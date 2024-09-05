@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0g0ysejugqyp"
-path="res://.godot/imported/Flag.png-3c0f8220d214f7cebd3dc5ac02581e1f.ctex"
+path="res://.godot/imported/Flag.png-dfd5ec0cb43d653e162da4f86d329ba8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Industria gamejam/3 Objects/Flag.png"
-dest_files=["res://.godot/imported/Flag.png-3c0f8220d214f7cebd3dc5ac02581e1f.ctex"]
+source_file="res://Industria gamejam/2 Objects/Flag.png"
+dest_files=["res://.godot/imported/Flag.png-dfd5ec0cb43d653e162da4f86d329ba8.ctex"]
 
 [params]
 

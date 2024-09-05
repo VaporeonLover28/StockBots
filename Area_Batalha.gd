@@ -25,7 +25,7 @@ func _ready():
 	instantiated_enemy.position.x = 904
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if player_has_died == false and enemy_has_died == false:
 		if RoundCounter.rounds > 5:
 			get_tree().change_scene_to_file("res://Menus/win_scene.tscn")

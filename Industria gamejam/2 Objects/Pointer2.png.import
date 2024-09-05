@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jk1s1h1hc4t5"
-path="res://.godot/imported/Pointer2.png-e617caabf6735036df4187b2b61f05c8.ctex"
+path="res://.godot/imported/Pointer2.png-2558f5d79b109cd76d4769a5e3134efe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Industria gamejam/3 Objects/Pointer2.png"
-dest_files=["res://.godot/imported/Pointer2.png-e617caabf6735036df4187b2b61f05c8.ctex"]
+source_file="res://Industria gamejam/2 Objects/Pointer2.png"
+dest_files=["res://.godot/imported/Pointer2.png-2558f5d79b109cd76d4769a5e3134efe.ctex"]
 
 [params]
 

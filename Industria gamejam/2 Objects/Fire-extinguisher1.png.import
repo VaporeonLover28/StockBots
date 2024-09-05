@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpi67xm2sx63c"
-path="res://.godot/imported/Fire-extinguisher1.png-94961f4dc0b65219b66fabad7b098086.ctex"
+path="res://.godot/imported/Fire-extinguisher1.png-395f8d0c6216bc6eb8e123f898aa3add.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Industria gamejam/3 Objects/Fire-extinguisher1.png"
-dest_files=["res://.godot/imported/Fire-extinguisher1.png-94961f4dc0b65219b66fabad7b098086.ctex"]
+source_file="res://Industria gamejam/2 Objects/Fire-extinguisher1.png"
+dest_files=["res://.godot/imported/Fire-extinguisher1.png-395f8d0c6216bc6eb8e123f898aa3add.ctex"]
 
 [params]
 

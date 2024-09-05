@@ -15,7 +15,7 @@ func _ready():
 	if Vl < 0:
 		self.scale.x = -1
 
-func _process(delta):
+func _process(_delta):
 	global_position.x += Vl
 	distance_traveled += Vl
 	

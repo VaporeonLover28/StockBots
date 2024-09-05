@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pda6nje28um0"
-path="res://.godot/imported/Transporter1.png-4401626b7df93ca7c6644457417aaf6e.ctex"
+path="res://.godot/imported/Transporter1.png-e2660e4b7d102728516e761def6180ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Industria gamejam/4 Animated objects/Transporter1.png"
-dest_files=["res://.godot/imported/Transporter1.png-4401626b7df93ca7c6644457417aaf6e.ctex"]
+source_file="res://Industria gamejam/3 Animated objects/Transporter1.png"
+dest_files=["res://.godot/imported/Transporter1.png-e2660e4b7d102728516e761def6180ac.ctex"]
 
 [params]
 

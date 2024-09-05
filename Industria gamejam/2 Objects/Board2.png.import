@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1kpb61eqfhmm"
-path="res://.godot/imported/Board2.png-520157811f7ad75389a05c294492e852.ctex"
+path="res://.godot/imported/Board2.png-af550e2f1c9660da91341a245beb8dbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Industria gamejam/3 Objects/Board2.png"
-dest_files=["res://.godot/imported/Board2.png-520157811f7ad75389a05c294492e852.ctex"]
+source_file="res://Industria gamejam/2 Objects/Board2.png"
+dest_files=["res://.godot/imported/Board2.png-af550e2f1c9660da91341a245beb8dbf.ctex"]
 
 [params]
 

@@ -33,7 +33,7 @@ func _ready():
 	set_texture(weapon_resource.weapon_sprite)
 	weapon_cooldown_timer.timeout.connect(funcao_weapon_cooldown)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	
 	if weapon_cooldown_timer.time_left == 0:
 		weapon_cooldown_timer.start(weapon_cooldown)

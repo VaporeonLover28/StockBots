@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=5 format=3 uid="uid://clj1h355k1bw1"]
 
-[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/2 Background/RevMiniPixel.ttf" id="1_llauo"]
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="1_llauo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4nve"]
 bg_color = Color(0.309804, 0.309804, 0.717647, 0.717647)

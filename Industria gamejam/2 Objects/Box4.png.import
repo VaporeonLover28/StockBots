@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xbp341equoml"
-path="res://.godot/imported/Box4.png-7a5249e91de063590121a45bfd5ec503.ctex"
+path="res://.godot/imported/Box4.png-325b52d0a0f361c66efbd97ef2c9b703.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Industria gamejam/3 Objects/Box4.png"
-dest_files=["res://.godot/imported/Box4.png-7a5249e91de063590121a45bfd5ec503.ctex"]
+source_file="res://Industria gamejam/2 Objects/Box4.png"
+dest_files=["res://.godot/imported/Box4.png-325b52d0a0f361c66efbd97ef2c9b703.ctex"]
 
 [params]
 

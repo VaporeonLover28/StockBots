@@ -55,7 +55,7 @@ func _ready():
 		robot_anim.flip_h = true
 		instanciated_weapon1.flip_h = true
 		
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	instanciated_weapon1.global_position = weapon_marker1.global_position
 	

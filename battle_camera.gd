@@ -7,7 +7,7 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if $"../".player_has_died == false and $"../".enemy_has_died == false:
 		distance = abs(abs($"..".instantiated_enemy.global_position.x) - abs(($"..".instantiated_player.global_position.x)))/200
 		position.x =  $"..".instantiated_player.global_position.x + 200

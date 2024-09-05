@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bplkyl1xy4bfm"
-path="res://.godot/imported/2.png-48cf7e75613d79877e74de8952645580.ctex"
+path="res://.godot/imported/2.png-b0819363dd53772d2b8e4dc730a2ef9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Industria gamejam/2 Background/2.png"
-dest_files=["res://.godot/imported/2.png-48cf7e75613d79877e74de8952645580.ctex"]
+source_file="res://Industria gamejam/1 Background/2.png"
+dest_files=["res://.godot/imported/2.png-b0819363dd53772d2b8e4dc730a2ef9a.ctex"]
 
 [params]
 
