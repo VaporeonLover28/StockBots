@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cclgutysjb5rh"
-path="res://.godot/imported/Fire_Idle_Sheet2.png-c72e14764f156d1abcfec890d386249f.ctex"
+uid="uid://cby8yigvw75xd"
+path="res://.godot/imported/Fire_Hurt_Sheet.png-bb07f16c31340502f543a49bd596966c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png"
-dest_files=["res://.godot/imported/Fire_Idle_Sheet2.png-c72e14764f156d1abcfec890d386249f.ctex"]
+source_file="res://robo gamejam/Arte experimental/Fire_Hurt_Sheet.png"
+dest_files=["res://.godot/imported/Fire_Hurt_Sheet.png-bb07f16c31340502f543a49bd596966c.ctex"]
 
 [params]
 

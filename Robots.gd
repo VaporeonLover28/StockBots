@@ -57,6 +57,11 @@ func _ready():
 		
 func _physics_process(_delta):
 	
+	if velocity.x == 0:
+		robot_anim.play("idle")
+	else:
+		robot_anim.play("move")
+	
 	instanciated_weapon1.global_position = weapon_marker1.global_position
 	
 	#if current_life <= 0:

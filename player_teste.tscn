@@ -1,43 +1,97 @@
-[gd_scene load_steps=11 format=3 uid="uid://ci0jr8gsscewo"]
+[gd_scene load_steps=19 format=3 uid="uid://ci0jr8gsscewo"]
 
 [ext_resource type="Script" path="res://player_teste.gd" id="1_saocx"]
 [ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="2_b1gs4"]
 [ext_resource type="Texture2D" uid="uid://bdsoklsj0nuvn" path="res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png" id="2_ijw6t"]
+[ext_resource type="Texture2D" uid="uid://cs2etpneiext" path="res://robo gamejam/Arte experimental/Ice_Hurt_Sheet.png" id="3_kux6n"]
+[ext_resource type="Texture2D" uid="uid://htesi5gh4hkc" path="res://robo gamejam/Arte experimental/Ice_Walk_Sheet.png" id="4_0o23t"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_aftvg"]
-atlas = ExtResource("2_ijw6t")
-region = Rect2(0, 0, 48, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ow0g7"]
+atlas = ExtResource("3_kux6n")
+region = Rect2(0, 0, 192, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_arkws"]
-atlas = ExtResource("2_ijw6t")
-region = Rect2(48, 0, 48, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyhps"]
+atlas = ExtResource("3_kux6n")
+region = Rect2(192, 0, 192, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tsr56"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqlk1"]
 atlas = ExtResource("2_ijw6t")
-region = Rect2(96, 0, 48, 48)
+region = Rect2(0, 0, 192, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gjmv2"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_dujaj"]
 atlas = ExtResource("2_ijw6t")
-region = Rect2(144, 0, 48, 48)
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sm1xv"]
+atlas = ExtResource("2_ijw6t")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qf0cj"]
+atlas = ExtResource("2_ijw6t")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgvbm"]
+atlas = ExtResource("4_0o23t")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmcl5"]
+atlas = ExtResource("4_0o23t")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0jqh"]
+atlas = ExtResource("4_0o23t")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lljkp"]
+atlas = ExtResource("4_0o23t")
+region = Rect2(576, 0, 192, 192)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yc83v"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_aftvg")
+"texture": SubResource("AtlasTexture_ow0g7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_arkws")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tsr56")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gjmv2")
+"texture": SubResource("AtlasTexture_vyhps")
 }],
 "loop": true,
-"name": &"default",
+"name": &"hurt",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqlk1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dujaj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sm1xv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qf0cj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgvbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dmcl5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0jqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lljkp")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_krufl"]
@@ -53,8 +107,11 @@ metadata/_edit_horizontal_guides_ = [-26.0, 15.0]
 
 [node name="robot_anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, -10)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_yc83v")
-autoplay = "default"
+animation = &"hurt"
+autoplay = "idle"
+frame_progress = 0.831855
 
 [node name="robot_collision" type="CollisionShape2D" parent="."]
 position = Vector2(-4, -6)

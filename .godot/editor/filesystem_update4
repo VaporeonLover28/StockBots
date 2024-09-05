@@ -1,7 +1,12 @@
-res://Area_Batalha.tscn
+res://Menus/menu.tscn
+res://Menus/menu.gdshader
+res://Menus/menu_theme.tres
+res://Menus/pause_theme.tres
 res://Modes/agressivo.tres
 res://Modes/lento.tres
-res://Menus/pause_theme.tres
-res://Menus/menu.gdshader
-res://Menus/menu.tscn
-res://Menus/menu_theme.tres
+res://enemy_teste.tscn
+res://Robots.gd
+res://Area_Batalha.tscn
+res://robots.tscn
+res://player_teste.tscn
+res://bullet.tscn

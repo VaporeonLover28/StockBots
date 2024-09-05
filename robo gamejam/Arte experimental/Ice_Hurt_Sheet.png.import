@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpraw6t0adho3"
-path="res://.godot/imported/IndustrialTile_27.png-43f3e69afefd97e4bbf80f1ea841aedf.ctex"
+uid="uid://cs2etpneiext"
+path="res://.godot/imported/Ice_Hurt_Sheet.png-376c909f842180e0b983379a23ce4049.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://IndustrialTile_27.png"
-dest_files=["res://.godot/imported/IndustrialTile_27.png-43f3e69afefd97e4bbf80f1ea841aedf.ctex"]
+source_file="res://robo gamejam/Arte experimental/Ice_Hurt_Sheet.png"
+dest_files=["res://.godot/imported/Ice_Hurt_Sheet.png-376c909f842180e0b983379a23ce4049.ctex"]
 
 [params]
 
