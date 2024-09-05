@@ -1,0 +1,38 @@
+Atualização 2 - Tanque de gelo
+
+Explicando:
+Cubo de gelo na cabeça q fica quicando conforme ele sobe e desce 
+(por mais q esse movimento seja difícil de transmitir em 4 frames)
+Luzes meio LED vermelha e verde, atualmente só a verde ligada
+Troca pra vermelha ligada na animação de tomar hit
+(Junto com a cor no meio da roda)
+
+Essa ficou um pouco mais broxa na minha opinião
+Já q eu n tinha uma visão 100% clara
+Como eu tinha pro de fogo
+Mas ainda ficou bom
+(N consegui exportar o gif pq a camada fode igual no gif do de fogo)
+(Mas botando o spritesheet direto no godot n deu erro com as camadas)
+(Ent n sei)
+
+
+
+
+Issaq é uma variação de fogo do tanque normal
+
+Eu fiz só o idle mas tenho uma ideia de como seria as outras animações
+
+(Tá bastante rápido na animação da pasta, 10fps, mas deveria ser 4fps, ent trocar pra 4 no godot)
+
+Explicando algumas coisas:
+
+Meio que o tanque tem lava ou magma fluindo por dentro dele, que tbm é o que ele atira
+É levado do tanque central no corpo até a cabeça pelo tubo atrás
+Tem também um pouco nas rodas que tem uma animaçãozinha de fogo variando a luminosidade 
+(por mais que essa tenha ficado um pouco pior quando eu exportei)
+Tbm tem uma animação da lava do tanque central se movendo
+Iria fazer pra cabeça tbm mas n sei exatamente como 
+(Mas posso tentar se vcs quiserem)
+
+É isso eu acho
+Eu achei q ficou mt pica

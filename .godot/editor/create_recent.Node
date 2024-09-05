@@ -1,0 +1,14 @@
+Node
+Button
+CanvasLayer
+Label
+Node2D
+BoxContainer
+TextureProgressBar
+ResourcePreloader
+SubViewport
+CollisionShape2D
+Area2D
+AnimationPlayer
+HSeparator
+VBoxContainer

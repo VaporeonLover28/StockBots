@@ -1,0 +1,14 @@
+res://Modes/lento.tres
+res://robots.tscn
+res://Menus/menu.gdshader
+res://player_teste.tscn
+res://enemy_teste.gd
+res://arma_gen.tscn
+res://mode_resource.tscn
+res://weapon_resource.tscn
+res://enemy_teste.tscn
+res://mode_resource.gd
+res://Robots.gd
+res://bullet.gd
+res://bullet.tscn
+res://Modes/agressivo.tres

@@ -1,0 +1,94 @@
+[gd_scene load_steps=10 format=3 uid="uid://1pke27qck4i4"]
+
+[ext_resource type="Texture2D" uid="uid://dtcfjvtert0nj" path="res://robô gamejam/6/Idle.png" id="2_ocm52"]
+
+[sub_resource type="GDScript" id="GDScript_jkm44"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asopx"]
+atlas = ExtResource("2_ocm52")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtik2"]
+atlas = ExtResource("2_ocm52")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lirgk"]
+atlas = ExtResource("2_ocm52")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ktto"]
+atlas = ExtResource("2_ocm52")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pp54i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asopx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtik2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lirgk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ktto")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tk67u"]
+radius = 8.0
+height = 32.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mviy5"]
+radius = 4.0
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(4, 4)
+script = SubResource("GDScript_jkm44")
+
+[node name="PlayerSprt" type="AnimatedSprite2D" parent="."]
+position = Vector2(7, -6)
+sprite_frames = SubResource("SpriteFrames_pp54i")
+autoplay = "default"
+
+[node name="BodyColl" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_tk67u")
+
+[node name="WheelsColl" type="CollisionShape2D" parent="."]
+position = Vector2(0, 14)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_mviy5")

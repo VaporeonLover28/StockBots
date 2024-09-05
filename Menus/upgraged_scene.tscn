@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxcv2ao31a4ht"]
+
+[ext_resource type="Script" path="res://Menus/upgraged_scene.gd" id="1_v6d15"]
+
+[node name="Upgraged_scene" type="CanvasLayer"]
+script = ExtResource("1_v6d15")
+
+[node name="pass_upgrade_button" type="Button" parent="."]
+offset_left = 155.0
+offset_top = 108.0
+offset_right = 313.0
+offset_bottom = 139.0
+text = "passar modificação"
+
+[connection signal="pressed" from="pass_upgrade_button" to="." method="_on_pass_upgrade_button_pressed"]

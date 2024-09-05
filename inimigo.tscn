@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://cjgmt6ygo1wpp"]
+
+[ext_resource type="Texture2D" uid="uid://cwdbc1stgr0q2" path="res://Industria gamejam/drones gamejam/1 Drones/1/Idle.png" id="1_5kyrf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qijef"]
+atlas = ExtResource("1_5kyrf")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqj75"]
+atlas = ExtResource("1_5kyrf")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3v66"]
+atlas = ExtResource("1_5kyrf")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gg52"]
+atlas = ExtResource("1_5kyrf")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6vfgx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qijef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqj75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3v66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7gg52")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iwc61"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2feei"]
+size = Vector2(39.5, 3.75)
+
+[node name="Inimigo" type="CharacterBody2D"]
+scale = Vector2(4, 4)
+
+[node name="InimigoSprt" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6vfgx")
+autoplay = "default"
+
+[node name="BodyColl" type="CollisionShape2D" parent="."]
+position = Vector2(-0.375, 0.375)
+shape = SubResource("CapsuleShape2D_iwc61")
+
+[node name="EliceColl" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3.125)
+shape = SubResource("RectangleShape2D_2feei")
