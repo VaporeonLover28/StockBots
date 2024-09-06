@@ -1,7 +1,8 @@
+AudioStreamPlayer2D
+Label
 Node
 Button
 CanvasLayer
-Label
 Node2D
 BoxContainer
 TextureProgressBar
@@ -11,4 +12,3 @@ CollisionShape2D
 Area2D
 AnimationPlayer
 HSeparator
-VBoxContainer

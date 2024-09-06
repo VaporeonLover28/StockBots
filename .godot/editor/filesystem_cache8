@@ -1,14 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1725576876
+::res://::1725656656
 Area_Batalha.gd::GDScript::-1::1725574251::0::1::::<>Node2D<>::
-Area_Batalha.tscn::PackedScene::5400144948865599507::1725576876::0::1::::<><>::res://Area_Batalha.gd<>res://battle_camera.gd<>uid://brimh23wepivl::::res://powerplant scenario gamejam/1 Tiles/Tile_27.png<>uid://ti04y3oterqt::::res://Menus/menu_pause.tscn<>uid://bus3gxvaqgd7o::::res://heathbar_background.png<>uid://d2sjy8h3h7tb4::::res://Healthbar_enchimento.png<>res://healthbar_enemy.gd<>res://healthbar_player.gd<>res://round_label.gd
+Area_Batalha.tscn::PackedScene::5400144948865599507::1725656470::0::1::::<><>::res://Area_Batalha.gd<>uid://cg6bxc4q05ahp::::res://tankscream.wav<>uid://ddmjykibjnfyx::::res://bgm.mp3<>res://battle_camera.gd<>uid://brimh23wepivl::::res://powerplant scenario gamejam/1 Tiles/Tile_27.png<>uid://ti04y3oterqt::::res://Menus/menu_pause.tscn<>uid://bus3gxvaqgd7o::::res://heathbar_background.png<>uid://d2sjy8h3h7tb4::::res://Healthbar_enchimento.png<>res://healthbar_enemy.gd<>res://healthbar_player.gd<>res://round_label.gd
 ArmaGen.gd::GDScript::-1::1725574193::0::1::::Weapon<>Sprite2D<>::
 arma_gen.tscn::PackedScene::4607893857483116694::1725573747::0::1::::<><>::res://ArmaGen.gd<>res://weapon_resource_base.gd<>uid://j5rk0540haiy::::res://free-guns-pixel-art/free-guns-pixel-art/RPG.png
 battle_camera.gd::GDScript::-1::1725574251::0::1::::<>Camera2D<>::
-bullet.gd::GDScript::-1::1725574193::0::1::::<>Area2D<>::
-bullet.tscn::PackedScene::6799741680790631131::1725576876::0::1::::<><>::res://bullet.gd<>uid://v03lvom2gxoj::::res://robo gamejam/6/Ball1.png
+bgm.mp3::AudioStreamMP3::7395190964680650099::1725656122::1725656133::1::::<><>::
+bullet.gd::GDScript::-1::1725653942::0::1::::<>Area2D<>::
+bullet.tscn::PackedScene::6799741680790631131::1725656470::0::1::::<><>::res://bullet.gd<>uid://v03lvom2gxoj::::res://robo gamejam/6/Ball1.png
 enemy_teste.gd::GDScript::-1::1725573599::0::1::::<>Robots<>::
-enemy_teste.tscn::PackedScene::4218012141222295258::1725576876::0::1::::<><>::res://enemy_teste.gd<>uid://cclgutysjb5rh::::res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://bw1dnyhhps5b8::::res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png
+enemy_teste.tscn::PackedScene::4218012141222295258::1725656470::0::1::::<><>::res://enemy_teste.gd<>uid://cclgutysjb5rh::::res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://bw1dnyhhps5b8::::res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png
 Font.txt::TextFile::-1::1725573598::0::1::::<><>::
 Healthbar_enchimento.png::CompressedTexture2D::9092110686234880827::1725573599::1725573703::1::::<><>::
 healthbar_enemy.gd::GDScript::-1::1725574251::0::1::::<>TextureProgressBar<>::
@@ -18,18 +19,24 @@ icon.svg::CompressedTexture2D::8701001055468581931::1725573600::1725573703::1:::
 inimigo.tscn::PackedScene::5417691426241772373::1725573600::0::1::::<><>::uid://cwdbc1stgr0q2::::res://Industria gamejam/drones gamejam/1 Drones/1/Idle.png
 item_resource.gd::GDScript::-1::1725573600::0::1::::Item_resource<>Resource<>::
 item_resource.tscn::PackedScene::2507479971577964477::1725573600::0::1::::<><>::res://item_resource.gd
+Kasino no Sabadaço - 07102006.mp3::AudioStreamMP3::4824686969991782870::1725656388::1725656396::1::::<><>::
 Label.gd::GDScript::-1::1725573599::0::1::::<>Label<>::
 License.txt::TextFile::-1::1725573599::0::1::::<><>::
+Manoel Gomes - Caneta Azul (Jersey ClubPhonk) Prod. by JXGHY ll.mp3::AudioStreamMP3::244360245826854718::1725655396::1725656073::1::::<><>::
 mode_resource.gd::GDScript::-1::1725573600::0::1::::Mode<>Item_resource<>::
 mode_resource.tscn::PackedScene::5590698567770611558::1725573747::0::1::::<><>::res://mode_resource.gd
+Monkeys Spinning Monkeys.mp3::AudioStreamMP3::7933008436829684975::1725656210::1725656234::1::::<><>::
 player.tscn::PackedScene::1856491382297284369::1725573600::0::1::::<><>::uid://dtcfjvtert0nj::::res://robô gamejam/6/Idle.png
 player_teste.gd::GDScript::-1::1725573600::0::1::::<>Robots<>::
-player_teste.tscn::PackedScene::5386540115154593914::1725576876::0::1::::<><>::res://player_teste.gd<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://bdsoklsj0nuvn::::res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png<>uid://htesi5gh4hkc::::res://robo gamejam/Arte experimental/Ice_Walk_Sheet.png
+player_teste.tscn::PackedScene::5386540115154593914::1725656470::0::1::::<><>::res://player_teste.gd<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://bdsoklsj0nuvn::::res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png<>uid://cs2etpneiext::::res://robo gamejam/Arte experimental/Ice_Hurt_Sheet.png<>uid://htesi5gh4hkc::::res://robo gamejam/Arte experimental/Ice_Walk_Sheet.png
+default_bus_layout.tres::AudioBusLayout::7306929473513873330::1725653650::0::1::::<><>::
 Robots.gd::GDScript::-1::1725576697::0::1::::Robots<>CharacterBody2D<>::
-robots.tscn::PackedScene::9042431026298361450::1725576876::0::1::::<><>::res://Robots.gd<>uid://dtcfjvtert0nj::::res://robo gamejam/6/Idle.png
+robots.tscn::PackedScene::9042431026298361450::1725656470::0::1::::<><>::res://Robots.gd<>uid://dtcfjvtert0nj::::res://robo gamejam/6/Idle.png
 round_counter.gd::GDScript::-1::1725573600::0::1::::<>Node<>::
 round_counter.tscn::PackedScene::1446679903272424325::1725573600::0::1::::<><>::res://round_counter.gd
 round_label.gd::GDScript::-1::1725573600::0::1::::<>Label<>::
+tankscream.wav::AudioStreamWAV::5258072080450411453::1725575573::1725653305::1::::<><>::
+Vine boom sound effect.mp3::AudioStreamMP3::8503333935455447983::1725656524::1725656661::1::::<><>::
 weapon_resource.tscn::PackedScene::1058344215478704269::1725573747::0::1::::<><>::res://weapon_resource_base.gd
 weapon_resource_base.gd::GDScript::-1::1725573600::0::1::::Weapon_resource<>Item_resource<>::
 ::res://1 Icons/::1725573598
@@ -1318,21 +1325,21 @@ Walk.png::CompressedTexture2D::1341509151008821629::1725573599::1725573703::1:::
 1.png::CompressedTexture2D::7212486927732954650::1725573599::1725573703::1::::<><>::
 2.png::CompressedTexture2D::8080446791871900546::1725573599::1725573703::1::::<><>::
 3.png::CompressedTexture2D::5525150166196243409::1725573599::1725573703::1::::<><>::
-::res://Menus/::1725576876
+::res://Menus/::1725656470
 menu.gd::GDScript::-1::1725574251::0::1::::<>Control<>::
-menu.gdshader::Shader::-1::1725576876::0::1::::<><>::
-menu.tscn::PackedScene::7247103091441093636::1725576876::0::1::::<><>::res://Menus/menu.gd<>uid://dbdy7qn6gl06v::::res://Industria gamejam/1 Background/1.png<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cnw2g3cjksd0g::::res://Industria gamejam/1 Background/3.png<>uid://btlwgagqgd0jr::::res://Industria gamejam/4.png<>uid://cyyviqxs8i4ro::::res://Industria gamejam/1 Background/5.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres
+menu.gdshader::Shader::-1::1725656470::0::1::::<><>::
+menu.tscn::PackedScene::7247103091441093636::1725656470::0::1::::<><>::res://Menus/menu.gd<>uid://dbdy7qn6gl06v::::res://Industria gamejam/1 Background/1.png<>uid://dla2qwmd23hr8::::res://Monkeys Spinning Monkeys.mp3<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cnw2g3cjksd0g::::res://Industria gamejam/1 Background/3.png<>uid://btlwgagqgd0jr::::res://Industria gamejam/4.png<>uid://cyyviqxs8i4ro::::res://Industria gamejam/1 Background/5.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres
 menu_pause.gd::GDScript::-1::1725574251::0::1::::<>CanvasLayer<>::
 menu_pause.tscn::PackedScene::1351674068474087943::1725573599::0::1::::<><>::res://Menus/menu_pause.gd<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres
-menu_theme.tres::Theme::5337092342093551882::1725575842::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
-pause_theme.tres::Theme::5565090707935745082::1725575842::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
+menu_theme.tres::Theme::5337092342093551882::1725653473::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
+pause_theme.tres::Theme::5565090707935745082::1725653473::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
 upgraged_scene.gd::GDScript::-1::1725573599::0::1::::<>CanvasLayer<>::
-upgraged_scene.tscn::PackedScene::6392636822786826645::1725573599::0::1::::<><>::res://Menus/upgraged_scene.gd
+upgraged_scene.tscn::PackedScene::6392636822786826645::1725656470::0::1::::<><>::res://Menus/upgraged_scene.gd<>uid://ca0d5ii6dw2qk::::res://Kasino no Sabadaço - 07102006.mp3
 win_scene.gd::GDScript::-1::1725573599::0::1::::<>CanvasLayer<>::
-win_scene.tscn::PackedScene::3486261982251564868::1725573599::0::1::::<><>::res://Menus/win_scene.gd
-::res://Modes/::1725575842
-agressivo.tres::Resource/Mode::7024451501339356069::1725575842::0::1::::<><>::res://mode_resource.gd
-lento.tres::Resource/Mode::6166951901167145063::1725575842::0::1::::<><>::res://mode_resource.gd
+win_scene.tscn::PackedScene::3486261982251564868::1725656470::0::1::::<><>::res://Menus/win_scene.gd
+::res://Modes/::1725653473
+agressivo.tres::Resource/Mode::7024451501339356069::1725653473::0::1::::<><>::res://mode_resource.gd
+lento.tres::Resource/Mode::6166951901167145063::1725653473::0::1::::<><>::res://mode_resource.gd
 ::res://powerplant scenario gamejam/::1725573600
 Font.txt::TextFile::-1::1725573600::0::1::::<><>::
 License.txt::TextFile::-1::1725573600::0::1::::<><>::
@@ -1561,7 +1568,7 @@ Death.png::CompressedTexture2D::954927924556388376::1725573600::1725573703::1:::
 Hurt.png::CompressedTexture2D::2780629461206292568::1725573600::1725573703::1::::<><>::
 Idle.png::CompressedTexture2D::8497299625365886863::1725573600::1725573703::1::::<><>::
 Walk.png::CompressedTexture2D::1312350508746546977::1725573600::1725573703::1::::<><>::
-::res://robo gamejam/Arte experimental/::1725578580
+::res://robo gamejam/Arte experimental/::1725578669
 explicao.txt::TextFile::-1::1725573600::0::1::::<><>::
 Fire_Hurt_Sheet.png::CompressedTexture2D::4894622227377144073::1725577625::1725578669::1::::<><>::
 Fire_Idle_Sheet2.png::CompressedTexture2D::4936328263640519065::1725576319::1725576382::1::::<><>::

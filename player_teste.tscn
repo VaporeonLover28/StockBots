@@ -109,9 +109,8 @@ metadata/_edit_horizontal_guides_ = [-26.0, 15.0]
 position = Vector2(3, -10)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_yc83v")
-animation = &"hurt"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.831855
 
 [node name="robot_collision" type="CollisionShape2D" parent="."]
 position = Vector2(-4, -6)

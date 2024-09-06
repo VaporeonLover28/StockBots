@@ -9,6 +9,7 @@ var distance_traveled: int
 
 
 func _ready():
+	$boom.playing = true
 	bullet.area_entered.connect(on_hit)
 	if Vl > 0:
 		self.scale.x = 1 
@@ -27,7 +28,9 @@ func _process(_delta):
 func on_hit(area):
 	if area.is_in_group("Player_type_hurtbox") and origin != 0:
 		$"../".instantiated_player.current_life -= dano
+		$"../PlayerHurtStream".playing = true
 		self.queue_free()
 	if area.is_in_group("Enemy_type_hurtbox") and origin != 1:
 		$"../".instantiated_enemy.current_life -= dano
+		$"../EnemyHurtStream".playing = true
 		self.queue_free()

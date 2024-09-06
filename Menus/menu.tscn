@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://dbisy13t7cu7e"]
+[gd_scene load_steps=21 format=3 uid="uid://dbisy13t7cu7e"]
 
 [ext_resource type="Script" path="res://Menus/menu.gd" id="1_jv4su"]
 [ext_resource type="Texture2D" uid="uid://dbdy7qn6gl06v" path="res://Industria gamejam/1 Background/1.png" id="2_gyigj"]
+[ext_resource type="AudioStream" uid="uid://dla2qwmd23hr8" path="res://Monkeys Spinning Monkeys.mp3" id="2_mjn81"]
 [ext_resource type="Shader" path="res://Menus/menu.gdshader" id="3_ft434"]
 [ext_resource type="Texture2D" uid="uid://bplkyl1xy4bfm" path="res://Industria gamejam/1 Background/2.png" id="4_5p5lq"]
 [ext_resource type="Texture2D" uid="uid://cnw2g3cjksd0g" path="res://Industria gamejam/1 Background/3.png" id="5_wojsn"]
@@ -16,7 +17,7 @@ shader_parameter/move_speed = -0.02
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uquuv"]
 shader = ExtResource("3_ft434")
-shader_parameter/move_speed = -0.03
+shader_parameter/move_speed = -0.04
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0yo8f"]
 shader = ExtResource("3_ft434")
@@ -24,7 +25,7 @@ shader_parameter/move_speed = 0.01
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8582j"]
 shader = ExtResource("3_ft434")
-shader_parameter/move_speed = 0.05
+shader_parameter/move_speed = 0.07
 
 [sub_resource type="LabelSettings" id="LabelSettings_t1x71"]
 font = ExtResource("8_vhut2")
@@ -75,6 +76,10 @@ _data = {
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_jv4su")
+
+[node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_mjn81")
+autoplay = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

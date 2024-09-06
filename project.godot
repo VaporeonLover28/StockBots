@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Game-geme-ver-0.5.2"
+config/name="StockBots"
 run/main_scene="res://Menus/menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
