@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpw1hww8w6lxs"]
+
+[ext_resource type="Script" path="res://Menus/win_scene.gd" id="1_oodep"]
+
+[node name="Win_scene" type="CanvasLayer"]
+script = ExtResource("1_oodep")
+
+[node name="Back_menu_button" type="Button" parent="."]
+offset_left = 358.0
+offset_top = 236.0
+offset_right = 461.0
+offset_bottom = 267.0
+text = "Reniciar run"
+
+[connection signal="pressed" from="Back_menu_button" to="." method="_on_back_menu_button_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ca0d5ii6dw2qk"
+path="res://.godot/imported/Kasino no Sabadaço - 07102006.mp3-6c6a4f0f93d3733b8ae134b9e72f9918.mp3str"
+
+[deps]
+
+source_file="res://Kasino no Sabadaço - 07102006.mp3"
+dest_files=["res://.godot/imported/Kasino no Sabadaço - 07102006.mp3-6c6a4f0f93d3733b8ae134b9e72f9918.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

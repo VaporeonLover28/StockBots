@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://bnqqai2ica55s"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_qr6if"]
+[ext_resource type="Texture2D" uid="uid://487eet0m3xnh" path="res://free-guns-pixel-art/free-guns-pixel-art/Sniper-rifle-3-scoped.png" id="2_oljlc"]
+
+[resource]
+script = ExtResource("1_qr6if")
+weapon_sprite = ExtResource("2_oljlc")
+type_bullet = "yes"
+weapon_damage = 10
+weapon_range = 1000
+weapon_cooldown = 3
+bullet_velocity = 10
+id = 1
+Item_name = "sniper"

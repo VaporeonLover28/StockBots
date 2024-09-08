@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxcv2ao31a4ht"]
+
+[ext_resource type="Script" path="res://Menus/upgraged_scene.gd" id="1_v6d15"]
+[ext_resource type="AudioStream" uid="uid://ca0d5ii6dw2qk" path="res://Kasino no Sabadaço - 07102006.mp3" id="2_gflqe"]
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="2_o31mb"]
+[ext_resource type="Texture2D" uid="uid://b7nntnnn1v2ei" path="res://1 Icons/1/Skillicon1_01.png" id="4_75rj2"]
+[ext_resource type="Script" path="res://Menus/item_container.gd" id="4_tugkl"]
+
+[node name="Upgraged_scene" type="CanvasLayer"]
+script = ExtResource("1_v6d15")
+
+[node name="pass_upgrade_button" type="Button" parent="."]
+offset_left = 379.0
+offset_top = 572.0
+offset_right = 549.0
+offset_bottom = 603.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("2_o31mb")
+text = "passar modificação"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_gflqe")
+autoplay = true
+
+[node name="Label" type="Label" parent="AudioStreamPlayer2D"]
+offset_left = 879.0
+offset_top = 385.0
+offset_right = 1099.0
+offset_bottom = 408.0
+scale = Vector2(3.06785, 13.7653)
+text = "KASSINOOOOOOOOOOOOO"
+
+[node name="choose_moodification" type="Label" parent="."]
+offset_left = 71.0
+offset_top = 24.0
+offset_right = 1101.0
+offset_bottom = 104.0
+theme_override_fonts/font = ExtResource("2_o31mb")
+theme_override_font_sizes/font_size = 80
+text = "Choose your modification"
+
+[node name="Button_item" type="Button" parent="."]
+offset_left = 93.0
+offset_top = 158.0
+offset_right = 101.0
+offset_bottom = 198.0
+
+[node name="Item_container" type="BoxContainer" parent="."]
+offset_left = 544.0
+offset_top = 232.0
+offset_right = 584.0
+offset_bottom = 272.0
+script = ExtResource("4_tugkl")
+all_itens = Array[String](["\"res://Weapons/bazuca.tres\"", "\"res://Weapons/sniper.tres\"", "\"res://Modes/agressivo.tres\"", "\"res://Modes/lento.tres\""])
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Item_container"]
+layout_mode = 2
+
+[node name="Item_sprite" type="Sprite2D" parent="Item_container/HBoxContainer"]
+texture = ExtResource("4_75rj2")
+
+[node name="Item_name" type="Label" parent="Item_container/HBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="pass_upgrade_button" to="." method="_on_pass_upgrade_button_pressed"]

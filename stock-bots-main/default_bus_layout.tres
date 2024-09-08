@@ -1,0 +1,33 @@
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://dcdsccms2lnqw"]
+
+[sub_resource type="AudioEffectPanner" id="AudioEffectPanner_drmlp"]
+resource_name = "Panner"
+pan = -0.7
+
+[sub_resource type="AudioEffectPanner" id="AudioEffectPanner_a5mgm"]
+resource_name = "Panner"
+pan = 0.7
+
+[resource]
+bus/1/name = &"PlayerHurt"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
+bus/1/effect/0/effect = SubResource("AudioEffectPanner_drmlp")
+bus/1/effect/0/enabled = true
+bus/2/name = &"EnemyHurt"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectPanner_a5mgm")
+bus/2/effect/0/enabled = true
+bus/3/name = &"Bullets"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = 0.0
+bus/3/send = &"Master"

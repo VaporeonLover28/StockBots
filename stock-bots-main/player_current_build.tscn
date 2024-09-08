@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch4pllhm337gy"]
+
+[ext_resource type="Script" path="res://player_current_build.gd" id="1_pcg45"]
+
+[node name="Player_current_build" type="Node"]
+script = ExtResource("1_pcg45")

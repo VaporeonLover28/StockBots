@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://pcw1lo80u3gb"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_j61kw"]
+
+[node name="item resource" type="ResourcePreloader"]
+script = ExtResource("1_j61kw")

@@ -1,0 +1,85 @@
+[gd_scene load_steps=10 format=3 uid="uid://ci0jr8gsscewo"]
+
+[ext_resource type="Script" path="res://player_teste.gd" id="1_saocx"]
+[ext_resource type="Texture2D" uid="uid://bdsoklsj0nuvn" path="res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png" id="2_ijw6t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aftvg"]
+atlas = ExtResource("2_ijw6t")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arkws"]
+atlas = ExtResource("2_ijw6t")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsr56"]
+atlas = ExtResource("2_ijw6t")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjmv2"]
+atlas = ExtResource("2_ijw6t")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yc83v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aftvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arkws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsr56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjmv2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krufl"]
+size = Vector2(30, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q231w"]
+size = Vector2(32, 40)
+
+[node name="player_teste" type="CharacterBody2D"]
+script = ExtResource("1_saocx")
+opponente = "\"res://enemy_teste.tscn\""
+VL = 10
+metadata/_edit_horizontal_guides_ = [-26.0, 15.0]
+
+[node name="robot_anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, -10)
+sprite_frames = SubResource("SpriteFrames_yc83v")
+autoplay = "default"
+
+[node name="robot_collision" type="CollisionShape2D" parent="."]
+position = Vector2(-4, -6)
+shape = SubResource("RectangleShape2D_krufl")
+
+[node name="robot_hurtbox" type="Area2D" parent="." groups=["Player_type_hurtbox"]]
+
+[node name="hurtbox_collision" type="CollisionShape2D" parent="robot_hurtbox"]
+position = Vector2(-4, -6)
+shape = SubResource("RectangleShape2D_q231w")
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="timer_chageAGST" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="timer_start_battle" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Weapon_marker1" type="Marker2D" parent="."]
+z_index = 1
+position = Vector2(-4, -4)
+
+[node name="Weapon_marker2" type="Marker2D" parent="."]
+z_index = -1
+position = Vector2(-1, -4)

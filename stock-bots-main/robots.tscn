@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=3 uid="uid://d13hruxbu3xly"]
+
+[ext_resource type="Script" path="res://Robots.gd" id="1_cwifc"]
+[ext_resource type="Texture2D" uid="uid://dtcfjvtert0nj" path="res://robo gamejam/6/Idle.png" id="2_g3ult"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3mtt"]
+size = Vector2(41, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pp2h"]
+size = Vector2(36, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27lge"]
+atlas = ExtResource("2_g3ult")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmk6n"]
+atlas = ExtResource("2_g3ult")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_is011"]
+atlas = ExtResource("2_g3ult")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iur13"]
+atlas = ExtResource("2_g3ult")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m3bnw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27lge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmk6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_is011")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iur13")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Robots" type="CharacterBody2D"]
+position = Vector2(148, 58)
+script = ExtResource("1_cwifc")
+
+[node name="robot_hurtbox" type="Area2D" parent="."]
+
+[node name="hurtbox_collision" type="CollisionShape2D" parent="robot_hurtbox"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_n3mtt")
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="robot_collision" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_3pp2h")
+
+[node name="robot_anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, -9)
+sprite_frames = SubResource("SpriteFrames_m3bnw")
+
+[node name="timer_chageAGST" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="timer_start_battle" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Weapon_marker1" type="Marker2D" parent="."]
+position = Vector2(-6, -3)
+
+[node name="Weapon_marker2" type="Marker2D" parent="."]
+z_index = -1
+position = Vector2(-2, -3)

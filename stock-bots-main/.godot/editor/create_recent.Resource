@@ -1,0 +1,3 @@
+Mode
+Weapon_resource
+Resource

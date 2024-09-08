@@ -1,0 +1,32 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://clj1h355k1bw1"]
+
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="1_llauo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4nve"]
+bg_color = Color(0.309804, 0.309804, 0.717647, 0.717647)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 4.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5irtt"]
+bg_color = Color(0.14902, 0.160784, 0.392157, 0.396078)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 4.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfp4p"]
+bg_color = Color(0.470588, 0.517647, 0.866667, 0.615686)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 4.0
+expand_margin_bottom = 3.0
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 32
+Button/fonts/font = ExtResource("1_llauo")
+Button/styles/hover = SubResource("StyleBoxFlat_n4nve")
+Button/styles/normal = SubResource("StyleBoxFlat_5irtt")
+Button/styles/pressed = SubResource("StyleBoxFlat_tfp4p")

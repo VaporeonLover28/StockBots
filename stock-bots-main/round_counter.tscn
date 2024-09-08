@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://uu1uvjsv2aob"]
+
+[ext_resource type="Script" path="res://round_counter.gd" id="1_j4a36"]
+
+[node name="round counter" type="Node"]
+script = ExtResource("1_j4a36")
