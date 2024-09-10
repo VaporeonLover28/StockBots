@@ -1,6 +1,8 @@
 extends Item_resource; class_name Mode
 
 @export_category("status")
+@export var robo_image : Texture2D
+@export var mode_agressivity : String
 @export var extra_life : int
 @export var extra_VL : int
 @export var extra_range : int

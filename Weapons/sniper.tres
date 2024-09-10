@@ -6,10 +6,11 @@
 [resource]
 script = ExtResource("1_qr6if")
 weapon_sprite = ExtResource("2_oljlc")
+weapon_type = "ranged"
 type_bullet = "yes"
 weapon_damage = 10
 weapon_range = 1000
 weapon_cooldown = 3
 bullet_velocity = 10
-id = 1
+Item_type = 1
 Item_name = "sniper"
