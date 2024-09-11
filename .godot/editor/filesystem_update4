@@ -1,10 +1,10 @@
-res://Area_Batalha.tscn
+res://robots.tscn
 res://Modes/agressivo.tres
 res://Menus/pause_theme.tres
 res://Robots.gd
 res://Modes/lento.tres
 res://Menus/menu.gdshader
-res://robots.tscn
+res://ArmaGen.gd
 res://enemy_teste.tscn
 res://Menus/upgraged_scene.tscn
 res://player_teste.tscn
@@ -15,7 +15,4 @@ res://player_loadout.tscn
 res://arma_gen.tscn
 res://loss_scene.tscn
 res://bullet.tscn
-res://Area_Batalha.gd
-res://Menus/menu_theme.tres
-res://bullet.gd
-res://default_bus_layout.tres
+res://player_teste.gd

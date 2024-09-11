@@ -4,8 +4,6 @@ extends Sprite2D; class_name Weapon
 @onready var weapon_cooldown_timer = $weapon_cooldown_timer
 @onready var bullet_spawn_marker = $bullet_spawn_marker
 @export var weapon_resource: Weapon_resource
-@onready var sniper = load("res://Weapons/sniper.tres")
-@onready var bazuca = load("res://Weapons/bazuca.tres")
 @onready var bullet = preload("res://bullet.tscn")
 @onready var range:int
 @onready var dano: int
