@@ -1,4 +1,4 @@
-extends Item_resource; class_name Mode
+extends Item_resource; class_name Mode_resource
 
 @export_category("status")
 @export var robo_image : Texture2D

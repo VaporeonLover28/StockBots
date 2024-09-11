@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb5ynhewq05g"]
+
+[ext_resource type="Script" path="res://player_loadout.gd" id="1_nihku"]
+[ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="2_gcmbf"]
+[ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="4_mw4yk"]
+
+[node name="Player_loadout" type="Node"]
+script = ExtResource("1_nihku")
+newest_weapon = ExtResource("2_gcmbf")
+oldest_weapon = ExtResource("2_gcmbf")
+current_mode = ExtResource("4_mw4yk")

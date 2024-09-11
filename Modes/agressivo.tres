@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Mode" load_steps=3 format=3 uid="uid://c7cxxptqesbar"]
+[gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://c7cxxptqesbar"]
 
 [ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="1_ivyn1"]
 [ext_resource type="Script" path="res://mode_resource.gd" id="1_yrxxt"]

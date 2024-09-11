@@ -2,22 +2,22 @@ extends CharacterBody2D; class_name Robots
 #status basícos do robô
 @export_category("Stats")
 @export_enum ("player","enemy") var side : int
-@export var mode : Mode
-@onready var max_life = 100 + mode.extra_life 
-@onready var current_life = max_life
-@onready var VL = 3 + mode.extra_VL
-@onready var maxVL = 100 + mode.extra_VL * 25
+@onready var mode : Mode_resource
+@onready var max_life : int
+@onready var current_life : int
+@onready var VL :int
+@onready var maxVL : int
 var battle_started = false
 enum{Go_back, Go_front, Go_wait, Go_runF, Go_runB, Go_slowF ,Go_slowB}
 var agressive_state = Go_front
 var probabilitiy_caculetor : int
-@onready var probability_GB = mode.mode_probability_GB
-@onready var probability_GF = mode.mode_probability_GF
-@onready var probability_GW = mode.mode_probability_GW
-@onready var probability_GRF = mode.mode_probability_GRF
-@onready var probability_GRB = mode.mode_probability_GRB
-@onready var probability_GSF = mode.mode_probability_GSF
-@onready var probability_GSB = mode.mode_probability_GSB
+@onready var probability_GB : Array[int]
+@onready var probability_GF : Array[int]
+@onready var probability_GW : Array[int]
+@onready var probability_GRF : Array[int]
+@onready var probability_GRB : Array[int]
+@onready var probability_GSF : Array[int]
+@onready var probability_GSB : Array[int]
 var change_to_GB : bool
 var change_to_GF : bool
 var change_to_GW : bool
@@ -27,34 +27,75 @@ var change_to_GRB : bool
 var change_to_GSB : bool
 var dir: int
 #itens
-@onready var weapon1 = preload("res://arma_gen.tscn")
+@onready var weapon = preload("res://arma_gen.tscn")
 var instanciated_weapon1 
-var weapon2
+var instanciated_weapon2
+
+
+#itens para inimigo
+@export var weapons_itens : Array[Weapon_resource]
+@export var modes_itens : Array[Mode_resource]
+@onready var random_weapon1 : Weapon_resource
+@onready var random_weapon2 : Weapon_resource
+@onready var random_mode : Mode_resource
+
 #varíaveis de comando
 @onready var robot_collision = $robot_collision
 @onready var robot_hurtbox = $robot_hurtbox
 @onready var robot_anim = $robot_anim
 @onready var timer_chage_agst = $timer_chageAGST
 @onready var weapon_marker1 = $Weapon_marker1
+@onready var weapon_marker2 = $Weapon_marker2
 @onready var timer_start_battle = $timer_start_battle
+
 
 func _ready():
 	#conectando sinais
 	timer_chage_agst.timeout.connect(change_agst)
 	timer_start_battle.timeout.connect(start_fight)
-	#adicionando arma ao robô
-	instanciated_weapon1 = weapon1.instantiate()
-	add_child(instanciated_weapon1)
+	
+	
 	#decidindo lados dos robos
 	if side == 0:
 		dir = 1
 		robot_anim.flip_h = false
+		mode = PlayerLoadout.current_mode
+		instanciated_weapon1 = weapon.instantiate()
+		instanciated_weapon1.weapon_resource = PlayerLoadout.newest_weapon
+		add_child(instanciated_weapon1)
+		instanciated_weapon2 = weapon.instantiate()
+		instanciated_weapon2.weapon_resource = PlayerLoadout.oldest_weapon
+		add_child(instanciated_weapon2)
 		instanciated_weapon1.flip_h = false
-	else:
+		instanciated_weapon2.flip_h = false
+	if side == 1:
 		dir = -1
 		robot_anim.flip_h = true
+		random_weapon1 = weapons_itens.pick_random()
+		random_weapon2 = weapons_itens.pick_random()
+		random_mode = modes_itens.pick_random()
+		mode = random_mode
+		instanciated_weapon1 = weapon.instantiate()
+		instanciated_weapon1.weapon_resource = random_weapon1
+		add_child(instanciated_weapon1)
+		instanciated_weapon2 = weapon.instantiate()
+		instanciated_weapon2.weapon_resource = random_weapon2
+		add_child(instanciated_weapon2)
 		instanciated_weapon1.flip_h = true
-		
+		instanciated_weapon2.flip_h = true
+	
+	max_life = 100 + mode.extra_life
+	current_life = max_life
+	VL = 3 + mode.extra_VL
+	maxVL = 100 + mode.extra_VL * 25
+	probability_GB = mode.mode_probability_GB
+	probability_GF = mode.mode_probability_GF
+	probability_GW = mode.mode_probability_GW
+	probability_GRF = mode.mode_probability_GRF
+	probability_GRB = mode.mode_probability_GRB
+	probability_GSF = mode.mode_probability_GSF
+	probability_GSB = mode.mode_probability_GSB
+
 func _physics_process(_delta):
 	
 	if velocity.x == 0:
@@ -63,9 +104,10 @@ func _physics_process(_delta):
 		robot_anim.play("move")
 	
 	instanciated_weapon1.global_position = weapon_marker1.global_position
+	instanciated_weapon2.global_position = weapon_marker2.global_position
 	
-	#if current_life <= 0:
-		#self.visible = false
+	if current_life <= 0:
+		self.visible = false
 		
 	#statemachime pra movimentação
 	if battle_started == true:

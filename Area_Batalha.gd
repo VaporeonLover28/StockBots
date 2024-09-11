@@ -15,6 +15,8 @@ func _ready():
 	add_child(instantiated_player)
 	add_child(instantiated_enemy)
 	
+	print(instantiated_player.side)
+	
 	instantiated_player.position.y = 603
 	instantiated_enemy.position.y = 600
 	instantiated_player.scale.x = 3
@@ -26,14 +28,13 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if player_has_died == false and enemy_has_died == false:
-		if RoundCounter.rounds > 5:
-			get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
-		if  instantiated_player.current_life <= 0:
-			RoundCounter.rounds += 1
-			player_has_died = true
-			get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
-		if instantiated_enemy.current_life <= 0:
-			RoundCounter.rounds += 1
-			enemy_has_died = true
-			get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+	if RoundCounter.rounds > 5:
+		get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
+	if  instantiated_player.current_life <= 0:
+		RoundCounter.rounds += 1
+		player_has_died = true
+		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+	if instantiated_enemy.current_life <= 0:
+		RoundCounter.rounds += 1
+		enemy_has_died = true
+		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")

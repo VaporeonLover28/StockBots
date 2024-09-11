@@ -1,7 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://d13hruxbu3xly"]
+[gd_scene load_steps=16 format=3 uid="uid://d13hruxbu3xly"]
 
 [ext_resource type="Script" path="res://Robots.gd" id="1_cwifc"]
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_16d3x"]
 [ext_resource type="Texture2D" uid="uid://dtcfjvtert0nj" path="res://robo gamejam/6/Idle.png" id="2_g3ult"]
+[ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="3_shega"]
+[ext_resource type="Resource" uid="uid://bnqqai2ica55s" path="res://Weapons/sniper.tres" id="4_3rsqc"]
+[ext_resource type="Script" path="res://mode_resource.gd" id="5_mj5qv"]
+[ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="6_83js7"]
+[ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="7_oh05l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n3mtt"]
 size = Vector2(41, 29)
@@ -48,6 +54,8 @@ animations = [{
 [node name="Robots" type="CharacterBody2D"]
 position = Vector2(148, 58)
 script = ExtResource("1_cwifc")
+weapons_itens = Array[ExtResource("2_16d3x")]([ExtResource("3_shega"), ExtResource("4_3rsqc")])
+modes_itens = Array[ExtResource("5_mj5qv")]([ExtResource("6_83js7"), ExtResource("7_oh05l")])
 
 [node name="robot_hurtbox" type="Area2D" parent="."]
 

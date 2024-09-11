@@ -22,8 +22,3 @@ func _ready() -> void:
 		$VBoxContainer/Item_Label3.text = "Extra velocity: " + str(Item_loaded.extra_VL)
 		$VBoxContainer/Item_Label4.text = "Extra range: " + str(Item_loaded.extra_range)
 		$VBoxContainer/Item_Label5.text = "Extra damage: " + str(Item_loaded.extra_damage)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

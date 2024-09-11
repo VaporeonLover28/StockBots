@@ -19,10 +19,9 @@ extends Sprite2D; class_name Weapon
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if $"../".side == 0:
-		weapon_resource = sniper
 		bullet_origin = 0
 	if $"../".side == 1:
-		weapon_resource = bazuca
+		flip_h = true
 		bullet_origin = 1
 		
 	range = weapon_resource.weapon_range + $"../".mode.extra_range

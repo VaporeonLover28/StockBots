@@ -1,10 +1,10 @@
+Button
+Node
 BoxContainer
 Label
 Sprite2D
 VBoxContainer
 AudioStreamPlayer2D
-Node
-Button
 CanvasLayer
 Node2D
 TextureProgressBar
