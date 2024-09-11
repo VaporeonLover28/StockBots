@@ -16,3 +16,7 @@ res://arma_gen.tscn
 res://loss_scene.tscn
 res://bullet.tscn
 res://player_teste.gd
+res://Area_Batalha.tscn
+res://Menus/menu_theme.tres
+res://Menus/menu.tscn
+res://Menus/upgraged_scene.gd

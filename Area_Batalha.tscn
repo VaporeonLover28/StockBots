@@ -49,6 +49,7 @@ bus = &"Enemy"
 
 [node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_dfwk3")
+volume_db = 15.0
 autoplay = true
 
 [node name="PlayerHurtStream" type="AudioStreamPlayer2D" parent="."]

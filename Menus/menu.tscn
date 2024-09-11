@@ -79,6 +79,7 @@ script = ExtResource("1_jv4su")
 
 [node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_mjn81")
+volume_db = 15.0
 autoplay = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]

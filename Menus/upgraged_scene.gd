@@ -8,7 +8,6 @@ extends CanvasLayer
 func _on_pass_upgrade_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 
-
 func _on_item_choice_button_pressed() -> void:
 	if item_container.Item_loaded.Item_type == 1:
 		PlayerLoadout.oldest_weapon = PlayerLoadout.newest_weapon
