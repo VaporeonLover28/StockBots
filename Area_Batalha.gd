@@ -28,13 +28,13 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if RoundCounter.rounds > 5:
-		get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
-	if  instantiated_player.current_life <= 0:
-		RoundCounter.rounds += 1
-		player_has_died = true
-		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
-	if instantiated_enemy.current_life <= 0:
-		RoundCounter.rounds += 1
-		enemy_has_died = true
-		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+	if player_has_died == false and enemy_has_died == false:
+		if RoundCounter.rounds > 5:
+			get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
+		if  instantiated_player.current_life <= 0:
+			player_has_died = true
+			get_tree().change_scene_to_file("res://loss_scene.tscn")
+		if instantiated_enemy.current_life <= 0:
+			RoundCounter.rounds += 1
+			enemy_has_died = true
+			get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")

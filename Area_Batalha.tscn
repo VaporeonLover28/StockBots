@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=16 format=3 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="AudioStream" uid="uid://cg6bxc4q05ahp" path="res://tankscream.wav" id="2_756et"]
 [ext_resource type="AudioStream" uid="uid://ddmjykibjnfyx" path="res://bgm.mp3" id="2_dfwk3"]
 [ext_resource type="Script" path="res://battle_camera.gd" id="2_vbxtt"]
 [ext_resource type="Texture2D" uid="uid://brimh23wepivl" path="res://powerplant scenario gamejam/1 Tiles/Tile_27.png" id="2_vvjwk"]
+[ext_resource type="AudioStream" uid="uid://dtfcwxx7hydm2" path="res://Vine boom sound effect.mp3" id="2_ws5cp"]
 [ext_resource type="PackedScene" uid="uid://ti04y3oterqt" path="res://Menus/menu_pause.tscn" id="3_sygqi"]
 [ext_resource type="Texture2D" uid="uid://bus3gxvaqgd7o" path="res://heathbar_background.png" id="5_vi61q"]
 [ext_resource type="Texture2D" uid="uid://d2sjy8h3h7tb4" path="res://Healthbar_enchimento.png" id="6_vpf56"]
@@ -30,17 +31,31 @@ script = ExtResource("1_ipkxo")
 metadata/_edit_horizontal_guides_ = [630.0]
 metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0]
 
+[node name="boomPlayer" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1157, 328)
+rotation = 3.14159
+scale = Vector2(0.899567, -1.35139)
+stream = ExtResource("2_ws5cp")
+volume_db = 24.0
+bus = &"Player"
+
+[node name="boomEnemy" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1157, 328)
+rotation = 3.14159
+scale = Vector2(0.899567, -1.35139)
+stream = ExtResource("2_ws5cp")
+volume_db = 24.0
+bus = &"Enemy"
+
 [node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_dfwk3")
 autoplay = true
 
 [node name="PlayerHurtStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_756et")
-bus = &"PlayerHurt"
 
 [node name="EnemyHurtStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_756et")
-bus = &"EnemyHurt"
 
 [node name="parede1" type="StaticBody2D" parent="."]
 position = Vector2(2, 325)
@@ -71,6 +86,7 @@ limit_bottom = 648
 script = ExtResource("2_vbxtt")
 
 [node name="Menu_pause" parent="battle_camera" instance=ExtResource("3_sygqi")]
+visible = false
 
 [node name="UI_layer" type="CanvasLayer" parent="battle_camera"]
 

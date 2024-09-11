@@ -7,13 +7,14 @@ var distance_traveled: int
 @onready var range : int
 @onready var origin : int
 
-
 func _ready():
-	$boom.playing = true
+
 	bullet.area_entered.connect(on_hit)
 	if Vl > 0:
+		$"../boomPlayer".playing = true
 		self.scale.x = 1 
 	if Vl < 0:
+		$"../boomEnemy".playing = true
 		self.scale.x = -1
 
 func _process(_delta):

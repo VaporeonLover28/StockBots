@@ -1,1 +1,1 @@
-extends Robots;
+extends Robots

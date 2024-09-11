@@ -1,8 +1,8 @@
 Button
+Sprite2D
 Node
 BoxContainer
 Label
-Sprite2D
 VBoxContainer
 AudioStreamPlayer2D
 CanvasLayer

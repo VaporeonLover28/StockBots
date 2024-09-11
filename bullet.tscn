@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c3430tlx820dj"]
+[gd_scene load_steps=4 format=3 uid="uid://c3430tlx820dj"]
 
 [ext_resource type="Script" path="res://bullet.gd" id="1_6r58j"]
 [ext_resource type="Texture2D" uid="uid://v03lvom2gxoj" path="res://robo gamejam/6/Ball1.png" id="2_2mkdp"]
-[ext_resource type="AudioStream" uid="uid://dtfcwxx7hydm2" path="res://Vine boom sound effect.mp3" id="3_fpu4j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ydj2r"]
 size = Vector2(11, 4)
@@ -17,7 +16,3 @@ shape = SubResource("RectangleShape2D_ydj2r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_2mkdp")
-
-[node name="boom" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_fpu4j")
-bus = &"Bullets"

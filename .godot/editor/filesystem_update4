@@ -13,5 +13,9 @@ res://item_resource.tscn
 res://mode_resource.tscn
 res://player_loadout.tscn
 res://arma_gen.tscn
+res://loss_scene.tscn
+res://bullet.tscn
 res://Area_Batalha.gd
-res://player_loadout.gd
+res://Menus/menu_theme.tres
+res://bullet.gd
+res://default_bus_layout.tres
