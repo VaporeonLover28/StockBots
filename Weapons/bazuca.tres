@@ -7,10 +7,12 @@
 script = ExtResource("1_iuu6u")
 weapon_sprite = ExtResource("2_nl6qy")
 weapon_type = "ranged"
-type_bullet = "nao"
-weapon_damage = 40
+weapon_damage = 0
 weapon_range = 300
+weapon_knockback = 300
 weapon_cooldown = 5
+bullet_amount = 1
+bullet_separation_time = 0.1
 bullet_velocity = 5
 Item_type = 1
 Item_name = "bazuca"

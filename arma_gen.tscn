@@ -3,10 +3,13 @@
 [ext_resource type="Script" path="res://ArmaGen.gd" id="1_82gnq"]
 
 [node name="ArmaGen" type="Sprite2D"]
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_82gnq")
 
 [node name="weapon_cooldown_timer" type="Timer" parent="."]
 
 [node name="bullet_spawn_marker" type="Marker2D" parent="."]
-position = Vector2(30, -4)
+position = Vector2(30, -5)
+
+[node name="attack_spawn_marker" type="Marker2D" parent="."]
+position = Vector2(77.5, -5)

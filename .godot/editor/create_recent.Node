@@ -1,5 +1,8 @@
-Button
+Marker2D
+AnimatedSprite2D
+Area2D
 Sprite2D
+Button
 Node
 BoxContainer
 Label
@@ -10,5 +13,3 @@ Node2D
 TextureProgressBar
 ResourcePreloader
 SubViewport
-CollisionShape2D
-Area2D

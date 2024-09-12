@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://hvvr4qb27qew"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_6r1s3"]
+[ext_resource type="Texture2D" uid="uid://b77hshnm05ccd" path="res://free-guns-pixel-art/free-guns-pixel-art/Shotgun-2.png" id="2_4asrh"]
+
+[resource]
+script = ExtResource("1_6r1s3")
+weapon_sprite = ExtResource("2_4asrh")
+weapon_type = "melee"
+weapon_damage = 100
+weapon_range = 0
+weapon_knockback = 40
+weapon_cooldown = 1
+bullet_amount = 1
+bullet_separation_time = 1.2
+bullet_velocity = 0
+Item_type = 1
+Item_name = "base_arma melle"
