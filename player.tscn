@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://1pke27qck4i4"]
 
-[ext_resource type="Texture2D" uid="uid://dtcfjvtert0nj" path="res://robô gamejam/6/Idle.png" id="2_ocm52"]
+[ext_resource type="Texture2D" uid="uid://dtcfjvtert0nj" path="res://robo gamejam/6/Idle.png" id="2_ocm52"]
 
 [sub_resource type="GDScript" id="GDScript_jkm44"]
 script/source = "extends CharacterBody2D

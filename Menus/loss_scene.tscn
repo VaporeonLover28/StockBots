@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://wqaubxgyiou7"]
 
+[ext_resource type="Script" path="res://Menus/loss_scene.gd" id="1_e04yr"]
 [ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="1_pkokq"]
-[ext_resource type="Script" path="res://loss_scene.gd" id="1_sqisl"]
 
 [node name="loss_scene" type="Node2D"]
-script = ExtResource("1_sqisl")
+script = ExtResource("1_e04yr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(245, 142)

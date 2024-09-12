@@ -3,10 +3,8 @@ extends Sprite2D; class_name Weapon
 #@export var weapon_resource: Resource
 @onready var weapon_cooldown_timer = $weapon_cooldown_timer
 @onready var bullet_spawn_marker = $bullet_spawn_marker
-@onready var attack_spawn_marker = $attack_spawn_marker
 @export var weapon_resource: Weapon_resource
 @onready var bullet = preload("res://bullet.tscn")
-@onready var attack = preload("res://atatck.tscn")
 @onready var range = weapon_resource.weapon_range + $"../".mode.extra_range
 @onready var dano = weapon_resource.weapon_damage +  $"../".mode.extra_damage
 @onready var weapon_knockback = weapon_resource.weapon_knockback
@@ -25,6 +23,7 @@ func _ready():
 		bullet_origin = 0
 	if $"../".side == 1:
 		flip_h = true
+		$Melee.scale.x *= -1
 		bullet_origin = 1
 		
 	
@@ -39,13 +38,13 @@ func _process(_delta):
 func funcao_weapon_cooldown():
 	for bullet_count in range(bullet_amount):
 		if weapon_resource.weapon_type == "melee":
-			var instanciated_attack = attack.instantiate()
-			print(instanciated_attack)
-			instanciated_attack.dano = dano
-			instanciated_attack.knockback = weapon_knockback 
-			instanciated_attack.global_position = attack_spawn_marker.global_position
-			instanciated_attack.origin = bullet_origin
-			add_child(instanciated_attack)
+			$Melee.dano = dano
+			$Melee.knockback = weapon_knockback 
+			$Melee.origin = bullet_origin
+			$Melee.attack_separation_time = bullet_separation_time
+			$Melee/MeleeColl.disabled = false
+			$Melee/AnimatedSprite2D.visible = true
+			$Melee/AnimatedSprite2D.play("attack_anim", bullet_separation_time)
 		if weapon_resource.weapon_type == "ranged":
 			var instanciated_bullet = bullet.instantiate()
 			instanciated_bullet.range = range
@@ -60,3 +59,6 @@ func funcao_weapon_cooldown():
 				instanciated_bullet.Vl = instanciated_bullet.Vl * -1
 			$"../../".add_child(instanciated_bullet)
 		await get_tree().create_timer(bullet_separation_time).timeout
+		if weapon_resource.weapon_type == "melee":
+			$Melee/MeleeColl.disabled = true
+			$Melee/AnimatedSprite2D.visible = false

@@ -1,7 +1,9 @@
-Marker2D
 AnimatedSprite2D
 Area2D
+CollisionShape2D
 Sprite2D
+Node2D
+Marker2D
 Button
 Node
 BoxContainer
@@ -9,7 +11,4 @@ Label
 VBoxContainer
 AudioStreamPlayer2D
 CanvasLayer
-Node2D
 TextureProgressBar
-ResourcePreloader
-SubViewport

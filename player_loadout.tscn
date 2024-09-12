@@ -1,12 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://cb5ynhewq05g"]
+[gd_scene load_steps=7 format=3 uid="uid://cb5ynhewq05g"]
 
 [ext_resource type="Script" path="res://player_loadout.gd" id="1_nihku"]
-[ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="2_gcmbf"]
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_tgcgu"]
 [ext_resource type="Resource" uid="uid://hvvr4qb27qew" path="res://teste_arma_melee.tres" id="3_spcvg"]
 [ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="4_mw4yk"]
+[ext_resource type="Script" path="res://mode_resource.gd" id="5_n6cwp"]
+[ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="7_yhxlb"]
 
 [node name="Player_loadout" type="Node"]
 script = ExtResource("1_nihku")
-newest_weapon = ExtResource("2_gcmbf")
-oldest_weapon = ExtResource("3_spcvg")
-current_mode = ExtResource("4_mw4yk")
+all_weapons = Array[ExtResource("2_tgcgu")]([ExtResource("3_spcvg")])
+all_modes = Array[ExtResource("5_n6cwp")]([ExtResource("4_mw4yk"), ExtResource("7_yhxlb")])

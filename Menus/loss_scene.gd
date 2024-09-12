@@ -9,5 +9,8 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_button_pressed() -> void:
-	RoundCounter.rounds = 0 
+	RoundCounter.rounds = 0
+	PlayerLoadout.newest_weapon = PlayerLoadout.all_weapons.pick_random()
+	PlayerLoadout.oldest_weapon =PlayerLoadout.all_weapons.pick_random()
+	PlayerLoadout.current_mode =PlayerLoadout.all_modes.pick_random()
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")

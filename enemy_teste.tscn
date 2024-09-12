@@ -1,11 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://b1dibqr307a1w"]
+[gd_scene load_steps=20 format=3 uid="uid://b1dibqr307a1w"]
 
 [ext_resource type="Script" path="res://enemy_teste.gd" id="1_80df5"]
 [ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_cu13g"]
 [ext_resource type="Texture2D" uid="uid://cclgutysjb5rh" path="res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png" id="2_khx7e"]
 [ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="2_t21lu"]
-[ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="3_dhtuu"]
-[ext_resource type="Resource" uid="uid://bnqqai2ica55s" path="res://Weapons/sniper.tres" id="4_15gby"]
+[ext_resource type="Resource" uid="uid://hvvr4qb27qew" path="res://teste_arma_melee.tres" id="3_k2rnj"]
 [ext_resource type="Texture2D" uid="uid://bw1dnyhhps5b8" path="res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png" id="4_eh53i"]
 [ext_resource type="Script" path="res://mode_resource.gd" id="5_lc2rp"]
 [ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="7_ytdgf"]
@@ -88,7 +87,7 @@ size = Vector2(34, 40)
 [node name="enemy_teste" type="CharacterBody2D"]
 script = ExtResource("1_80df5")
 side = 1
-weapons_itens = Array[ExtResource("2_cu13g")]([ExtResource("3_dhtuu"), ExtResource("4_15gby")])
+weapons_itens = Array[ExtResource("2_cu13g")]([ExtResource("3_k2rnj")])
 modes_itens = Array[ExtResource("5_lc2rp")]([ExtResource("2_t21lu"), ExtResource("7_ytdgf")])
 metadata/_edit_horizontal_guides_ = [-25.0, 15.0]
 
