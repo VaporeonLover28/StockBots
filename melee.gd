@@ -11,8 +11,10 @@ func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Player_type_hurtbox") and origin == 1:
 		$"../../../".instantiated_player.current_life -= dano
 		$"../../../".instantiated_player.velocity.x -= knockback
+		$"../../../".instantiated_player.velocity.y -= knockback
 		$"../../../PlayerHurtStream".playing = true
 	if area.is_in_group("Enemy_type_hurtbox") and origin == 0:
 		$"../../../".instantiated_enemy.current_life -= dano
 		$"../../../".instantiated_enemy.velocity.x += knockback
+		$"../../../".instantiated_enemy.velocity.y -= knockback
 		$"../../../EnemyHurtStream".playing = true

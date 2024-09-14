@@ -30,10 +30,12 @@ func on_hit(area):
 	if area.is_in_group("Player_type_hurtbox") and origin == 1:
 		$"../".instantiated_player.current_life -= dano
 		$"../".instantiated_player.velocity.x -= knockback
+		$"../".instantiated_player.velocity.y -= knockback * 0.5
 		$"../PlayerHurtStream".playing = true
 		self.queue_free()
 	if area.is_in_group("Enemy_type_hurtbox") and origin == 0:
 		$"../".instantiated_enemy.current_life -= dano
 		$"../".instantiated_enemy.velocity.x += knockback
+		$"../".instantiated_enemy.velocity.y -= knockback * 0.5
 		$"../EnemyHurtStream".playing = true
 		self.queue_free()

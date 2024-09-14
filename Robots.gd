@@ -98,7 +98,10 @@ func _ready():
 	probability_GSF = mode.mode_probability_GSF
 	probability_GSB = mode.mode_probability_GSB
 
-func _physics_process(_delta):
+func _physics_process(delta):
+	
+	if not is_on_floor():
+		velocity.y += 350 * delta
 	
 	if velocity.x == 0:
 		robot_anim.play("idle")

@@ -121,8 +121,8 @@ autostart = true
 
 [node name="Weapon_marker1" type="Marker2D" parent="."]
 z_index = 1
-position = Vector2(-7, -1)
+position = Vector2(-4, -4)
 
 [node name="Weapon_marker2" type="Marker2D" parent="."]
 z_index = -1
-position = Vector2(-3, -1)
+position = Vector2(4, -4)

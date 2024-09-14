@@ -51,7 +51,7 @@ animations = [{
 }]
 
 [node name="Robots" type="CharacterBody2D"]
-position = Vector2(148, 58)
+position = Vector2(156, -62)
 script = ExtResource("1_cwifc")
 weapons_itens = Array[ExtResource("2_16d3x")]([ExtResource("5_kt6bd")])
 modes_itens = Array[ExtResource("5_mj5qv")]([ExtResource("6_83js7"), ExtResource("7_oh05l")])
