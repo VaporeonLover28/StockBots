@@ -1,10 +1,10 @@
-res://robots.tscn
+res://Menus/menu.tscn
 res://Modes/agressivo.tres
 res://Modes/lento.tres
 res://Menus/pause_theme.tres
 res://Menus/menu.gdshader
 res://Menus/menu_theme.tres
-res://Robots.gd
+res://robots.tscn
 res://weapon_resource.tscn
 res://item_resource.tscn
 res://mode_resource.tscn
@@ -12,7 +12,6 @@ res://arma_gen.tscn
 res://Area_Batalha.tscn
 res://bullet.tscn
 res://player_loadout.tscn
-res://Menus/menu.tscn
 res://Menus/win_scene.tscn
 res://Menus/upgraged_scene.tscn
 res://Menus/menu_pause.tscn
@@ -20,8 +19,3 @@ res://Menus/loss_scene.tscn
 res://enemy_teste.tscn
 res://player.tscn
 res://player_teste.tscn
-res://ArmaGen.gd
-res://bullet.gd
-res://Area_Batalha.gd
-res://melee.gd
-res://Weapons/sniper.tres
