@@ -3,15 +3,15 @@ extends Area2D
 @onready var attack: Area2D = $"."
 var distance_traveled: int
 @onready var Vl : int
-@onready var dano : int
+@onready var dano : float
 @onready var range : int
 @onready var knockback : int
 @onready var origin : int
 
 func _ready():
 	attack.area_entered.connect(on_hit)
-	self.scale.x *= clampf(dano/5, 0.75, 3)
-	self.scale.y *= clampf(dano/5, 0.75, 3)
+	self.scale.x *= clampf(dano/5, 1, 3)
+	self.scale.y *= clampf(dano/5, 1, 3)
 	if Vl > 0:
 		$"../boomPlayer".playing = true
 		self.scale.x *= 1 

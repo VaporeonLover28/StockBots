@@ -7,7 +7,7 @@ extends Node; class_name Weapon
 @export var weapon_resource: Weapon_resource
 @onready var bullet = preload("res://bullet.tscn")
 @onready var range = weapon_resource.weapon_range + $"../".mode.extra_range
-@onready var dano = weapon_resource.weapon_damage +  $"../".mode.extra_damage
+@onready var dano = weapon_resource.weapon_damage * $"../".mode.extra_damage
 @onready var weapon_knockback = weapon_resource.weapon_knockback
 @onready var weapon_cooldown = weapon_resource.weapon_cooldown
 @onready var bullet_velocity = weapon_resource.bullet_velocity
@@ -25,7 +25,7 @@ func _ready():
 		if self.weapon_resource.weapon_type == "melle":
 			$ArmaGen_sprite.rotation = 0
 		if self.weapon_resource.weapon_type == "ranged":
-			$ArmaGen_sprite.rotation = 25
+			$ArmaGen_sprite.rotation = 45
 	if $"../".side == 1:
 		arma_gen_sprite.flip_h = true
 		$Melee.scale.x *= -1
@@ -33,10 +33,10 @@ func _ready():
 		if self.weapon_resource.weapon_type == "melle":
 			$ArmaGen_sprite.rotation = 0
 		if self.weapon_resource.weapon_type == "ranged":
-			$ArmaGen_sprite.rotation = -25
+			$ArmaGen_sprite.rotation = -45
 		
 	
-	
+	$Melee.z_index = 0
 	arma_gen_sprite.set_texture(weapon_resource.weapon_sprite)
 	weapon_cooldown_timer.timeout.connect(funcao_weapon_cooldown)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -54,7 +54,7 @@ func funcao_weapon_cooldown():
 			$Melee.attack_separation_time = bullet_separation_time
 			$Melee/MeleeColl.disabled = false
 			$Melee/AnimatedSprite2D.visible = true
-			$Melee/AnimatedSprite2D.play("attack_anim", bullet_separation_time)
+			$Melee/AnimatedSprite2D.play("attack_anim", bullet_separation_time + 0.8)
 		if weapon_resource.weapon_type == "ranged":
 			var instanciated_bullet = bullet.instantiate()
 			instanciated_bullet.range = range

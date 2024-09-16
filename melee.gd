@@ -1,7 +1,7 @@
 extends Area2D
 
 @onready var coll = $MeleeColl
-@onready var dano: int
+@onready var dano: float
 @onready var knockback : int
 @onready var origin : int
 @onready var attack_separation_time : float
@@ -17,7 +17,7 @@ func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Enemy_type_hurtbox") and origin == 0:
 		$"../../../".instantiated_enemy.current_life -= dano
 		$"../../../".instantiated_enemy.velocity.x += knockback
-		$"../../../".instantiated_enemy.velocity.y -= knockback
+		$"../../../".instantiated_enemy.velocity.y -= knockback * 0.33
 		$"../../../EnemyHurtStream".playing = true
 
 

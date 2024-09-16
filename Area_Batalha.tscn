@@ -388,6 +388,7 @@ metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.
 position = Vector2(267, 54)
 
 [node name="TileMap" type="TileMap" parent="Background"]
+z_index = -2
 position = Vector2(-267, -46)
 tile_set = SubResource("TileSet_pq4u0")
 format = 2
@@ -422,7 +423,7 @@ position = Vector2(1157, 328)
 rotation = 3.14159
 scale = Vector2(0.899567, -1.35139)
 stream = ExtResource("2_ws5cp")
-volume_db = 24.0
+volume_db = 10.0
 bus = &"Player"
 
 [node name="boomEnemy" type="AudioStreamPlayer2D" parent="."]
@@ -430,13 +431,14 @@ position = Vector2(1157, 328)
 rotation = 3.14159
 scale = Vector2(0.899567, -1.35139)
 stream = ExtResource("2_ws5cp")
-volume_db = 24.0
+volume_db = 10.0
 bus = &"Enemy"
 
 [node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_7mart")
 volume_db = 15.0
 autoplay = true
+parameters/looping = true
 
 [node name="PlayerHurtStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_756et")

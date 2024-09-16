@@ -198,6 +198,7 @@ script = ExtResource("1_jv4su")
 stream = ExtResource("2_4jpd1")
 volume_db = 15.0
 autoplay = true
+parameters/looping = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

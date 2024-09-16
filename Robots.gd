@@ -64,7 +64,7 @@ func _ready():
 		instanciated_weapon1.weapon_resource = PlayerLoadout.newest_weapon
 		add_child(instanciated_weapon1)
 		instanciated_weapon2 = weapon.instantiate()
-		instanciated_weapon2.z_index = -0.5
+		instanciated_weapon2.z_index = -1
 		instanciated_weapon2.weapon_resource = PlayerLoadout.oldest_weapon
 		add_child(instanciated_weapon2)
 		instanciated_weapon1.arma_gen_sprite.flip_h = false
@@ -80,7 +80,7 @@ func _ready():
 		instanciated_weapon1.weapon_resource = random_weapon1
 		add_child(instanciated_weapon1)
 		instanciated_weapon2 = weapon.instantiate()
-		instanciated_weapon2.z_index = -0.5
+		instanciated_weapon2.z_index = -1
 		instanciated_weapon2.weapon_resource = random_weapon2
 		add_child(instanciated_weapon2)
 		instanciated_weapon1.arma_gen_sprite.flip_h = true
