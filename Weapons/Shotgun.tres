@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://3nfehs72ddv5"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_lm046"]
+[ext_resource type="Texture2D" uid="uid://ddl4rgvxcve2h" path="res://Weapons/Icon29_36.png" id="2_8mord"]
+
+[resource]
+script = ExtResource("1_lm046")
+weapon_sprite = ExtResource("2_8mord")
+weapon_type = "ranged"
+weapon_damage = 15
+weapon_range = 400
+weapon_knockback = 150
+weapon_cooldown = 5
+bullet_amount = 1
+bullet_separation_time = 1.0
+bullet_velocity = 3
+Item_type = 1
+Item_name = "Shotgun"

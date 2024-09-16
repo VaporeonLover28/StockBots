@@ -1,3 +1,8 @@
+Node2D
+Node
+Label
+VBoxContainer
+BoxContainer
 ColorRect
 AnimatedSprite2D
 TileMap
@@ -5,10 +10,5 @@ StaticBody2D
 CollisionShape2D
 Area2D
 Sprite2D
-Node2D
 Marker2D
 Button
-Node
-BoxContainer
-Label
-VBoxContainer

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://2efwn6lthyk2"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_8yiwp"]
+[ext_resource type="Texture2D" uid="uid://c5olvmpgsjdbc" path="res://melee weapons/Icon28_14.png" id="2_tiiuc"]
+
+[resource]
+script = ExtResource("1_8yiwp")
+weapon_sprite = ExtResource("2_tiiuc")
+weapon_type = "melee"
+weapon_damage = 15
+weapon_range = 0
+weapon_knockback = 25
+weapon_cooldown = 4
+bullet_amount = 3
+bullet_separation_time = 1.8
+bullet_velocity = 0
+Item_type = 1
+Item_name = "Sword"

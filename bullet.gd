@@ -10,12 +10,14 @@ var distance_traveled: int
 
 func _ready():
 	attack.area_entered.connect(on_hit)
+	self.scale.x *= clampf(dano/5, 0.75, 3)
+	self.scale.y *= clampf(dano/5, 0.75, 3)
 	if Vl > 0:
 		$"../boomPlayer".playing = true
-		self.scale.x = 1 
+		self.scale.x *= 1 
 	if Vl < 0:
 		$"../boomEnemy".playing = true
-		self.scale.x = -1
+		self.scale.x *= -1
 
 func _process(_delta):
 	global_position.x += Vl
@@ -30,12 +32,12 @@ func on_hit(area):
 	if area.is_in_group("Player_type_hurtbox") and origin == 1:
 		$"../".instantiated_player.current_life -= dano
 		$"../".instantiated_player.velocity.x -= knockback
-		$"../".instantiated_player.velocity.y -= knockback * 0.5
+		$"../".instantiated_player.velocity.y -= knockback * 0.33
 		$"../PlayerHurtStream".playing = true
 		self.queue_free()
 	if area.is_in_group("Enemy_type_hurtbox") and origin == 0:
 		$"../".instantiated_enemy.current_life -= dano
 		$"../".instantiated_enemy.velocity.x += knockback
-		$"../".instantiated_enemy.velocity.y -= knockback * 0.5
+		$"../".instantiated_enemy.velocity.y -= knockback * 0.33
 		$"../EnemyHurtStream".playing = true
 		self.queue_free()

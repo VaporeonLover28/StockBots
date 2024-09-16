@@ -1,18 +1,18 @@
 [gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://dwtfs4v7ims6n"]
 
 [ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_iuu6u"]
-[ext_resource type="Texture2D" uid="uid://j5rk0540haiy" path="res://free-guns-pixel-art/free-guns-pixel-art/RPG.png" id="2_nl6qy"]
+[ext_resource type="Texture2D" uid="uid://dg3hvgqhhcf2q" path="res://Weapons/Icon29_02.png" id="2_n4ev4"]
 
 [resource]
 script = ExtResource("1_iuu6u")
-weapon_sprite = ExtResource("2_nl6qy")
+weapon_sprite = ExtResource("2_n4ev4")
 weapon_type = "ranged"
 weapon_damage = 30
 weapon_range = 300
 weapon_knockback = 300
-weapon_cooldown = 5
+weapon_cooldown = 10
 bullet_amount = 1
 bullet_separation_time = 0.1
 bullet_velocity = 5
 Item_type = 1
-Item_name = "bazuca"
+Item_name = "Laser canon"

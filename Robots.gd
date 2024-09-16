@@ -64,11 +64,11 @@ func _ready():
 		instanciated_weapon1.weapon_resource = PlayerLoadout.newest_weapon
 		add_child(instanciated_weapon1)
 		instanciated_weapon2 = weapon.instantiate()
-		instanciated_weapon2.z_index = -10
+		instanciated_weapon2.z_index = -0.5
 		instanciated_weapon2.weapon_resource = PlayerLoadout.oldest_weapon
 		add_child(instanciated_weapon2)
-		instanciated_weapon1.flip_h = false
-		instanciated_weapon2.flip_h = false
+		instanciated_weapon1.arma_gen_sprite.flip_h = false
+		instanciated_weapon2.arma_gen_sprite.flip_h = false
 	if side == 1:
 		dir = -1
 		robot_anim.flip_h = true
@@ -80,11 +80,11 @@ func _ready():
 		instanciated_weapon1.weapon_resource = random_weapon1
 		add_child(instanciated_weapon1)
 		instanciated_weapon2 = weapon.instantiate()
-		instanciated_weapon2.z_index = -10
+		instanciated_weapon2.z_index = -0.5
 		instanciated_weapon2.weapon_resource = random_weapon2
 		add_child(instanciated_weapon2)
-		instanciated_weapon1.flip_h = true
-		instanciated_weapon2.flip_h = true
+		instanciated_weapon1.arma_gen_sprite.flip_h = true
+		instanciated_weapon2.arma_gen_sprite.flip_h = true
 	
 	max_life = 100 + mode.extra_life
 	current_life = max_life

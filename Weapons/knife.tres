@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://btqjh46mvsnvh"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_x0c4q"]
+[ext_resource type="Texture2D" uid="uid://c4oo0ttcdy76" path="res://melee weapons/Icon28_21.png" id="2_tsvfk"]
+
+[resource]
+script = ExtResource("1_x0c4q")
+weapon_sprite = ExtResource("2_tsvfk")
+weapon_type = "melee"
+weapon_damage = 5
+weapon_range = 0
+weapon_knockback = 10
+weapon_cooldown = 3
+bullet_amount = 5
+bullet_separation_time = 1.4
+bullet_velocity = 0
+Item_type = 1
+Item_name = "Knife"

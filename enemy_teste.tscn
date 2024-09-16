@@ -1,13 +1,31 @@
-[gd_scene load_steps=20 format=3 uid="uid://b1dibqr307a1w"]
+[gd_scene load_steps=38 format=3 uid="uid://b1dibqr307a1w"]
 
 [ext_resource type="Script" path="res://enemy_teste.gd" id="1_80df5"]
 [ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_cu13g"]
 [ext_resource type="Texture2D" uid="uid://cclgutysjb5rh" path="res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png" id="2_khx7e"]
 [ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="2_t21lu"]
-[ext_resource type="Resource" uid="uid://hvvr4qb27qew" path="res://teste_arma_melee.tres" id="3_k2rnj"]
+[ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="3_jlom0"]
 [ext_resource type="Texture2D" uid="uid://bw1dnyhhps5b8" path="res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png" id="4_eh53i"]
+[ext_resource type="Resource" uid="uid://cmdhgntf7f4oa" path="res://Weapons/pistola.tres" id="4_ry33w"]
 [ext_resource type="Script" path="res://mode_resource.gd" id="5_lc2rp"]
+[ext_resource type="Resource" uid="uid://b6lxllx6gu78i" path="res://Weapons/baton.tres" id="5_tlewb"]
+[ext_resource type="Resource" uid="uid://bw3j1f7fekdxy" path="res://Weapons/Hammer.tres" id="6_ekcln"]
+[ext_resource type="Resource" uid="uid://chbbw4pve210d" path="res://Modes/basic.tres" id="7_2yr65"]
+[ext_resource type="Resource" uid="uid://btu4w4guwao35" path="res://Weapons/chainsaw.tres" id="7_meeys"]
 [ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="7_ytdgf"]
+[ext_resource type="Resource" uid="uid://btqjh46mvsnvh" path="res://Weapons/knife.tres" id="8_2uicn"]
+[ext_resource type="Resource" uid="uid://cfaj8muo1v8w0" path="res://Modes/Frail.tres" id="8_drqjv"]
+[ext_resource type="Resource" uid="uid://bnsemtux7ekn6" path="res://Weapons/scythe.tres" id="9_jemkq"]
+[ext_resource type="Resource" uid="uid://cllbth8kyrwtg" path="res://Modes/camper.tres" id="9_yam32"]
+[ext_resource type="Resource" uid="uid://y38a6o8o786m" path="res://Modes/fast.tres" id="10_8p1eq"]
+[ext_resource type="Resource" uid="uid://2efwn6lthyk2" path="res://Weapons/Sword.tres" id="10_ery35"]
+[ext_resource type="Resource" uid="uid://bc1llup7iku37" path="res://Weapons/rifle.tres" id="11_5wr0o"]
+[ext_resource type="Resource" uid="uid://cs7n177luksmp" path="res://Modes/Breaker.tres" id="11_xx7p1"]
+[ext_resource type="Resource" uid="uid://cphdxboh4hox3" path="res://Modes/tank.tres" id="12_3dt8y"]
+[ext_resource type="Resource" uid="uid://3nfehs72ddv5" path="res://Weapons/Shotgun.tres" id="12_xqop6"]
+[ext_resource type="Resource" uid="uid://cjgnfduibhtik" path="res://Weapons/Smg.tres" id="13_f8w8b"]
+[ext_resource type="Resource" uid="uid://bnqqai2ica55s" path="res://Weapons/sniper.tres" id="14_hxqxj"]
+[ext_resource type="Resource" uid="uid://btb8opkimoq5n" path="res://Weapons/uzi.tres" id="15_4irmh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6u52"]
 atlas = ExtResource("2_khx7e")
@@ -87,8 +105,8 @@ size = Vector2(34, 40)
 [node name="enemy_teste" type="CharacterBody2D"]
 script = ExtResource("1_80df5")
 side = 1
-weapons_itens = Array[ExtResource("2_cu13g")]([ExtResource("3_k2rnj")])
-modes_itens = Array[ExtResource("5_lc2rp")]([ExtResource("2_t21lu"), ExtResource("7_ytdgf")])
+weapons_itens = Array[ExtResource("2_cu13g")]([ExtResource("3_jlom0"), ExtResource("4_ry33w"), ExtResource("5_tlewb"), ExtResource("6_ekcln"), ExtResource("7_meeys"), ExtResource("8_2uicn"), ExtResource("9_jemkq"), ExtResource("10_ery35"), ExtResource("11_5wr0o"), ExtResource("12_xqop6"), ExtResource("13_f8w8b"), ExtResource("14_hxqxj"), ExtResource("15_4irmh")])
+modes_itens = Array[ExtResource("5_lc2rp")]([ExtResource("2_t21lu"), ExtResource("7_ytdgf"), ExtResource("7_2yr65"), ExtResource("8_drqjv"), ExtResource("9_yam32"), ExtResource("10_8p1eq"), ExtResource("11_xx7p1"), ExtResource("12_3dt8y")])
 metadata/_edit_horizontal_guides_ = [-25.0, 15.0]
 
 [node name="robot_anim" type="AnimatedSprite2D" parent="."]
@@ -121,8 +139,8 @@ autostart = true
 
 [node name="Weapon_marker1" type="Marker2D" parent="."]
 z_index = 1
-position = Vector2(-4, -4)
+position = Vector2(-6, -4)
 
 [node name="Weapon_marker2" type="Marker2D" parent="."]
 z_index = -1
-position = Vector2(4, -4)
+position = Vector2(-21, -7)

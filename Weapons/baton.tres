@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://b6lxllx6gu78i"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_e8wg5"]
+[ext_resource type="Texture2D" uid="uid://dwnxuu6p7krqt" path="res://melee weapons/Icon28_06.png" id="2_3twu2"]
+
+[resource]
+script = ExtResource("1_e8wg5")
+weapon_sprite = ExtResource("2_3twu2")
+weapon_type = "melee"
+weapon_damage = 1
+weapon_range = 0
+weapon_knockback = 150
+weapon_cooldown = 3
+bullet_amount = 1
+bullet_separation_time = 1.1
+bullet_velocity = 0
+Item_type = 1
+Item_name = "Baton"

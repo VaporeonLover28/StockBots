@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://cphdxboh4hox3"]
+
+[ext_resource type="Texture2D" uid="uid://bmfsir1p24aw7" path="res://1 Icons/7/Skillicon7_18.png" id="1_i6ah3"]
+[ext_resource type="Script" path="res://mode_resource.gd" id="2_govys"]
+
+[resource]
+script = ExtResource("2_govys")
+robo_image = ExtResource("1_i6ah3")
+mode_agressivity = "Passive"
+extra_life = 50
+extra_VL = -2
+extra_range = 80
+extra_damage = 0
+mode_probability_GB = Array[int]([1, 2, 3])
+mode_probability_GF = Array[int]([4, 5])
+mode_probability_GW = Array[int]([6, 7, 8])
+mode_probability_GRF = Array[int]([9, 10, 11])
+mode_probability_GRB = Array[int]([0])
+mode_probability_GSF = Array[int]([12])
+mode_probability_GSB = Array[int]([13, 14])
+Item_type = 0
+Item_name = "Resilient"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://bw3j1f7fekdxy"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_voabg"]
+[ext_resource type="Texture2D" uid="uid://cvn4kmu5opl81" path="res://melee weapons/Icon28_38.png" id="2_4hpx0"]
+
+[resource]
+script = ExtResource("1_voabg")
+weapon_sprite = ExtResource("2_4hpx0")
+weapon_type = "melee"
+weapon_damage = 25
+weapon_range = 0
+weapon_knockback = 40
+weapon_cooldown = 6
+bullet_amount = 2
+bullet_separation_time = 2.0
+bullet_velocity = 0
+Item_type = 1
+Item_name = "Hammer"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://btb8opkimoq5n"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_iijs0"]
+[ext_resource type="Texture2D" uid="uid://d1ey6l05nxdd5" path="res://Weapons/Icon29_10.png" id="2_mb2yf"]
+
+[resource]
+script = ExtResource("1_iijs0")
+weapon_sprite = ExtResource("2_mb2yf")
+weapon_type = "ranged"
+weapon_damage = 5
+weapon_range = 400
+weapon_knockback = 50
+weapon_cooldown = 6
+bullet_amount = 5
+bullet_separation_time = 1.5
+bullet_velocity = 5
+Item_type = 1
+Item_name = "Uzi"

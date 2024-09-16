@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://y38a6o8o786m"]
+
+[ext_resource type="Texture2D" uid="uid://dmimpbnbpm683" path="res://1 Icons/7/Skillicon7_29.png" id="1_ubye8"]
+[ext_resource type="Script" path="res://mode_resource.gd" id="2_xc7s5"]
+
+[resource]
+script = ExtResource("2_xc7s5")
+robo_image = ExtResource("1_ubye8")
+mode_agressivity = "little agressive"
+extra_life = 25
+extra_VL = 3
+extra_range = 0
+extra_damage = 5
+mode_probability_GB = Array[int]([1, 2])
+mode_probability_GF = Array[int]([3, 4])
+mode_probability_GW = Array[int]([5])
+mode_probability_GRF = Array[int]([6, 7, 8])
+mode_probability_GRB = Array[int]([9, 10, 11])
+mode_probability_GSF = Array[int]([12])
+mode_probability_GSB = Array[int]([13, 14])
+Item_type = 0
+Item_name = "Fast"

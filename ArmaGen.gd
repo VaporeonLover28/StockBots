@@ -1,7 +1,8 @@
-extends Sprite2D; class_name Weapon
+extends Node; class_name Weapon
 
 #@export var weapon_resource: Resource
 @onready var weapon_cooldown_timer = $weapon_cooldown_timer
+@onready var arma_gen_sprite = $ArmaGen_sprite
 @onready var bullet_spawn_marker = $bullet_spawn_marker
 @export var weapon_resource: Weapon_resource
 @onready var bullet = preload("res://bullet.tscn")
@@ -21,13 +22,22 @@ extends Sprite2D; class_name Weapon
 func _ready():
 	if $"../".side == 0:
 		bullet_origin = 0
+		if self.weapon_resource.weapon_type == "melle":
+			$ArmaGen_sprite.rotation = 0
+		if self.weapon_resource.weapon_type == "ranged":
+			$ArmaGen_sprite.rotation = 25
 	if $"../".side == 1:
-		flip_h = true
+		arma_gen_sprite.flip_h = true
 		$Melee.scale.x *= -1
 		bullet_origin = 1
+		if self.weapon_resource.weapon_type == "melle":
+			$ArmaGen_sprite.rotation = 0
+		if self.weapon_resource.weapon_type == "ranged":
+			$ArmaGen_sprite.rotation = -25
 		
 	
-	set_texture(weapon_resource.weapon_sprite)
+	
+	arma_gen_sprite.set_texture(weapon_resource.weapon_sprite)
 	weapon_cooldown_timer.timeout.connect(funcao_weapon_cooldown)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -53,12 +63,11 @@ func funcao_weapon_cooldown():
 			instanciated_bullet.knockback = weapon_knockback 
 			instanciated_bullet.global_position = bullet_spawn_marker.global_position
 			instanciated_bullet.origin = bullet_origin
-			if self.flip_h == false:
+			if arma_gen_sprite.flip_h == false:
 				instanciated_bullet.Vl = instanciated_bullet.Vl * 1
-			if self.flip_h == true:
+			if arma_gen_sprite.flip_h == true:
 				instanciated_bullet.Vl = instanciated_bullet.Vl * -1
 			$"../../".add_child(instanciated_bullet)
+		
 		await get_tree().create_timer(bullet_separation_time).timeout
-		if weapon_resource.weapon_type == "melee":
-			$Melee/MeleeColl.disabled = true
-			$Melee/AnimatedSprite2D.visible = false
+		

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://cmdhgntf7f4oa"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_0ivlw"]
+[ext_resource type="Texture2D" uid="uid://cbcmak35yevq7" path="res://Weapons/Icon29_31.png" id="2_e6gte"]
+
+[resource]
+script = ExtResource("1_0ivlw")
+weapon_sprite = ExtResource("2_e6gte")
+weapon_type = "ranged"
+weapon_damage = 5
+weapon_range = 600
+weapon_knockback = 75
+weapon_cooldown = 4
+bullet_amount = 2
+bullet_separation_time = 0.75
+bullet_velocity = 7
+Item_type = 1
+Item_name = "Pistol"

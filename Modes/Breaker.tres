@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://cs7n177luksmp"]
+
+[ext_resource type="Texture2D" uid="uid://cphwl4lapsiqp" path="res://1 Icons/7/Skillicon7_37.png" id="1_pq311"]
+[ext_resource type="Script" path="res://mode_resource.gd" id="1_ymggv"]
+
+[resource]
+script = ExtResource("1_ymggv")
+robo_image = ExtResource("1_pq311")
+mode_agressivity = "Very passive"
+extra_life = 10
+extra_VL = -2
+extra_range = 75
+extra_damage = 10
+mode_probability_GB = Array[int]([1, 2, 3])
+mode_probability_GF = Array[int]([4])
+mode_probability_GW = Array[int]([5, 6, 7, 8])
+mode_probability_GRF = Array[int]([])
+mode_probability_GRB = Array[int]([9])
+mode_probability_GSF = Array[int]([10, 11])
+mode_probability_GSB = Array[int]([12, 13, 14])
+Item_type = 0
+Item_name = "Breaker"

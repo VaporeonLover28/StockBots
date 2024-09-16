@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_resource" load_steps=3 format=3 uid="uid://bc1llup7iku37"]
+
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="1_qsux7"]
+[ext_resource type="Texture2D" uid="uid://b7dloow64ajpi" path="res://Weapons/Icon29_20.png" id="2_o7yv1"]
+
+[resource]
+script = ExtResource("1_qsux7")
+weapon_sprite = ExtResource("2_o7yv1")
+weapon_type = "ranged"
+weapon_damage = 5
+weapon_range = 500
+weapon_knockback = 50
+weapon_cooldown = 6
+bullet_amount = 3
+bullet_separation_time = 1.7
+bullet_velocity = 7
+Item_type = 1
+Item_name = "Rifle"

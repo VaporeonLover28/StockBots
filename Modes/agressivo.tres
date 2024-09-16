@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://c7cxxptqesbar"]
 
-[ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="1_ivyn1"]
+[ext_resource type="Texture2D" uid="uid://bn026wua4pj1p" path="res://1 Icons/7/Skillicon7_15.png" id="1_ospol"]
 [ext_resource type="Script" path="res://mode_resource.gd" id="1_yrxxt"]
 
 [resource]
 script = ExtResource("1_yrxxt")
-robo_image = ExtResource("1_ivyn1")
-mode_agressivity = "agressivo"
+robo_image = ExtResource("1_ospol")
+mode_agressivity = "Agressive"
 extra_life = 25
 extra_VL = 2
 extra_range = -50
-extra_damage = 0
+extra_damage = 5
 mode_probability_GB = Array[int]([1, 2])
 mode_probability_GF = Array[int]([3, 4, 5])
 mode_probability_GW = Array[int]([6])
@@ -19,4 +19,4 @@ mode_probability_GRB = Array[int]([0])
 mode_probability_GSF = Array[int]([11, 12])
 mode_probability_GSB = Array[int]([13, 14])
 Item_type = 0
-Item_name = "agressivo"
+Item_name = "Agressive"

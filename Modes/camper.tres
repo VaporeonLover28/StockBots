@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://cllbth8kyrwtg"]
+
+[ext_resource type="Texture2D" uid="uid://d4mcw81475u76" path="res://1 Icons/7/Skillicon7_23.png" id="1_yujsj"]
+[ext_resource type="Script" path="res://mode_resource.gd" id="2_was6b"]
+
+[resource]
+script = ExtResource("2_was6b")
+robo_image = ExtResource("1_yujsj")
+mode_agressivity = "Very passive"
+extra_life = 10
+extra_VL = 1
+extra_range = 300
+extra_damage = 5
+mode_probability_GB = Array[int]([1, 2, 3, 4])
+mode_probability_GF = Array[int]([5, 6])
+mode_probability_GW = Array[int]([7, 8, 9, 10])
+mode_probability_GRF = Array[int]([0])
+mode_probability_GRB = Array[int]([0])
+mode_probability_GSF = Array[int]([11])
+mode_probability_GSB = Array[int]([12, 13, 14])
+Item_type = 0
+Item_name = "Camper"

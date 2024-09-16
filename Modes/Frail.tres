@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://cfaj8muo1v8w0"]
+
+[ext_resource type="Script" path="res://mode_resource.gd" id="1_fyx5k"]
+[ext_resource type="Texture2D" uid="uid://b1lekt3ro000r" path="res://1 Icons/7/Skillicon7_19.png" id="1_h03yg"]
+
+[resource]
+script = ExtResource("1_fyx5k")
+robo_image = ExtResource("1_h03yg")
+mode_agressivity = "Very agressive"
+extra_life = -30
+extra_VL = 2
+extra_range = -50
+extra_damage = 15
+mode_probability_GB = Array[int]([1])
+mode_probability_GF = Array[int]([2, 3])
+mode_probability_GW = Array[int]([0])
+mode_probability_GRF = Array[int]([4, 5, 6, 7])
+mode_probability_GRB = Array[int]([8, 9, 10])
+mode_probability_GSF = Array[int]([11, 12])
+mode_probability_GSB = Array[int]([13, 14])
+Item_type = 0
+Item_name = "Frail"
