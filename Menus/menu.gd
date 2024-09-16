@@ -7,13 +7,17 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pass
+	if Input.is_action_just_pressed("ui_accept"):
+		start()
 
-func _on_start_btn_pressed():
+func start():
 	PlayerLoadout.newest_weapon = PlayerLoadout.all_weapons.pick_random()
 	PlayerLoadout.oldest_weapon =PlayerLoadout.all_weapons.pick_random()
 	PlayerLoadout.current_mode =PlayerLoadout.all_modes.pick_random()
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
+
+func _on_start_btn_pressed():
+	start()
 
 func _on_credits_btn_pressed():
 	pass # Replace with function body.

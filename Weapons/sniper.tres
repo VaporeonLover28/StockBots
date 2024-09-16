@@ -7,12 +7,12 @@
 script = ExtResource("1_qr6if")
 weapon_sprite = ExtResource("2_qerco")
 weapon_type = "ranged"
-weapon_damage = 20
+weapon_damage = 34
 weapon_range = 1000
 weapon_knockback = 100
-weapon_cooldown = 7
+weapon_cooldown = 7.0
 bullet_amount = 1
 bullet_separation_time = 0.5
-bullet_velocity = 10
+bullet_velocity = 15
 Item_type = 1
 Item_name = "sniper"

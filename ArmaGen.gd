@@ -15,32 +15,30 @@ extends Node; class_name Weapon
 @onready var bullet_separation_time = weapon_resource.bullet_separation_time
 @onready var bullet_origin: int
 
-
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if $"../".side == 0:
 		bullet_origin = 0
-		if self.weapon_resource.weapon_type == "melle":
+		if self.weapon_resource.weapon_type == "melee":
 			$ArmaGen_sprite.rotation = 0
 		if self.weapon_resource.weapon_type == "ranged":
-			$ArmaGen_sprite.rotation = 45
+			$ArmaGen_sprite.rotation = 0
 	if $"../".side == 1:
 		arma_gen_sprite.flip_h = true
 		$Melee.scale.x *= -1
 		bullet_origin = 1
-		if self.weapon_resource.weapon_type == "melle":
+		if self.weapon_resource.weapon_type == "melee":
 			$ArmaGen_sprite.rotation = 0
 		if self.weapon_resource.weapon_type == "ranged":
-			$ArmaGen_sprite.rotation = -45
-		
+			$ArmaGen_sprite.rotation = 0
 	
 	$Melee.z_index = 0
 	arma_gen_sprite.set_texture(weapon_resource.weapon_sprite)
 	weapon_cooldown_timer.timeout.connect(funcao_weapon_cooldown)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	
+	print(str(self.get_parent().name) + " rotation arma: " + str($ArmaGen_sprite.rotation))
 	
 	if weapon_cooldown_timer.time_left == 0:
 		weapon_cooldown_timer.start(weapon_cooldown)
@@ -70,4 +68,3 @@ func funcao_weapon_cooldown():
 			$"../../".add_child(instanciated_bullet)
 		
 		await get_tree().create_timer(bullet_separation_time).timeout
-		

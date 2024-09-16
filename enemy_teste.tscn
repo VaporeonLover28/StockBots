@@ -116,6 +116,7 @@ sprite_frames = SubResource("SpriteFrames_wqe6p")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.617078
+flip_h = true
 
 [node name="robot_collision" type="CollisionShape2D" parent="."]
 position = Vector2(-3, -5)
@@ -143,4 +144,4 @@ position = Vector2(-6, -4)
 
 [node name="Weapon_marker2" type="Marker2D" parent="."]
 z_index = -1
-position = Vector2(-15, -7)
+position = Vector2(-15, -4)
