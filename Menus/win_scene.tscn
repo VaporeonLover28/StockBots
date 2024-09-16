@@ -1,15 +1,52 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpw1hww8w6lxs"]
+[gd_scene load_steps=6 format=3 uid="uid://bpw1hww8w6lxs"]
 
 [ext_resource type="Script" path="res://Menus/win_scene.gd" id="1_oodep"]
+[ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="2_4duf8"]
+[ext_resource type="Theme" uid="uid://cibleptmewh3g" path="res://Menus/menu_theme.tres" id="2_c28we"]
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="3_1hjga"]
+[ext_resource type="Texture2D" uid="uid://dgk22ucxx4rmi" path="res://pizza.jpeg" id="4_jmx5b"]
 
 [node name="Win_scene" type="CanvasLayer"]
 script = ExtResource("1_oodep")
 
 [node name="Back_menu_button" type="Button" parent="."]
-offset_left = 358.0
-offset_top = 236.0
-offset_right = 461.0
-offset_bottom = 267.0
-text = "Reniciar run"
+offset_left = 740.0
+offset_top = 558.0
+offset_right = 940.0
+offset_bottom = 598.0
+scale = Vector2(2, 2)
+theme = ExtResource("2_c28we")
+text = "Reset run"
+
+[node name="robot" type="Sprite2D" parent="."]
+position = Vector2(359, 322)
+texture = ExtResource("2_4duf8")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 22.0001
+offset_right = 383.0
+offset_bottom = 45.0001
+scale = Vector2(3, 3)
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "Congrats, You have passed the test little one"
+
+[node name="Label2" type="Label" parent="."]
+z_index = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.035
+offset_left = 79.0
+offset_top = 518.0
+offset_right = 432.68
+offset_bottom = 518.32
+scale = Vector2(2.5, 2.5)
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "Now you can go to your new home and eat a pizza"
+
+[node name="Pizza" type="Sprite2D" parent="."]
+position = Vector2(722, 338)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_jmx5b")
 
 [connection signal="pressed" from="Back_menu_button" to="." method="_on_back_menu_button_pressed"]

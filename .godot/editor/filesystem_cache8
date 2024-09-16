@@ -1,19 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726438822
+::res://::1726446591
 Area_Batalha.gd::GDScript::-1::1726419016::0::1::::<>Node2D<>::
-Area_Batalha.tscn::PackedScene::5400144948865599507::1726432695::0::1::::<><>::res://Area_Batalha.gd<>uid://cg6bxc4q05ahp::::res://tankscream.wav<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>res://battle_camera.gd<>uid://dtfcwxx7hydm2::::res://Vine boom sound effect.mp3<>uid://ti04y3oterqt::::res://Menus/menu_pause.tscn<>uid://byklwnlhgc235::::res://stockbots_Battle.mp3<>uid://bus3gxvaqgd7o::::res://heathbar_background.png<>uid://d2sjy8h3h7tb4::::res://Healthbar_enchimento.png<>res://healthbar_enemy.gd<>res://healthbar_player.gd<>res://round_label.gd
-ArmaGen.gd::GDScript::-1::1726432645::0::1::::Weapon<>Node<>::
+Area_Batalha.tscn::PackedScene::5400144948865599507::1726445934::0::1::::<><>::res://Area_Batalha.gd<>uid://cg6bxc4q05ahp::::res://tankscream.wav<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>res://battle_camera.gd<>uid://dtfcwxx7hydm2::::res://Vine boom sound effect.mp3<>uid://ti04y3oterqt::::res://Menus/menu_pause.tscn<>uid://byklwnlhgc235::::res://stockbots_Battle.mp3<>uid://bus3gxvaqgd7o::::res://heathbar_background.png<>uid://d2sjy8h3h7tb4::::res://Healthbar_enchimento.png<>res://healthbar_enemy.gd<>res://healthbar_player.gd<>res://round_label.gd
+ArmaGen.gd::GDScript::-1::1726445549::0::1::::Weapon<>Node<>::
 arma_gen.gd::GDScript::-1::1726432587::0::1::::<>Node<>::
-arma_gen.tscn::PackedScene::4607893857483116694::1726434196::0::1::::<><>::res://ArmaGen.gd<>uid://7exxfvrcnpao::::res://Weapons/Icon29_13.png<>res://melee.gd<>uid://dds0ynv0bstoo::::res://SP301_nyknck/SP301_nyknck/SP301_01.png<>uid://50mlri3vfh8c::::res://SP301_nyknck/SP301_nyknck/SP301_02.png<>uid://d32x5ydu2m2fq::::res://SP301_nyknck/SP301_nyknck/SP301_03.png<>uid://jwhch5yj6g65::::res://SP301_nyknck/SP301_nyknck/SP301_04.png<>uid://eo2p05df8r3j::::res://SP301_nyknck/SP301_nyknck/SP301_05.png
+arma_gen.tscn::PackedScene::4607893857483116694::1726445933::0::1::::<><>::res://ArmaGen.gd<>uid://7exxfvrcnpao::::res://Weapons/Icon29_13.png<>res://melee.gd<>uid://dds0ynv0bstoo::::res://SP301_nyknck/SP301_nyknck/SP301_01.png<>uid://50mlri3vfh8c::::res://SP301_nyknck/SP301_nyknck/SP301_02.png<>uid://d32x5ydu2m2fq::::res://SP301_nyknck/SP301_nyknck/SP301_03.png<>uid://jwhch5yj6g65::::res://SP301_nyknck/SP301_nyknck/SP301_04.png<>uid://eo2p05df8r3j::::res://SP301_nyknck/SP301_nyknck/SP301_05.png
 atatck.tscn::PackedScene::3829231720759194005::1726417723::0::1::::<><>::uid://dds0ynv0bstoo::::res://SP301_nyknck/SP301_nyknck/SP301_01.png<>uid://50mlri3vfh8c::::res://SP301_nyknck/SP301_nyknck/SP301_02.png<>uid://d32x5ydu2m2fq::::res://SP301_nyknck/SP301_nyknck/SP301_03.png<>uid://jwhch5yj6g65::::res://SP301_nyknck/SP301_nyknck/SP301_04.png<>uid://eo2p05df8r3j::::res://SP301_nyknck/SP301_nyknck/SP301_05.png
 battle_camera.gd::GDScript::-1::1726417723::0::1::::<>Camera2D<>::
 bgm.mp3::AudioStreamMP3::7395190964680650099::1726417723::1726417855::1::::<><>::
-bullet.gd::GDScript::-1::1726422228::0::1::::<>Area2D<>::
-bullet.tscn::PackedScene::6799741680790631131::1726432695::0::1::::<><>::res://bullet.gd<>uid://v03lvom2gxoj::::res://robo gamejam/6/Ball1.png
+bullet.gd::GDScript::-1::1726444500::0::1::::<>Area2D<>::
+bullet.tscn::PackedScene::6799741680790631131::1726445934::0::1::::<><>::res://bullet.gd<>uid://v03lvom2gxoj::::res://robo gamejam/6/Ball1.png
 dark_logo.png::CompressedTexture2D::5109143945065579457::1726417723::1726417857::1::::<><>::
-default_bus_layout.tres::AudioBusLayout::7306929473513873330::1726438826::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::7306929473513873330::1726445810::0::1::::<><>::
 enemy_teste.gd::GDScript::-1::1726417723::0::1::::<>Robots<>::
-enemy_teste.tscn::PackedScene::4218012141222295258::1726432696::0::1::::<><>::res://enemy_teste.gd<>res://weapon_resource_base.gd<>uid://cclgutysjb5rh::::res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://hvvr4qb27qew::::res://teste_arma_melee.tres<>uid://bw1dnyhhps5b8::::res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png<>res://mode_resource.gd<>uid://chbbw4pve210d::::res://Modes/basic.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres<>uid://cphdxboh4hox3::::res://Modes/tank.tres
+enemy_teste.tscn::PackedScene::4218012141222295258::1726445934::0::1::::<><>::res://enemy_teste.gd<>res://weapon_resource_base.gd<>uid://cclgutysjb5rh::::res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://bw1dnyhhps5b8::::res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png<>uid://cmdhgntf7f4oa::::res://Weapons/pistola.tres<>res://mode_resource.gd<>uid://b6lxllx6gu78i::::res://Weapons/baton.tres<>uid://bw3j1f7fekdxy::::res://Weapons/Hammer.tres<>uid://chbbw4pve210d::::res://Modes/basic.tres<>uid://btu4w4guwao35::::res://Weapons/chainsaw.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://btqjh46mvsnvh::::res://Weapons/knife.tres<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://bnsemtux7ekn6::::res://Weapons/scythe.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://2efwn6lthyk2::::res://Weapons/Sword.tres<>uid://bc1llup7iku37::::res://Weapons/rifle.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres<>uid://cphdxboh4hox3::::res://Modes/tank.tres<>uid://3nfehs72ddv5::::res://Weapons/Shotgun.tres<>uid://cjgnfduibhtik::::res://Weapons/Smg.tres<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://btb8opkimoq5n::::res://Weapons/uzi.tres
 Font.txt::TextFile::-1::1726417722::0::1::::<><>::
 Healthbar_enchimento.png::CompressedTexture2D::9092110686234880827::1726417723::1726417857::1::::<><>::
 healthbar_enemy.gd::GDScript::-1::1726417723::0::1::::<>TextureProgressBar<>::
@@ -22,7 +22,7 @@ heathbar_background.png::CompressedTexture2D::3829068387087282890::1726417723::1
 icon.svg::CompressedTexture2D::8701001055468581931::1726417723::1726417857::1::::<><>::
 inimigo.tscn::PackedScene::5417691426241772373::1726417723::0::1::::<><>::uid://cwdbc1stgr0q2::::res://Industria gamejam/drones gamejam/1 Drones/1/Idle.png
 item_resource.gd::GDScript::-1::1726417723::0::1::::Item_resource<>Resource<>::
-item_resource.tscn::PackedScene::2507479971577964477::1726432693::0::1::::<><>::res://item_resource.gd
+item_resource.tscn::PackedScene::2507479971577964477::1726445933::0::1::::<><>::res://item_resource.gd
 Kasino no Sabadaço - 07102006.mp3::AudioStreamMP3::4824686969991782870::1726417723::1726417855::1::::<><>::
 Label.gd::GDScript::-1::1726417723::0::1::::<>Label<>::
 License.txt::TextFile::-1::1726417723::0::1::::<><>::
@@ -31,17 +31,19 @@ logo_letters.png::CompressedTexture2D::5189272137541764883::1726417723::17264178
 logo_no_letters.png::CompressedTexture2D::3438170632195584298::1726417723::1726417857::1::::<><>::
 loss_scene.tscn::PackedScene::5072840304162661292::1726417723::0::1::::<><>::res://Menus/loss_scene.gd<>uid://cf0fy854iu0yx::::res://robo gamejam/Arte experimental/Idle_ice_image.png
 Manoel Gomes - Caneta Azul (Jersey ClubPhonk) Prod. by JXGHY ll.mp3::AudioStreamMP3::244360245826854718::1726417723::1726417855::1::::<><>::
-melee.gd::GDScript::-1::1726422426::0::1::::<>Area2D<>::
+melee.gd::GDScript::-1::1726445601::0::1::::<>Area2D<>::
 mode_resource.gd::GDScript::-1::1726417723::0::1::::Mode_resource<>Item_resource<>::
-mode_resource.tscn::PackedScene::5590698567770611558::1726432694::0::1::::<><>::res://mode_resource.gd
+mode_resource.tscn::PackedScene::5590698567770611558::1726445933::0::1::::<><>::res://mode_resource.gd
 Monkeys Spinning Monkeys.mp3::AudioStreamMP3::7933008436829684975::1726417723::1726417855::1::::<><>::
+pizza eye.jpg::CompressedTexture2D::3646509366633869833::1726446591::1726446668::1::::<><>::
+pizza.jpeg::CompressedTexture2D::7602727520321744028::1726445883::1726445924::1::::<><>::
 player.tscn::PackedScene::1856491382297284369::1726419019::0::1::::<><>::uid://dtcfjvtert0nj::::res://robo gamejam/6/Idle.png
 player_loadout.gd::GDScript::-1::1726417723::0::1::::<>Node<>::
-player_loadout.tscn::PackedScene::144307127695818630::1726432695::0::1::::<><>::res://player_loadout.gd<>res://weapon_resource_base.gd<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>res://mode_resource.gd<>uid://chbbw4pve210d::::res://Modes/basic.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres<>uid://cphdxboh4hox3::::res://Modes/tank.tres
+player_loadout.tscn::PackedScene::144307127695818630::1726445934::0::1::::<><>::res://player_loadout.gd<>res://weapon_resource_base.gd<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>res://mode_resource.gd<>uid://cmdhgntf7f4oa::::res://Weapons/pistola.tres<>uid://b6lxllx6gu78i::::res://Weapons/baton.tres<>uid://bw3j1f7fekdxy::::res://Weapons/Hammer.tres<>uid://chbbw4pve210d::::res://Modes/basic.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://btu4w4guwao35::::res://Weapons/chainsaw.tres<>uid://btqjh46mvsnvh::::res://Weapons/knife.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://bnsemtux7ekn6::::res://Weapons/scythe.tres<>uid://2efwn6lthyk2::::res://Weapons/Sword.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres<>uid://cphdxboh4hox3::::res://Modes/tank.tres<>uid://bc1llup7iku37::::res://Weapons/rifle.tres<>uid://3nfehs72ddv5::::res://Weapons/Shotgun.tres<>uid://cjgnfduibhtik::::res://Weapons/Smg.tres<>uid://btb8opkimoq5n::::res://Weapons/uzi.tres
 player_teste.gd::GDScript::-1::1726417723::0::1::::<>Robots<>::
-player_teste.tscn::PackedScene::5386540115154593914::1726432696::0::1::::<><>::res://player_teste.gd<>res://weapon_resource_base.gd<>uid://bdsoklsj0nuvn::::res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png<>uid://cs2etpneiext::::res://robo gamejam/Arte experimental/Ice_Hurt_Sheet.png<>uid://htesi5gh4hkc::::res://robo gamejam/Arte experimental/Ice_Walk_Sheet.png
-Robots.gd::GDScript::-1::1726432540::0::1::::Robots<>CharacterBody2D<>::
-robots.tscn::PackedScene::9042431026298361450::1726432693::0::1::::<><>::res://Robots.gd<>res://weapon_resource_base.gd<>uid://dtcfjvtert0nj::::res://robo gamejam/6/Idle.png<>uid://hvvr4qb27qew::::res://teste_arma_melee.tres<>res://mode_resource.gd<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres
+player_teste.tscn::PackedScene::5386540115154593914::1726445934::0::1::::<><>::res://player_teste.gd<>res://weapon_resource_base.gd<>uid://bdsoklsj0nuvn::::res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png<>uid://cs2etpneiext::::res://robo gamejam/Arte experimental/Ice_Hurt_Sheet.png<>uid://htesi5gh4hkc::::res://robo gamejam/Arte experimental/Ice_Walk_Sheet.png
+Robots.gd::GDScript::-1::1726443819::0::1::::Robots<>CharacterBody2D<>::
+robots.tscn::PackedScene::9042431026298361450::1726445932::0::1::::<><>::res://Robots.gd<>res://weapon_resource_base.gd<>uid://dtcfjvtert0nj::::res://robo gamejam/6/Idle.png<>uid://hvvr4qb27qew::::res://teste_arma_melee.tres<>res://mode_resource.gd<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres
 round_counter.gd::GDScript::-1::1726417724::0::1::::<>Node<>::
 round_counter.tscn::PackedScene::1446679903272424325::1726417724::0::1::::<><>::res://round_counter.gd
 round_label.gd::GDScript::-1::1726417724::0::1::::<>Label<>::
@@ -52,7 +54,7 @@ tankscream.wav::AudioStreamWAV::5258072080450411453::1726417736::1726417862::1::
 teste_arma_melee.tres::Resource/Weapon_resource::535980801622778670::1726422804::0::1::::<><>::res://weapon_resource_base.gd<>uid://b77hshnm05ccd::::res://free-guns-pixel-art/free-guns-pixel-art/Shotgun-2.png
 Vine boom sound effect.mp3::AudioStreamMP3::8503333935455447983::1726417723::1726417855::1::::<><>::
 Wandersong Original Soundtrack - 58 - Chismest.mp3::AudioStreamMP3::904543138155335860::1726417723::1726417855::1::::<><>::
-weapon_resource.tscn::PackedScene::1058344215478704269::1726432693::0::1::::<><>::res://weapon_resource_base.gd
+weapon_resource.tscn::PackedScene::1058344215478704269::1726445933::0::1::::<><>::res://weapon_resource_base.gd
 weapon_resource_base.gd::GDScript::-1::1726417736::0::1::::Weapon_resource<>Item_resource<>::
 ::res://1 Icons/::1726417722
 ::res://1 Icons/7/::1726417860
@@ -605,7 +607,7 @@ Walk.png::CompressedTexture2D::1341509151008821629::1726417723::1726417856::1:::
 1.png::CompressedTexture2D::7212486927732954650::1726417723::1726417856::1::::<><>::
 2.png::CompressedTexture2D::8080446791871900546::1726417723::1726417855::1::::<><>::
 3.png::CompressedTexture2D::5525150166196243409::1726417723::1726417855::1::::<><>::
-::res://melee weapons/::1726438700
+::res://melee weapons/::1726438827
 Icon28_01.png::CompressedTexture2D::4830493680048202079::1726438699::1726438827::1::::<><>::
 Icon28_02.png::CompressedTexture2D::8058455909023285896::1726438699::1726438827::1::::<><>::
 Icon28_03.png::CompressedTexture2D::3716159313212729875::1726438699::1726438827::1::::<><>::
@@ -646,31 +648,31 @@ Icon28_37.png::CompressedTexture2D::8471023719824926469::1726438700::1726438827:
 Icon28_38.png::CompressedTexture2D::6275423307875600576::1726438700::1726438827::1::::<><>::
 Icon28_39.png::CompressedTexture2D::213578981912153529::1726438700::1726438827::1::::<><>::
 Icon28_40.png::CompressedTexture2D::6184886015982273516::1726438700::1726438827::1::::<><>::
-::res://Menus/::1726438799
+::res://Menus/::1726446215
 current_player_loadout.gd::GDScript::-1::1726419601::0::1::::<>BoxContainer<>::
 item_container.gd::GDScript::-1::1726429219::0::1::::<>BoxContainer<>::
 loss_scene.gd::GDScript::-1::1726417723::0::1::::<>Node2D<>::
-loss_scene.tscn::PackedScene::1577220408338634432::1726432696::0::1::::<><>::res://Menus/loss_scene.gd<>uid://cf0fy854iu0yx::::res://robo gamejam/Arte experimental/Idle_ice_image.png
+loss_scene.tscn::PackedScene::1577220408338634432::1726445934::0::1::::<><>::res://Menus/loss_scene.gd<>uid://cf0fy854iu0yx::::res://robo gamejam/Arte experimental/Idle_ice_image.png
 menu.gd::GDScript::-1::1726417723::0::1::::<>Control<>::
-menu.gdshader::Shader::-1::1726438799::0::1::::<><>::
-menu.tscn::PackedScene::7247103091441093636::1726432695::0::1::::<><>::res://Menus/menu.gd<>uid://b84hwqo6xc6pu::::res://stockbots_Intro.mp3<>uid://dbdy7qn6gl06v::::res://Industria gamejam/1 Background/1.png<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cnw2g3cjksd0g::::res://Industria gamejam/1 Background/3.png<>uid://btlwgagqgd0jr::::res://Industria gamejam/4.png<>uid://cyyviqxs8i4ro::::res://Industria gamejam/1 Background/5.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://ce154bugrrsa8::::res://dark_logo.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://cf6ys3mggt1dn::::res://logo_letters.png
+menu.gdshader::Shader::-1::1726446215::0::1::::<><>::
+menu.tscn::PackedScene::7247103091441093636::1726445934::0::1::::<><>::res://Menus/menu.gd<>uid://b84hwqo6xc6pu::::res://stockbots_Intro.mp3<>uid://dbdy7qn6gl06v::::res://Industria gamejam/1 Background/1.png<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cnw2g3cjksd0g::::res://Industria gamejam/1 Background/3.png<>uid://btlwgagqgd0jr::::res://Industria gamejam/4.png<>uid://cyyviqxs8i4ro::::res://Industria gamejam/1 Background/5.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://ce154bugrrsa8::::res://dark_logo.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://cf6ys3mggt1dn::::res://logo_letters.png
 menu_pause.gd::GDScript::-1::1726417723::0::1::::<>CanvasLayer<>::
-menu_pause.tscn::PackedScene::1351674068474087943::1726432696::0::1::::<><>::res://Menus/menu_pause.gd<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres
-menu_theme.tres::Theme::5337092342093551882::1726418085::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
-pause_theme.tres::Theme::5565090707935745082::1726418085::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
+menu_pause.tscn::PackedScene::1351674068474087943::1726445934::0::1::::<><>::res://Menus/menu_pause.gd<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres
+menu_theme.tres::Theme::5337092342093551882::1726445927::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
+pause_theme.tres::Theme::5565090707935745082::1726445926::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
 upgraged_scene.gd::GDScript::-1::1726417723::0::1::::<>CanvasLayer<>::
-upgraged_scene.tscn::PackedScene::6392636822786826645::1726432696::0::1::::<><>::res://Menus/upgraged_scene.gd<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres<>res://Menus/item_container.gd<>uid://desw3f5klvetp::::res://stockbots_Upgrade.mp3<>res://item_resource.gd<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>res://Menus/current_player_loadout.gd<>uid://chbbw4pve210d::::res://Modes/basic.tres<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres
+upgraged_scene.tscn::PackedScene::6392636822786826645::1726445934::0::1::::<><>::res://Menus/upgraged_scene.gd<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres<>res://Menus/item_container.gd<>uid://desw3f5klvetp::::res://stockbots_Upgrade.mp3<>res://item_resource.gd<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>res://Menus/current_player_loadout.gd<>uid://chbbw4pve210d::::res://Modes/basic.tres<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://cphdxboh4hox3::::res://Modes/tank.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres<>uid://b6lxllx6gu78i::::res://Weapons/baton.tres<>uid://btu4w4guwao35::::res://Weapons/chainsaw.tres<>uid://bw3j1f7fekdxy::::res://Weapons/Hammer.tres<>uid://btqjh46mvsnvh::::res://Weapons/knife.tres<>uid://cmdhgntf7f4oa::::res://Weapons/pistola.tres<>uid://bc1llup7iku37::::res://Weapons/rifle.tres<>uid://bnsemtux7ekn6::::res://Weapons/scythe.tres<>uid://3nfehs72ddv5::::res://Weapons/Shotgun.tres<>uid://cjgnfduibhtik::::res://Weapons/Smg.tres<>uid://2efwn6lthyk2::::res://Weapons/Sword.tres<>uid://btb8opkimoq5n::::res://Weapons/uzi.tres
 win_scene.gd::GDScript::-1::1726417723::0::1::::<>CanvasLayer<>::
-win_scene.tscn::PackedScene::3486261982251564868::1726432696::0::1::::<><>::res://Menus/win_scene.gd
-::res://Modes/::1726432937
-agressivo.tres::Resource/Mode_resource::7024451501339356069::1726430381::0::1::::<><>::uid://bn026wua4pj1p::::res://1 Icons/7/Skillicon7_15.png<>res://mode_resource.gd
-basic.tres::Resource/Mode_resource::5266329202374964533::1726430381::0::1::::<><>::uid://dbx3mf4k37hkr::::res://1 Icons/7/Skillicon7_36.png<>res://mode_resource.gd
-Breaker.tres::Resource/Mode_resource::6103138123256065759::1726431390::0::1::::<><>::uid://cphwl4lapsiqp::::res://1 Icons/7/Skillicon7_37.png<>res://mode_resource.gd
-camper.tres::Resource/Mode_resource::5567721868905292652::1726430381::0::1::::<><>::uid://d4mcw81475u76::::res://1 Icons/7/Skillicon7_23.png<>res://mode_resource.gd
-fast.tres::Resource/Mode_resource::1744340136558235182::1726430381::0::1::::<><>::uid://dmimpbnbpm683::::res://1 Icons/7/Skillicon7_29.png<>res://mode_resource.gd
-Frail.tres::Resource/Mode_resource::5124391631558118801::1726430381::0::1::::<><>::res://mode_resource.gd<>uid://b1lekt3ro000r::::res://1 Icons/7/Skillicon7_19.png
-lento.tres::Resource/Mode_resource::6166951901167145063::1726430381::0::1::::<><>::uid://blb6pitk3vhuo::::res://1 Icons/7/Skillicon7_34.png<>res://mode_resource.gd
-tank.tres::Resource/Mode_resource::5840347964980924106::1726430381::0::1::::<><>::uid://bmfsir1p24aw7::::res://1 Icons/7/Skillicon7_18.png<>res://mode_resource.gd
+win_scene.tscn::PackedScene::3486261982251564868::1726446215::0::1::::<><>::res://Menus/win_scene.gd<>uid://cf0fy854iu0yx::::res://robo gamejam/Arte experimental/Idle_ice_image.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://dgk22ucxx4rmi::::res://pizza.jpeg
+::res://Modes/::1726445926
+agressivo.tres::Resource/Mode_resource::7024451501339356069::1726445926::0::1::::<><>::uid://bn026wua4pj1p::::res://1 Icons/7/Skillicon7_15.png<>res://mode_resource.gd
+basic.tres::Resource/Mode_resource::5266329202374964533::1726445926::0::1::::<><>::uid://dbx3mf4k37hkr::::res://1 Icons/7/Skillicon7_36.png<>res://mode_resource.gd
+Breaker.tres::Resource/Mode_resource::6103138123256065759::1726445926::0::1::::<><>::uid://cphwl4lapsiqp::::res://1 Icons/7/Skillicon7_37.png<>res://mode_resource.gd
+camper.tres::Resource/Mode_resource::5567721868905292652::1726445926::0::1::::<><>::uid://d4mcw81475u76::::res://1 Icons/7/Skillicon7_23.png<>res://mode_resource.gd
+fast.tres::Resource/Mode_resource::1744340136558235182::1726445926::0::1::::<><>::uid://dmimpbnbpm683::::res://1 Icons/7/Skillicon7_29.png<>res://mode_resource.gd
+Frail.tres::Resource/Mode_resource::5124391631558118801::1726445926::0::1::::<><>::res://mode_resource.gd<>uid://b1lekt3ro000r::::res://1 Icons/7/Skillicon7_19.png
+lento.tres::Resource/Mode_resource::6166951901167145063::1726445926::0::1::::<><>::uid://blb6pitk3vhuo::::res://1 Icons/7/Skillicon7_34.png<>res://mode_resource.gd
+tank.tres::Resource/Mode_resource::5840347964980924106::1726445926::0::1::::<><>::uid://bmfsir1p24aw7::::res://1 Icons/7/Skillicon7_18.png<>res://mode_resource.gd
 ::res://powerplant scenario gamejam/::1726417724
 Font.txt::TextFile::-1::1726417724::0::1::::<><>::
 License.txt::TextFile::-1::1726417724::0::1::::<><>::
@@ -879,8 +881,11 @@ SP301_02.png::CompressedTexture2D::2158023907194465784::1726417723::1726417857::
 SP301_03.png::CompressedTexture2D::9181739203094708726::1726417723::1726417857::1::::<><>::
 SP301_04.png::CompressedTexture2D::677544908980068700::1726417723::1726417857::1::::<><>::
 SP301_05.png::CompressedTexture2D::311324168394426045::1726417723::1726417857::1::::<><>::
-::res://Weapons/::1726434103
+::res://Weapons/::1726445926
+baton.tres::Resource/Weapon_resource::4586399741038038538::1726440287::0::1::::<><>::res://weapon_resource_base.gd<>uid://dwnxuu6p7krqt::::res://melee weapons/Icon28_06.png
 bazuca.tres::Resource/Weapon_resource::8742977074780436499::1726434103::0::1::::<><>::res://weapon_resource_base.gd<>uid://dg3hvgqhhcf2q::::res://Weapons/Icon29_02.png
+chainsaw.tres::Resource/Weapon_resource::3763097881537152750::1726440870::0::1::::<><>::res://weapon_resource_base.gd<>uid://ccm3akn5unvi3::::res://melee weapons/Icon28_10.png
+Hammer.tres::Resource/Weapon_resource::3988971016703324514::1726441097::0::1::::<><>::res://weapon_resource_base.gd<>uid://cvn4kmu5opl81::::res://melee weapons/Icon28_38.png
 Icon29_01.png::CompressedTexture2D::589288125489766405::1726430745::1726430899::1::::<><>::
 Icon29_02.png::CompressedTexture2D::7638660550826998426::1726430745::1726430899::1::::<><>::
 Icon29_03.png::CompressedTexture2D::2567915727259384655::1726430745::1726430899::1::::<><>::
@@ -921,9 +926,12 @@ Icon29_37.png::CompressedTexture2D::8074819616560926986::1726430745::1726430899:
 Icon29_38.png::CompressedTexture2D::5750837317911599377::1726430746::1726430899::1::::<><>::
 Icon29_39.png::CompressedTexture2D::3077592163630466483::1726430746::1726430899::1::::<><>::
 Icon29_40.png::CompressedTexture2D::6268203236527112374::1726430746::1726430899::1::::<><>::
-pistola.tres::Resource/Weapon_resource::5621737070442570840::1726434103::0::1::::<><>::res://weapon_resource_base.gd<>uid://cbcmak35yevq7::::res://Weapons/Icon29_31.png
+knife.tres::Resource/Weapon_resource::3753599282013007653::1726441002::0::1::::<><>::res://weapon_resource_base.gd<>uid://c4oo0ttcdy76::::res://melee weapons/Icon28_21.png
+pistola.tres::Resource/Weapon_resource::5621737070442570840::1726445275::0::1::::<><>::res://weapon_resource_base.gd<>uid://cbcmak35yevq7::::res://Weapons/Icon29_31.png
 rifle.tres::Resource/Weapon_resource::2581160798332215480::1726433383::0::1::::<><>::res://weapon_resource_base.gd<>uid://b7dloow64ajpi::::res://Weapons/Icon29_20.png
+scythe.tres::Resource/Weapon_resource::3336299777986210433::1726441097::0::1::::<><>::res://weapon_resource_base.gd<>uid://m5a864wyeqvd::::res://melee weapons/Icon28_09.png
 Shotgun.tres::Resource/Weapon_resource::1992435657767203004::1726433573::0::1::::<><>::res://weapon_resource_base.gd<>uid://ddl4rgvxcve2h::::res://Weapons/Icon29_36.png
-Smg.tres::Resource/Weapon_resource::5417725665359596590::1726434103::0::1::::<><>::res://weapon_resource_base.gd<>uid://b2gujfykfoxc5::::res://Weapons/Icon29_30.png
-sniper.tres::Resource/Weapon_resource::3332877629199454054::1726434103::0::1::::<><>::res://weapon_resource_base.gd<>uid://d1whdqxkxg3ya::::res://Weapons/Icon29_16.png
+Smg.tres::Resource/Weapon_resource::5417725665359596590::1726445926::0::1::::<><>::res://weapon_resource_base.gd<>uid://b2gujfykfoxc5::::res://Weapons/Icon29_30.png
+sniper.tres::Resource/Weapon_resource::3332877629199454054::1726441097::0::1::::<><>::res://weapon_resource_base.gd<>uid://hc5qbiutielh::::res://Weapons/Icon29_21.png
+Sword.tres::Resource/Weapon_resource::1903699892890825559::1726441097::0::1::::<><>::res://weapon_resource_base.gd<>uid://c5olvmpgsjdbc::::res://melee weapons/Icon28_14.png
 uzi.tres::Resource/Weapon_resource::3724102556124123513::1726434103::0::1::::<><>::res://weapon_resource_base.gd<>uid://d1ey6l05nxdd5::::res://Weapons/Icon29_10.png
