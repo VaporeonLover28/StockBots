@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=19 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="AudioStream" uid="uid://cg6bxc4q05ahp" path="res://tankscream.wav" id="2_756et"]
@@ -12,8 +12,10 @@
 [ext_resource type="Script" path="res://healthbar_enemy.gd" id="7_1wvw0"]
 [ext_resource type="Script" path="res://healthbar_player.gd" id="7_ubfqr"]
 [ext_resource type="Script" path="res://round_label.gd" id="9_giufu"]
+[ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
+[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rd237"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7at4a"]
 resource_name = "<null>"
 texture = ExtResource("2_cb1ea")
 margins = Vector2i(16, 16)
@@ -371,7 +373,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_pq4u0"]
 tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_rd237")
+sources/0 = SubResource("TileSetAtlasSource_7at4a")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6kdl"]
 size = Vector2(20, 20.001)
@@ -392,6 +394,7 @@ z_index = -2
 position = Vector2(-267, -46)
 tile_set = SubResource("TileSet_pq4u0")
 format = 2
+layer_0/tile_data = PackedInt32Array(589825, 589824, 6, 589826, 589824, 6, 589827, 589824, 6, 589828, 589824, 6, 589829, 589824, 6, 589830, 589824, 6, 589831, 589824, 6, 589832, 589824, 6, 589833, 589824, 6, 589834, 589824, 6, 589835, 589824, 6, 589836, 589824, 6, 589837, 589824, 6, 589838, 589824, 6, 589839, 589824, 6, 589840, 589824, 6, 589841, 589824, 6, 589842, 589824, 6, 589843, 589824, 6, 589844, 589824, 6, 589845, 589824, 6, 589846, 589824, 6, 589847, 589824, 6, 589848, 589824, 6, 589849, 589824, 6, 589850, 589824, 6, 589851, 589824, 6, 589852, 589824, 6, 589853, 589824, 6, 589854, 589824, 6, 589855, 589824, 6, 589856, 589824, 6, 589857, 589824, 6, 589858, 589824, 6)
 
 [node name="Layer1" type="TileMapLayer" parent="Background/TileMap"]
 use_parent_material = true
@@ -496,6 +499,7 @@ offset_left = 70.0
 offset_top = 91.0
 offset_right = 78.68
 offset_bottom = 102.336
+theme = ExtResource("12_y03r6")
 text = "Player"
 
 [node name="Label_enemy" type="Label" parent="battle_camera/UI_layer"]
@@ -503,6 +507,7 @@ offset_left = 1048.0
 offset_top = 87.0
 offset_right = 1101.0
 offset_bottom = 110.0
+theme = ExtResource("12_y03r6")
 text = "Enemy"
 
 [node name="Round_label" type="Label" parent="battle_camera/UI_layer"]
@@ -510,4 +515,35 @@ offset_left = 532.0
 offset_top = 40.0
 offset_right = 572.0
 offset_bottom = 63.0
+theme = ExtResource("12_y03r6")
 script = ExtResource("9_giufu")
+
+[node name="Frame07" type="Sprite2D" parent="."]
+position = Vector2(172, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Frame08" type="Sprite2D" parent="."]
+position = Vector2(258, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Frame09" type="Sprite2D" parent="."]
+position = Vector2(347, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Frame10" type="Sprite2D" parent="."]
+position = Vector2(819, 128)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Frame11" type="Sprite2D" parent="."]
+position = Vector2(905, 128)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Frame12" type="Sprite2D" parent="."]
+position = Vector2(994, 128)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")

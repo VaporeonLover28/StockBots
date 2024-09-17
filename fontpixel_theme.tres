@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://2gkcw1bng28h"]
+
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="1_td08h"]
+
+[resource]
+Label/fonts/font = ExtResource("1_td08h")

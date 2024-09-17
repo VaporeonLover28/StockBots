@@ -22,7 +22,7 @@ func _ready():
 		if self.weapon_resource.weapon_type == "melee":
 			$ArmaGen_sprite.rotation = 0
 		if self.weapon_resource.weapon_type == "ranged":
-			$ArmaGen_sprite.rotation = 0
+			$ArmaGen_sprite.rotation = 0.79
 	if $"../".side == 1:
 		arma_gen_sprite.flip_h = true
 		$Melee.scale.x *= -1
@@ -30,20 +30,18 @@ func _ready():
 		if self.weapon_resource.weapon_type == "melee":
 			$ArmaGen_sprite.rotation = 0
 		if self.weapon_resource.weapon_type == "ranged":
-			$ArmaGen_sprite.rotation = 0
+			$ArmaGen_sprite.rotation = -0.79
 	
 	$Melee.z_index = 0
 	arma_gen_sprite.set_texture(weapon_resource.weapon_sprite)
 	weapon_cooldown_timer.timeout.connect(funcao_weapon_cooldown)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	
-	print(str(self.get_parent().name) + " rotation arma: " + str($ArmaGen_sprite.rotation))
-	
 	if weapon_cooldown_timer.time_left == 0:
 		weapon_cooldown_timer.start(weapon_cooldown)
 		
 func funcao_weapon_cooldown():
+	$weapon_cooldown_timer.stop()
 	for bullet_count in range(bullet_amount):
 		if weapon_resource.weapon_type == "melee":
 			$Melee.dano = dano
@@ -54,6 +52,7 @@ func funcao_weapon_cooldown():
 			$Melee/AnimatedSprite2D.visible = true
 			$Melee/AnimatedSprite2D.play("attack_anim", bullet_separation_time + 0.8)
 		if weapon_resource.weapon_type == "ranged":
+			print(str(weapon_resource.Item_name) + " spawnou bala")
 			var instanciated_bullet = bullet.instantiate()
 			instanciated_bullet.range = range
 			instanciated_bullet.Vl = bullet_velocity
@@ -68,3 +67,4 @@ func funcao_weapon_cooldown():
 			$"../../".add_child(instanciated_bullet)
 		
 		await get_tree().create_timer(bullet_separation_time).timeout
+	$weapon_cooldown_timer.start()

@@ -26,3 +26,10 @@ func _on_menu_btn_pressed():
 
 func _on_quit_bnt_2_pressed():
 	get_tree().quit()
+
+func _on_restart_pressed() -> void:
+	RoundCounter.rounds = 0
+	PlayerLoadout.newest_weapon = PlayerLoadout.all_weapons.pick_random()
+	PlayerLoadout.oldest_weapon =PlayerLoadout.all_weapons.pick_random()
+	PlayerLoadout.current_mode =PlayerLoadout.all_modes.pick_random()
+	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
