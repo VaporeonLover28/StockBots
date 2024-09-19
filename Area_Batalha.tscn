@@ -444,7 +444,6 @@ bus = &"Enemy"
 
 [node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_7mart")
-volume_db = 15.0
 autoplay = true
 parameters/looping = true
 
