@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=20 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="AudioStream" uid="uid://cg6bxc4q05ahp" path="res://tankscream.wav" id="2_756et"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://round_label.gd" id="9_giufu"]
 [ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
 [ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
+[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="15_r4eji"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7at4a"]
 resource_name = "<null>"
@@ -518,32 +519,51 @@ offset_bottom = 63.0
 theme = ExtResource("12_y03r6")
 script = ExtResource("9_giufu")
 
-[node name="Frame07" type="Sprite2D" parent="."]
+[node name="Player_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(172, 123)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
-[node name="Frame08" type="Sprite2D" parent="."]
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+z_index = 5
+texture = ExtResource("15_r4eji")
+
+[node name="Player_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(258, 123)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
-[node name="Frame09" type="Sprite2D" parent="."]
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
+texture = ExtResource("15_r4eji")
+
+[node name="Player_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(347, 123)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
-[node name="Frame10" type="Sprite2D" parent="."]
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
+texture = ExtResource("15_r4eji")
+
+[node name="Enemy_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(819, 128)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
-[node name="Frame11" type="Sprite2D" parent="."]
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
+texture = ExtResource("15_r4eji")
+
+[node name="Enemy_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(905, 128)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
-[node name="Frame12" type="Sprite2D" parent="."]
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
+texture = ExtResource("15_r4eji")
+
+[node name="Enemy_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(994, 128)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
+texture = ExtResource("15_r4eji")

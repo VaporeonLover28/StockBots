@@ -12,8 +12,8 @@ func _process(_delta):
 
 func start():
 	PlayerLoadout.newest_weapon = PlayerLoadout.all_weapons.pick_random()
-	PlayerLoadout.oldest_weapon =PlayerLoadout.all_weapons.pick_random()
-	PlayerLoadout.current_mode =PlayerLoadout.all_modes.pick_random()
+	PlayerLoadout.oldest_weapon = null
+	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 
 func _on_start_btn_pressed():

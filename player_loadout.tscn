@@ -1,25 +1,16 @@
-[gd_scene load_steps=25 format=3 uid="uid://cb5ynhewq05g"]
+[gd_scene load_steps=16 format=3 uid="uid://cb5ynhewq05g"]
 
 [ext_resource type="Script" path="res://player_loadout.gd" id="1_nihku"]
 [ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_tgcgu"]
 [ext_resource type="Resource" uid="uid://bnqqai2ica55s" path="res://Weapons/sniper.tres" id="3_aag8x"]
 [ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="4_2hjcs"]
-[ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="4_mw4yk"]
-[ext_resource type="Script" path="res://mode_resource.gd" id="5_n6cwp"]
 [ext_resource type="Resource" uid="uid://cmdhgntf7f4oa" path="res://Weapons/pistola.tres" id="5_uo0xa"]
 [ext_resource type="Resource" uid="uid://b6lxllx6gu78i" path="res://Weapons/baton.tres" id="6_foy4l"]
 [ext_resource type="Resource" uid="uid://bw3j1f7fekdxy" path="res://Weapons/Hammer.tres" id="7_7hh8n"]
-[ext_resource type="Resource" uid="uid://chbbw4pve210d" path="res://Modes/basic.tres" id="7_mw88v"]
-[ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="7_yhxlb"]
-[ext_resource type="Resource" uid="uid://cfaj8muo1v8w0" path="res://Modes/Frail.tres" id="8_62tpg"]
 [ext_resource type="Resource" uid="uid://btu4w4guwao35" path="res://Weapons/chainsaw.tres" id="8_puqps"]
 [ext_resource type="Resource" uid="uid://btqjh46mvsnvh" path="res://Weapons/knife.tres" id="9_2ushq"]
-[ext_resource type="Resource" uid="uid://cllbth8kyrwtg" path="res://Modes/camper.tres" id="9_8xxhy"]
-[ext_resource type="Resource" uid="uid://y38a6o8o786m" path="res://Modes/fast.tres" id="10_7d5vj"]
 [ext_resource type="Resource" uid="uid://bnsemtux7ekn6" path="res://Weapons/scythe.tres" id="10_mlcc1"]
 [ext_resource type="Resource" uid="uid://2efwn6lthyk2" path="res://Weapons/Sword.tres" id="11_5pjgq"]
-[ext_resource type="Resource" uid="uid://cs7n177luksmp" path="res://Modes/Breaker.tres" id="11_esysb"]
-[ext_resource type="Resource" uid="uid://cphdxboh4hox3" path="res://Modes/tank.tres" id="12_6urok"]
 [ext_resource type="Resource" uid="uid://bc1llup7iku37" path="res://Weapons/rifle.tres" id="12_kw0eu"]
 [ext_resource type="Resource" uid="uid://3nfehs72ddv5" path="res://Weapons/Shotgun.tres" id="13_xv6bn"]
 [ext_resource type="Resource" uid="uid://cjgnfduibhtik" path="res://Weapons/Smg.tres" id="14_dghqx"]
@@ -28,4 +19,3 @@
 [node name="Player_loadout" type="Node"]
 script = ExtResource("1_nihku")
 all_weapons = Array[ExtResource("2_tgcgu")]([ExtResource("3_aag8x"), ExtResource("4_2hjcs"), ExtResource("5_uo0xa"), ExtResource("6_foy4l"), ExtResource("7_7hh8n"), ExtResource("8_puqps"), ExtResource("9_2ushq"), ExtResource("10_mlcc1"), ExtResource("11_5pjgq"), ExtResource("12_kw0eu"), ExtResource("13_xv6bn"), ExtResource("14_dghqx"), ExtResource("15_fmnog")])
-all_modes = Array[ExtResource("5_n6cwp")]([ExtResource("4_mw4yk"), ExtResource("7_yhxlb"), ExtResource("7_mw88v"), ExtResource("8_62tpg"), ExtResource("9_8xxhy"), ExtResource("10_7d5vj"), ExtResource("11_esysb"), ExtResource("12_6urok")])

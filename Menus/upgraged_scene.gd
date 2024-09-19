@@ -6,6 +6,7 @@ extends CanvasLayer
 # Called when the node enters the scene tree for the first time.
 
 func _on_pass_upgrade_button_pressed() -> void:
+	PlayerLoadout.times_passed_item =+ 1
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 
 func _on_item_choice_button_pressed() -> void:

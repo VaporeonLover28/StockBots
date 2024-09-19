@@ -60,33 +60,42 @@ func _ready():
 		dir = 1
 		robot_anim.flip_h = false
 		mode = PlayerLoadout.current_mode
-		instanciated_weapon1 = weapon.instantiate()
-		instanciated_weapon1.weapon_resource = PlayerLoadout.newest_weapon
-		add_child(instanciated_weapon1)
-		instanciated_weapon2 = weapon.instantiate()
-		instanciated_weapon2.z_index = -1
-		instanciated_weapon2.weapon_resource = PlayerLoadout.oldest_weapon
-		add_child(instanciated_weapon2)
-		instanciated_weapon1.arma_gen_sprite.flip_h = false
-		instanciated_weapon2.arma_gen_sprite.flip_h = false
+		if PlayerLoadout.newest_weapon != null:
+			instanciated_weapon1 = weapon.instantiate()
+			instanciated_weapon1.weapon_resource = PlayerLoadout.newest_weapon
+			add_child(instanciated_weapon1)
+			instanciated_weapon1.arma_gen_sprite.flip_h = false
+			
+		if PlayerLoadout.oldest_weapon != null:
+			instanciated_weapon2 = weapon.instantiate()
+			instanciated_weapon2.z_index = -1
+			instanciated_weapon2.weapon_resource = PlayerLoadout.oldest_weapon
+			add_child(instanciated_weapon2)
+			instanciated_weapon2.arma_gen_sprite.flip_h = false
+		
+		max_life = 100 + mode.extra_life + 10 * PlayerLoadout.times_passed_item
 	if side == 1:
 		dir = -1
 		robot_anim.flip_h = true
-		random_weapon1 = weapons_itens.pick_random()
-		random_weapon2 = weapons_itens.pick_random()
-		random_mode = modes_itens.pick_random()
-		mode = random_mode
+		if RoundCounter.rounds == 0:
+			mode = load("res://Modes/basic.tres")
+		if RoundCounter.rounds >= 1:
+			random_mode = modes_itens.pick_random()
+			mode = random_mode
 		instanciated_weapon1 = weapon.instantiate()
+		random_weapon1 = weapons_itens.pick_random()
 		instanciated_weapon1.weapon_resource = random_weapon1
 		add_child(instanciated_weapon1)
-		instanciated_weapon2 = weapon.instantiate()
-		instanciated_weapon2.z_index = -1
-		instanciated_weapon2.weapon_resource = random_weapon2
-		add_child(instanciated_weapon2)
 		instanciated_weapon1.arma_gen_sprite.flip_h = true
-		instanciated_weapon2.arma_gen_sprite.flip_h = true
+		if RoundCounter.rounds >= 2:
+			instanciated_weapon2 = weapon.instantiate()
+			random_weapon2 = weapons_itens.pick_random()
+			instanciated_weapon2.z_index = -1
+			instanciated_weapon2.weapon_resource = random_weapon2
+			add_child(instanciated_weapon2)
+			instanciated_weapon2.arma_gen_sprite.flip_h = true
+		max_life = 100 + mode.extra_life + 10 * RoundCounter.rounds
 	
-	max_life = 100 + mode.extra_life
 	current_life = max_life
 	VL = 3 + mode.extra_VL
 	maxVL = 100 + mode.extra_VL * 25
@@ -108,8 +117,10 @@ func _physics_process(delta):
 	else:
 		robot_anim.play("move")
 	
-	instanciated_weapon1.global_position = weapon_marker1.global_position
-	instanciated_weapon2.global_position = weapon_marker2.global_position
+	if instanciated_weapon1 != null:
+		instanciated_weapon1.global_position = weapon_marker1.global_position
+	if instanciated_weapon2 != null:
+		instanciated_weapon2.global_position = weapon_marker2.global_position
 	
 	if current_life <= 0:
 		self.visible = false
@@ -200,9 +211,9 @@ func funcao_go_runF():
 	if change_to_GSB == true:
 		agressive_state = Go_slowB
 func funcao_go_slowF(): 
-	velocity.x += VL / 1.5 * dir
-	if velocity.x >= maxVL / 1.5:
-		velocity.x = maxVL / 1.5
+	velocity.x += VL * 0.5 
+	if velocity.x >= maxVL * 0.5:
+		velocity.x = maxVL * 0.5
 	if change_to_GB == true:
 		agressive_state = Go_back
 	if change_to_GF == true:
@@ -218,7 +229,7 @@ func funcao_go_slowF():
 	if change_to_GSB == true:
 		agressive_state = Go_slowB
 func funcao_go_runB():
-	velocity.x -= VL * 1.5 * dir
+	velocity.x -= VL * 1.5
 	if velocity.x <= -maxVL * 1.5:
 		velocity.x = -maxVL * 1.5
 	if change_to_GB == true:
@@ -234,9 +245,9 @@ func funcao_go_runB():
 	if change_to_GSB == true:
 		agressive_state = Go_slowB
 func funcao_go_slowB():
-	velocity.x -= VL / 1.5 * dir
-	if velocity.x <= -maxVL :
-		velocity.x = -maxVL
+	velocity.x -= VL * 0.5 * dir
+	if velocity.x <= -maxVL * 0.5:
+		velocity.x = -maxVL * 0.5
 	if change_to_GB == true:
 		agressive_state = Go_back
 	if change_to_GF == true:
