@@ -7,7 +7,7 @@
 script = ExtResource("1_qr6if")
 weapon_sprite = ExtResource("2_qerco")
 weapon_type = "ranged"
-weapon_damage = 15
+weapon_damage = 25
 weapon_range = 1000
 weapon_knockback = 100
 weapon_cooldown = 6.5

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=20 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="AudioStream" uid="uid://cg6bxc4q05ahp" path="res://tankscream.wav" id="2_756et"]
@@ -12,7 +12,6 @@
 [ext_resource type="Script" path="res://healthbar_enemy.gd" id="7_1wvw0"]
 [ext_resource type="Script" path="res://healthbar_player.gd" id="7_ubfqr"]
 [ext_resource type="Script" path="res://round_label.gd" id="9_giufu"]
-[ext_resource type="Texture2D" uid="uid://d3wpb5c55x7tu" path="res://Damagebar_enchiment.png" id="11_oth15"]
 [ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
 [ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
 [ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="15_r4eji"]
@@ -468,62 +467,29 @@ visible = false
 [node name="UI_layer" type="CanvasLayer" parent="battle_camera"]
 
 [node name="Healthbar_Player" type="TextureProgressBar" parent="battle_camera/UI_layer"]
-z_as_relative = false
-offset_left = 49.0
-offset_top = 23.0
-offset_right = 94.0
-offset_bottom = 31.0
+offset_left = 54.0001
+offset_top = 22.0
+offset_right = 99.0001
+offset_bottom = 647.0
 scale = Vector2(7, 7)
 value = 100.0
+texture_under = ExtResource("5_vi61q")
 texture_progress = ExtResource("6_vpf56")
 texture_progress_offset = Vector2(2, 2)
 script = ExtResource("7_ubfqr")
 
-[node name="Player_damage_timer" type="Timer" parent="battle_camera/UI_layer/Healthbar_Player"]
-wait_time = 0.5
-
-[node name="Damagebar_Player" type="TextureProgressBar" parent="battle_camera/UI_layer/Healthbar_Player"]
-show_behind_parent = true
-z_as_relative = false
-layout_mode = 0
-offset_left = -0.285713
-offset_top = 0.142857
-offset_right = 44.7143
-offset_bottom = 40.1429
-value = 100.0
-texture_under = ExtResource("5_vi61q")
-texture_progress = ExtResource("11_oth15")
-texture_progress_offset = Vector2(2, 2)
-
 [node name="Healthbar_Enemy" type="TextureProgressBar" parent="battle_camera/UI_layer"]
-z_index = 1
-offset_left = 1106.0
-offset_top = 23.0
-offset_right = 1151.0
-offset_bottom = 648.0
-scale = Vector2(-7, 7)
+offset_left = 803.0
+offset_top = 21.0
+offset_right = 848.0
+offset_bottom = 646.0
+scale = Vector2(7, 7)
 size_flags_horizontal = 8
 value = 100.0
-fill_mode = 1
+texture_under = ExtResource("5_vi61q")
 texture_progress = ExtResource("6_vpf56")
 texture_progress_offset = Vector2(2, 2)
 script = ExtResource("7_1wvw0")
-
-[node name="Enemy_damage_timer" type="Timer" parent="battle_camera/UI_layer/Healthbar_Enemy"]
-wait_time = 0.5
-
-[node name="Damagebar_Enemy" type="TextureProgressBar" parent="battle_camera/UI_layer/Healthbar_Enemy"]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 44.5714
-offset_top = -0.428571
-offset_right = 89.5714
-offset_bottom = 39.5714
-scale = Vector2(-1, 1)
-value = 100.0
-texture_under = ExtResource("5_vi61q")
-texture_progress = ExtResource("11_oth15")
-texture_progress_offset = Vector2(2, 2)
 
 [node name="Label_player" type="Label" parent="battle_camera/UI_layer"]
 anchors_preset = -1
@@ -600,8 +566,3 @@ texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
 texture = ExtResource("15_r4eji")
-
-[connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Player" to="battle_camera/UI_layer/Healthbar_Player" method="_on_value_changed"]
-[connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Player/Player_damage_timer" to="battle_camera/UI_layer/Healthbar_Player" method="_on_player_damage_timer_timeout"]
-[connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Enemy" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_value_changed"]
-[connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Enemy/Enemy_damage_timer" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_enemy_damage_timer_timeout"]

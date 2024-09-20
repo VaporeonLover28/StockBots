@@ -1,11 +1,3 @@
-<<<<<<< Updated upstream
-res://healthbar_player.gd
-=======
-<<<<<<< HEAD
-=======
-res://healthbar_player.gd
->>>>>>> e358c308516fa624f9ab467cbb2e745f44358583
->>>>>>> Stashed changes
 res://Area_Batalha.tscn
 res://Modes/agressivo.tres
 res://Modes/lento.tres
@@ -33,16 +25,10 @@ res://Menus/loss_scene.tscn
 res://enemy_teste.tscn
 res://player_teste.tscn
 res://round_counter.tscn
-<<<<<<< Updated upstream
-res://healthbar_enemy.gd
-res://Robots.gd
-=======
-<<<<<<< HEAD
 res://Menus/menu_pause.gd
 res://Weapons/uzi.tres
 res://Weapons/Sword.tres
-=======
-res://healthbar_enemy.gd
-res://Robots.gd
->>>>>>> e358c308516fa624f9ab467cbb2e745f44358583
->>>>>>> Stashed changes
+res://Weapons/bazuca.tres
+res://Weapons/Smg.tres
+res://Weapons/Shotgun.tres
+res://Weapons/sniper.tres
