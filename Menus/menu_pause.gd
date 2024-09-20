@@ -12,6 +12,9 @@ func _process(_delta):
 	if Input.is_action_pressed("pause"):
 		visible = true
 		$Anim_p.play("anim_pause")
+	
+	if Input.is_action_just_pressed("restart"):
+		restart()
 
 func _on_anim_p_animation_finished(_anim_name):
 	get_tree().paused = true
@@ -27,10 +30,13 @@ func _on_menu_btn_pressed():
 func _on_quit_bnt_2_pressed():
 	get_tree().quit()
 
-func _on_restart_pressed() -> void:
+func restart():
 	RoundCounter.rounds = 0
 	PlayerLoadout.times_passed_item = 0
 	PlayerLoadout.newest_weapon = PlayerLoadout.all_weapons.pick_random()
 	PlayerLoadout.oldest_weapon = null
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
+
+func _on_restart_pressed() -> void:
+	restart()
