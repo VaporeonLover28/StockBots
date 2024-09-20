@@ -98,7 +98,7 @@ func _ready():
 	
 	current_life = max_life
 	VL = 3 + mode.extra_VL
-	maxVL = 100 + mode.extra_VL * 25
+	maxVL = VL + mode.extra_VL * 25
 	probability_GB = mode.mode_probability_GB
 	probability_GF = mode.mode_probability_GF
 	probability_GW = mode.mode_probability_GW
