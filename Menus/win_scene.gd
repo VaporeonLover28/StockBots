@@ -8,12 +8,19 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("Especial"):
+		$Back_menu_button.text = "Next victim"
 		$Pizza.texture = PIZZA_EYE
 		$Label.text = "Do not belive in their lies, stupid robot"
 		$Label2.text = "The pizza is not real! you will die like the others"
-
+		$P.visible = false
+		$C.visible = false
+		$T.visible = false
+		$R.visible = false
+		$L.visible = false
+		$"creepy music".play()
+		
 func _on_back_menu_button_pressed() -> void:
-	PlayerLoadout.newest_weapon = PlayerLoadout.all_weapons.pick_random()
+	PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
 	PlayerLoadout.oldest_weapon = null
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	RoundCounter.rounds = 0 

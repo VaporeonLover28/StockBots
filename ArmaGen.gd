@@ -52,7 +52,6 @@ func funcao_weapon_cooldown():
 			$Melee/AnimatedSprite2D.visible = true
 			$Melee/AnimatedSprite2D.play("attack_anim", bullet_separation_time + 0.8)
 		if weapon_resource.weapon_type == "ranged":
-			print(str(weapon_resource.Item_name) + " spawnou bala")
 			var instanciated_bullet = bullet.instantiate()
 			instanciated_bullet.range = range
 			instanciated_bullet.Vl = bullet_velocity

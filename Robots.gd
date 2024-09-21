@@ -33,8 +33,6 @@ var instanciated_weapon2
 
 
 #itens para inimigo
-@export var weapons_itens : Array[Weapon_resource]
-@export var modes_itens : Array[Mode_resource]
 @onready var random_weapon1 : Weapon_resource
 @onready var random_weapon2 : Weapon_resource
 @onready var random_mode : Mode_resource
@@ -80,16 +78,16 @@ func _ready():
 		if RoundCounter.rounds == 0:
 			mode = load("res://Modes/basic.tres")
 		if RoundCounter.rounds >= 1:
-			random_mode = modes_itens.pick_random()
+			random_mode = RoundCounter.current_item_modes.pick_random()
 			mode = random_mode
 		instanciated_weapon1 = weapon.instantiate()
-		random_weapon1 = weapons_itens.pick_random()
+		random_weapon1 = RoundCounter.current_item_weapons.pick_random()
 		instanciated_weapon1.weapon_resource = random_weapon1
 		add_child(instanciated_weapon1)
 		instanciated_weapon1.arma_gen_sprite.flip_h = true
 		if RoundCounter.rounds >= 2:
 			instanciated_weapon2 = weapon.instantiate()
-			random_weapon2 = weapons_itens.pick_random()
+			random_weapon2 = RoundCounter.current_item_weapons.pick_random()
 			instanciated_weapon2.z_index = -1
 			instanciated_weapon2.weapon_resource = random_weapon2
 			add_child(instanciated_weapon2)
@@ -98,7 +96,7 @@ func _ready():
 	
 	current_life = max_life
 	VL = 3 + mode.extra_VL
-	maxVL = VL + mode.extra_VL * 25
+	maxVL = (VL + mode.extra_VL) * 15
 	probability_GB = mode.mode_probability_GB
 	probability_GF = mode.mode_probability_GF
 	probability_GW = mode.mode_probability_GW
@@ -106,7 +104,6 @@ func _ready():
 	probability_GRB = mode.mode_probability_GRB
 	probability_GSF = mode.mode_probability_GSF
 	probability_GSB = mode.mode_probability_GSB
-
 func _physics_process(delta):
 	
 	if not is_on_floor():
@@ -147,8 +144,8 @@ func _physics_process(delta):
 		move_and_slide()
 func funcao_go_back():
 	velocity.x -= VL * dir
-	if velocity.x <= -maxVL:
-		velocity.x = -maxVL
+	if velocity.x * dir <= -maxVL :
+		velocity.x = -maxVL * dir
 	if change_to_GF == true:
 		agressive_state = Go_front
 	if change_to_GW == true:
@@ -163,8 +160,8 @@ func funcao_go_back():
 		agressive_state = Go_slowB
 func funcao_go_front():
 	velocity.x += VL * dir
-	if velocity.x >= maxVL:
-		velocity.x = maxVL
+	if velocity.x * dir >= maxVL:
+		velocity.x = maxVL * dir
 	if change_to_GB == true:
 		agressive_state = Go_back
 	if change_to_GW == true:
@@ -196,8 +193,8 @@ func funcao_go_wait():
 
 func funcao_go_runF(): 
 	velocity.x += VL * 1.5 * dir
-	if velocity.x >= maxVL * 1.5:
-		velocity.x = maxVL * 1.5
+	if velocity.x * dir >= maxVL * 1.5:
+		velocity.x = maxVL * 1.5 * dir
 	if change_to_GB == true:
 		agressive_state = Go_back
 	if change_to_GF == true:
@@ -212,8 +209,8 @@ func funcao_go_runF():
 		agressive_state = Go_slowB
 func funcao_go_slowF(): 
 	velocity.x += VL * 0.5 
-	if velocity.x >= maxVL * 0.5:
-		velocity.x = maxVL * 0.5
+	if velocity.x * dir >= maxVL * 0.5:
+		velocity.x = maxVL * 0.5 * dir
 	if change_to_GB == true:
 		agressive_state = Go_back
 	if change_to_GF == true:
@@ -230,8 +227,8 @@ func funcao_go_slowF():
 		agressive_state = Go_slowB
 func funcao_go_runB():
 	velocity.x -= VL * 1.5
-	if velocity.x <= -maxVL * 1.5:
-		velocity.x = -maxVL * 1.5
+	if velocity.x * dir <= -maxVL * 1.5:
+		velocity.x = -maxVL * 1.5 * dir
 	if change_to_GB == true:
 		agressive_state = Go_back
 	if change_to_GF == true:
@@ -246,8 +243,8 @@ func funcao_go_runB():
 		agressive_state = Go_slowB
 func funcao_go_slowB():
 	velocity.x -= VL * 0.5 * dir
-	if velocity.x <= -maxVL * 0.5:
-		velocity.x = -maxVL * 0.5
+	if velocity.x * dir <= -maxVL * 0.5:
+		velocity.x = -maxVL * 0.5 * dir
 	if change_to_GB == true:
 		agressive_state = Go_back
 	if change_to_GF == true:

@@ -1,6 +1,36 @@
-[gd_scene load_steps=2 format=3 uid="uid://uu1uvjsv2aob"]
+[gd_scene load_steps=25 format=3 uid="uid://uu1uvjsv2aob"]
 
 [ext_resource type="Script" path="res://round_counter.gd" id="1_j4a36"]
+[ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_1oxe5"]
+[ext_resource type="Script" path="res://mode_resource.gd" id="2_uxbjw"]
+[ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="3_jqbg5"]
+[ext_resource type="Resource" uid="uid://b6lxllx6gu78i" path="res://Weapons/baton.tres" id="3_p3agb"]
+[ext_resource type="Resource" uid="uid://btqjh46mvsnvh" path="res://Weapons/knife.tres" id="4_4kcg8"]
+[ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="4_t5yoo"]
+[ext_resource type="Resource" uid="uid://chbbw4pve210d" path="res://Modes/basic.tres" id="5_e4iob"]
+[ext_resource type="Resource" uid="uid://cmdhgntf7f4oa" path="res://Weapons/pistola.tres" id="5_sdbta"]
+[ext_resource type="Resource" uid="uid://bc1llup7iku37" path="res://Weapons/rifle.tres" id="6_ktcfu"]
+[ext_resource type="Resource" uid="uid://y38a6o8o786m" path="res://Modes/fast.tres" id="6_rgou7"]
+[ext_resource type="Resource" uid="uid://cllbth8kyrwtg" path="res://Modes/camper.tres" id="7_0w8ed"]
+[ext_resource type="Resource" uid="uid://3nfehs72ddv5" path="res://Weapons/Shotgun.tres" id="7_tnqjj"]
+[ext_resource type="Resource" uid="uid://2efwn6lthyk2" path="res://Weapons/Sword.tres" id="8_obtre"]
+[ext_resource type="Resource" uid="uid://cs7n177luksmp" path="res://Modes/Breaker.tres" id="8_wm4tu"]
+[ext_resource type="Resource" uid="uid://cfaj8muo1v8w0" path="res://Modes/Frail.tres" id="9_a5nl6"]
+[ext_resource type="Resource" uid="uid://btb8opkimoq5n" path="res://Weapons/uzi.tres" id="9_uwflq"]
+[ext_resource type="Resource" uid="uid://btu4w4guwao35" path="res://Weapons/chainsaw.tres" id="10_7ilsd"]
+[ext_resource type="Resource" uid="uid://cphdxboh4hox3" path="res://Modes/tank.tres" id="10_qioqr"]
+[ext_resource type="Resource" uid="uid://bnsemtux7ekn6" path="res://Weapons/scythe.tres" id="11_leaa2"]
+[ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="12_hlm6g"]
+[ext_resource type="Resource" uid="uid://bnqqai2ica55s" path="res://Weapons/sniper.tres" id="13_klat4"]
+[ext_resource type="Resource" uid="uid://bw3j1f7fekdxy" path="res://Weapons/Hammer.tres" id="14_1kpxh"]
+[ext_resource type="Resource" uid="uid://cjgnfduibhtik" path="res://Weapons/Smg.tres" id="15_for75"]
 
 [node name="round counter" type="Node"]
 script = ExtResource("1_j4a36")
+mode_rarity_1 = Array[ExtResource("2_uxbjw")]([ExtResource("3_jqbg5"), ExtResource("4_t5yoo"), ExtResource("5_e4iob")])
+mode_rarity_2 = Array[ExtResource("2_uxbjw")]([ExtResource("6_rgou7"), ExtResource("7_0w8ed")])
+mode_rarity_3 = Array[ExtResource("2_uxbjw")]([ExtResource("8_wm4tu"), ExtResource("9_a5nl6"), ExtResource("10_qioqr")])
+weapon_rarity_1 = Array[ExtResource("2_1oxe5")]([ExtResource("3_p3agb"), ExtResource("4_4kcg8"), ExtResource("5_sdbta")])
+weapon_rarity_2 = Array[ExtResource("2_1oxe5")]([ExtResource("6_ktcfu"), ExtResource("7_tnqjj"), ExtResource("8_obtre"), ExtResource("9_uwflq")])
+weapon_rarity_3 = Array[ExtResource("2_1oxe5")]([ExtResource("10_7ilsd"), ExtResource("11_leaa2"), ExtResource("12_hlm6g"), ExtResource("13_klat4")])
+weapon_rarity_4 = Array[ExtResource("2_1oxe5")]([ExtResource("14_1kpxh"), ExtResource("15_for75")])

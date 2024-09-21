@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://y2n1vobhruev"
+path="res://.godot/imported/sound effect win scene.mp3-66db1b9dd4bc633520ee5063f34792fb.mp3str"
+
+[deps]
+
+source_file="res://sound effect win scene.mp3"
+dest_files=["res://.godot/imported/sound effect win scene.mp3-66db1b9dd4bc633520ee5063f34792fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

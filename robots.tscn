@@ -1,12 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://d13hruxbu3xly"]
+[gd_scene load_steps=10 format=3 uid="uid://d13hruxbu3xly"]
 
 [ext_resource type="Script" path="res://Robots.gd" id="1_cwifc"]
-[ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_16d3x"]
 [ext_resource type="Texture2D" uid="uid://dtcfjvtert0nj" path="res://robo gamejam/6/Idle.png" id="2_g3ult"]
-[ext_resource type="Resource" uid="uid://hvvr4qb27qew" path="res://teste_arma_melee.tres" id="5_kt6bd"]
-[ext_resource type="Script" path="res://mode_resource.gd" id="5_mj5qv"]
-[ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="6_83js7"]
-[ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="7_oh05l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n3mtt"]
 size = Vector2(41, 29)
@@ -53,8 +48,6 @@ animations = [{
 [node name="Robots" type="CharacterBody2D"]
 position = Vector2(156, -62)
 script = ExtResource("1_cwifc")
-weapons_itens = Array[ExtResource("2_16d3x")]([ExtResource("5_kt6bd")])
-modes_itens = Array[ExtResource("5_mj5qv")]([ExtResource("6_83js7"), ExtResource("7_oh05l")])
 
 [node name="robot_hurtbox" type="Area2D" parent="."]
 

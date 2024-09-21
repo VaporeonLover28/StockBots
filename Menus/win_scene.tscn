@@ -1,19 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://bpw1hww8w6lxs"]
+[gd_scene load_steps=8 format=3 uid="uid://bpw1hww8w6lxs"]
 
 [ext_resource type="Script" path="res://Menus/win_scene.gd" id="1_oodep"]
 [ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="2_4duf8"]
 [ext_resource type="Theme" uid="uid://cibleptmewh3g" path="res://Menus/menu_theme.tres" id="2_c28we"]
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="3_1hjga"]
 [ext_resource type="Texture2D" uid="uid://dgk22ucxx4rmi" path="res://pizza.jpeg" id="4_jmx5b"]
+[ext_resource type="AudioStream" uid="uid://y2n1vobhruev" path="res://sound effect win scene.mp3" id="6_kewtd"]
+[ext_resource type="AudioStream" uid="uid://bjtd0chwbbb38" path="res://Minecraft Music Disc - 13.mp3" id="7_3sa2t"]
 
 [node name="Win_scene" type="CanvasLayer"]
 script = ExtResource("1_oodep")
 
 [node name="Back_menu_button" type="Button" parent="."]
-offset_left = 740.0
-offset_top = 558.0
-offset_right = 940.0
-offset_bottom = 598.0
+offset_left = 666.0
+offset_top = 539.0
+offset_right = 866.0
+offset_bottom = 579.0
 scale = Vector2(2, 2)
 theme = ExtResource("2_c28we")
 text = "Reset run"
@@ -23,30 +25,89 @@ position = Vector2(359, 322)
 texture = ExtResource("2_4duf8")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 11.0
-offset_top = 22.0001
-offset_right = 383.0
-offset_bottom = 45.0001
-scale = Vector2(3, 3)
+offset_left = 15.0
+offset_top = 26.0
+offset_right = 419.0
+offset_bottom = 49.0
+scale = Vector2(2.7, 2.7)
 theme_override_fonts/font = ExtResource("3_1hjga")
-text = "Congrats, You have passed the test little one"
+text = "  ongrats, You have passed the   rial    un    ittle one"
 
 [node name="Label2" type="Label" parent="."]
 z_index = 1
 anchors_preset = -1
 anchor_right = 0.035
 anchor_bottom = 0.035
-offset_left = 79.0
-offset_top = 518.0
-offset_right = 432.68
-offset_bottom = 518.32
+offset_left = 68.0
+offset_top = 466.0
+offset_right = 421.68
+offset_bottom = 466.32
 scale = Vector2(2.5, 2.5)
 theme_override_fonts/font = ExtResource("3_1hjga")
-text = "Now you can go to your new home and eat a pizza"
+text = "Now you can go to your new home and eat a    izza :)"
 
 [node name="Pizza" type="Sprite2D" parent="."]
 position = Vector2(722, 338)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_jmx5b")
+
+[node name="P" type="Label" parent="."]
+offset_left = 946.0
+offset_top = 460.0
+offset_right = 986.0
+offset_bottom = 483.0
+scale = Vector2(3, 3)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "P"
+
+[node name="C" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 21.0
+offset_right = 45.0
+offset_bottom = 44.0
+scale = Vector2(3.3, 3.3)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "C"
+
+[node name="T" type="Label" parent="."]
+offset_left = 700.0
+offset_top = 23.0
+offset_right = 740.0
+offset_bottom = 46.0
+scale = Vector2(3, 3)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "T"
+
+[node name="R" type="Label" parent="."]
+offset_left = 824.0
+offset_top = 23.0
+offset_right = 864.0
+offset_bottom = 46.0
+scale = Vector2(3, 3)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "R"
+
+[node name="L" type="Label" parent="."]
+offset_left = 915.0
+offset_top = 23.0
+offset_right = 955.0
+offset_bottom = 46.0
+scale = Vector2(3, 3)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "L"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_kewtd")
+autoplay = true
+
+[node name="creepy music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_3sa2t")
+volume_db = -10.0
+parameters/looping = false
 
 [connection signal="pressed" from="Back_menu_button" to="." method="_on_back_menu_button_pressed"]

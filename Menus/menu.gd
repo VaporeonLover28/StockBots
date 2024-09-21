@@ -4,14 +4,14 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Anim.play("anim_menu")
-
+	RoundCounter.rounds = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		start()
 
 func start():
-	PlayerLoadout.newest_weapon = PlayerLoadout.all_weapons.pick_random()
+	PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
 	PlayerLoadout.oldest_weapon = null
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")

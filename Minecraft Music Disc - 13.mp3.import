@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjtd0chwbbb38"
+path="res://.godot/imported/Minecraft Music Disc - 13.mp3-3b99d7918a6c89ee62610466a58a5fb6.mp3str"
+
+[deps]
+
+source_file="res://Minecraft Music Disc - 13.mp3"
+dest_files=["res://.godot/imported/Minecraft Music Disc - 13.mp3-3b99d7918a6c89ee62610466a58a5fb6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

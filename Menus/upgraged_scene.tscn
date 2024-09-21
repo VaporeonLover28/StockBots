@@ -1,33 +1,11 @@
-[gd_scene load_steps=32 format=4 uid="uid://cxcv2ao31a4ht"]
+[gd_scene load_steps=10 format=4 uid="uid://cxcv2ao31a4ht"]
 
 [ext_resource type="Script" path="res://Menus/upgraged_scene.gd" id="1_v6d15"]
 [ext_resource type="Theme" uid="uid://clj1h355k1bw1" path="res://Menus/pause_theme.tres" id="2_j0vx0"]
 [ext_resource type="Script" path="res://Menus/item_container.gd" id="3_73nff"]
 [ext_resource type="AudioStream" uid="uid://desw3f5klvetp" path="res://stockbots_Upgrade.mp3" id="3_hvd8j"]
-[ext_resource type="Script" path="res://item_resource.gd" id="4_0bx6x"]
-[ext_resource type="Resource" uid="uid://dwtfs4v7ims6n" path="res://Weapons/bazuca.tres" id="5_allrn"]
-[ext_resource type="Resource" uid="uid://bnqqai2ica55s" path="res://Weapons/sniper.tres" id="6_st56a"]
-[ext_resource type="Resource" uid="uid://c7cxxptqesbar" path="res://Modes/agressivo.tres" id="7_wtt2q"]
-[ext_resource type="Resource" uid="uid://ct4k2dd16hjtv" path="res://Modes/lento.tres" id="8_cg5ng"]
 [ext_resource type="Script" path="res://Menus/current_player_loadout.gd" id="10_chbrl"]
-[ext_resource type="Resource" uid="uid://chbbw4pve210d" path="res://Modes/basic.tres" id="10_xmg7k"]
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="11_a6rk7"]
-[ext_resource type="Resource" uid="uid://cfaj8muo1v8w0" path="res://Modes/Frail.tres" id="12_3dqlg"]
-[ext_resource type="Resource" uid="uid://cllbth8kyrwtg" path="res://Modes/camper.tres" id="13_56dd7"]
-[ext_resource type="Resource" uid="uid://y38a6o8o786m" path="res://Modes/fast.tres" id="14_d1u44"]
-[ext_resource type="Resource" uid="uid://cphdxboh4hox3" path="res://Modes/tank.tres" id="15_nsswm"]
-[ext_resource type="Resource" uid="uid://cs7n177luksmp" path="res://Modes/Breaker.tres" id="15_qu4fl"]
-[ext_resource type="Resource" uid="uid://b6lxllx6gu78i" path="res://Weapons/baton.tres" id="16_pvmac"]
-[ext_resource type="Resource" uid="uid://btu4w4guwao35" path="res://Weapons/chainsaw.tres" id="17_qh0kb"]
-[ext_resource type="Resource" uid="uid://bw3j1f7fekdxy" path="res://Weapons/Hammer.tres" id="18_rgm8g"]
-[ext_resource type="Resource" uid="uid://btqjh46mvsnvh" path="res://Weapons/knife.tres" id="19_bdckq"]
-[ext_resource type="Resource" uid="uid://cmdhgntf7f4oa" path="res://Weapons/pistola.tres" id="20_s65jm"]
-[ext_resource type="Resource" uid="uid://bc1llup7iku37" path="res://Weapons/rifle.tres" id="21_6a6fg"]
-[ext_resource type="Resource" uid="uid://bnsemtux7ekn6" path="res://Weapons/scythe.tres" id="22_k2hq2"]
-[ext_resource type="Resource" uid="uid://3nfehs72ddv5" path="res://Weapons/Shotgun.tres" id="23_fr7gu"]
-[ext_resource type="Resource" uid="uid://cjgnfduibhtik" path="res://Weapons/Smg.tres" id="24_hc3pr"]
-[ext_resource type="Resource" uid="uid://2efwn6lthyk2" path="res://Weapons/Sword.tres" id="25_ydc2v"]
-[ext_resource type="Resource" uid="uid://btb8opkimoq5n" path="res://Weapons/uzi.tres" id="26_5bwmu"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="29_55rux"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ydqc"]
@@ -413,7 +391,6 @@ offset_top = 306.0
 offset_right = 337.0
 offset_bottom = 499.0
 script = ExtResource("3_73nff")
-All_itens = Array[ExtResource("4_0bx6x")]([ExtResource("5_allrn"), ExtResource("6_st56a"), ExtResource("7_wtt2q"), ExtResource("8_cg5ng"), ExtResource("10_xmg7k"), ExtResource("15_qu4fl"), ExtResource("13_56dd7"), ExtResource("14_d1u44"), ExtResource("12_3dqlg"), ExtResource("15_nsswm"), ExtResource("16_pvmac"), ExtResource("17_qh0kb"), ExtResource("18_rgm8g"), ExtResource("19_bdckq"), ExtResource("20_s65jm"), ExtResource("21_6a6fg"), ExtResource("22_k2hq2"), ExtResource("23_fr7gu"), ExtResource("24_hc3pr"), ExtResource("25_ydc2v"), ExtResource("26_5bwmu")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Item_container"]
 layout_mode = 2
@@ -456,7 +433,6 @@ offset_top = 306.0
 offset_right = 625.0
 offset_bottom = 499.0
 script = ExtResource("3_73nff")
-All_itens = Array[ExtResource("4_0bx6x")]([ExtResource("7_wtt2q"), ExtResource("8_cg5ng"), ExtResource("10_xmg7k"), ExtResource("12_3dqlg"), ExtResource("13_56dd7"), ExtResource("14_d1u44"), ExtResource("15_qu4fl"), ExtResource("5_allrn"), ExtResource("6_st56a"), ExtResource("20_s65jm"), ExtResource("16_pvmac"), ExtResource("18_rgm8g"), ExtResource("17_qh0kb"), ExtResource("19_bdckq"), ExtResource("22_k2hq2"), ExtResource("25_ydc2v"), ExtResource("21_6a6fg"), ExtResource("23_fr7gu"), ExtResource("24_hc3pr"), ExtResource("26_5bwmu"), ExtResource("15_nsswm")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Item_container2"]
 layout_mode = 2
@@ -500,7 +476,6 @@ offset_top = 306.0
 offset_right = 913.0
 offset_bottom = 499.0
 script = ExtResource("3_73nff")
-All_itens = Array[ExtResource("4_0bx6x")]([ExtResource("7_wtt2q"), ExtResource("8_cg5ng"), ExtResource("5_allrn"), ExtResource("6_st56a"), ExtResource("10_xmg7k"), ExtResource("15_qu4fl"), ExtResource("13_56dd7"), ExtResource("14_d1u44"), ExtResource("12_3dqlg"), ExtResource("15_nsswm"), ExtResource("20_s65jm"), ExtResource("16_pvmac"), ExtResource("18_rgm8g"), ExtResource("17_qh0kb"), ExtResource("19_bdckq"), ExtResource("22_k2hq2"), ExtResource("25_ydc2v"), ExtResource("21_6a6fg"), ExtResource("23_fr7gu"), ExtResource("24_hc3pr"), ExtResource("26_5bwmu")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Item_container3"]
 layout_mode = 2

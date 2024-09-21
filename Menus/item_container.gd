@@ -1,7 +1,6 @@
 extends BoxContainer
 
-@export var All_itens : Array[Item_resource]
-@onready var Item_loaded = All_itens.pick_random()
+@onready var Item_loaded = RoundCounter.current_item_pool.pick_random()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
