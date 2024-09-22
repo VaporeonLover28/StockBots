@@ -19,9 +19,9 @@ func _process(delta: float) -> void:
 		$"creepy music".play()
 		
 func _on_back_menu_button_pressed() -> void:
+	RoundCounter.rounds = 0 
+	PlayerLoadout.times_passed_item = 0
 	PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
 	PlayerLoadout.oldest_weapon = null
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
-	RoundCounter.rounds = 0 
-	PlayerLoadout.times_passed_item = 0
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")

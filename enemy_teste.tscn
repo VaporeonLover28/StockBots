@@ -1,8 +1,17 @@
-[gd_scene load_steps=15 format=3 uid="uid://b1dibqr307a1w"]
+[gd_scene load_steps=18 format=3 uid="uid://b1dibqr307a1w"]
 
 [ext_resource type="Script" path="res://enemy_teste.gd" id="1_80df5"]
 [ext_resource type="Texture2D" uid="uid://cclgutysjb5rh" path="res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png" id="2_khx7e"]
+[ext_resource type="Texture2D" uid="uid://cby8yigvw75xd" path="res://robo gamejam/Arte experimental/Fire_Hurt_Sheet.png" id="2_ywxb8"]
 [ext_resource type="Texture2D" uid="uid://bw1dnyhhps5b8" path="res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png" id="4_eh53i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vruwp"]
+atlas = ExtResource("2_ywxb8")
+region = Rect2(6, 0, 188, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ht64a"]
+atlas = ExtResource("2_ywxb8")
+region = Rect2(194, 0, 188, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6u52"]
 atlas = ExtResource("2_khx7e")
@@ -38,6 +47,17 @@ region = Rect2(576, 0, 192, 192)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wqe6p"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vruwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ht64a")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_q6u52")
@@ -88,9 +108,8 @@ metadata/_edit_horizontal_guides_ = [-25.0, 15.0]
 position = Vector2(-10, -9)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_wqe6p")
-animation = &"idle"
+animation = &"hurt"
 autoplay = "idle"
-frame_progress = 0.617078
 flip_h = true
 
 [node name="robot_collision" type="CollisionShape2D" parent="."]
@@ -120,3 +139,9 @@ position = Vector2(-6, -4)
 [node name="Weapon_marker2" type="Marker2D" parent="."]
 z_index = -1
 position = Vector2(-15, -4)
+
+[node name="timer_hurt" type="Timer" parent="."]
+wait_time = 0.7
+one_shot = true
+
+[connection signal="area_entered" from="robot_hurtbox" to="." method="_on_robot_hurtbox_area_entered"]

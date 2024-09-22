@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://uu1uvjsv2aob"]
+[gd_scene load_steps=25 format=3 uid="uid://uu1uvjsv2aob"]
 
 [ext_resource type="Script" path="res://round_counter.gd" id="1_j4a36"]
 [ext_resource type="Script" path="res://weapon_resource_base.gd" id="2_1oxe5"]
@@ -24,7 +24,6 @@
 [ext_resource type="Resource" uid="uid://bnqqai2ica55s" path="res://Weapons/sniper.tres" id="13_klat4"]
 [ext_resource type="Resource" uid="uid://bw3j1f7fekdxy" path="res://Weapons/Hammer.tres" id="14_1kpxh"]
 [ext_resource type="Resource" uid="uid://cjgnfduibhtik" path="res://Weapons/Smg.tres" id="15_for75"]
-[ext_resource type="Resource" uid="uid://bmf223h8n1wa8" path="res://Weapons/secret.tres" id="25_2aasm"]
 
 [node name="round counter" type="Node"]
 script = ExtResource("1_j4a36")
@@ -33,5 +32,5 @@ mode_rarity_2 = Array[ExtResource("2_uxbjw")]([ExtResource("6_rgou7"), ExtResour
 mode_rarity_3 = Array[ExtResource("2_uxbjw")]([ExtResource("8_wm4tu"), ExtResource("9_a5nl6"), ExtResource("10_qioqr")])
 weapon_rarity_1 = Array[ExtResource("2_1oxe5")]([ExtResource("4_4kcg8"), ExtResource("5_sdbta")])
 weapon_rarity_2 = Array[ExtResource("2_1oxe5")]([ExtResource("6_ktcfu"), ExtResource("7_tnqjj"), ExtResource("8_obtre"), ExtResource("9_uwflq"), ExtResource("3_p3agb")])
-weapon_rarity_3 = Array[ExtResource("2_1oxe5")]([ExtResource("10_7ilsd"), ExtResource("11_leaa2"), ExtResource("12_hlm6g"), ExtResource("13_klat4")])
-weapon_rarity_4 = Array[ExtResource("2_1oxe5")]([ExtResource("14_1kpxh"), ExtResource("15_for75"), ExtResource("25_2aasm")])
+weapon_rarity_3 = Array[ExtResource("2_1oxe5")]([ExtResource("10_7ilsd"), ExtResource("11_leaa2"), ExtResource("13_klat4")])
+weapon_rarity_4 = Array[ExtResource("2_1oxe5")]([ExtResource("14_1kpxh"), ExtResource("15_for75"), ExtResource("12_hlm6g")])

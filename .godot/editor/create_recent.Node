@@ -1,3 +1,4 @@
+Timer
 AnimationTree
 AnimatedSprite2D
 Node2D
@@ -11,4 +12,3 @@ AnimationPlayer
 AudioStreamPlayer
 AudioListener2D
 AudioStreamPlayer2D
-Timer

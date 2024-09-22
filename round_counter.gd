@@ -17,17 +17,19 @@ func _item_pool(round):
 	current_item_modes.clear()
 	current_item_weapons.clear()
 	current_item_pool.clear()
-	if rounds >= 0 :
+	if rounds >= 0 and rounds < 4:
 		current_item_weapons.append_array(weapon_rarity_1)
-	if rounds >= 1 :
-		current_item_weapons.append_array(weapon_rarity_2)
 		current_item_modes.append_array(mode_rarity_1)
-	if rounds >= 3 :
-		current_item_weapons.append_array(weapon_rarity_3)
+	if rounds >= 2 :
+		current_item_weapons.append_array(weapon_rarity_2)
+	if rounds >= 3:
 		current_item_modes.append_array(mode_rarity_2)
 	if rounds >= 4 :
-		current_item_weapons.append_array(weapon_rarity_4)
+		current_item_weapons.append_array(weapon_rarity_3)
+	if rounds >= 5:
 		current_item_modes.append_array(mode_rarity_3)
+	if rounds >= 6 :
+		current_item_weapons.append_array(weapon_rarity_4)
 	
 	current_item_pool.append_array(current_item_weapons)
 	current_item_pool.append_array(current_item_modes)

@@ -26,6 +26,7 @@ var change_to_GSF : bool
 var change_to_GRB : bool
 var change_to_GSB : bool
 var dir: int
+
 #itens
 @onready var weapon = preload("res://arma_gen.tscn")
 var instanciated_weapon1 
@@ -38,6 +39,8 @@ var instanciated_weapon2
 @onready var random_mode : Mode_resource
 
 #varíaveis de comando
+enum {no_hit, hurt}
+var hurt_state = no_hit
 @onready var robot_collision = $robot_collision
 @onready var robot_hurtbox = $robot_hurtbox
 @onready var robot_anim = $robot_anim
@@ -45,13 +48,14 @@ var instanciated_weapon2
 @onready var weapon_marker1 = $Weapon_marker1
 @onready var weapon_marker2 = $Weapon_marker2
 @onready var timer_start_battle = $timer_start_battle
+@onready var timer_hurt = $timer_hurt
 
 
 func _ready():
 	#conectando sinais
 	timer_chage_agst.timeout.connect(change_agst)
 	timer_start_battle.timeout.connect(start_fight)
-	
+	timer_hurt.timeout.connect(stop_hurt)
 	
 	#decidindo lados dos robos
 	if side == 0:
@@ -92,10 +96,10 @@ func _ready():
 			instanciated_weapon2.weapon_resource = random_weapon2
 			add_child(instanciated_weapon2)
 			instanciated_weapon2.arma_gen_sprite.flip_h = true
-		max_life = 100 + mode.extra_life + 10 * RoundCounter.rounds
+		max_life = 100 + mode.extra_life + 10 * (RoundCounter.rounds -2)
 	
 	current_life = max_life
-	VL = 3 + mode.extra_VL
+	VL = 4 + mode.extra_VL
 	maxVL = (VL + mode.extra_VL) * 15
 	probability_GB = mode.mode_probability_GB
 	probability_GF = mode.mode_probability_GF
@@ -140,6 +144,12 @@ func _physics_process(delta):
 				funcao_go_runB()
 			Go_slowB:
 				funcao_go_slowB()
+				
+		match hurt_state:
+			no_hit:
+				funcao_no_hit()
+			hurt:
+				funcao_hurt()
 				
 		move_and_slide()
 func funcao_go_back():
@@ -260,6 +270,22 @@ func funcao_go_slowB():
 
 func start_fight():
 	battle_started = true
+	
+func funcao_no_hit():
+	if velocity.x == 0:
+		robot_anim.play("idle")
+	else:
+		robot_anim.play("move")
+	
+func _on_robot_hurtbox_area_entered(area: Area2D) -> void:
+	if area.is_in_group("bullet_type_hurtbox") and area.origin != side:
+		hurt_state = hurt
+		timer_hurt.start()
+func funcao_hurt():
+	robot_anim.play("hurt")
+	
+func stop_hurt():
+	hurt_state = no_hit
 	
 func change_agst():
 	#randomizando proxímo estado

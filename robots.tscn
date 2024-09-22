@@ -46,7 +46,7 @@ animations = [{
 }]
 
 [node name="Robots" type="CharacterBody2D"]
-position = Vector2(156, -62)
+position = Vector2(208, -18)
 script = ExtResource("1_cwifc")
 
 [node name="robot_hurtbox" type="Area2D" parent="."]
@@ -79,3 +79,8 @@ position = Vector2(-6, -3)
 [node name="Weapon_marker2" type="Marker2D" parent="."]
 z_index = -1
 position = Vector2(-2, -3)
+
+[node name="timer_hurt" type="Timer" parent="."]
+wait_time = 0.3
+
+[connection signal="area_entered" from="robot_hurtbox" to="." method="_on_robot_hurtbox_area_entered"]
