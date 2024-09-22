@@ -99,7 +99,7 @@ size = Vector2(30, 40)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q231w"]
 size = Vector2(32, 40)
 
-[node name="player_teste" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 script = ExtResource("1_saocx")
 metadata/_edit_horizontal_guides_ = [-26.0, 15.0]
 
@@ -107,8 +107,10 @@ metadata/_edit_horizontal_guides_ = [-26.0, 15.0]
 position = Vector2(3, -10)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_yc83v")
-animation = &"idle"
+animation = &"hurt"
 autoplay = "idle"
+frame = 1
+frame_progress = 0.206323
 
 [node name="robot_collision" type="CollisionShape2D" parent="."]
 position = Vector2(-4, -6)

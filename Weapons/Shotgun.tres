@@ -7,12 +7,13 @@
 script = ExtResource("1_lm046")
 weapon_sprite = ExtResource("2_8mord")
 weapon_type = "ranged"
-weapon_damage = 8
+weapon_damage = 15
 weapon_range = 200
 weapon_knockback = 150
-weapon_cooldown = 7.5
-bullet_amount = 8
+weapon_cooldown = 7.0
+bullet_amount = 1
 bullet_separation_time = 0.1
 bullet_velocity = 5
 Item_type = 1
 Item_name = "Shotgun"
+Description = "Very short range, but great damage when hits."

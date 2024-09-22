@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b6wdlro1dw41o"]
+[gd_scene load_steps=17 format=3 uid="uid://b6wdlro1dw41o"]
 
 [ext_resource type="Script" path="res://ArmaGen.gd" id="1_82gnq"]
 [ext_resource type="Texture2D" uid="uid://7exxfvrcnpao" path="res://Weapons/Icon29_13.png" id="2_43pwa"]
@@ -34,6 +34,94 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="Animation" id="Animation_t4alt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ArmaGen_sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_axnt1"]
+resource_name = "enemymelee"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ArmaGen_sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.785398, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_g7wn2"]
+resource_name = "enemyranged"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ArmaGen_sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.05, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-0.785398, 0.785398, 0.0, -0.785398]
+}
+
+[sub_resource type="Animation" id="Animation_1pm2x"]
+resource_name = "playermelee"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ArmaGen_sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.785398, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ijq0t"]
+resource_name = "playerranged"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ArmaGen_sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.785398, 0.0, 0.785398]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kq1tj"]
+_data = {
+"RESET": SubResource("Animation_t4alt"),
+"enemymelee": SubResource("Animation_axnt1"),
+"enemyranged": SubResource("Animation_g7wn2"),
+"playermelee": SubResource("Animation_1pm2x"),
+"playerranged": SubResource("Animation_ijq0t")
+}
+
 [node name="ArmaGen" type="Node2D"]
 script = ExtResource("1_82gnq")
 
@@ -63,6 +151,11 @@ position = Vector2(66, 0)
 scale = Vector2(-1, 1)
 sprite_frames = SubResource("SpriteFrames_xel37")
 animation = &"attack_anim"
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kq1tj")
+}
 
 [connection signal="area_entered" from="Melee" to="Melee" method="_on_area_entered"]
 [connection signal="animation_finished" from="Melee/AnimatedSprite2D" to="Melee" method="_on_animated_sprite_2d_animation_finished"]

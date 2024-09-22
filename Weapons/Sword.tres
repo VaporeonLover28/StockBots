@@ -16,3 +16,4 @@ bullet_separation_time = 0.8
 bullet_velocity = 0
 Item_type = 1
 Item_name = "Sword"
+Description = "Good all around, but doesn't excel at any stats. Basic weapon."

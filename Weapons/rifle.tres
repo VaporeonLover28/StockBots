@@ -7,8 +7,8 @@
 script = ExtResource("1_qsux7")
 weapon_sprite = ExtResource("2_o7yv1")
 weapon_type = "ranged"
-weapon_damage = 7
-weapon_range = 700
+weapon_damage = 9
+weapon_range = 500
 weapon_knockback = 50
 weapon_cooldown = 2.0
 bullet_amount = 3
@@ -16,3 +16,4 @@ bullet_separation_time = 1.5
 bullet_velocity = 9
 Item_type = 1
 Item_name = "Rifle"
+Description = "Good all around, but doesn't excel at any specific stats. Basic weapon."

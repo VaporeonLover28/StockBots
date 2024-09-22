@@ -79,7 +79,7 @@ size = Vector2(32, 40)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2cpvs"]
 size = Vector2(34, 40)
 
-[node name="enemy_teste" type="CharacterBody2D"]
+[node name="enemy" type="CharacterBody2D"]
 script = ExtResource("1_80df5")
 side = 1
 metadata/_edit_horizontal_guides_ = [-25.0, 15.0]

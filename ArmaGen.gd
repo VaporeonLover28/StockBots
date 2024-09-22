@@ -23,6 +23,9 @@ func _ready():
 			$ArmaGen_sprite.rotation = 0
 		if self.weapon_resource.weapon_type == "ranged":
 			$ArmaGen_sprite.rotation = 0.79
+		if self.weapon_resource.Item_name == "secret":
+			$ArmaGen_sprite.scale.x = 0.05
+			$ArmaGen_sprite.scale.y = 0.05
 	if $"../".side == 1:
 		arma_gen_sprite.flip_h = true
 		$Melee.scale.x *= -1
@@ -65,5 +68,6 @@ func funcao_weapon_cooldown():
 				instanciated_bullet.Vl = instanciated_bullet.Vl * -1
 			$"../../".add_child(instanciated_bullet)
 		
+		$anim.play(str(get_parent().name) + str(weapon_resource.weapon_type))
 		await get_tree().create_timer(bullet_separation_time).timeout
 	$weapon_cooldown_timer.start()

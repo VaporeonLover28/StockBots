@@ -1,12 +1,32 @@
-[gd_scene load_steps=8 format=3 uid="uid://bpw1hww8w6lxs"]
+[gd_scene load_steps=10 format=3 uid="uid://bpw1hww8w6lxs"]
 
 [ext_resource type="Script" path="res://Menus/win_scene.gd" id="1_oodep"]
 [ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="2_4duf8"]
 [ext_resource type="Theme" uid="uid://cibleptmewh3g" path="res://Menus/menu_theme.tres" id="2_c28we"]
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="3_1hjga"]
-[ext_resource type="Texture2D" uid="uid://dgk22ucxx4rmi" path="res://pizza.jpeg" id="4_jmx5b"]
+[ext_resource type="Texture2D" uid="uid://cvnjwn8dna4p7" path="res://pizasemoio.png" id="5_b0ili"]
+[ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="6_bd3du"]
 [ext_resource type="AudioStream" uid="uid://y2n1vobhruev" path="res://sound effect win scene.mp3" id="6_kewtd"]
 [ext_resource type="AudioStream" uid="uid://bjtd0chwbbb38" path="res://Minecraft Music Disc - 13.mp3" id="7_3sa2t"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_afuke"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_b0ili")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_bd3du")
+}],
+"loop": true,
+"name": &"eye",
+"speed": 5.0
+}]
 
 [node name="Win_scene" type="CanvasLayer"]
 script = ExtResource("1_oodep")
@@ -46,10 +66,12 @@ scale = Vector2(2.5, 2.5)
 theme_override_fonts/font = ExtResource("3_1hjga")
 text = "Now you can go to your new home and eat a    izza :)"
 
-[node name="Pizza" type="Sprite2D" parent="."]
+[node name="Pizza" type="AnimatedSprite2D" parent="."]
 position = Vector2(722, 338)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_jmx5b")
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_afuke")
+animation = &"eye"
+autoplay = "default"
 
 [node name="P" type="Label" parent="."]
 offset_left = 946.0

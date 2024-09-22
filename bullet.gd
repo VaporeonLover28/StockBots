@@ -13,10 +13,8 @@ func _ready():
 	self.scale.x *= clampf(dano/5, 1, 3)
 	self.scale.y *= clampf(dano/5, 1, 3)
 	if Vl > 0:
-		$"../boomPlayer".playing = true
 		self.scale.x *= 1 
 	if Vl < 0:
-		$"../boomEnemy".playing = true
 		self.scale.x *= -1
 
 func _process(_delta):

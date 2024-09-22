@@ -7,7 +7,7 @@
 script = ExtResource("1_iijs0")
 weapon_sprite = ExtResource("2_mb2yf")
 weapon_type = "ranged"
-weapon_damage = 1
+weapon_damage = 3
 weapon_range = 400
 weapon_knockback = 50
 weapon_cooldown = 3.4
@@ -16,3 +16,4 @@ bullet_separation_time = 0.1
 bullet_velocity = 7
 Item_type = 1
 Item_name = "Uzi"
+Description = "Short bursts of good damage after a medium cooldown."

@@ -1,6 +1,5 @@
 extends CanvasLayer
 
-@onready var PIZZA_EYE = preload("res://pizza eye.jpg")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -9,7 +8,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("Especial"):
 		$Back_menu_button.text = "Next victim"
-		$Pizza.texture = PIZZA_EYE
+		$Pizza.animation = "eye"
 		$Label.text = "Do not belive in their lies, stupid robot"
 		$Label2.text = "The pizza is not real! you will die like the others"
 		$P.visible = false

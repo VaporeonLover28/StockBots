@@ -16,3 +16,4 @@ bullet_separation_time = 0.1
 bullet_velocity = 10
 Item_type = 1
 Item_name = "Laser canon"
+Description = "Very long cooldown, but blasts opponents with a deadly, high-damage bullet."

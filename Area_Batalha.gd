@@ -22,8 +22,8 @@ func _ready():
 	add_child(instantiated_enemy)
 	
 	
-	instantiated_player.position.y = 572
-	instantiated_enemy.position.y = 570
+	instantiated_player.position.y = 598
+	instantiated_enemy.position.y = 598
 	instantiated_player.scale.x = 3
 	instantiated_enemy.scale.x = 3
 	instantiated_player.scale.y = 3
@@ -47,10 +47,14 @@ func _ready():
 		enemy_sprite_item_2.scale = Vector2(0.66,0.66)
 	if instantiated_enemy.mode != null:
 		enemy_sprite_item_3.texture = instantiated_enemy.mode.robo_image
+	if instantiated_player.instanciated_weapon1.weapon_resource.Item_name == "secret":
+		player_sprite_item.scale.x = 0.05
+		player_sprite_item.scale.y = 0.05
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	
 	if player_has_died == false and enemy_has_died == false:
-		if RoundCounter.rounds > 5:
+		if RoundCounter.rounds > 8:
 			get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
 		if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
 			RoundCounter.rounds += 1
@@ -59,7 +63,7 @@ func _process(_delta):
 			get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
 		if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
 			player_has_died = true
-			get_tree().change_scene_to_file("res://loss_scene.tscn")
+			get_tree().change_scene_to_file("res://Menus/loss_scene.tscn")
 		if instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
 			RoundCounter.rounds += 1
 			enemy_has_died = true

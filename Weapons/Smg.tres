@@ -7,12 +7,13 @@
 script = ExtResource("1_bf7fe")
 weapon_sprite = ExtResource("2_qe6mq")
 weapon_type = "ranged"
-weapon_damage = 2
+weapon_damage = 4
 weapon_range = 650
 weapon_knockback = 25
-weapon_cooldown = 0.6
+weapon_cooldown = 0.2
 bullet_amount = 2
 bullet_separation_time = 1.5
 bullet_velocity = 7
 Item_type = 1
 Item_name = "Heavy machine gun"
+Description = "High tier weapon, great and constant damage from a good distance."

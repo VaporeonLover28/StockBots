@@ -71,7 +71,7 @@ func _ready():
 			add_child(instanciated_weapon2)
 			instanciated_weapon2.arma_gen_sprite.flip_h = false
 		
-		max_life = 100 + mode.extra_life + 10 * PlayerLoadout.times_passed_item
+		max_life = (100 + mode.extra_life) + (10 * PlayerLoadout.times_passed_item)
 	if side == 1:
 		dir = -1
 		robot_anim.flip_h = true
