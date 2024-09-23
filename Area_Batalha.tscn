@@ -168,6 +168,82 @@ _data = {
 "bg": SubResource("Animation_rjlv0")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggg33"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8qwj"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc1ly"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3a6g"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pli3"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2coc"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k2r4"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_roi0h"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(224, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lookq"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2agem"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_ggg33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8qwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wc1ly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3a6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pli3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2coc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0k2r4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_roi0h")
+}],
+"loop": true,
+"name": &"press",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lookq")
+}],
+"loop": true,
+"name": &"stopped",
+"speed": 5.0
+}]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h7gy7"]
 resource_name = "<null>"
 texture = ExtResource("2_cb1ea")
@@ -528,82 +604,6 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_h7gy7")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ggg33"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(0, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v8qwj"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(192, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wc1ly"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(64, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i3a6g"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(96, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4pli3"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(128, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_u2coc"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(160, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0k2r4"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(192, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_roi0h"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(224, 0, 32, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lookq"]
-atlas = ExtResource("15_kv1wn")
-region = Rect2(0, 0, 32, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_2agem"]
-animations = [{
-"frames": [{
-"duration": 3.0,
-"texture": SubResource("AtlasTexture_ggg33")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v8qwj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wc1ly")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i3a6g")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4pli3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_u2coc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0k2r4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_roi0h")
-}],
-"loop": true,
-"name": &"press",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lookq")
-}],
-"loop": true,
-"name": &"stopped",
-"speed": 5.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ahbtt"]
 atlas = ExtResource("14_sdxnw")
 region = Rect2(0, 0, 32, 32)
@@ -722,7 +722,7 @@ size = Vector2(35, 635.5)
 position = Vector2(0, -24)
 script = ExtResource("1_ipkxo")
 metadata/_edit_horizontal_guides_ = [630.0, 612.0, 613.0, 96.0]
-metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0]
+metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0, 1120.0, 1120.0]
 
 [node name="bgmover" type="AnimationPlayer" parent="."]
 libraries = {
@@ -731,8 +731,41 @@ libraries = {
 
 [node name="Background" type="Node2D" parent="."]
 
+[node name="Caixas" type="Node2D" parent="Background"]
+
+[node name="Prensa1" type="AnimatedSprite2D" parent="Background/Caixas"]
+position = Vector2(230.4, 160)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"stopped"
+autoplay = "stopped"
+
+[node name="Prensa2" type="AnimatedSprite2D" parent="Background/Caixas"]
+position = Vector2(460.8, 160)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"press"
+autoplay = "stopped"
+frame = 7
+
+[node name="Prensa3" type="AnimatedSprite2D" parent="Background/Caixas"]
+position = Vector2(691.2, 160)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"press"
+autoplay = "stopped"
+frame = 7
+
+[node name="Prensa4" type="AnimatedSprite2D" parent="Background/Caixas"]
+position = Vector2(921.6, 160)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"press"
+autoplay = "stopped"
+frame = 7
+
 [node name="TileMap" type="TileMap" parent="Background"]
-z_index = -2
+z_index = -4096
 position = Vector2(0, 32)
 tile_set = SubResource("TileSet_pq4u0")
 format = 2
@@ -835,39 +868,6 @@ modulate = Color(0.36504, 0.1872, 0.78, 1)
 position = Vector2(239, 528)
 scale = Vector2(2, 2)
 texture = ExtResource("14_tfgwc")
-
-[node name="Caixas" type="Node2D" parent="Background"]
-
-[node name="Prensa1" type="AnimatedSprite2D" parent="Background/Caixas"]
-position = Vector2(230.4, 160)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_2agem")
-animation = &"stopped"
-autoplay = "stopped"
-
-[node name="Prensa2" type="AnimatedSprite2D" parent="Background/Caixas"]
-position = Vector2(460.8, 160)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_2agem")
-animation = &"press"
-autoplay = "stopped"
-frame = 7
-
-[node name="Prensa3" type="AnimatedSprite2D" parent="Background/Caixas"]
-position = Vector2(691.2, 160)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_2agem")
-animation = &"press"
-autoplay = "stopped"
-frame = 7
-
-[node name="Prensa4" type="AnimatedSprite2D" parent="Background/Caixas"]
-position = Vector2(921.6, 160)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_2agem")
-animation = &"press"
-autoplay = "stopped"
-frame = 7
 
 [node name="Conveyor" type="Node2D" parent="Background"]
 position = Vector2(-1, 216)

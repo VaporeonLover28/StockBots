@@ -1,3 +1,7 @@
+CanvasLayer
+ParallaxLayer
+ParallaxBackground
+Sprite2D
 Button
 AnimationPlayer
 Label
@@ -9,7 +13,3 @@ AnimatedSprite2D
 Node2D
 Node
 DirectionalLight2D
-PointLight2D
-TileMapLayer
-Sprite2D
-AudioStreamPlayer
