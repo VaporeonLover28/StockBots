@@ -1,4 +1,8 @@
+Button
 AnimationPlayer
+Label
+ColorRect
+VBoxContainer
 Timer
 AnimationTree
 AnimatedSprite2D
@@ -7,8 +11,5 @@ Node
 DirectionalLight2D
 PointLight2D
 TileMapLayer
-Label
 Sprite2D
 AudioStreamPlayer
-AudioListener2D
-AudioStreamPlayer2D
