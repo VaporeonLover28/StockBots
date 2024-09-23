@@ -1,17 +1,166 @@
-[gd_scene load_steps=18 format=3 uid="uid://b1dibqr307a1w"]
+[gd_scene load_steps=24 format=3 uid="uid://b1dibqr307a1w"]
 
 [ext_resource type="Script" path="res://enemy_teste.gd" id="1_80df5"]
 [ext_resource type="Texture2D" uid="uid://cclgutysjb5rh" path="res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png" id="2_khx7e"]
 [ext_resource type="Texture2D" uid="uid://cby8yigvw75xd" path="res://robo gamejam/Arte experimental/Fire_Hurt_Sheet.png" id="2_ywxb8"]
 [ext_resource type="Texture2D" uid="uid://bw1dnyhhps5b8" path="res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png" id="4_eh53i"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vruwp"]
-atlas = ExtResource("2_ywxb8")
-region = Rect2(6, 0, 188, 192)
+[sub_resource type="Animation" id="Animation_nxpur"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("robot_anim:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("robot_anim:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_edmbl"]
+resource_name = "hurt"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("robot_anim:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"hurt"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("robot_anim:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_jqq6m"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("robot_anim:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("robot_anim:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_d0ywu"]
+resource_name = "run"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("robot_anim:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"move"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("robot_anim:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_odw80"]
+resource_name = "walk"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("robot_anim:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"move"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("robot_anim:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v5pba"]
+_data = {
+"RESET": SubResource("Animation_nxpur"),
+"hurt": SubResource("Animation_edmbl"),
+"idle": SubResource("Animation_jqq6m"),
+"run": SubResource("Animation_d0ywu"),
+"walk": SubResource("Animation_odw80")
+}
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ht64a"]
 atlas = ExtResource("2_ywxb8")
 region = Rect2(194, 0, 188, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40fpg"]
+atlas = ExtResource("2_ywxb8")
+region = Rect2(0, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6u52"]
 atlas = ExtResource("2_khx7e")
@@ -49,10 +198,10 @@ region = Rect2(576, 0, 192, 192)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vruwp")
+"texture": SubResource("AtlasTexture_ht64a")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ht64a")
+"texture": SubResource("AtlasTexture_40fpg")
 }],
 "loop": true,
 "name": &"hurt",
@@ -104,12 +253,18 @@ script = ExtResource("1_80df5")
 side = 1
 metadata/_edit_horizontal_guides_ = [-25.0, 15.0]
 
+[node name="robot_player" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v5pba")
+}
+
 [node name="robot_anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(-10, -9)
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_wqe6p")
-animation = &"hurt"
+animation = &"idle"
 autoplay = "idle"
+frame = 2
 flip_h = true
 
 [node name="robot_collision" type="CollisionShape2D" parent="."]
@@ -141,7 +296,5 @@ z_index = -1
 position = Vector2(-15, -4)
 
 [node name="timer_hurt" type="Timer" parent="."]
-wait_time = 0.7
-one_shot = true
 
 [connection signal="area_entered" from="robot_hurtbox" to="." method="_on_robot_hurtbox_area_entered"]

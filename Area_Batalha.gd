@@ -47,9 +47,6 @@ func _ready():
 		enemy_sprite_item_2.scale = Vector2(0.66,0.66)
 	if instantiated_enemy.mode != null:
 		enemy_sprite_item_3.texture = instantiated_enemy.mode.robo_image
-	if instantiated_player.instanciated_weapon1.weapon_resource.Item_name == "secret":
-		player_sprite_item.scale.x = 0.05
-		player_sprite_item.scale.y = 0.05
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	

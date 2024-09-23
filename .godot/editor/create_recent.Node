@@ -1,3 +1,4 @@
+AnimationPlayer
 Timer
 AnimationTree
 AnimatedSprite2D
@@ -8,7 +9,6 @@ PointLight2D
 TileMapLayer
 Label
 Sprite2D
-AnimationPlayer
 AudioStreamPlayer
 AudioListener2D
 AudioStreamPlayer2D

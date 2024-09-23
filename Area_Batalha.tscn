@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=66 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="AudioStream" uid="uid://cg6bxc4q05ahp" path="res://tankscream.wav" id="2_756et"]
@@ -33,6 +33,140 @@
 [ext_resource type="Texture2D" uid="uid://hgwx0luh4jly" path="res://Industria gamejam/3 Animated objects/Transporter3.png" id="16_v2lui"]
 [ext_resource type="Texture2D" uid="uid://8vmegvyjds0c" path="res://laite.png" id="21_dr2xx"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
+
+[sub_resource type="Animation" id="Animation_rjlv0"]
+resource_name = "bg"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Caixas/Prensa1:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Caixas/Prensa1:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Caixas/Prensa3:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/Caixas/Prensa3:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Background/Caixas/Prensa2:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Background/Caixas/Prensa4:animation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Background/Caixas/Prensa2:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Background/Caixas/Prensa4:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+
+[sub_resource type="Animation" id="Animation_mlsej"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Caixas/Prensa1:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"stopped"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Caixas/Prensa1:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wjquc"]
+_data = {
+"RESET": SubResource("Animation_mlsej"),
+"bg": SubResource("Animation_rjlv0")
+}
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h7gy7"]
 resource_name = "<null>"
@@ -590,6 +724,11 @@ script = ExtResource("1_ipkxo")
 metadata/_edit_horizontal_guides_ = [630.0, 612.0, 613.0, 96.0]
 metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0]
 
+[node name="bgmover" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_wjquc")
+}
+
 [node name="Background" type="Node2D" parent="."]
 
 [node name="TileMap" type="TileMap" parent="Background"]
@@ -612,88 +751,88 @@ texture = ExtResource("3_skj3i")
 
 [node name="Locker4" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.42861, 0.3822, 0.78, 1)
-position = Vector2(808, 551)
+position = Vector2(808, 554)
 scale = Vector2(3, 3)
 texture = ExtResource("4_fntlt")
 
 [node name="Box1" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.286275, 0.254902, 1, 1)
-position = Vector2(175.5, 541)
+position = Vector2(175, 545)
 scale = Vector2(4, 4)
 texture = ExtResource("4_u5fbv")
 
 [node name="18" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.366267, 0.2144, 0.67, 1)
-position = Vector2(152.5, 577)
+position = Vector2(153, 584)
 scale = Vector2(3, 3)
 texture = ExtResource("5_7owb0")
 
 [node name="Box2" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.286275, 0.254902, 1, 1)
-position = Vector2(228.5, 570)
+position = Vector2(228, 576)
 scale = Vector2(2, 2)
 texture = ExtResource("6_dfh65")
 
 [node name="Box3" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.286275, 0.254902, 1, 1)
-position = Vector2(845, 574)
+position = Vector2(845, 576)
 rotation = 3.14159
 scale = Vector2(2, -2)
 texture = ExtResource("7_itu11")
 
 [node name="Box4" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.286275, 0.254902, 1, 1)
-position = Vector2(927, 559)
+position = Vector2(927, 560)
 rotation = -3.14159
 scale = Vector2(3, -3)
 texture = ExtResource("6_dfh65")
 
 [node name="Bucket" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.14902, 0.160784, 0.541176, 1)
-position = Vector2(961, 551)
+position = Vector2(961, 554)
 scale = Vector2(3, 3)
 texture = ExtResource("8_8kt74")
 
 [node name="Mop" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.286275, 0.254902, 1, 1)
-position = Vector2(903, 550)
+position = Vector2(903, 554)
 scale = Vector2(3, 3)
 texture = ExtResource("9_ixpgv")
 
 [node name="26" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.3705, 0.2325, 0.75, 1)
-position = Vector2(574, 548)
+position = Vector2(574, 554)
 scale = Vector2(2.265, 2.265)
 texture = ExtResource("11_m6m48")
 
 [node name="20" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.3705, 0.2325, 0.75, 1)
-position = Vector2(619, 571)
+position = Vector2(619, 575)
 scale = Vector2(-3, 3)
 texture = ExtResource("12_7abox")
 
 [node name="21" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.3705, 0.2325, 0.75, 1)
-position = Vector2(535, 572)
+position = Vector2(535, 575)
 scale = Vector2(3, 3)
 texture = ExtResource("12_7abox")
 
 [node name="22" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.3705, 0.2325, 0.75, 1)
-position = Vector2(472, 571)
+position = Vector2(472, 575)
 scale = Vector2(3, 3)
 texture = ExtResource("13_iktaq")
 
 [node name="23" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.3705, 0.2325, 0.75, 1)
-position = Vector2(681, 571)
+position = Vector2(681, 575)
 rotation = 3.14159
 scale = Vector2(3, -3)
 texture = ExtResource("13_iktaq")
 
 [node name="Fire-extinguisher1" type="Sprite2D" parent="Background/TileMap/Layer1"]
 modulate = Color(0.36504, 0.1872, 0.78, 1)
-position = Vector2(239, 524)
+position = Vector2(239, 528)
 scale = Vector2(2, 2)
 texture = ExtResource("14_tfgwc")
 
@@ -710,22 +849,25 @@ autoplay = "stopped"
 position = Vector2(460.8, 160)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_2agem")
-animation = &"stopped"
+animation = &"press"
 autoplay = "stopped"
+frame = 7
 
 [node name="Prensa3" type="AnimatedSprite2D" parent="Background/Caixas"]
 position = Vector2(691.2, 160)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_2agem")
-animation = &"stopped"
+animation = &"press"
 autoplay = "stopped"
+frame = 7
 
 [node name="Prensa4" type="AnimatedSprite2D" parent="Background/Caixas"]
 position = Vector2(921.6, 160)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_2agem")
-animation = &"stopped"
+animation = &"press"
 autoplay = "stopped"
+frame = 7
 
 [node name="Conveyor" type="Node2D" parent="Background"]
 position = Vector2(-1, 216)
@@ -937,18 +1079,21 @@ stream = ExtResource("2_756et")
 
 [node name="Laite" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.376471)
+z_index = 4096
 position = Vector2(190.981, 528.657)
 scale = Vector2(0.978974, 1.17351)
 texture = ExtResource("21_dr2xx")
 
 [node name="Laite2" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.376471)
+z_index = 4096
 position = Vector2(973.982, 528.657)
 scale = Vector2(0.978974, 1.17351)
 texture = ExtResource("21_dr2xx")
 
 [node name="Laite3" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.376471)
+z_index = 4096
 position = Vector2(575.982, 528.657)
 scale = Vector2(0.978974, 1.17351)
 texture = ExtResource("21_dr2xx")
@@ -973,7 +1118,7 @@ offset_top = 22.0
 offset_right = 99.0001
 offset_bottom = 30.34
 scale = Vector2(7, 7)
-value = 16.0
+value = 100.0
 texture_progress = ExtResource("6_vpf56")
 texture_progress_offset = Vector2(2, 2)
 script = ExtResource("7_ubfqr")

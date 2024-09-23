@@ -44,6 +44,8 @@ var hurt_state = no_hit
 @onready var robot_collision = $robot_collision
 @onready var robot_hurtbox = $robot_hurtbox
 @onready var robot_anim = $robot_anim
+@onready var robot_player = $robot_player
+#            TIMER_CHANGE_AGST
 @onready var timer_chage_agst = $timer_chageAGST
 @onready var weapon_marker1 = $Weapon_marker1
 @onready var weapon_marker2 = $Weapon_marker2
@@ -112,11 +114,6 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		velocity.y += 350 * delta
-	
-	if velocity.x == 0:
-		robot_anim.play("idle")
-	else:
-		robot_anim.play("move")
 	
 	if instanciated_weapon1 != null:
 		instanciated_weapon1.global_position = weapon_marker1.global_position
@@ -273,23 +270,30 @@ func start_fight():
 	
 func funcao_no_hit():
 	if velocity.x == 0:
-		robot_anim.play("idle")
-	else:
-		robot_anim.play("move")
+		robot_player.play("idle")
+	elif velocity.x <= 4 and velocity.x >= -4 and velocity.x != 0:
+		robot_player.play("move")
+	elif velocity.x > 4  or velocity.x < -4:
+		robot_player.play("run")
 	
 func _on_robot_hurtbox_area_entered(area: Area2D) -> void:
-	if area.is_in_group("bullet_type_hurtbox") and area.origin != side:
+	if area.is_in_group("bullet_type_hurtbox") and area.origin != side and hurt_state != hurt:
 		hurt_state = hurt
-		timer_hurt.start()
+	
 func funcao_hurt():
-	robot_anim.play("hurt")
+	if robot_anim.animation != "hurt":
+		robot_anim.play("hurt")
+	if timer_hurt.is_stopped() == true:
+		timer_hurt.start()
 	
 func stop_hurt():
 	hurt_state = no_hit
+	timer_hurt.stop()
 	
 func change_agst():
 	#randomizando proxímo estado
 	probabilitiy_caculetor = round(13 * randf()) + 1
+	#                                 PROBABILITY CALCULATOR
 	change_to_GB = probability_GB.has(probabilitiy_caculetor)
 	change_to_GF = probability_GF.has(probabilitiy_caculetor)
 	change_to_GW = probability_GW.has(probabilitiy_caculetor)

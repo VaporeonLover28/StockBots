@@ -1,16 +1,4 @@
-<<<<<<< Updated upstream
-res://round_counter.tscn
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-res://robots.tscn
-=======
-res://round_counter.tscn
->>>>>>> 8d73a5414595a1b39ae9a683d3a0bd6f7b912c1f
-=======
-res://round_counter.tscn
->>>>>>> 8d73a5414595a1b39ae9a683d3a0bd6f7b912c1f
->>>>>>> Stashed changes
+res://player_teste.tscn
 res://Modes/agressivo.tres
 res://Modes/lento.tres
 res://Modes/basic.tres
@@ -19,46 +7,26 @@ res://Modes/camper.tres
 res://Modes/Breaker.tres
 res://Modes/Frail.tres
 res://Modes/tank.tres
-res://Weapons/secret.tres
-res://Menus/pause_theme.tres
 res://Menus/menu.gdshader
 res://Menus/menu_theme.tres
-res://Menus/tiles.tres
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-res://Menus/win_scene.gd
-res://weapon_resource.tscn
-res://item_resource.tscn
-res://mode_resource.tscn
-res://arma_gen.tscn
-res://Area_Batalha.tscn
-res://bullet.tscn
-res://player_loadout.tscn
+res://Menus/pause_theme.tres
 res://Menus/menu.tscn
-res://Menus/win_scene.tscn
-res://Menus/upgraged_scene.tscn
-res://Menus/menu_pause.tscn
-res://Menus/loss_scene.tscn
 res://enemy_teste.tscn
-res://player_teste.tscn
-res://round_counter.tscn
+res://bullet.tscn
+res://Area_Batalha.tscn
+res://player_loadout.tscn
 res://Robots.gd
-res://Weapons/knife.tres
-res://Area_Batalha.gd
-res://round_counter.gd
-res://Weapons/pistola.tres
-res://Weapons/rifle.tres
+res://arma_gen.tscn
+res://melee.gd
 res://Weapons/uzi.tres
-res://Weapons/Shotgun.tres
-res://Weapons/bazuca.tres
-res://Weapons/Sword.tres
-res://Menus/menu_pause.gd
-res://Weapons/scythe.tres
-res://Weapons/Smg.tres
-=======
->>>>>>> 8d73a5414595a1b39ae9a683d3a0bd6f7b912c1f
-=======
->>>>>>> 8d73a5414595a1b39ae9a683d3a0bd6f7b912c1f
->>>>>>> Stashed changes
+res://Weapons/secret.tres
+res://Menus/menu.gd
+res://Area_Batalha.gd
+res://ArmaGen.gd
+res://bullet.gd
+res://Menus/tiles.tres
+res://Menus/upgraged_scene.tscn
+res://enemy_teste.gd
+res://robots.tscn
+res://round_counter.tscn
+res://Weapons/rifle.tres
