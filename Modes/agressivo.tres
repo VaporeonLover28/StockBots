@@ -7,7 +7,7 @@
 script = ExtResource("1_yrxxt")
 robo_image = ExtResource("1_ospol")
 mode_agressivity = "Agressive"
-extra_life = 25
+extra_life = 10
 extra_VL = 2
 extra_range = -50
 extra_damage = 1.2
