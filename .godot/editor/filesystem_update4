@@ -8,7 +8,15 @@ res://Modes/Frail.tres
 res://Modes/tank.tres
 res://Menus/menu.gdshader
 res://Menus/menu_theme.tres
-res://Menus/credits_scene.tscn
-res://Area_Batalha.tscn
 res://Menus/pause_theme.tres
 res://Area_Batalha.gdshader
+res://Menus/credits_scene.tscn
+res://Area_Batalha.tscn
+res://Robots.gd
+res://Area_Batalha.gd
+res://player_teste.tscn
+res://arma_gen.tscn
+res://ArmaGen.gd
+res://bullet.gd
+res://Menus/menu.gd
+res://Menus/menu_pause.tscn

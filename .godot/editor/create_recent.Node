@@ -1,3 +1,4 @@
+Timer
 CanvasLayer
 ParallaxLayer
 ParallaxBackground
@@ -7,9 +8,7 @@ AnimationPlayer
 Label
 ColorRect
 VBoxContainer
-Timer
 AnimationTree
 AnimatedSprite2D
 Node2D
 Node
-DirectionalLight2D

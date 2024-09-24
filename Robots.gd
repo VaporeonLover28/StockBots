@@ -8,6 +8,7 @@ extends CharacterBody2D; class_name Robots
 @onready var VL :int
 @onready var maxVL : int
 var battle_started = false
+var process_game = false
 enum{Go_back, Go_front, Go_wait, Go_runF, Go_runB, Go_slowF ,Go_slowB}
 var agressive_state = Go_front
 var probabilitiy_caculetor : int
@@ -110,45 +111,46 @@ func _ready():
 	probability_GRB = mode.mode_probability_GRB
 	probability_GSF = mode.mode_probability_GSF
 	probability_GSB = mode.mode_probability_GSB
+
 func _physics_process(delta):
-	
-	if not is_on_floor():
-		velocity.y += 350 * delta
-	
-	if instanciated_weapon1 != null:
-		instanciated_weapon1.global_position = weapon_marker1.global_position
-	if instanciated_weapon2 != null:
-		instanciated_weapon2.global_position = weapon_marker2.global_position
-	
-	if current_life <= 0:
-		self.visible = false
+	if process_game == true:
+		if not is_on_floor():
+			velocity.y += 350 * delta
 		
-	#statemachime pra movimentação
-	if battle_started == true:
+		if instanciated_weapon1 != null:
+			instanciated_weapon1.global_position = weapon_marker1.global_position
+		if instanciated_weapon2 != null:
+			instanciated_weapon2.global_position = weapon_marker2.global_position
+		
+		if current_life <= 0:
+			self.visible = false
+			
 		#statemachime pra movimentação
-		match agressive_state:
-			Go_back:
-				funcao_go_back()
-			Go_front:
-				funcao_go_front()
-			Go_wait:
-				funcao_go_wait()
-			Go_runF:
-				funcao_go_runF()
-			Go_slowF:
-				funcao_go_slowF()
-			Go_runB:
-				funcao_go_runB()
-			Go_slowB:
-				funcao_go_slowB()
-				
-		match hurt_state:
-			no_hit:
-				funcao_no_hit()
-			hurt:
-				funcao_hurt()
-				
-		move_and_slide()
+		if battle_started == true and process_game:
+			#statemachime pra movimentação
+			match agressive_state:
+				Go_back:
+					funcao_go_back()
+				Go_front:
+					funcao_go_front()
+				Go_wait:
+					funcao_go_wait()
+				Go_runF:
+					funcao_go_runF()
+				Go_slowF:
+					funcao_go_slowF()
+				Go_runB:
+					funcao_go_runB()
+				Go_slowB:
+					funcao_go_slowB()
+					
+			match hurt_state:
+				no_hit:
+					funcao_no_hit()
+				hurt:
+					funcao_hurt()
+					
+			move_and_slide()
 func funcao_go_back():
 	velocity.x -= VL * dir
 	if velocity.x * dir <= -maxVL :
@@ -267,38 +269,43 @@ func funcao_go_slowB():
 
 func start_fight():
 	battle_started = true
+	process_game = true
 	
 func funcao_no_hit():
 	if velocity.x == 0:
 		robot_player.play("idle")
-	elif velocity.x <= 4 and velocity.x >= -4 and velocity.x != 0:
-		robot_player.play("move")
-	elif velocity.x > 4  or velocity.x < -4:
+	elif velocity.x <= 100 and velocity.x >= -100 and velocity.x != 0:
+		robot_player.play("walk")
+	elif velocity.x > 100  or velocity.x < -100:
 		robot_player.play("run")
 	
 func _on_robot_hurtbox_area_entered(area: Area2D) -> void:
-	if area.is_in_group("bullet_type_hurtbox") and area.origin != side and hurt_state != hurt:
-		hurt_state = hurt
+	if process_game:
+		if area.is_in_group("bullet_type_hurtbox") and area.origin != side and hurt_state != hurt:
+			hurt_state = hurt
 	
 func funcao_hurt():
-	if robot_anim.animation != "hurt":
-		robot_anim.play("hurt")
-	if timer_hurt.is_stopped() == true:
-		timer_hurt.start()
+	if process_game:
+		if robot_anim.animation != "hurt":
+			robot_anim.play("hurt")
+		if timer_hurt.is_stopped() == true:
+			timer_hurt.start()
 	
 func stop_hurt():
-	hurt_state = no_hit
-	timer_hurt.stop()
-	
+	if process_game:
+		hurt_state = no_hit
+		timer_hurt.stop()
+		
 func change_agst():
-	#randomizando proxímo estado
-	probabilitiy_caculetor = round(13 * randf()) + 1
-	#                                 PROBABILITY CALCULATOR
-	change_to_GB = probability_GB.has(probabilitiy_caculetor)
-	change_to_GF = probability_GF.has(probabilitiy_caculetor)
-	change_to_GW = probability_GW.has(probabilitiy_caculetor)
-	change_to_GRF = probability_GRF.has(probabilitiy_caculetor)
-	change_to_GSF = probability_GSF.has(probabilitiy_caculetor)
-	change_to_GRB = probability_GRB.has(probabilitiy_caculetor)
-	change_to_GSB = probability_GSB.has(probabilitiy_caculetor)
+	if process_game:
+		#randomizando proxímo estado
+		probabilitiy_caculetor = round(13 * randf()) + 1
+		#                                 PROBABILITY CALCULATOR
+		change_to_GB = probability_GB.has(probabilitiy_caculetor)
+		change_to_GF = probability_GF.has(probabilitiy_caculetor)
+		change_to_GW = probability_GW.has(probabilitiy_caculetor)
+		change_to_GRF = probability_GRF.has(probabilitiy_caculetor)
+		change_to_GSF = probability_GSF.has(probabilitiy_caculetor)
+		change_to_GRB = probability_GRB.has(probabilitiy_caculetor)
+		change_to_GSB = probability_GSB.has(probabilitiy_caculetor)
 	

@@ -15,6 +15,9 @@ var enemy_has_died = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_tree().paused = false
+	print($deathtimer.time_left)
+	$bgmover.play("bg")
 	
 	instantiated_player = load_player.instantiate()
 	instantiated_enemy = load_enemy.instantiate()
@@ -51,17 +54,25 @@ func _ready():
 func _process(_delta):
 	
 	if player_has_died == false and enemy_has_died == false:
-		if RoundCounter.rounds > 8:
-			get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
-		if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
-			RoundCounter.rounds += 1
-			player_has_died = true
-			enemy_has_died = true
-			get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
-		if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
-			player_has_died = true
-			get_tree().change_scene_to_file("res://Menus/loss_scene.tscn")
-		if instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
-			RoundCounter.rounds += 1
-			enemy_has_died = true
-			get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+		pass
+		
+	else:
+		get_tree().paused = true
+		$deathtimer.start()
+
+func _on_deathtimer_timeout():
+	if RoundCounter.rounds == 8:
+		get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
+	if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
+		RoundCounter.rounds += 1
+		player_has_died = true
+		enemy_has_died = true
+		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+	if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
+		player_has_died = true
+		get_tree().change_scene_to_file("res://Menus/loss_scene.tscn")
+	if instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
+		RoundCounter.rounds += 1
+		enemy_has_died = true
+		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+	$deathtimer.stop()

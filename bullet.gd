@@ -18,6 +18,10 @@ func _ready():
 		self.scale.x *= -1
 
 func _process(_delta):
+	
+	if $"../".instantiated_player.process_game == false:
+		self.queue_free()
+	
 	global_position.x += Vl
 	distance_traveled += Vl
 	
