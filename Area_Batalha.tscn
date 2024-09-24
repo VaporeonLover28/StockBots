@@ -1,7 +1,6 @@
-[gd_scene load_steps=66 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=67 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
-[ext_resource type="AudioStream" uid="uid://cg6bxc4q05ahp" path="res://tankscream.wav" id="2_756et"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
 [ext_resource type="Script" path="res://battle_camera.gd" id="2_vbxtt"]
 [ext_resource type="Texture2D" uid="uid://e5o2g1xto0ei" path="res://Industria gamejam/2 Objects/Board3.png" id="3_skj3i"]
@@ -31,7 +30,9 @@
 [ext_resource type="Texture2D" uid="uid://pda6nje28um0" path="res://Industria gamejam/3 Animated objects/Transporter1.png" id="15_m4qr3"]
 [ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="15_r4eji"]
 [ext_resource type="Texture2D" uid="uid://hgwx0luh4jly" path="res://Industria gamejam/3 Animated objects/Transporter3.png" id="16_v2lui"]
+[ext_resource type="AudioStream" uid="uid://xoycf3uxb4dd" path="res://Bleep_02.wav" id="20_dd2n1"]
 [ext_resource type="Texture2D" uid="uid://8vmegvyjds0c" path="res://laite.png" id="21_dr2xx"]
+[ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
 
 [sub_resource type="Animation" id="Animation_mlsej"]
@@ -724,6 +725,8 @@ script = ExtResource("1_ipkxo")
 metadata/_edit_horizontal_guides_ = [630.0, 612.0, 613.0, 96.0]
 metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0, 1120.0, 1120.0]
 
+[node name="explotimer" type="Timer" parent="."]
+
 [node name="deathtimer" type="Timer" parent="."]
 wait_time = 3.0
 
@@ -1074,10 +1077,10 @@ autoplay = true
 parameters/looping = true
 
 [node name="PlayerHurtStream" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_756et")
+stream = ExtResource("20_dd2n1")
 
 [node name="EnemyHurtStream" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_756et")
+stream = ExtResource("21_ec7br")
 
 [node name="Laite" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.376471)
@@ -1254,6 +1257,7 @@ position = Vector2(561, 187)
 scale = Vector2(10.275, 10.275)
 texture = ExtResource("33_wvca8")
 
+[connection signal="timeout" from="explotimer" to="." method="_on_explotimer_timeout"]
 [connection signal="timeout" from="deathtimer" to="." method="_on_deathtimer_timeout"]
 [connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Player" to="battle_camera/UI_layer/Healthbar_Player" method="_on_value_changed"]
 [connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Player/Player_damage_timer" to="battle_camera/UI_layer/Healthbar_Player" method="_on_player_damage_timer_timeout"]

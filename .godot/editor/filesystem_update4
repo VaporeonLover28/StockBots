@@ -1,4 +1,4 @@
-res://Menus/menu.tscn
+res://Area_Batalha.tscn
 res://Modes/agressivo.tres
 res://Modes/lento.tres
 res://Modes/fast.tres
@@ -10,13 +10,11 @@ res://Menus/menu.gdshader
 res://Menus/menu_theme.tres
 res://Menus/pause_theme.tres
 res://Area_Batalha.gdshader
-res://Menus/credits_scene.tscn
-res://Area_Batalha.tscn
-res://Robots.gd
 res://Area_Batalha.gd
+res://Menus/menu.tscn
+res://Menus/credits_scene.tscn
 res://player_teste.tscn
 res://arma_gen.tscn
-res://ArmaGen.gd
-res://bullet.gd
-res://Menus/menu.gd
-res://Menus/menu_pause.tscn
+res://Robots.gd
+res://enemy_teste.tscn
+res://player_teste.gd

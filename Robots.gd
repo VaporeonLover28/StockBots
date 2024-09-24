@@ -122,8 +122,8 @@ func _physics_process(delta):
 		if instanciated_weapon2 != null:
 			instanciated_weapon2.global_position = weapon_marker2.global_position
 		
-		if current_life <= 0:
-			self.visible = false
+		#if current_life <= 0:
+			#self.visible = false
 			
 		#statemachime pra movimentação
 		if battle_started == true and process_game:
@@ -286,8 +286,7 @@ func _on_robot_hurtbox_area_entered(area: Area2D) -> void:
 	
 func funcao_hurt():
 	if process_game:
-		if robot_anim.animation != "hurt":
-			robot_anim.play("hurt")
+		robot_player.play("hurt")
 		if timer_hurt.is_stopped() == true:
 			timer_hurt.start()
 	

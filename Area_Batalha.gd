@@ -53,26 +53,41 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	
-	if player_has_died == false and enemy_has_died == false:
-		pass
-		
-	else:
-		get_tree().paused = true
-		$deathtimer.start()
+	if instantiated_player.current_life <= 0 or instantiated_enemy.current_life <= 0:
+		instantiated_player.robot_player.play("idle")
+		instantiated_enemy.robot_player.play("idle")
+		instantiated_enemy.process_game = false
+		instantiated_player.process_game = false
+		if $explotimer.is_stopped() == false:
+			$explotimer.start()
+		if $deathtimer.is_stopped() == false:
+			$deathtimer.start()
 
 func _on_deathtimer_timeout():
+	print("deathtimer")
 	if RoundCounter.rounds == 8:
+		print("win")
 		get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
-	if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
+	if instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
+		print("draw")
 		RoundCounter.rounds += 1
 		player_has_died = true
 		enemy_has_died = true
 		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
 	if  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
+		print("enemy win")
 		player_has_died = true
 		get_tree().change_scene_to_file("res://Menus/loss_scene.tscn")
 	if instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
+		print("player win")
 		RoundCounter.rounds += 1
 		enemy_has_died = true
 		get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
 	$deathtimer.stop()
+
+func _on_explotimer_timeout() -> void:
+	print("explosiontimer")
+	if instantiated_player.current_life <= 0:
+		instantiated_player.robot_player.play("explosion")
+	if instantiated_enemy.current_life <= 0:
+		instantiated_enemy.robot_player.play("explosion")
