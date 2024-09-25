@@ -6,6 +6,8 @@ var instantiated_player
 var instantiated_enemy
 var player_has_died = false
 var enemy_has_died = false
+var timer_explosion_started = false
+var timer_death_timer_started = false
 @onready var player_sprite_item: Sprite2D = $battle_camera/UI_layer/Player_itemframe_1/Sprite_item
 @onready var player_sprite_item_2: Sprite2D = $battle_camera/UI_layer/Player_itemframe_2/Sprite_item
 @onready var player_sprite_item_3: Sprite2D = $battle_camera/UI_layer/Player_itemframe_3/Sprite_item
@@ -15,7 +17,6 @@ var enemy_has_died = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_tree().paused = false
 	print($deathtimer.time_left)
 	$bgmover.play("bg")
 	
@@ -54,14 +55,19 @@ func _ready():
 func _process(_delta):
 	
 	if instantiated_player.current_life <= 0 or instantiated_enemy.current_life <= 0:
-		instantiated_player.robot_player.play("idle")
-		instantiated_enemy.robot_player.play("idle")
+		#if timer_explosion_started == false:
+			#print("algo aí")
+			#instantiated_player.robot_player.play("idle")
+			#instantiated_enemy.robot_player.play("idle")
 		instantiated_enemy.process_game = false
 		instantiated_player.process_game = false
-		if $explotimer.is_stopped() == false:
+		if $explotimer.is_stopped() == true and timer_explosion_started == false:
 			$explotimer.start()
-		if $deathtimer.is_stopped() == false:
+			timer_explosion_started == true
+		if $deathtimer.is_stopped() == true and timer_death_timer_started == false:
 			$deathtimer.start()
+			timer_death_timer_started == true
+			
 
 func _on_deathtimer_timeout():
 	print("deathtimer")
@@ -89,5 +95,13 @@ func _on_explotimer_timeout() -> void:
 	print("explosiontimer")
 	if instantiated_player.current_life <= 0:
 		instantiated_player.robot_player.play("explosion")
+		if instantiated_player.instanciated_weapon1 != null:
+			instantiated_player.instanciated_weapon1.visible = false
+		if instantiated_player.instanciated_weapon2 != null:
+			instantiated_player.instanciated_weapon2.visible = false
 	if instantiated_enemy.current_life <= 0:
 		instantiated_enemy.robot_player.play("explosion")
+		if instantiated_enemy.instanciated_weapon1 != null:
+			instantiated_enemy.instanciated_weapon1.visible = false
+		if instantiated_enemy.instanciated_weapon2 != null:
+			instantiated_enemy.instanciated_weapon2.visible = false
