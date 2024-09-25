@@ -9,8 +9,8 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("Especial"):
 		$Back_menu_button.text = "Next victim"
 		$Pizza.animation = "eye"
-		$Label.text = "Do not belive in their lies, stupid robot"
-		$Label2.text = "The pizza is not real! you will die like the others"
+		$Label.text = "Do not belive in their lies, stupid robot."
+		$Label2.text = "The pizza is not real. you will die like all the others."
 		$P.visible = false
 		$C.visible = false
 		$T.visible = false

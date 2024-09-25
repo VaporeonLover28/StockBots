@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c455x0jvfd8hl"
+path="res://.godot/imported/Wandersong Original Soundtrack - 60 - Subterfuge [ ezmp3.cc ].mp3-d3e23f1a813959b87811b28f523fed5e.mp3str"
+
+[deps]
+
+source_file="res://Wandersong Original Soundtrack - 60 - Subterfuge [ ezmp3.cc ].mp3"
+dest_files=["res://.godot/imported/Wandersong Original Soundtrack - 60 - Subterfuge [ ezmp3.cc ].mp3-d3e23f1a813959b87811b28f523fed5e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -17,7 +17,6 @@ var timer_death_timer_started = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print($deathtimer.time_left)
 	$bgmover.play("bg")
 	
 	instantiated_player = load_player.instantiate()

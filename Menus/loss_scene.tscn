@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="4_c87cl"]
 [ext_resource type="Theme" uid="uid://cibleptmewh3g" path="res://Menus/menu_theme.tres" id="4_nfglq"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmc37"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ew6bm"]
 resource_name = "<null>"
 texture = ExtResource("3_aq5aj")
 margins = Vector2i(16, 16)
@@ -364,7 +364,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_redcq"]
 tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_dmc37")
+sources/0 = SubResource("TileSetAtlasSource_ew6bm")
 
 [node name="loss_scene" type="Node2D"]
 script = ExtResource("1_e04yr")
@@ -388,13 +388,14 @@ scale = Vector2(2, 2)
 texture = ExtResource("2_qpmi3")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 1.0
-offset_top = 47.0
-offset_right = 1153.0
-offset_bottom = 95.0
+offset_left = 122.0
+offset_top = 83.0
+offset_right = 1274.0
+offset_bottom = 131.0
+scale = Vector2(0.8, 0.8)
 theme_override_fonts/font = ExtResource("4_c87cl")
 theme_override_font_sizes/font_size = 48
-text = "You have lost, now you're gonna be discarted ):"
+text = "You have lost, now you're gonna be discarted :("
 
 [node name="Button" type="Button" parent="."]
 offset_left = 363.0

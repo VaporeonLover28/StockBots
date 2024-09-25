@@ -19,7 +19,7 @@ func start():
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 
 func _on_start_btn_pressed():
-	start()
+	get_tree().change_scene_to_file("res://introduction.tscn")
 
 func _on_credits_btn_pressed():
 	get_tree().change_scene_to_file("res://Menus/credits_scene.tscn")

@@ -20,4 +20,4 @@ mode_probability_GSF = Array[int]([10, 11])
 mode_probability_GSB = Array[int]([12, 13, 14])
 Item_type = 0
 Item_name = "Breaker"
-Description = "Vc sabia que em termo de reprudução de pokemon o Vapo-"
+Description = "Good health and damage buff, slight range increase, but makes you slower."

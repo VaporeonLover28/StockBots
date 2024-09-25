@@ -737,7 +737,7 @@ wait_time = 0.7
 one_shot = true
 
 [node name="deathtimer" type="Timer" parent="."]
-wait_time = 1.7
+wait_time = 4.0
 one_shot = true
 
 [node name="bgmover" type="AnimationPlayer" parent="."]
