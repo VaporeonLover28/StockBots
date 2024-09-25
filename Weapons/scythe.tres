@@ -7,7 +7,7 @@
 script = ExtResource("1_dtv82")
 weapon_sprite = ExtResource("2_h1ou7")
 weapon_type = "melee"
-weapon_damage = 15
+weapon_damage = 20
 weapon_range = 0
 weapon_knockback = -150
 weapon_cooldown = 4.0
