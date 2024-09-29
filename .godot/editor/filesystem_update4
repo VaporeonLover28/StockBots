@@ -1,7 +1,6 @@
 res://Menus/menu.tscn
 res://Modes/agressivo.tres
 res://Modes/lento.tres
-res://Weapons/rifle.tres
 res://Modes/fast.tres
 res://Modes/camper.tres
 res://Modes/Breaker.tres
@@ -22,6 +21,3 @@ res://enemy_teste.tscn
 res://Menus/upgraged_scene.tscn
 res://Menus/win_scene.tscn
 res://Menus/loss_scene.tscn
-res://Weapons/baton.tres
-res://Weapons/scythe.tres
-res://Weapons/secret.tres
