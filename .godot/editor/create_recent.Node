@@ -1,7 +1,7 @@
+Label
 ColorRect
 AudioStreamPlayer2D
 AudioListener2D
-Label
 Button
 Sprite2D
 ParallaxLayer
