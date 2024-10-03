@@ -12,6 +12,10 @@ var current_item_modes : Array[Mode_resource]
 var current_item_weapons : Array[Weapon_resource]
 var current_item_pool : Array
 
+func _process(delta: float) -> void:
+	if Input.is_action_pressed("time"):
+		Engine.time_scale *= 3
+
 func _item_pool(round):
 	rounds = round
 	current_item_modes.clear()

@@ -18,3 +18,6 @@ res://Area_Batalha.tscn
 res://Area_Batalha.gd
 res://Menus/loss_scene.tscn
 res://Robots.gd
+res://Menus/win_scene.tscn
+res://round_counter.gd
+res://round_counter.tscn
