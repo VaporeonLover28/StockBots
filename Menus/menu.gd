@@ -11,10 +11,10 @@ func _process(_delta):
 		start()
 
 func start():
-	PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
-	#PlayerLoadout.newest_weapon = load("res://Weapons/secret.tres")
-	#PlayerLoadout.oldest_weapon = load("res://Weapons/secret.tres")
-	PlayerLoadout.oldest_weapon = null
+	#PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
+	PlayerLoadout.newest_weapon = load("res://Weapons/secret.tres")
+	PlayerLoadout.oldest_weapon = load("res://Weapons/secret.tres")
+	#PlayerLoadout.oldest_weapon = null
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 

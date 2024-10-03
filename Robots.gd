@@ -99,12 +99,13 @@ func _ready():
 			instanciated_weapon2.weapon_resource = random_weapon2
 			add_child(instanciated_weapon2)
 			instanciated_weapon2.arma_gen_sprite.flip_h = true
+			
+		if RoundCounter.rounds == 0:
+			max_life = 60
+		if RoundCounter.rounds == 1:
+			max_life = 80
 		if RoundCounter.rounds > 1:
 			max_life = 100 + mode.extra_life + 10 * (RoundCounter.rounds -2)
-		elif RoundCounter.rounds == 0:
-			max_life = 60 + mode.extra_life + 10 * (RoundCounter.rounds -2)
-		else:
-			max_life = 80 + mode.extra_life + 10 * (RoundCounter.rounds -2)
 	
 	current_life = max_life
 	VL = 4 + mode.extra_VL

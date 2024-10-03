@@ -59,7 +59,7 @@ shader_parameter/move_speed = -0.02
 
 [node name="Upgraged_scene" type="CanvasLayer"]
 script = ExtResource("1_v6d15")
-metadata/_edit_vertical_guides_ = [576.0, 505.0]
+metadata/_edit_vertical_guides_ = [576.0, 505.0, 818.0]
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -2
@@ -451,12 +451,13 @@ offset_bottom = 134.0
 color = Color(0.219608, 0, 0.172549, 1)
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(754, 0)
 
 [node name="caixotas" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_nvpje")
-position = Vector2(567, 39)
-scale = Vector2(0.7, 0.5)
+position = Vector2(441, 39)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_pr0mk")
 
 [connection signal="pressed" from="pass_upgrade_button" to="." method="_on_pass_upgrade_button_pressed"]

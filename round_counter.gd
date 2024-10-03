@@ -14,7 +14,9 @@ var current_item_pool : Array
 
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("time"):
-		Engine.time_scale *= 3
+		Engine.time_scale = 3
+	else:
+		Engine.time_scale = 1
 
 func _item_pool(round):
 	rounds = round
