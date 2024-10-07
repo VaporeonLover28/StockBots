@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://cejk66da5sivs"]
+
+[ext_resource type="Script" path="res://Menus/loss_scene.gd" id="1_7da56"]
+[ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="1_pkokq"]
+
+[node name="loss_scene" type="Node2D"]
+script = ExtResource("1_7da56")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(245, 142)
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(806, 127)
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(970, 133)
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(234, 438)
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(379, 442)
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(800, 448)
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(976, 467)
+rotation = 1.5708
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(581, 272)
+scale = Vector2(1, 3.96)
+texture = ExtResource("1_pkokq")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(604, 297)
+scale = Vector2(10.6723, 0.584107)
+texture = ExtResource("1_pkokq")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 295.0
+offset_top = 555.0
+offset_right = 342.0
+offset_bottom = 586.0
+scale = Vector2(13.2101, 2.36095)
+text = "volta"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
