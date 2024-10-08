@@ -22,17 +22,17 @@
 [ext_resource type="Texture2D" uid="uid://cq26ohjang3aq" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png" id="11_m6m48"]
 [ext_resource type="Texture2D" uid="uid://yasf3m23fpr5" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png" id="12_7abox"]
 [ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
-[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
+[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://Icones gameJam/2 Frames/Frame_07.png" id="13_7hk75"]
 [ext_resource type="Texture2D" uid="uid://d2ubh3rmxvmsu" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png" id="13_iktaq"]
 [ext_resource type="Texture2D" uid="uid://cepabdw87w6tj" path="res://Industria gamejam/3 Animated objects/Transporter2.png" id="14_sdxnw"]
 [ext_resource type="Texture2D" uid="uid://cpi67xm2sx63c" path="res://Industria gamejam/2 Objects/Fire-extinguisher1.png" id="14_tfgwc"]
 [ext_resource type="Texture2D" uid="uid://b6rndm00is02q" path="res://Industria gamejam/3 Animated objects/Hammer.png" id="15_kv1wn"]
 [ext_resource type="Texture2D" uid="uid://pda6nje28um0" path="res://Industria gamejam/3 Animated objects/Transporter1.png" id="15_m4qr3"]
-[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="15_r4eji"]
 [ext_resource type="Texture2D" uid="uid://hgwx0luh4jly" path="res://Industria gamejam/3 Animated objects/Transporter3.png" id="16_v2lui"]
 [ext_resource type="AudioStream" uid="uid://xoycf3uxb4dd" path="res://Bleep_02.wav" id="20_dd2n1"]
 [ext_resource type="Texture2D" uid="uid://8vmegvyjds0c" path="res://laite.png" id="21_dr2xx"]
 [ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
+[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="33_5bbra"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
 [ext_resource type="Script" path="res://label2.gd" id="34_xna17"]
 [ext_resource type="Shader" path="res://caixota.gdshader" id="35_8p8sl"]
@@ -1225,7 +1225,7 @@ texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
 z_index = 5
-texture = ExtResource("15_r4eji")
+texture = ExtResource("33_5bbra")
 
 [node name="Player_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(258, 123)
@@ -1233,7 +1233,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
-texture = ExtResource("15_r4eji")
+texture = ExtResource("33_5bbra")
 
 [node name="Player_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(347, 123)
@@ -1241,7 +1241,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
-texture = ExtResource("15_r4eji")
+texture = ExtResource("33_5bbra")
 
 [node name="Enemy_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(819, 128)
@@ -1249,7 +1249,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
-texture = ExtResource("15_r4eji")
+texture = ExtResource("33_5bbra")
 
 [node name="Enemy_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(905, 128)
@@ -1257,7 +1257,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
-texture = ExtResource("15_r4eji")
+texture = ExtResource("33_5bbra")
 
 [node name="Enemy_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(994, 128)
@@ -1265,9 +1265,10 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
-texture = ExtResource("15_r4eji")
+texture = ExtResource("33_5bbra")
 
 [node name="Label" type="Label" parent="battle_camera/UI_layer"]
+visible = false
 offset_left = 691.0
 offset_top = 32.0
 offset_right = 812.0

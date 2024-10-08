@@ -6,7 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://ctpxhkx6nx4gp" path="res://deltarune explosion greenscreen.mp3" id="2_yrhsw"]
 [ext_resource type="Texture2D" uid="uid://cs2etpneiext" path="res://robo gamejam/Arte experimental/Ice_Hurt_Sheet.png" id="3_kux6n"]
 [ext_resource type="Texture2D" uid="uid://htesi5gh4hkc" path="res://robo gamejam/Arte experimental/Ice_Walk_Sheet.png" id="4_0o23t"]
-[ext_resource type="Texture2D" uid="uid://cm2vv3bthg7n1" path="res://1 Icons/7/Skillicon7_10.png" id="7_gpwnq"]
+[ext_resource type="Texture2D" uid="uid://cm2vv3bthg7n1" path="res://Icones gameJam/1 Icons/7/Skillicon7_10.png" id="7_gpwnq"]
 
 [sub_resource type="Animation" id="Animation_nxpur"]
 length = 0.001
