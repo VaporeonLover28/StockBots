@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://cq26ohjang3aq" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png" id="11_m6m48"]
 [ext_resource type="Texture2D" uid="uid://yasf3m23fpr5" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png" id="12_7abox"]
 [ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
-[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://Icones gameJam/2 Frames/Frame_07.png" id="13_7hk75"]
+[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
 [ext_resource type="Texture2D" uid="uid://d2ubh3rmxvmsu" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png" id="13_iktaq"]
 [ext_resource type="Texture2D" uid="uid://cepabdw87w6tj" path="res://Industria gamejam/3 Animated objects/Transporter2.png" id="14_sdxnw"]
 [ext_resource type="Texture2D" uid="uid://cpi67xm2sx63c" path="res://Industria gamejam/2 Objects/Fire-extinguisher1.png" id="14_tfgwc"]
@@ -32,7 +32,7 @@
 [ext_resource type="AudioStream" uid="uid://xoycf3uxb4dd" path="res://Bleep_02.wav" id="20_dd2n1"]
 [ext_resource type="Texture2D" uid="uid://8vmegvyjds0c" path="res://laite.png" id="21_dr2xx"]
 [ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
-[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="33_5bbra"]
+[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="33_7et10"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
 [ext_resource type="Script" path="res://label2.gd" id="34_xna17"]
 [ext_resource type="Shader" path="res://caixota.gdshader" id="35_8p8sl"]
@@ -1225,7 +1225,7 @@ texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
 z_index = 5
-texture = ExtResource("33_5bbra")
+texture = ExtResource("33_7et10")
 
 [node name="Player_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(258, 123)
@@ -1233,7 +1233,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
-texture = ExtResource("33_5bbra")
+texture = ExtResource("33_7et10")
 
 [node name="Player_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(347, 123)
@@ -1241,7 +1241,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
-texture = ExtResource("33_5bbra")
+texture = ExtResource("33_7et10")
 
 [node name="Enemy_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(819, 128)
@@ -1249,7 +1249,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
-texture = ExtResource("33_5bbra")
+texture = ExtResource("33_7et10")
 
 [node name="Enemy_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(905, 128)
@@ -1257,7 +1257,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
-texture = ExtResource("33_5bbra")
+texture = ExtResource("33_7et10")
 
 [node name="Enemy_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(994, 128)
@@ -1265,7 +1265,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
-texture = ExtResource("33_5bbra")
+texture = ExtResource("33_7et10")
 
 [node name="Label" type="Label" parent="battle_camera/UI_layer"]
 visible = false
@@ -1278,8 +1278,8 @@ text = "HEALTHw"
 script = ExtResource("34_xna17")
 
 [node name="Pizacomoio" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.00784314)
-position = Vector2(561, 187)
+modulate = Color(1, 1, 1, 0.0117647)
+position = Vector2(561, 522.26)
 scale = Vector2(10.275, 10.275)
 texture = ExtResource("33_wvca8")
 

@@ -25,8 +25,8 @@ func _ready():
 	add_child(instantiated_enemy)
 	
 	
-	instantiated_player.position.y = 598
-	instantiated_enemy.position.y = 598
+	instantiated_player.position.y = 597.991
+	instantiated_enemy.position.y = 597.991
 	instantiated_player.scale.x = 3
 	instantiated_enemy.scale.x = 3
 	instantiated_player.scale.y = 3

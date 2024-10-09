@@ -7,11 +7,11 @@
 script = ExtResource("1_bf7fe")
 weapon_sprite = ExtResource("2_qe6mq")
 weapon_type = "ranged"
-weapon_damage = 3
+weapon_damage = 2
 weapon_range = 650
 weapon_knockback = 25
 weapon_cooldown = 0.4
-bullet_amount = 2
+bullet_amount = 1
 bullet_separation_time = 1.5
 bullet_velocity = 7
 Item_type = 1
