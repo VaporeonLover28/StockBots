@@ -13,7 +13,7 @@ func _process(_delta):
 	if Input.is_action_just_pressed("Especial"):
 		secret_pressed = true
 		$ColorRect2.visible = true
-		$ColorRect2.set_color(Color("ff0e00b1"))
+		$ColorRect2.set_color(Color("000000b1"))
 	
 	if Input.is_action_just_pressed("ui_accept"):
 		start()

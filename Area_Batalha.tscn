@@ -1278,7 +1278,6 @@ text = "HEALTHw"
 script = ExtResource("34_xna17")
 
 [node name="Pizacomoio" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.0117647)
 position = Vector2(561, 522.26)
 scale = Vector2(10.275, 10.275)
 texture = ExtResource("33_wvca8")
