@@ -32,7 +32,7 @@
 [ext_resource type="AudioStream" uid="uid://xoycf3uxb4dd" path="res://Bleep_02.wav" id="20_dd2n1"]
 [ext_resource type="Texture2D" uid="uid://8vmegvyjds0c" path="res://laite.png" id="21_dr2xx"]
 [ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
-[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://1 Icons/7/Skillicon7_01.png" id="33_7et10"]
+[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://Icones gameJam/1 Icons/7/Skillicon7_01.png" id="33_7et10"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
 [ext_resource type="Script" path="res://label2.gd" id="34_xna17"]
 [ext_resource type="Shader" path="res://caixota.gdshader" id="35_8p8sl"]
@@ -1191,19 +1191,19 @@ wait_time = 0.5
 anchors_preset = -1
 anchor_right = 0.035
 anchor_bottom = 0.018
-offset_left = 70.0
+offset_left = 72.0
 offset_top = 91.0
-offset_right = 78.68
-offset_bottom = 102.336
+offset_right = 115.68
+offset_bottom = 103.336
 theme = ExtResource("12_y03r6")
 text = "Player"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label_enemy" type="Label" parent="battle_camera/UI_layer"]
-offset_left = 1048.0
+offset_left = 1035.0
 offset_top = 87.0
-offset_right = 1101.0
-offset_bottom = 110.0
+offset_right = 1110.0
+offset_bottom = 111.0
 theme = ExtResource("12_y03r6")
 text = "Enemy"
 metadata/_edit_use_anchors_ = true

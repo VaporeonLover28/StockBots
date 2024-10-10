@@ -3,4 +3,5 @@
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="1_td08h"]
 
 [resource]
+Label/font_sizes/font_size = 16
 Label/fonts/font = ExtResource("1_td08h")

@@ -5,4 +5,3 @@ uniform float move_speed = 0.05;
 void fragment() {
 	COLOR = texture(TEXTURE, vec2(UV.x + TIME * move_speed,UV.y));
 }
-
