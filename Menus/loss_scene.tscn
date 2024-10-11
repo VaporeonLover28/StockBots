@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="4_c87cl"]
 [ext_resource type="Theme" uid="uid://cibleptmewh3g" path="res://Menus/menu_theme.tres" id="4_nfglq"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ew6bm"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mc8i"]
 resource_name = "<null>"
 texture = ExtResource("3_aq5aj")
 margins = Vector2i(16, 16)
@@ -364,7 +364,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_redcq"]
 tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_ew6bm")
+sources/0 = SubResource("TileSetAtlasSource_7mc8i")
 
 [node name="loss_scene" type="Node2D"]
 script = ExtResource("1_e04yr")
@@ -388,21 +388,23 @@ scale = Vector2(2, 2)
 texture = ExtResource("2_qpmi3")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 97.0
-offset_top = 90.0
-offset_right = 1303.0
-offset_bottom = 138.0
+offset_left = 244.0
+offset_top = 75.0
+offset_right = 1000.0
+offset_bottom = 174.0
 scale = Vector2(0.8, 0.8)
 theme_override_fonts/font = ExtResource("4_c87cl")
 theme_override_font_sizes/font_size = 48
-text = "You have failed your only goal. You piece of junk."
+text = "You have failed your only goal. 
+You worthless piece of junk."
+horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
-offset_left = 363.0
+offset_left = 350.0
 offset_top = 557.0
-offset_right = 753.0
+offset_right = 765.0
 offset_bottom = 597.0
 theme = ExtResource("4_nfglq")
-text = "Try again"
+text = "Try again (Round 0)"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
