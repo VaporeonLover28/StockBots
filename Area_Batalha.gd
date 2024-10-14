@@ -19,6 +19,7 @@ var timer_death_timer_started = false
 func _ready():
 	$bgmover.play("bg")
 	
+	#gedagedigedageda-o
 	if PlayerLoadout.player_round_life == 3:
 		$LiveCounter/HP1.play("full")
 		$LiveCounter/HP2.play("full")
