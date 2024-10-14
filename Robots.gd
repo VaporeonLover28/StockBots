@@ -119,6 +119,9 @@ func _ready():
 	probability_GSB = mode.mode_probability_GSB
 
 func _physics_process(delta):
+	
+	#print(str(self.name) + "velocity = " + str(self.velocity.x))
+	
 	if process_game == true:
 		if not is_on_floor():
 			velocity.y += 350 * delta

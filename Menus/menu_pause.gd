@@ -32,6 +32,7 @@ func _on_quit_bnt_2_pressed():
 
 func restart():
 	RoundCounter.rounds = 0
+	PlayerLoadout.player_round_life = 3
 	PlayerLoadout.times_passed_item = 0
 	PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
 	PlayerLoadout.oldest_weapon = null

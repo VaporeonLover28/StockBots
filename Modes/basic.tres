@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Mode_resource" load_steps=3 format=3 uid="uid://chbbw4pve210d"]
 
-[ext_resource type="Texture2D" uid="uid://dbx3mf4k37hkr" path="res://1 Icons/7/Skillicon7_36.png" id="1_w62ma"]
+[ext_resource type="Texture2D" uid="uid://dbx3mf4k37hkr" path="res://Icones gameJam/1 Icons/7/Skillicon7_36.png" id="1_w62ma"]
 [ext_resource type="Script" path="res://mode_resource.gd" id="2_xqcx7"]
 
 [resource]
@@ -9,7 +9,7 @@ robo_image = ExtResource("1_w62ma")
 mode_agressivity = "normal"
 extra_life = 10
 extra_VL = 1
-extra_range = 50
+extra_range = 1.0
 extra_damage = 1.0
 mode_probability_GB = Array[int]([1, 2])
 mode_probability_GF = Array[int]([3, 4])

@@ -19,6 +19,23 @@ var timer_death_timer_started = false
 func _ready():
 	$bgmover.play("bg")
 	
+	if PlayerLoadout.player_round_life == 3:
+		$LiveCounter/HP1.play("full")
+		$LiveCounter/HP2.play("full")
+		$LiveCounter/HP3.play("full")
+	elif PlayerLoadout.player_round_life == 2:
+		$LiveCounter/HP1.play("full")
+		$LiveCounter/HP2.play("full")
+		$LiveCounter/HP3.play("empty")
+	elif PlayerLoadout.player_round_life == 1:
+		$LiveCounter/HP1.play("full")
+		$LiveCounter/HP2.play("empty")
+		$LiveCounter/HP3.play("empty")
+	elif PlayerLoadout.player_round_life == 0:
+		$LiveCounter/HP1.play("empty")
+		$LiveCounter/HP2.play("empty")
+		$LiveCounter/HP3.play("empty")
+	
 	instantiated_player = load_player.instantiate()
 	instantiated_enemy = load_enemy.instantiate()
 	add_child(instantiated_player)
@@ -52,7 +69,6 @@ func _ready():
 		enemy_sprite_item_3.texture = instantiated_enemy.mode.robo_image
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	
 	if instantiated_player.current_life <= 0 or instantiated_enemy.current_life <= 0:
 		#if timer_explosion_started == false:
 			#print("algo aí")
@@ -73,21 +89,39 @@ func _on_deathtimer_timeout():
 	if RoundCounter.rounds == 8:
 		print("win")
 		get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
-	#elif instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
-		#print("draw")
-		#RoundCounter.rounds += 1
-		#player_has_died = true
-		#enemy_has_died = true
-		#get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
-	#elif  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
-		#print("enemy win")
-		#player_has_died = true
-		#get_tree().change_scene_to_file("res://Menus/loss_scene.tscn")
-	#elif instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
-		#print("player win")
-		#RoundCounter.rounds += 1
-		#enemy_has_died = true
-		#get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+	elif RoundCounter.rounds < 8:
+		if PlayerLoadout.player_round_life > 0:
+			if instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
+				print("draw")
+				RoundCounter.rounds += 1
+				player_has_died = true
+				enemy_has_died = true
+				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+			elif  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
+				print("enemy win")
+				player_has_died = true
+				get_tree().change_scene_to_file("res://round_loss_scene.tscn")
+			elif instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
+				print("player win")
+				RoundCounter.rounds += 1
+				enemy_has_died = true
+				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+		else:
+			if instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
+				print("draw")
+				RoundCounter.rounds += 1
+				player_has_died = true
+				enemy_has_died = true
+				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
+			elif  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
+				print("enemy win")
+				player_has_died = true
+				get_tree().change_scene_to_file("res://Menus/loss_scene.tscn")
+			elif instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
+				print("player win")
+				RoundCounter.rounds += 1
+				enemy_has_died = true
+				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
 	$deathtimer.stop()
 
 func _on_explotimer_timeout() -> void:

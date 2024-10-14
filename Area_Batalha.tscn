@@ -1,11 +1,13 @@
-[gd_scene load_steps=72 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=75 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
 [ext_resource type="Script" path="res://battle_camera.gd" id="2_vbxtt"]
+[ext_resource type="Texture2D" uid="uid://dpad7q5prlkr1" path="res://robo gamejam/Arte experimental/HealthIceSlot.png" id="3_jey4l"]
 [ext_resource type="Texture2D" uid="uid://e5o2g1xto0ei" path="res://Industria gamejam/2 Objects/Board3.png" id="3_skj3i"]
 [ext_resource type="PackedScene" uid="uid://ti04y3oterqt" path="res://Menus/menu_pause.tscn" id="3_sygqi"]
 [ext_resource type="AudioStream" uid="uid://byklwnlhgc235" path="res://stockbots_Battle.mp3" id="4_7mart"]
+[ext_resource type="Texture2D" uid="uid://byafh2sgeok2q" path="res://robo gamejam/Arte experimental/HealthIceIcon.png" id="4_72eiq"]
 [ext_resource type="Texture2D" uid="uid://c5pgkanxape01" path="res://Industria gamejam/2 Objects/Locker4.png" id="4_fntlt"]
 [ext_resource type="Texture2D" uid="uid://cxxyxvrbyawxc" path="res://Industria gamejam/2 Objects/Box1.png" id="4_u5fbv"]
 [ext_resource type="Texture2D" uid="uid://cxy648aacf25k" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/18.png" id="5_7owb0"]
@@ -22,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cq26ohjang3aq" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png" id="11_m6m48"]
 [ext_resource type="Texture2D" uid="uid://yasf3m23fpr5" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png" id="12_7abox"]
 [ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
-[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
+[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://Icones gameJam/2 Frames/Frame_07.png" id="13_7hk75"]
 [ext_resource type="Texture2D" uid="uid://d2ubh3rmxvmsu" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png" id="13_iktaq"]
 [ext_resource type="Texture2D" uid="uid://cepabdw87w6tj" path="res://Industria gamejam/3 Animated objects/Transporter2.png" id="14_sdxnw"]
 [ext_resource type="Texture2D" uid="uid://cpi67xm2sx63c" path="res://Industria gamejam/2 Objects/Fire-extinguisher1.png" id="14_tfgwc"]
@@ -38,6 +40,25 @@
 [ext_resource type="Shader" path="res://caixota.gdshader" id="35_8p8sl"]
 [ext_resource type="Texture2D" uid="uid://d4s5hbfw4h4k" path="res://Industria gamejam/caixaconveyor.png" id="36_g0ie3"]
 [ext_resource type="Texture2D" uid="uid://dhho27twwygpj" path="res://Industria gamejam/undo_maneiro.png" id="37_0b0cw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kib3y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jey4l")
+}],
+"loop": true,
+"name": &"empty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_72eiq")
+}],
+"loop": true,
+"name": &"full",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_mlsej"]
 length = 0.001
@@ -733,6 +754,33 @@ script = ExtResource("1_ipkxo")
 metadata/_edit_horizontal_guides_ = [630.0, 612.0, 613.0, 96.0]
 metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0, 1120.0, 1120.0]
 
+[node name="LiveCounter" type="Node2D" parent="."]
+
+[node name="Lives" type="Label" parent="LiveCounter"]
+offset_left = 416.0
+offset_top = 356.0
+offset_right = 502.0
+offset_bottom = 387.0
+theme = ExtResource("12_y03r6")
+theme_override_font_sizes/font_size = 30
+text = "Lives:"
+horizontal_alignment = 1
+
+[node name="HP1" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(544, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
+[node name="HP2" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(608, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
+[node name="HP3" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(672, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
 [node name="explotimer" type="Timer" parent="."]
 wait_time = 0.7
 one_shot = true
@@ -1215,6 +1263,7 @@ offset_right = 511.0
 offset_bottom = 61.0
 scale = Vector2(3, 3)
 theme = ExtResource("12_y03r6")
+text = "Round: X"
 script = ExtResource("9_giufu")
 metadata/_edit_use_anchors_ = true
 

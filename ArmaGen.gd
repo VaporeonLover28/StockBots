@@ -6,7 +6,7 @@ extends Node; class_name Weapon
 @onready var bullet_spawn_marker = $bullet_spawn_marker
 @export var weapon_resource: Weapon_resource
 @onready var bullet = preload("res://bullet.tscn")
-@onready var range = weapon_resource.weapon_range + $"../".mode.extra_range
+@onready var range = weapon_resource.weapon_range * $"../".mode.extra_range
 @onready var dano = weapon_resource.weapon_damage * $"../".mode.extra_damage
 @onready var weapon_knockback = weapon_resource.weapon_knockback
 @onready var weapon_cooldown = weapon_resource.weapon_cooldown
@@ -56,7 +56,16 @@ func funcao_weapon_cooldown():
 			if weapon_resource.weapon_type == "ranged":
 				var instanciated_bullet = bullet.instantiate()
 				instanciated_bullet.range = range
-				instanciated_bullet.Vl = bullet_velocity
+				if arma_gen_sprite.flip_h == false:
+					if self.get_parent().velocity.x >= 1:
+						instanciated_bullet.Vl = bullet_velocity + (self.get_parent().velocity.x / 100)
+					else:
+						instanciated_bullet.Vl = bullet_velocity
+				if arma_gen_sprite.flip_h == true:
+					if self.get_parent().velocity.x <= 1:
+						instanciated_bullet.Vl = bullet_velocity - (self.get_parent().velocity.x / 100)
+					else:
+						instanciated_bullet.Vl = bullet_velocity
 				instanciated_bullet.dano = dano
 				instanciated_bullet.knockback = weapon_knockback 
 				instanciated_bullet.global_position = bullet_spawn_marker.global_position

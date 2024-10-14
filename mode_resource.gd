@@ -5,7 +5,7 @@ extends Item_resource; class_name Mode_resource
 @export var mode_agressivity : String
 @export var extra_life : int
 @export var extra_VL : int
-@export var extra_range : int
+@export var extra_range : float
 @export var extra_damage : float
 #bote de 1 a 14
 @export var mode_probability_GB : Array[int]

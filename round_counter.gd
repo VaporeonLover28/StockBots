@@ -13,10 +13,13 @@ var current_item_weapons : Array[Weapon_resource]
 var current_item_pool : Array
 
 func _process(delta: float) -> void:
-	if Input.is_action_pressed("time"):
-		Engine.time_scale = 6
-	else:
-		Engine.time_scale = 1
+	if Input.is_action_just_pressed("time"):
+		if Engine.time_scale == 1:
+			Engine.time_scale = 3
+		elif Engine.time_scale == 3:
+			Engine.time_scale = 10
+		elif Engine.time_scale == 10:
+			Engine.time_scale = 1
 
 func _item_pool(round):
 	rounds = round
