@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=76 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
@@ -36,29 +36,11 @@
 [ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
 [ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://Icones gameJam/1 Icons/7/Skillicon7_01.png" id="33_7et10"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
-[ext_resource type="Script" path="res://label2.gd" id="34_xna17"]
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="34_i81a0"]
 [ext_resource type="Shader" path="res://caixota.gdshader" id="35_8p8sl"]
+[ext_resource type="Script" path="res://round_timer.gd" id="35_xrgkj"]
 [ext_resource type="Texture2D" uid="uid://d4s5hbfw4h4k" path="res://Industria gamejam/caixaconveyor.png" id="36_g0ie3"]
 [ext_resource type="Texture2D" uid="uid://dhho27twwygpj" path="res://Industria gamejam/undo_maneiro.png" id="37_0b0cw"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_kib3y"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_jey4l")
-}],
-"loop": true,
-"name": &"empty",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_72eiq")
-}],
-"loop": true,
-"name": &"full",
-"speed": 5.0
-}]
 
 [sub_resource type="Animation" id="Animation_mlsej"]
 length = 0.001
@@ -193,6 +175,25 @@ _data = {
 "RESET": SubResource("Animation_mlsej"),
 "bg": SubResource("Animation_rjlv0")
 }
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kib3y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jey4l")
+}],
+"loop": true,
+"name": &"empty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_72eiq")
+}],
+"loop": true,
+"name": &"full",
+"speed": 5.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ggg33"]
 atlas = ExtResource("15_kv1wn")
@@ -754,32 +755,9 @@ script = ExtResource("1_ipkxo")
 metadata/_edit_horizontal_guides_ = [630.0, 612.0, 613.0, 96.0]
 metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0, 1120.0, 1120.0]
 
-[node name="LiveCounter" type="Node2D" parent="."]
-
-[node name="Lives" type="Label" parent="LiveCounter"]
-offset_left = 416.0
-offset_top = 356.0
-offset_right = 502.0
-offset_bottom = 387.0
-theme = ExtResource("12_y03r6")
-theme_override_font_sizes/font_size = 30
-text = "Lives:"
-horizontal_alignment = 1
-
-[node name="HP1" type="AnimatedSprite2D" parent="LiveCounter"]
-position = Vector2(544, 368)
-sprite_frames = SubResource("SpriteFrames_kib3y")
-animation = &"full"
-
-[node name="HP2" type="AnimatedSprite2D" parent="LiveCounter"]
-position = Vector2(608, 368)
-sprite_frames = SubResource("SpriteFrames_kib3y")
-animation = &"full"
-
-[node name="HP3" type="AnimatedSprite2D" parent="LiveCounter"]
-position = Vector2(672, 368)
-sprite_frames = SubResource("SpriteFrames_kib3y")
-animation = &"full"
+[node name="suddendeathtimer" type="Timer" parent="."]
+one_shot = true
+autostart = true
 
 [node name="explotimer" type="Timer" parent="."]
 wait_time = 0.7
@@ -793,6 +771,33 @@ one_shot = true
 libraries = {
 "": SubResource("AnimationLibrary_wjquc")
 }
+
+[node name="LiveCounter" type="Node2D" parent="."]
+
+[node name="Lives" type="Label" parent="LiveCounter"]
+offset_left = 378.0
+offset_top = 356.0
+offset_right = 566.0
+offset_bottom = 387.0
+theme = ExtResource("12_y03r6")
+theme_override_font_sizes/font_size = 30
+text = "Spare Lives:"
+horizontal_alignment = 1
+
+[node name="HP1" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(600, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
+[node name="HP2" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(664, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
+[node name="HP3" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(728, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
 
 [node name="Background" type="Node2D" parent="."]
 
@@ -1243,29 +1248,42 @@ offset_left = 72.0
 offset_top = 91.0
 offset_right = 115.68
 offset_bottom = 103.336
-theme = ExtResource("12_y03r6")
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 18
 text = "Player"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label_enemy" type="Label" parent="battle_camera/UI_layer"]
 offset_left = 1035.0
-offset_top = 87.0
+offset_top = 90.0
 offset_right = 1110.0
-offset_bottom = 111.0
-theme = ExtResource("12_y03r6")
+offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 18
 text = "Enemy"
 metadata/_edit_use_anchors_ = true
 
 [node name="Round_label" type="Label" parent="battle_camera/UI_layer"]
-offset_left = 471.0
+offset_left = 469.0
 offset_top = 38.0
-offset_right = 511.0
-offset_bottom = 61.0
-scale = Vector2(3, 3)
-theme = ExtResource("12_y03r6")
+offset_right = 682.0
+offset_bottom = 89.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 50
 text = "Round: X"
 script = ExtResource("9_giufu")
 metadata/_edit_use_anchors_ = true
+
+[node name="Round_Timer" type="Label" parent="battle_camera/UI_layer"]
+offset_left = 548.0
+offset_top = 87.0
+offset_right = 598.0
+offset_bottom = 127.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("35_xrgkj")
 
 [node name="Player_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(172, 123)
@@ -1316,16 +1334,6 @@ texture = ExtResource("13_7hk75")
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
 texture = ExtResource("33_7et10")
 
-[node name="Label" type="Label" parent="battle_camera/UI_layer"]
-visible = false
-offset_left = 691.0
-offset_top = 32.0
-offset_right = 812.0
-offset_bottom = 68.0
-theme_override_font_sizes/font_size = 26
-text = "HEALTHw"
-script = ExtResource("34_xna17")
-
 [node name="Pizacomoio" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.0156863)
 position = Vector2(561, 522.26)
@@ -1348,6 +1356,7 @@ position = Vector2(574.5, 180.5)
 scale = Vector2(25.839, 20)
 texture = ExtResource("37_0b0cw")
 
+[connection signal="timeout" from="suddendeathtimer" to="." method="_on_suddendeathtimer_timeout"]
 [connection signal="timeout" from="explotimer" to="." method="_on_explotimer_timeout"]
 [connection signal="timeout" from="deathtimer" to="." method="_on_deathtimer_timeout"]
 [connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Player" to="battle_camera/UI_layer/Healthbar_Player" method="_on_value_changed"]

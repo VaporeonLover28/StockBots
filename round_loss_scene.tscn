@@ -697,24 +697,6 @@ _data = {
 "reice": SubResource("Animation_vbbsj")
 }
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_e63wv"]
-atlas = ExtResource("4_dvxgm")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_aylyq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_wuup1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e63wv")
-}],
-"loop": false,
-"name": &"tank",
-"speed": 5.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_r1stw"]
 atlas = ExtResource("6_jwb2v")
 region = Rect2(0, 0, 192, 244)
@@ -734,6 +716,24 @@ animations = [{
 }],
 "loop": false,
 "name": &"arm",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e63wv"]
+atlas = ExtResource("4_dvxgm")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aylyq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wuup1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e63wv")
+}],
+"loop": false,
+"name": &"tank",
 "speed": 5.0
 }]
 
@@ -767,6 +767,17 @@ stream = ExtResource("3_yjfcs")
 [node name="boot" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_3iaqy")
 
+[node name="Arm" type="AnimatedSprite2D" parent="."]
+position = Vector2(552, -188)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_x2uhm")
+animation = &"arm"
+
+[node name="Ice" type="Sprite2D" parent="Arm"]
+show_behind_parent = true
+position = Vector2(2, 62)
+texture = ExtResource("5_hyvqo")
+
 [node name="Tank" type="AnimatedSprite2D" parent="."]
 clip_children = 2
 position = Vector2(616, 292)
@@ -782,17 +793,6 @@ offset_top = -79.5
 offset_right = -97.0
 offset_bottom = -39.5
 scale = Vector2(5.45018, 5.36968)
-
-[node name="Arm" type="AnimatedSprite2D" parent="."]
-position = Vector2(552, -188)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_x2uhm")
-animation = &"arm"
-
-[node name="Ice" type="Sprite2D" parent="Arm"]
-show_behind_parent = true
-position = Vector2(2, 62)
-texture = ExtResource("5_hyvqo")
 
 [node name="Label" type="Label" parent="."]
 visible = false

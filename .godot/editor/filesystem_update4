@@ -1,4 +1,4 @@
-res://arma_gen.tscn
+res://Menus/menu.tscn
 res://Modes/agressivo.tres
 res://Modes/lento.tres
 res://Modes/fast.tres
@@ -13,13 +13,12 @@ res://Menus/pause_theme.tres
 res://fontpixel_theme.tres
 res://caixota.gdshader
 res://Area_Batalha.gdshader
-res://ArmaGen.gd
-res://Robots.gd
-res://Menus/menu.tscn
+res://Weapons/secret.tres
 res://introduction.tscn
 res://Menus/credits_scene.tscn
 res://Area_Batalha.tscn
 res://player_teste.tscn
+res://arma_gen.tscn
 res://enemy_teste.tscn
 res://Menus/upgraged_scene.tscn
 res://Menus/win_scene.tscn
@@ -28,6 +27,3 @@ res://round_counter.tscn
 res://round_loss_scene.tscn
 res://player_loadout.tscn
 res://Area_Batalha.gd
-res://Menus/menu_pause.gd
-res://Menus/loss_scene.gd
-res://round_loss_scene.gd

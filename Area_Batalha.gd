@@ -139,3 +139,7 @@ func _on_explotimer_timeout() -> void:
 			instantiated_enemy.instanciated_weapon1.visible = false
 		if instantiated_enemy.instanciated_weapon2 != null:
 			instantiated_enemy.instanciated_weapon2.visible = false
+
+func _on_suddendeathtimer_timeout() -> void:
+	instantiated_enemy.current_life = 1
+	instantiated_player.current_life = 1

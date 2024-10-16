@@ -109,7 +109,7 @@ func _ready():
 	
 	current_life = max_life
 	VL = 4 + mode.extra_VL
-	maxVL = (VL + mode.extra_VL) * 15
+	maxVL = (4 + mode.extra_VL) * 15
 	probability_GB = mode.mode_probability_GB
 	probability_GF = mode.mode_probability_GF
 	probability_GW = mode.mode_probability_GW
@@ -120,7 +120,7 @@ func _ready():
 
 func _physics_process(delta):
 	
-	#print(str(self.name) + "velocity = " + str(self.velocity.x))
+	#print(str(self.name) + "velocity = " + str(maxVL))
 	
 	if process_game == true:
 		if not is_on_floor():
