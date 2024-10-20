@@ -14,6 +14,13 @@ var timer_death_timer_started = false
 @onready var enemy_sprite_item: Sprite2D = $battle_camera/UI_layer/Enemy_itemframe_1/Sprite_item
 @onready var enemy_sprite_item_2: Sprite2D = $battle_camera/UI_layer/Enemy_itemframe_2/Sprite_item
 @onready var enemy_sprite_item_3: Sprite2D = $battle_camera/UI_layer/Enemy_itemframe_3/Sprite_item
+@onready var player_item_description_1: Label = $battle_camera/UI_layer/Player_itemframe_1/Item_description
+@onready var player_item_description_2: Label = $battle_camera/UI_layer/Player_itemframe_2/Item_description
+@onready var player_item_description_3: Label = $battle_camera/UI_layer/Player_itemframe_3/Item_description
+@onready var enemy_item_description_1: Label = $battle_camera/UI_layer/Enemy_itemframe_1/Item_description
+@onready var enemy_item_description_2: Label = $battle_camera/UI_layer/Enemy_itemframe_2/Item_description
+@onready var enemy_item_description_3: Label = $battle_camera/UI_layer/Enemy_itemframe_3/Item_description
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -55,19 +62,25 @@ func _ready():
 	if instantiated_player.instanciated_weapon1 != null:
 		player_sprite_item.texture = instantiated_player.instanciated_weapon1.weapon_resource.weapon_sprite
 		player_sprite_item.scale = Vector2(0.66,0.66)
+		player_item_description_1.text = instantiated_player.instanciated_weapon1.weapon_resource.Description
 	if instantiated_player.instanciated_weapon2 != null:
 		player_sprite_item_2.texture = instantiated_player.instanciated_weapon2.weapon_resource.weapon_sprite
 		player_sprite_item_2.scale = Vector2(0.66,0.66)
+		player_item_description_2.text = instantiated_player.instanciated_weapon2.weapon_resource.Description
 	if instantiated_player.mode != null:
 		player_sprite_item_3.texture = instantiated_player.mode.robo_image
+		player_item_description_3.text = instantiated_player.mode.Description
 	if instantiated_enemy.instanciated_weapon1 != null:
 		enemy_sprite_item.texture = instantiated_enemy.instanciated_weapon1.weapon_resource.weapon_sprite
 		enemy_sprite_item.scale = Vector2(0.66,0.66)
+		enemy_item_description_1.text = instantiated_enemy.instanciated_weapon1.weapon_resource.Description
 	if instantiated_enemy.instanciated_weapon2 != null:
 		enemy_sprite_item_2.texture = instantiated_enemy.instanciated_weapon2.weapon_resource.weapon_sprite
 		enemy_sprite_item_2.scale = Vector2(0.66,0.66)
+		enemy_item_description_2.text = instantiated_enemy.instanciated_weapon2.weapon_resource.Description
 	if instantiated_enemy.mode != null:
 		enemy_sprite_item_3.texture = instantiated_enemy.mode.robo_image
+		enemy_item_description_3.text = instantiated_enemy.mode.Description
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if instantiated_player.current_life <= 0 or instantiated_enemy.current_life <= 0:

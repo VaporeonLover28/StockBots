@@ -1,5 +1,7 @@
-Timer
+CollisionShape2D
+Area2D
 Label
+Timer
 Sprite2D
 AnimatedSprite2D
 Node2D
@@ -10,6 +12,3 @@ AnimationPlayer
 AudioListener2D
 Button
 ParallaxLayer
-ParallaxBackground
-PanelContainer
-MarginContainer

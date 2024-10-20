@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=83 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
@@ -41,6 +41,7 @@
 [ext_resource type="Script" path="res://round_timer.gd" id="35_xrgkj"]
 [ext_resource type="Texture2D" uid="uid://d4s5hbfw4h4k" path="res://Industria gamejam/caixaconveyor.png" id="36_g0ie3"]
 [ext_resource type="Texture2D" uid="uid://dhho27twwygpj" path="res://Industria gamejam/undo_maneiro.png" id="37_0b0cw"]
+[ext_resource type="Script" path="res://houver_collision.gd" id="38_3nnha"]
 
 [sub_resource type="Animation" id="Animation_mlsej"]
 length = 0.001
@@ -745,6 +746,24 @@ size = Vector2(20, 20.001)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6u1x"]
 size = Vector2(35, 635.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcdk6"]
+size = Vector2(31.3636, 31.8182)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fiwkh"]
+size = Vector2(30.9091, 31.3636)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ol2by"]
+size = Vector2(31.3636, 30.9091)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_auaha"]
+size = Vector2(31.8181, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7i7q"]
+size = Vector2(31.3636, 31.3636)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yo620"]
+size = Vector2(31.8182, 31.3636)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0q6cn"]
 shader = ExtResource("35_8p8sl")
 shader_parameter/move_speed = -0.02
@@ -756,6 +775,7 @@ metadata/_edit_horizontal_guides_ = [630.0, 612.0, 613.0, 96.0]
 metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0, 1120.0, 1120.0]
 
 [node name="suddendeathtimer" type="Timer" parent="."]
+wait_time = 120.0
 one_shot = true
 autostart = true
 
@@ -1294,6 +1314,23 @@ texture = ExtResource("13_7hk75")
 z_index = 5
 texture = ExtResource("33_7et10")
 
+[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Player_itemframe_1"]
+custom_minimum_size = Vector2(24, 0)
+offset_left = -14.0
+offset_top = 20.0
+offset_right = 10.0
+offset_bottom = 29.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 6
+autowrap_mode = 2
+
+[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_1/Houver_collision"]
+position = Vector2(-0.227272, -0.454544)
+shape = SubResource("RectangleShape2D_vcdk6")
+
 [node name="Player_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(258, 123)
 scale = Vector2(2.2, 2.2)
@@ -1301,6 +1338,24 @@ texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
 texture = ExtResource("33_7et10")
+
+[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Player_itemframe_2"]
+visible = false
+custom_minimum_size = Vector2(24, 0)
+offset_left = -14.0
+offset_top = 20.0
+offset_right = 10.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+
+[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_2/Houver_collision"]
+position = Vector2(0, -0.227272)
+shape = SubResource("RectangleShape2D_fiwkh")
 
 [node name="Player_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(347, 123)
@@ -1310,6 +1365,25 @@ texture = ExtResource("13_7hk75")
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
 texture = ExtResource("33_7et10")
 
+[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Player_itemframe_3"]
+visible = false
+custom_minimum_size = Vector2(24, 0)
+offset_left = -12.0
+offset_top = 20.0
+offset_right = 12.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+justification_flags = 171
+
+[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_3/Houver_collision"]
+position = Vector2(-0.227249, 0)
+shape = SubResource("RectangleShape2D_ol2by")
+
 [node name="Enemy_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(819, 128)
 scale = Vector2(2.2, 2.2)
@@ -1317,6 +1391,24 @@ texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
 texture = ExtResource("33_7et10")
+
+[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
+visible = false
+custom_minimum_size = Vector2(24, 0)
+offset_left = -14.0
+offset_top = 18.0
+offset_right = 10.0
+offset_bottom = 26.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+
+[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision"]
+position = Vector2(3.05176e-05, 0)
+shape = SubResource("RectangleShape2D_auaha")
 
 [node name="Enemy_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(905, 128)
@@ -1326,6 +1418,24 @@ texture = ExtResource("13_7hk75")
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
 texture = ExtResource("33_7et10")
 
+[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
+visible = false
+custom_minimum_size = Vector2(24, 0)
+offset_left = -12.0
+offset_top = 18.0
+offset_right = 12.0
+offset_bottom = 26.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+
+[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision"]
+position = Vector2(-0.227234, 0.227272)
+shape = SubResource("RectangleShape2D_e7i7q")
+
 [node name="Enemy_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(994, 128)
 scale = Vector2(2.2, 2.2)
@@ -1333,6 +1443,24 @@ texture = ExtResource("13_7hk75")
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
 texture = ExtResource("33_7et10")
+
+[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
+visible = false
+custom_minimum_size = Vector2(24, 0)
+offset_left = -13.0
+offset_top = 18.0
+offset_right = 11.0
+offset_bottom = 26.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+
+[node name="Houver_collission" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission"]
+position = Vector2(0, 0.227272)
+shape = SubResource("RectangleShape2D_yo620")
 
 [node name="Pizacomoio" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.0156863)
@@ -1363,3 +1491,15 @@ texture = ExtResource("37_0b0cw")
 [connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Player/Player_damage_timer" to="battle_camera/UI_layer/Healthbar_Player" method="_on_player_damage_timer_timeout"]
 [connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Enemy" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_value_changed"]
 [connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Enemy/Enemy_damage_timer" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_enemy_damage_timer_timeout"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" to="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" to="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" method="_on_mouse_exited"]

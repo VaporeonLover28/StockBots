@@ -13,7 +13,6 @@ res://Menus/pause_theme.tres
 res://fontpixel_theme.tres
 res://caixota.gdshader
 res://Area_Batalha.gdshader
-res://Weapons/secret.tres
 res://introduction.tscn
 res://Menus/credits_scene.tscn
 res://Area_Batalha.tscn
@@ -26,4 +25,4 @@ res://Menus/loss_scene.tscn
 res://round_counter.tscn
 res://round_loss_scene.tscn
 res://player_loadout.tscn
-res://Area_Batalha.gd
+res://houver_collision.gd
