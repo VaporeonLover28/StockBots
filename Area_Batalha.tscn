@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=84 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
@@ -24,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cq26ohjang3aq" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png" id="11_m6m48"]
 [ext_resource type="Texture2D" uid="uid://yasf3m23fpr5" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png" id="12_7abox"]
 [ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
-[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://Icones gameJam/2 Frames/Frame_07.png" id="13_7hk75"]
+[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
 [ext_resource type="Texture2D" uid="uid://d2ubh3rmxvmsu" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png" id="13_iktaq"]
 [ext_resource type="Texture2D" uid="uid://cepabdw87w6tj" path="res://Industria gamejam/3 Animated objects/Transporter2.png" id="14_sdxnw"]
 [ext_resource type="Texture2D" uid="uid://cpi67xm2sx63c" path="res://Industria gamejam/2 Objects/Fire-extinguisher1.png" id="14_tfgwc"]
@@ -40,6 +40,7 @@
 [ext_resource type="Shader" path="res://caixota.gdshader" id="35_8p8sl"]
 [ext_resource type="Script" path="res://round_timer.gd" id="35_xrgkj"]
 [ext_resource type="Texture2D" uid="uid://d4s5hbfw4h4k" path="res://Industria gamejam/caixaconveyor.png" id="36_g0ie3"]
+[ext_resource type="Texture2D" uid="uid://btk11gbmgxk0b" path="res://2 Frames/bigframe.png" id="36_jrxla"]
 [ext_resource type="Texture2D" uid="uid://dhho27twwygpj" path="res://Industria gamejam/undo_maneiro.png" id="37_0b0cw"]
 [ext_resource type="Script" path="res://houver_collision.gd" id="38_3nnha"]
 
@@ -1200,9 +1201,6 @@ limit_right = 1152
 limit_bottom = 648
 script = ExtResource("2_vbxtt")
 
-[node name="Menu_pause" parent="battle_camera" instance=ExtResource("3_sygqi")]
-visible = false
-
 [node name="UI_layer" type="CanvasLayer" parent="battle_camera"]
 
 [node name="Healthbar_Player" type="TextureProgressBar" parent="battle_camera/UI_layer"]
@@ -1266,10 +1264,10 @@ anchor_right = 0.035
 anchor_bottom = 0.018
 offset_left = 72.0
 offset_top = 91.0
-offset_right = 115.68
-offset_bottom = 103.336
+offset_right = 94.68
+offset_bottom = 98.336
 theme_override_fonts/font = ExtResource("34_i81a0")
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Player"
 metadata/_edit_use_anchors_ = true
 
@@ -1279,7 +1277,7 @@ offset_top = 90.0
 offset_right = 1110.0
 offset_bottom = 114.0
 theme_override_fonts/font = ExtResource("34_i81a0")
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Enemy"
 metadata/_edit_use_anchors_ = true
 
@@ -1310,19 +1308,22 @@ position = Vector2(172, 123)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
-[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
-z_index = 5
-texture = ExtResource("33_7et10")
+[node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+position = Vector2(48, 48)
+texture = ExtResource("36_jrxla")
 
-[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Player_itemframe_1"]
+[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Player_itemframe_1/Bigframe"]
 custom_minimum_size = Vector2(24, 0)
-offset_left = -14.0
-offset_top = 20.0
-offset_right = 10.0
-offset_bottom = 29.0
+offset_left = -62.0
+offset_top = -28.0
+offset_right = -38.0
+offset_bottom = -19.0
 theme_override_fonts/font = ExtResource("34_i81a0")
 theme_override_font_sizes/font_size = 6
 autowrap_mode = 2
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+texture = ExtResource("33_7et10")
 
 [node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
 script = ExtResource("38_3nnha")
@@ -1462,6 +1463,9 @@ script = ExtResource("38_3nnha")
 position = Vector2(0, 0.227272)
 shape = SubResource("RectangleShape2D_yo620")
 
+[node name="Menu_pause" parent="." instance=ExtResource("3_sygqi")]
+visible = false
+
 [node name="Pizacomoio" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.0156863)
 position = Vector2(561, 522.26)
@@ -1475,7 +1479,8 @@ texture = ExtResource("33_wvca8")
 [node name="caixotas" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_0q6cn")
-position = Vector2(788, 181)
+position = Vector2(598, 207)
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("36_g0ie3")
 
 [node name="Fundo" type="Sprite2D" parent="ParallaxBackground"]
