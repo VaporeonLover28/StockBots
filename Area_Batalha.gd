@@ -14,12 +14,12 @@ var timer_death_timer_started = false
 @onready var enemy_sprite_item: Sprite2D = $battle_camera/UI_layer/Enemy_itemframe_1/Sprite_item
 @onready var enemy_sprite_item_2: Sprite2D = $battle_camera/UI_layer/Enemy_itemframe_2/Sprite_item
 @onready var enemy_sprite_item_3: Sprite2D = $battle_camera/UI_layer/Enemy_itemframe_3/Sprite_item
-@onready var player_item_description_1: Label = $battle_camera/UI_layer/Player_itemframe_1/Item_description
-@onready var player_item_description_2: Label = $battle_camera/UI_layer/Player_itemframe_2/Item_description
-@onready var player_item_description_3: Label = $battle_camera/UI_layer/Player_itemframe_3/Item_description
-@onready var enemy_item_description_1: Label = $battle_camera/UI_layer/Enemy_itemframe_1/Item_description
-@onready var enemy_item_description_2: Label = $battle_camera/UI_layer/Enemy_itemframe_2/Item_description
-@onready var enemy_item_description_3: Label = $battle_camera/UI_layer/Enemy_itemframe_3/Item_description
+@onready var player_item_description_1: RichTextLabel = $battle_camera/UI_layer/Player_itemframe_1/Bigframe/Item_description
+@onready var player_item_description_2: Label = $battle_camera/UI_layer/Player_itemframe_2/Bigframe/Item_description
+@onready var player_item_description_3: Label = $battle_camera/UI_layer/Player_itemframe_3/Bigframe/Item_description
+@onready var enemy_item_description_1: Label = $battle_camera/UI_layer/Enemy_itemframe_1/Bigframe/Item_description
+@onready var enemy_item_description_2: Label = $battle_camera/UI_layer/Enemy_itemframe_2/Bigframe/Item_description
+@onready var enemy_item_description_3: Label = $battle_camera/UI_layer/Enemy_itemframe_3/Bigframe/Item_description
 
 
 # Called when the node enters the scene tree for the first time.
