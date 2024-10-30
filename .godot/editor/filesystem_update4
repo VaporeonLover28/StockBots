@@ -1,4 +1,4 @@
-res://Menus/menu.tscn
+res://Area_Batalha.tscn
 res://Modes/agressivo.tres
 res://Modes/lento.tres
 res://Modes/fast.tres
@@ -13,9 +13,10 @@ res://Menus/pause_theme.tres
 res://fontpixel_theme.tres
 res://caixota.gdshader
 res://Area_Batalha.gdshader
+res://Area_Batalha.gd
+res://Menus/menu.tscn
 res://introduction.tscn
 res://Menus/credits_scene.tscn
-res://Area_Batalha.tscn
 res://player_teste.tscn
 res://arma_gen.tscn
 res://enemy_teste.tscn
@@ -25,7 +26,6 @@ res://Menus/loss_scene.tscn
 res://round_counter.tscn
 res://round_loss_scene.tscn
 res://player_loadout.tscn
-res://Area_Batalha.gd
 res://houver_collision.gd
-res://robo gamejam/License.txt
-res://Boxes.gd
+res://ui_layer.gd
+res://AlreadyOpen.gd

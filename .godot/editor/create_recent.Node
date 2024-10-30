@@ -1,3 +1,4 @@
+TextureButton
 RichTextLabel
 CollisionShape2D
 Area2D
@@ -12,4 +13,3 @@ ColorRect
 AnimationPlayer
 AudioListener2D
 Button
-ParallaxLayer

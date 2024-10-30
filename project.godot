@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 RoundCounter="*res://round_counter.tscn"
 PlayerLoadout="*res://player_loadout.tscn"
+AlreadyOpen="*res://AlreadyOpen.gd"
 
 [display]
 

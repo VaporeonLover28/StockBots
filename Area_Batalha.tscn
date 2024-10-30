@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=83 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
@@ -24,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cq26ohjang3aq" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png" id="11_m6m48"]
 [ext_resource type="Texture2D" uid="uid://yasf3m23fpr5" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png" id="12_7abox"]
 [ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
-[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://Icones gameJam/2 Frames/Frame_07.png" id="13_7hk75"]
+[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
 [ext_resource type="Texture2D" uid="uid://d2ubh3rmxvmsu" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png" id="13_iktaq"]
 [ext_resource type="Texture2D" uid="uid://cepabdw87w6tj" path="res://Industria gamejam/3 Animated objects/Transporter2.png" id="14_sdxnw"]
 [ext_resource type="Texture2D" uid="uid://cpi67xm2sx63c" path="res://Industria gamejam/2 Objects/Fire-extinguisher1.png" id="14_tfgwc"]
@@ -756,9 +756,6 @@ size = Vector2(30.9091, 31.3636)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vcdk6"]
 size = Vector2(31.3636, 31.8182)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_auaha"]
-size = Vector2(31.8181, 30)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7i7q"]
 size = Vector2(31.3636, 31.3636)
 
@@ -1312,25 +1309,22 @@ texture = ExtResource("13_7hk75")
 position = Vector2(48, 48)
 texture = ExtResource("36_jrxla")
 
-[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Player_itemframe_3/Bigframe"]
-custom_minimum_size = Vector2(30, 0)
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Player_itemframe_3/Bigframe"]
 offset_left = -56.0
-offset_top = -38.0
+offset_top = -30.0
 offset_right = 58.0
-offset_bottom = 58.0
-theme_override_fonts/font = ExtResource("34_i81a0")
-theme_override_font_sizes/font_size = 16
-text = "Se eu mijar aqui é paia?"
-vertical_alignment = 1
+offset_bottom = 60.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
 autowrap_mode = 2
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
 texture = ExtResource("33_7et10")
 
-[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_3" groups=["player_frames"]]
+[node name="Hover_collision3" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_3" groups=["player_frames"]]
 script = ExtResource("38_3nnha")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_3/Houver_collision"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_3/Hover_collision3"]
 shape = SubResource("RectangleShape2D_ol2by")
 
 [node name="Player_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
@@ -1342,24 +1336,22 @@ texture = ExtResource("13_7hk75")
 position = Vector2(48, 48)
 texture = ExtResource("36_jrxla")
 
-[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Player_itemframe_2/Bigframe"]
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Player_itemframe_2/Bigframe"]
 offset_left = -56.0
-offset_top = -38.0
+offset_top = -30.0
 offset_right = 58.0
-offset_bottom = 58.0
-theme_override_fonts/font = ExtResource("34_i81a0")
-theme_override_font_sizes/font_size = 16
-text = "Se eu mijar aqui é paia?"
-vertical_alignment = 1
+offset_bottom = 60.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
 autowrap_mode = 2
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
 texture = ExtResource("33_7et10")
 
-[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_2" groups=["player_frames"]]
+[node name="Hover_collision2" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_2" groups=["player_frames"]]
 script = ExtResource("38_3nnha")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_2/Houver_collision"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_2/Hover_collision2"]
 shape = SubResource("RectangleShape2D_fiwkh")
 
 [node name="Player_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
@@ -1373,28 +1365,20 @@ texture = ExtResource("36_jrxla")
 
 [node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Player_itemframe_1/Bigframe"]
 offset_left = -56.0
-offset_top = -38.0
+offset_top = -30.0
 offset_right = 58.0
-offset_bottom = 58.0
+offset_bottom = 60.0
 theme_override_fonts/normal_font = ExtResource("34_i81a0")
-text = "Se eu mijar aqui é paia?
-paia?
-paia?
-paia?
-paia?
-paia?
-paia?
-paia?
-paia?"
+text = "Empty slot. Holds a second weapon, when you get one."
 autowrap_mode = 2
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
 texture = ExtResource("33_7et10")
 
-[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_1" groups=["player_frames"]]
+[node name="Hover_collision1" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_1" groups=["player_frames"]]
 script = ExtResource("38_3nnha")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_1/Houver_collision"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_1/Hover_collision1"]
 z_index = 8
 shape = SubResource("RectangleShape2D_vcdk6")
 
@@ -1407,28 +1391,23 @@ texture = ExtResource("13_7hk75")
 position = Vector2(-40, 48)
 texture = ExtResource("36_jrxla")
 
-[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Enemy_itemframe_1/Bigframe"]
-custom_minimum_size = Vector2(32, 0)
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Enemy_itemframe_1/Bigframe"]
 offset_left = -56.0
-offset_top = -38.0
+offset_top = -30.0
 offset_right = 58.0
-offset_bottom = 58.0
-theme_override_fonts/font = ExtResource("34_i81a0")
-text = "Se eu mijar aqui é paia?"
-horizontal_alignment = 2
-vertical_alignment = 1
+offset_bottom = 60.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
 autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
 texture = ExtResource("33_7et10")
 
-[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_1" groups=["enemy_frames"]]
+[node name="Hover_collision1" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_1" groups=["enemy_frames"]]
 script = ExtResource("38_3nnha")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision"]
-position = Vector2(3.05176e-05, 0)
-shape = SubResource("RectangleShape2D_auaha")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision1"]
+shape = SubResource("RectangleShape2D_vcdk6")
 
 [node name="Enemy_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(905, 123)
@@ -1439,26 +1418,22 @@ texture = ExtResource("13_7hk75")
 position = Vector2(-40, 48)
 texture = ExtResource("36_jrxla")
 
-[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Enemy_itemframe_2/Bigframe"]
-custom_minimum_size = Vector2(32, 0)
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Enemy_itemframe_2/Bigframe"]
 offset_left = -56.0
-offset_top = -38.0
+offset_top = -30.0
 offset_right = 58.0
-offset_bottom = 58.0
-theme_override_fonts/font = ExtResource("34_i81a0")
-text = "Se eu mijar aqui é paia?"
-horizontal_alignment = 2
-vertical_alignment = 1
+offset_bottom = 60.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
 autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
 texture = ExtResource("33_7et10")
 
-[node name="Houver_collision" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_2" groups=["enemy_frames"]]
+[node name="Hover_collision2" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_2" groups=["enemy_frames"]]
 script = ExtResource("38_3nnha")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision2"]
 shape = SubResource("RectangleShape2D_e7i7q")
 
 [node name="Enemy_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
@@ -1470,26 +1445,22 @@ texture = ExtResource("13_7hk75")
 position = Vector2(-40, 48)
 texture = ExtResource("36_jrxla")
 
-[node name="Item_description" type="Label" parent="battle_camera/UI_layer/Enemy_itemframe_3/Bigframe"]
-custom_minimum_size = Vector2(32, 0)
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Enemy_itemframe_3/Bigframe"]
 offset_left = -56.0
-offset_top = -38.0
+offset_top = -30.0
 offset_right = 58.0
-offset_bottom = 58.0
-theme_override_fonts/font = ExtResource("34_i81a0")
-text = "Se eu mijar aqui é paia?"
-horizontal_alignment = 2
-vertical_alignment = 1
+offset_bottom = 60.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
 autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
 texture = ExtResource("33_7et10")
 
-[node name="Houver_collission" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_3" groups=["enemy_frames"]]
+[node name="Hover_collision3" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_3" groups=["enemy_frames"]]
 script = ExtResource("38_3nnha")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision3"]
 shape = SubResource("RectangleShape2D_yo620")
 
 [node name="Menu_pause" parent="." instance=ExtResource("3_sygqi")]
@@ -1525,15 +1496,15 @@ texture = ExtResource("37_0b0cw")
 [connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Player/Player_damage_timer" to="battle_camera/UI_layer/Healthbar_Player" method="_on_player_damage_timer_timeout"]
 [connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Enemy" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_value_changed"]
 [connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Enemy/Enemy_damage_timer" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_enemy_damage_timer_timeout"]
-[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_3/Houver_collision" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_2/Houver_collision" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Player_itemframe_1/Houver_collision" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_1/Houver_collision" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" to="battle_camera/UI_layer/Enemy_itemframe_2/Houver_collision" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" to="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" to="battle_camera/UI_layer/Enemy_itemframe_3/Houver_collission" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_3/Hover_collision3" to="battle_camera/UI_layer/Player_itemframe_3/Hover_collision3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_3/Hover_collision3" to="battle_camera/UI_layer/Player_itemframe_3/Hover_collision3" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_2/Hover_collision2" to="battle_camera/UI_layer/Player_itemframe_2/Hover_collision2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_2/Hover_collision2" to="battle_camera/UI_layer/Player_itemframe_2/Hover_collision2" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_1/Hover_collision1" to="battle_camera/UI_layer/Player_itemframe_1/Hover_collision1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_1/Hover_collision1" to="battle_camera/UI_layer/Player_itemframe_1/Hover_collision1" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision1" to="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision1" to="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision1" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision2" to="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision2" to="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision2" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision3" to="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision3" to="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision3" method="_on_mouse_exited"]

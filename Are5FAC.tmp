@@ -1,0 +1,1517 @@
+[gd_scene load_steps=83 format=4 uid="uid://ci64ulxa7vqdf"]
+
+[ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
+[ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
+[ext_resource type="Script" path="res://battle_camera.gd" id="2_vbxtt"]
+[ext_resource type="Texture2D" uid="uid://dpad7q5prlkr1" path="res://robo gamejam/Arte experimental/HealthIceSlot.png" id="3_jey4l"]
+[ext_resource type="Texture2D" uid="uid://e5o2g1xto0ei" path="res://Industria gamejam/2 Objects/Board3.png" id="3_skj3i"]
+[ext_resource type="PackedScene" uid="uid://ti04y3oterqt" path="res://Menus/menu_pause.tscn" id="3_sygqi"]
+[ext_resource type="AudioStream" uid="uid://byklwnlhgc235" path="res://stockbots_Battle.mp3" id="4_7mart"]
+[ext_resource type="Texture2D" uid="uid://byafh2sgeok2q" path="res://robo gamejam/Arte experimental/HealthIceIcon.png" id="4_72eiq"]
+[ext_resource type="Texture2D" uid="uid://c5pgkanxape01" path="res://Industria gamejam/2 Objects/Locker4.png" id="4_fntlt"]
+[ext_resource type="Texture2D" uid="uid://cxxyxvrbyawxc" path="res://Industria gamejam/2 Objects/Box1.png" id="4_u5fbv"]
+[ext_resource type="Texture2D" uid="uid://cxy648aacf25k" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/18.png" id="5_7owb0"]
+[ext_resource type="Texture2D" uid="uid://bus3gxvaqgd7o" path="res://heathbar_background.png" id="5_vi61q"]
+[ext_resource type="Texture2D" uid="uid://c6gukofqxjn4e" path="res://Industria gamejam/2 Objects/Box2.png" id="6_dfh65"]
+[ext_resource type="Texture2D" uid="uid://d2sjy8h3h7tb4" path="res://Healthbar_enchimento.png" id="6_vpf56"]
+[ext_resource type="Script" path="res://healthbar_enemy.gd" id="7_1wvw0"]
+[ext_resource type="Texture2D" uid="uid://dv68bod06bl57" path="res://Industria gamejam/2 Objects/Box3.png" id="7_itu11"]
+[ext_resource type="Script" path="res://healthbar_player.gd" id="7_ubfqr"]
+[ext_resource type="Texture2D" uid="uid://b5qgkf12tfpj2" path="res://Industria gamejam/2 Objects/Bucket.png" id="8_8kt74"]
+[ext_resource type="Script" path="res://round_label.gd" id="9_giufu"]
+[ext_resource type="Texture2D" uid="uid://dwen7gx4h1mc2" path="res://Industria gamejam/2 Objects/Mop.png" id="9_ixpgv"]
+[ext_resource type="Texture2D" uid="uid://d3wpb5c55x7tu" path="res://Damagebar_enchiment.png" id="11_b7ndx"]
+[ext_resource type="Texture2D" uid="uid://cq26ohjang3aq" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png" id="11_m6m48"]
+[ext_resource type="Texture2D" uid="uid://yasf3m23fpr5" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png" id="12_7abox"]
+[ext_resource type="Theme" uid="uid://2gkcw1bng28h" path="res://fontpixel_theme.tres" id="12_y03r6"]
+[ext_resource type="Texture2D" uid="uid://cw3ok2cns1ch0" path="res://2 Frames/Frame_07.png" id="13_7hk75"]
+[ext_resource type="Texture2D" uid="uid://d2ubh3rmxvmsu" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png" id="13_iktaq"]
+[ext_resource type="Texture2D" uid="uid://cepabdw87w6tj" path="res://Industria gamejam/3 Animated objects/Transporter2.png" id="14_sdxnw"]
+[ext_resource type="Texture2D" uid="uid://cpi67xm2sx63c" path="res://Industria gamejam/2 Objects/Fire-extinguisher1.png" id="14_tfgwc"]
+[ext_resource type="Texture2D" uid="uid://b6rndm00is02q" path="res://Industria gamejam/3 Animated objects/Hammer.png" id="15_kv1wn"]
+[ext_resource type="Texture2D" uid="uid://pda6nje28um0" path="res://Industria gamejam/3 Animated objects/Transporter1.png" id="15_m4qr3"]
+[ext_resource type="Texture2D" uid="uid://hgwx0luh4jly" path="res://Industria gamejam/3 Animated objects/Transporter3.png" id="16_v2lui"]
+[ext_resource type="AudioStream" uid="uid://xoycf3uxb4dd" path="res://Bleep_02.wav" id="20_dd2n1"]
+[ext_resource type="Texture2D" uid="uid://8vmegvyjds0c" path="res://laite.png" id="21_dr2xx"]
+[ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
+[ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://Icones gameJam/1 Icons/7/Skillicon7_01.png" id="33_7et10"]
+[ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="34_i81a0"]
+[ext_resource type="Shader" path="res://caixota.gdshader" id="35_8p8sl"]
+[ext_resource type="Script" path="res://round_timer.gd" id="35_xrgkj"]
+[ext_resource type="Texture2D" uid="uid://d4s5hbfw4h4k" path="res://Industria gamejam/caixaconveyor.png" id="36_g0ie3"]
+[ext_resource type="Texture2D" uid="uid://btk11gbmgxk0b" path="res://2 Frames/bigframe.png" id="36_jrxla"]
+[ext_resource type="Texture2D" uid="uid://dhho27twwygpj" path="res://Industria gamejam/undo_maneiro.png" id="37_0b0cw"]
+[ext_resource type="Script" path="res://houver_collision.gd" id="38_3nnha"]
+
+[sub_resource type="Animation" id="Animation_mlsej"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Caixas/Prensa1:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"stopped"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Caixas/Prensa1:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_rjlv0"]
+resource_name = "bg"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Caixas/Prensa1:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Caixas/Prensa1:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Caixas/Prensa3:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/Caixas/Prensa3:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Background/Caixas/Prensa2:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Background/Caixas/Prensa4:animation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"press"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Background/Caixas/Prensa2:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.3, 2.4, 2.5, 2.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Background/Caixas/Prensa4:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wjquc"]
+_data = {
+"RESET": SubResource("Animation_mlsej"),
+"bg": SubResource("Animation_rjlv0")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kib3y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jey4l")
+}],
+"loop": true,
+"name": &"empty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_72eiq")
+}],
+"loop": true,
+"name": &"full",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggg33"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8qwj"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc1ly"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3a6g"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pli3"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2coc"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k2r4"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_roi0h"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(224, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lookq"]
+atlas = ExtResource("15_kv1wn")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2agem"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_ggg33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8qwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wc1ly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3a6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pli3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2coc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0k2r4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_roi0h")
+}],
+"loop": true,
+"name": &"press",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lookq")
+}],
+"loop": true,
+"name": &"stopped",
+"speed": 5.0
+}]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h7gy7"]
+resource_name = "<null>"
+texture = ExtResource("2_cb1ea")
+margins = Vector2i(16, 16)
+separation = Vector2i(16, 16)
+texture_region_size = Vector2i(32, 32)
+2:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+25:1/0 = 0
+26:1/0 = 0
+28:1/0 = 0
+29:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+25:2/0 = 0
+26:2/0 = 0
+28:2/0 = 0
+29:2/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+22:4/0 = 0
+23:4/0 = 0
+25:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+29:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+25:5/0 = 0
+26:5/0 = 0
+27:5/0 = 0
+28:5/0 = 0
+29:5/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+22:7/0 = 0
+23:7/0 = 0
+25:7/0 = 0
+26:7/0 = 0
+28:7/0 = 0
+29:7/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+22:8/0 = 0
+23:8/0 = 0
+25:8/0 = 0
+26:8/0 = 0
+28:8/0 = 0
+29:8/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+16:10/0 = 0
+17:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+22:10/0 = 0
+23:10/0 = 0
+25:10/0 = 0
+26:10/0 = 0
+28:10/0 = 0
+29:10/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+16:11/0 = 0
+17:11/0 = 0
+19:11/0 = 0
+20:11/0 = 0
+22:11/0 = 0
+23:11/0 = 0
+25:11/0 = 0
+26:11/0 = 0
+28:11/0 = 0
+29:11/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+16:13/0 = 0
+17:13/0 = 0
+19:13/0 = 0
+20:13/0 = 0
+22:13/0 = 0
+23:13/0 = 0
+25:13/0 = 0
+26:13/0 = 0
+28:13/0 = 0
+29:13/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+16:14/0 = 0
+17:14/0 = 0
+19:14/0 = 0
+20:14/0 = 0
+22:14/0 = 0
+23:14/0 = 0
+25:14/0 = 0
+26:14/0 = 0
+28:14/0 = 0
+29:14/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+13:16/0 = 0
+14:16/0 = 0
+16:16/0 = 0
+17:16/0 = 0
+19:16/0 = 0
+20:16/0 = 0
+22:16/0 = 0
+23:16/0 = 0
+25:16/0 = 0
+26:16/0 = 0
+28:16/0 = 0
+29:16/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+10:17/0 = 0
+11:17/0 = 0
+13:17/0 = 0
+14:17/0 = 0
+16:17/0 = 0
+17:17/0 = 0
+19:17/0 = 0
+20:17/0 = 0
+22:17/0 = 0
+23:17/0 = 0
+25:17/0 = 0
+26:17/0 = 0
+28:17/0 = 0
+29:17/0 = 0
+1:19/0 = 0
+2:19/0 = 0
+4:19/0 = 0
+5:19/0 = 0
+7:19/0 = 0
+8:19/0 = 0
+10:19/0 = 0
+11:19/0 = 0
+13:19/0 = 0
+14:19/0 = 0
+16:19/0 = 0
+17:19/0 = 0
+19:19/0 = 0
+20:19/0 = 0
+22:19/0 = 0
+23:19/0 = 0
+25:19/0 = 0
+26:19/0 = 0
+28:19/0 = 0
+29:19/0 = 0
+1:20/0 = 0
+2:20/0 = 0
+4:20/0 = 0
+5:20/0 = 0
+7:20/0 = 0
+8:20/0 = 0
+10:20/0 = 0
+11:20/0 = 0
+13:20/0 = 0
+14:20/0 = 0
+16:20/0 = 0
+17:20/0 = 0
+19:20/0 = 0
+20:20/0 = 0
+22:20/0 = 0
+23:20/0 = 0
+25:20/0 = 0
+26:20/0 = 0
+28:20/0 = 0
+29:20/0 = 0
+1:22/0 = 0
+2:22/0 = 0
+4:22/0 = 0
+5:22/0 = 0
+7:22/0 = 0
+8:22/0 = 0
+10:22/0 = 0
+11:22/0 = 0
+13:22/0 = 0
+14:22/0 = 0
+16:22/0 = 0
+17:22/0 = 0
+19:22/0 = 0
+20:22/0 = 0
+22:22/0 = 0
+23:22/0 = 0
+25:22/0 = 0
+26:22/0 = 0
+28:22/0 = 0
+29:22/0 = 0
+4:23/0 = 0
+5:23/0 = 0
+1:25/0 = 0
+2:25/0 = 0
+1:26/0 = 0
+2:26/0 = 0
+0:0/0 = 0
+1:0/0 = 0
+0:8/0 = 0
+0:7/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+9:5/0 = 0
+9:7/0 = 0
+6:7/0 = 0
+3:7/0 = 0
+3:6/0 = 0
+2:6/0 = 0
+1:6/0 = 0
+0:6/0 = 0
+0:5/0 = 0
+3:5/0 = 0
+6:5/0 = 0
+6:4/0 = 0
+3:4/0 = 0
+0:4/0 = 0
+9:4/0 = 0
+1:3/0 = 0
+0:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+3:2/0 = 0
+6:2/0 = 0
+9:2/0 = 0
+0:2/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+7:0/0 = 0
+6:0/0 = 0
+5:0/0 = 0
+4:0/0 = 0
+3:0/0 = 0
+2:0/0 = 0
+6:1/0 = 0
+3:1/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+9:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_pq4u0"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_h7gy7")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahbtt"]
+atlas = ExtResource("14_sdxnw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j66tm"]
+atlas = ExtResource("14_sdxnw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy8i2"]
+atlas = ExtResource("14_sdxnw")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y80yq"]
+atlas = ExtResource("14_sdxnw")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7krkm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahbtt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j66tm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy8i2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y80yq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gcig0"]
+atlas = ExtResource("15_m4qr3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ka3bi"]
+atlas = ExtResource("15_m4qr3")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktkyi"]
+atlas = ExtResource("15_m4qr3")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pckw"]
+atlas = ExtResource("15_m4qr3")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tlewe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gcig0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ka3bi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktkyi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2pckw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_schgj"]
+atlas = ExtResource("16_v2lui")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibgqo"]
+atlas = ExtResource("16_v2lui")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6hv7"]
+atlas = ExtResource("16_v2lui")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10ulw"]
+atlas = ExtResource("16_v2lui")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hwcbq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_schgj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibgqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6hv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10ulw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6kdl"]
+size = Vector2(20, 20.001)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6u1x"]
+size = Vector2(35, 635.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ol2by"]
+size = Vector2(31.3636, 30.9091)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fiwkh"]
+size = Vector2(30.9091, 31.3636)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcdk6"]
+size = Vector2(31.3636, 31.8182)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7i7q"]
+size = Vector2(31.3636, 31.3636)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yo620"]
+size = Vector2(31.8182, 31.3636)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0q6cn"]
+shader = ExtResource("35_8p8sl")
+shader_parameter/move_speed = -0.02
+
+[node name="Area_batalha" type="Node2D"]
+position = Vector2(0, -24)
+script = ExtResource("1_ipkxo")
+metadata/_edit_horizontal_guides_ = [630.0, 612.0, 613.0, 96.0]
+metadata/_edit_vertical_guides_ = [989.0, 1595.0, 1138.0, -83.0, 78.0, -24.0, 3.0, 1120.0, 1120.0]
+
+[node name="suddendeathtimer" type="Timer" parent="."]
+wait_time = 120.0
+one_shot = true
+autostart = true
+
+[node name="explotimer" type="Timer" parent="."]
+wait_time = 0.7
+one_shot = true
+
+[node name="deathtimer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+
+[node name="bgmover" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_wjquc")
+}
+
+[node name="LiveCounter" type="Node2D" parent="."]
+
+[node name="Lives" type="Label" parent="LiveCounter"]
+offset_left = 378.0
+offset_top = 356.0
+offset_right = 566.0
+offset_bottom = 387.0
+theme = ExtResource("12_y03r6")
+theme_override_font_sizes/font_size = 30
+text = "Spare Lives:"
+horizontal_alignment = 1
+
+[node name="HP1" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(600, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
+[node name="HP2" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(664, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
+[node name="HP3" type="AnimatedSprite2D" parent="LiveCounter"]
+position = Vector2(728, 368)
+sprite_frames = SubResource("SpriteFrames_kib3y")
+animation = &"full"
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Caixas" type="Node2D" parent="Background"]
+
+[node name="Prensa1" type="AnimatedSprite2D" parent="Background/Caixas"]
+modulate = Color(0.490196, 0.435294, 0.968627, 1)
+z_index = -200
+position = Vector2(230.4, 202)
+scale = Vector2(3.3, 3.3)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"stopped"
+autoplay = "stopped"
+
+[node name="Prensa2" type="AnimatedSprite2D" parent="Background/Caixas"]
+modulate = Color(0.48985, 0.4365, 0.97, 1)
+position = Vector2(460.8, 202)
+scale = Vector2(3.3, 3.3)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"press"
+autoplay = "stopped"
+frame = 4
+
+[node name="Prensa3" type="AnimatedSprite2D" parent="Background/Caixas"]
+modulate = Color(0.490196, 0.435294, 0.968627, 1)
+position = Vector2(691.2, 202)
+scale = Vector2(3.3, 3.3)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"press"
+autoplay = "stopped"
+
+[node name="Prensa4" type="AnimatedSprite2D" parent="Background/Caixas"]
+modulate = Color(0.490196, 0.435294, 0.968627, 1)
+position = Vector2(921.6, 202)
+scale = Vector2(3.3, 3.3)
+sprite_frames = SubResource("SpriteFrames_2agem")
+animation = &"press"
+autoplay = "stopped"
+frame = 4
+
+[node name="TileMap" type="TileMap" parent="Background"]
+z_index = -4096
+position = Vector2(0, 32)
+tile_set = SubResource("TileSet_pq4u0")
+format = 2
+layer_0/tile_data = PackedInt32Array(1114115, 589824, 1, 1114116, 589824, 1, 1114117, 589824, 1, 1114118, 589824, 1, 1114119, 589824, 1, 1114120, 589824, 1, 1114121, 589824, 1, 1114122, 589824, 1, 1114123, 589824, 1, 1114124, 589824, 1, 1114125, 589824, 1, 1114126, 589824, 1, 1114127, 589824, 1, 1114128, 589824, 1, 1114129, 589824, 1, 1114130, 589824, 1, 1114131, 589824, 1, 1048596, 589824, 1, 1048597, 589824, 1, 1048598, 589824, 1, 1048599, 589824, 1, 1048600, 589824, 1, 1048601, 589824, 1, 1048602, 589824, 1, 1048603, 589824, 1, 1114140, 589824, 1)
+
+[node name="Layer1" type="TileMapLayer" parent="Background/TileMap"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAABABMAAAAJAAIAAAACABMAAAAAAAMAAAADABMAAAAAAAMAAAAEABMAAAAAAAMAAAAFABMAAAAAAAMAAAAGABMAAAAAAAMAAAAHABMAAAAAAAMAAAAIABMAAAAAAAMAAAAJABMAAAAAAAMAAAAKABMAAAAAAAMAAAALABMAAAAAAAMAAAAMABMAAAAAAAMAAAANABMAAAAAAAMAAAAOABMAAAAAAAMAAAAPABMAAAAAAAMAAAAQABMAAAAAAAMAAAARABMAAAAAAAMAAAASABMAAAAAAAMAAAATABMAAAAAAAMAAAAUABMAAAAAAAMAAAAVABMAAAAAAAMAAAAWABMAAAAAAAMAAAAXABMAAAAAAAMAAAAYABMAAAAAAAMAAAAZABMAAAAAAAMAAAAaABMAAAAAAAMAAAAbABMAAAAAAAMAAAAcABMAAAAAAAMAAAAdABMAAAAAAAMAAAAiABMAAAABAAMAAAAhABMAAAAAAAMAAAAgABMAAAAAAAMAAAAfABMAAAAAAAMAAAAeABMAAAAAAAMAAAAjABMAAAACAAAAAAAAABMAAAACAAAAAAAAABIAAAAEAAYAAAABABIAAAAJAAEAAAACABIAAAAJAAEAAAADABIAAAAJAAEAAAAEABIAAAAJAAEAAAAFABIAAAAJAAEAAAAGABIAAAAJAAEAAAAHABIAAAAJAAEAAAAJABIAAAAJAAEAAAAKABIAAAAJAAEAAAALABIAAAAJAAEAAAAMABIAAAAJAAEAAAANABIAAAAJAAEAAAAOABIAAAAJAAEAAAAPABIAAAAJAAEAAAAQABIAAAAJAAEAAAARABIAAAAJAAEAAAASABIAAAAJAAEAAAATABIAAAAJAAEAAAAUABIAAAAJAAEAAAAVABIAAAAJAAEAAAAWABIAAAAJAAEAAAAXABIAAAAJAAEAAAAYABIAAAAJAAEAAAAZABIAAAAJAAEAAAAaABIAAAAJAAEAAAAbABIAAAAJAAEAAAAcABIAAAAJAAEAAAAdABIAAAAJAAEAAAAeABIAAAAJAAEAAAAfABIAAAAJAAEAAAAgABIAAAAJAAEAAAAhABIAAAAJAAEAAAAjABIAAAAEAAYAAAAiABIAAAAJAAEAAAAZAA0AAAAJAAEAAAAYAA0AAAAJAAEAAAAXAAwAAAAJAAEAAAAWAAwAAAAJAAEAAAAVAAsAAAABAAIAAAAUAAsAAAABAAIAAAACAAEAAAAIAAQAAAABAAEAAAAHAAQAAAAAAAAAAAADAAYAAAAWAAsAAAABAAIAAAAYAAwAAAAJAAEAAAAaAA0AAAAJAAEAAAAGAAAAAAAJAAMAAAAHAAAAAAAJAAMAAAAIAAEAAAAIAAQAAAAJAAEAAAAIAAQAAAAbAAsAAAABAAIAAAAcAAsAAAABAAIAAAAdAAwAAAAJAAEAAAAeAAwAAAAJAAEAAAAfAA0AAAAJAAEAAAAgAA0AAAAJAAEAAAAiAA4AAAAIAAIAAAAFAAAAAAAJAAMAAAAHAAEAAAAIAAQAAAAaAAsAAAABAAIAAAAcAAwAAAAJAAEAAAAeAA0AAAAJAAEAAAAEAAEAAAAIAAQAAAAFAAEAAAAIAAQAAAAXAAsAAAABAAIAAAAYAAsAAAABAAIAAAAZAAwAAAAJAAEAAAAaAAwAAAAJAAEAAAAbAA0AAAAJAAEAAAAcAA0AAAAJAAEAAAASAAsAAAABAAIAAAATAAwAAAAJAAEAAAAUAAwAAAAJAAEAAAAVAA0AAAAJAAEAAAAWAA0AAAAJAAEAAAAQAAsAAAABAAIAAAARAAwAAAAJAAEAAAASAAwAAAAJAAEAAAATAA0AAAAJAAEAAAAUAA0AAAAJAAEAAAATAAsAAAABAAIAAAAVAAwAAAAJAAEAAAAXAA0AAAAJAAEAAAAEAAAAAAAJAAMAAAAGAAEAAAAIAAQAAAAZAAsAAAABAAIAAAAbAAwAAAAJAAEAAAAdAA0AAAAJAAEAAAAIAAAAAAAJAAMAAAAKAAEAAAAIAAQAAAAdAAsAAAABAAIAAAAfAAwAAAAJAAEAAAAhAA0AAAAJAAEAAAAJAAAAAAAJAAMAAAAKAAAAAAAJAAMAAAALAAEAAAAIAAQAAAAMAAEAAAAIAAQAAAAeAAsAAAABAAIAAAAfAAsAAAABAAIAAAAgAAwAAAAJAAEAAAAhAAwAAAAJAAEAAAAAAP//AAACAAYAAAABAP//AAAJAAIAAAACAP//AAAAAAMAAAADAP//AAAAAAMAAAAEAP//AAAAAAMAAAAFAP//AAAAAAMAAAAGAP//AAAAAAMAAAAHAP//AAAAAAMAAAAIAP//AAAAAAMAAAAJAP//AAAAAAMAAAAKAP//AAAAAAMAAAALAP//AAAAAAMAAAAMAP//AAAAAAMAAAANAP//AAAAAAMAAAAOAP//AAAAAAMAAAAPAP//AAAAAAMAAAAQAP//AAAAAAMAAAARAP//AAAAAAMAAAASAP//AAAAAAMAAAATAP//AAAAAAMAAAAVAP//AAAAAAMAAAAWAP//AAAAAAMAAAAXAP//AAAAAAMAAAAYAP//AAAAAAMAAAAZAP//AAAAAAMAAAAaAP//AAAAAAMAAAAbAP//AAAAAAMAAAAcAP//AAAAAAMAAAAdAP//AAAAAAMAAAAeAP//AAAAAAMAAAAfAP//AAAAAAMAAAAgAP//AAAAAAMAAAAhAP//AAAAAAMAAAAiAP//AAABAAMAAAAjAP//AAACAAYAAAAjAAAAAAADAAYAAAAjAAEAAAADAAYAAAAjAAIAAAADAAYAAAAjAAMAAAADAAYAAAAjAAkAAAADAAYAAAAjAAoAAAADAAYAAAAjAAsAAAADAAYAAAAjAAwAAAADAAYAAAAjAA0AAAADAAYAAAAAABEAAAADAAYAAAAAABAAAAADAAYAAAAAAA8AAAADAAYAAAAAAA4AAAADAAYAAAAAAA0AAAADAAYAAAAAAAwAAAADAAYAAAAAAAsAAAADAAYAAAAAAAoAAAADAAYAAAAAAAkAAAADAAYAAAAAAAMAAAADAAYAAAAAAAIAAAADAAYAAAAAAAEAAAADAAYAAAADAAsAAAABAAIAAAABAAsAAAAAAAIAAAABAAwAAAAJAAEAAAABAA0AAAAJAAEAAAACAA0AAAAJAAEAAAACAAwAAAAJAAEAAAACAAsAAAABAAIAAAADAAwAAAAJAAEAAAADAA0AAAAJAAEAAAAEAA0AAAAJAAEAAAAEAAwAAAAJAAEAAAAEAAsAAAABAAIAAAAFAAsAAAABAAIAAAAFAAwAAAAJAAEAAAAFAA0AAAAJAAEAAAAGAA0AAAAJAAEAAAAGAAwAAAAJAAEAAAAGAAsAAAABAAIAAAAHAAsAAAABAAIAAAAHAAwAAAAJAAEAAAAHAA0AAAAJAAEAAAAIAA0AAAAJAAEAAAAIAAwAAAAJAAEAAAAIAAsAAAABAAIAAAAJAAsAAAABAAIAAAAJAAwAAAAJAAEAAAAJAA0AAAAJAAEAAAAKAA0AAAAJAAEAAAAKAAwAAAAJAAEAAAAKAAsAAAABAAIAAAALAAsAAAABAAIAAAALAAwAAAAJAAEAAAALAA0AAAAJAAEAAAAMAA0AAAAJAAEAAAAMAAwAAAAJAAEAAAAMAAsAAAABAAIAAAANAAsAAAABAAIAAAANAAwAAAAJAAEAAAANAA0AAAAJAAEAAAAOAA0AAAAJAAEAAAAOAAwAAAAJAAEAAAAOAAsAAAABAAIAAAAPAAsAAAABAAIAAAAPAAwAAAAJAAEAAAAPAA0AAAAJAAEAAAAQAA0AAAAJAAEAAAAQAAwAAAAJAAEAAAARAA0AAAAJAAEAAAASAA0AAAAJAAEAAAAVAAEAAAAIAAQAAAAVAAAAAAAJAAMAAAATAAAAAAAJAAMAAAASAAAAAAAJAAMAAAARAAAAAAAJAAMAAAAQAAAAAAAJAAMAAAAPAAAAAAAJAAMAAAAOAAAAAAAJAAMAAAANAAAAAAAJAAMAAAAMAAAAAAAJAAMAAAALAAAAAAAJAAMAAAANAAEAAAAIAAQAAAAOAAEAAAAIAAQAAAAPAAEAAAAIAAQAAAAQAAEAAAAIAAQAAAARAAEAAAAIAAQAAAASAAEAAAAIAAQAAAATAAEAAAAIAAQAAAAWAAEAAAAIAAQAAAAWAAAAAAAJAAMAAAAXAAAAAAAJAAMAAAAZAAAAAAAJAAMAAAAZAAEAAAAIAAQAAAAaAAEAAAAIAAQAAAAaAAAAAAAJAAMAAAAbAAAAAAAJAAMAAAAbAAEAAAAIAAQAAAAcAAEAAAAIAAQAAAAcAAAAAAAJAAMAAAAdAAAAAAAJAAMAAAAdAAEAAAAIAAQAAAAeAAEAAAAIAAQAAAAeAAAAAAAJAAMAAAAfAAAAAAAJAAMAAAAfAAEAAAAIAAQAAAAgAAEAAAAIAAQAAAAgAAAAAAAJAAMAAAAhAAAAAAAJAAMAAAAhAAEAAAAIAAQAAAAiAAEAAAAJAAQAAAAiAAAAAAAAAAQAAAAhAAsAAAABAAIAAAAgAAsAAAABAAIAAAAiAAsAAAACAAIAAAAiAAwAAAAJAAEAAAAiAA0AAAAJAAEAAAARAAsAAAABAAIAAAACAAAAAAAJAAMAAAABAAAAAAAIAAMAAAADAAAAAAAJAAMAAAADAAEAAAAIAAQAAAAIABIAAAAJAAEAAAAiAA8AAAAJAAEAAAAiABAAAAAJAAEAAAAiABEAAAAJAAEAAAAjAA8AAAADAAYAAAAjABAAAAADAAYAAAAjABEAAAADAAYAAAAjAA4AAAADAAYAAAACAA4AAAAHAAIAAAACAA8AAAAJAAEAAAACABAAAAAJAAEAAAACABEAAAAJAAEAAAADAA4AAAAHAAIAAAADAA8AAAAJAAEAAAADABAAAAAJAAEAAAADABEAAAAJAAEAAAAEAA4AAAAHAAIAAAAEAA8AAAAJAAEAAAAEABAAAAAJAAEAAAAEABEAAAAJAAEAAAAFAA4AAAAIAAIAAAAFAA8AAAAJAAEAAAAFABAAAAAJAAEAAAAFABEAAAAJAAEAAAAGAA4AAAAIAAAAAAAGAA8AAAAHAAEAAAAGABAAAAAHAAEAAAAGABEAAAAGAAIAAAAHAA4AAAAJAAEAAAAHAA8AAAAJAAEAAAAHABAAAAAJAAEAAAAHABEAAAAGAAMAAAAIAA4AAAAJAAEAAAAIAA8AAAAJAAEAAAAIABAAAAAJAAEAAAAIABEAAAAHAAIAAAAJAA4AAAAJAAEAAAAJAA8AAAAJAAEAAAAJABAAAAAJAAEAAAAJABEAAAAHAAIAAAAKAA4AAAAJAAEAAAAKAA8AAAAJAAEAAAAKABAAAAAJAAEAAAAKABEAAAAHAAIAAAALAA4AAAAJAAEAAAALAA8AAAAJAAEAAAALABAAAAAJAAEAAAALABEAAAAHAAIAAAAMAA4AAAAJAAEAAAAMAA8AAAAJAAEAAAAMABAAAAAJAAEAAAAMABEAAAAHAAIAAAANAA4AAAAJAAEAAAANAA8AAAAJAAEAAAANABAAAAAJAAEAAAANABEAAAAIAAIAAAAOAA4AAAAIAAAAAAAOAA8AAAAHAAEAAAAOABAAAAAHAAEAAAAOABEAAAAGAAIAAAAPAA4AAAAGAAMAAAAPAA8AAAAJAAEAAAAPABAAAAAJAAEAAAAPABEAAAAJAAEAAAAQAA4AAAAHAAIAAAAQAA8AAAAJAAEAAAAQABAAAAAJAAEAAAAQABEAAAAJAAEAAAABAA4AAAAGAAMAAAABAA8AAAAJAAEAAAABABAAAAAJAAEAAAABABEAAAAJAAEAAAASAA4AAAAHAAIAAAASAA8AAAAJAAEAAAASABAAAAAJAAEAAAASABEAAAAJAAEAAAATAA4AAAAHAAIAAAATAA8AAAAJAAEAAAATABAAAAAJAAEAAAAUAA4AAAAIAAIAAAAUAA8AAAAJAAEAAAAUABAAAAAJAAEAAAAVAA4AAAAIAAAAAAAVAA8AAAAHAAEAAAAVABAAAAAHAAEAAAAVABEAAAAGAAIAAAAWAA4AAAAJAAEAAAAWAA8AAAAJAAEAAAAWABAAAAAJAAEAAAAWABEAAAAGAAMAAAAXAA4AAAAJAAEAAAAXAA8AAAAJAAEAAAAXABAAAAAJAAEAAAAXABEAAAAHAAIAAAAYAA4AAAAJAAEAAAAYAA8AAAAJAAEAAAAYABAAAAAJAAEAAAAYABEAAAAHAAIAAAAZAA4AAAAJAAEAAAAZAA8AAAAJAAEAAAAZABAAAAAJAAEAAAAZABEAAAAHAAIAAAAaAA4AAAAJAAEAAAAaAA8AAAAJAAEAAAAaABAAAAAJAAEAAAAaABEAAAAHAAIAAAAbAA4AAAAJAAEAAAAbAA8AAAAJAAEAAAAbABAAAAAJAAEAAAAbABEAAAAHAAIAAAAcAA4AAAAJAAEAAAAcAA8AAAAJAAEAAAAcABAAAAAJAAEAAAAcABEAAAAIAAIAAAAdAA4AAAAIAAAAAAAdAA8AAAAHAAEAAAAdABAAAAAHAAEAAAAdABEAAAAGAAIAAAAeAA4AAAAGAAMAAAAeAA8AAAAJAAEAAAAeABAAAAAJAAEAAAAeABEAAAAJAAEAAAAfAA4AAAAHAAIAAAAfAA8AAAAJAAEAAAAfABAAAAAJAAEAAAAfABEAAAAJAAEAAAAgAA4AAAAHAAIAAAAgAA8AAAAJAAEAAAAgABAAAAAJAAEAAAAgABEAAAAJAAEAAAAhAA4AAAAHAAIAAAAhAA8AAAAJAAEAAAAhABAAAAAJAAEAAAAhABEAAAAJAAEAAAATABEAAAAJAAEAAAARAA8AAAAJAAEAAAARABAAAAAJAAEAAAAUABEAAAAJAAEAAAARAA4AAAAHAAIAAAAAAAgAAAADAAYAAAAAAAcAAAADAAYAAAAAAAYAAAADAAYAAAAAAAUAAAADAAYAAAAAAAQAAAADAAYAAAAjAAQAAAADAAYAAAAjAAYAAAADAAYAAAAjAAcAAAADAAYAAAAjAAgAAAADAAYAAAABAAkAAAADAAAAAAAiAAkAAAADAAAAABAYAAkAAAAEAAAAAAAZAAkAAAAEAAAAAAAaAAkAAAAEAAAAAAAbAAkAAAAEAAAAAAAcAAkAAAAEAAAAAAAdAAkAAAAEAAAAAAAeAAkAAAAEAAAAAAAfAAkAAAAEAAAAAAAgAAkAAAAEAAAAAAAhAAkAAAAEAAAAAAABAAoAAAABAAEAAAAiAAoAAAADAAEAAAACAAoAAAACAAEAAAADAAoAAAACAAEAAAAEAAoAAAACAAEAAAAFAAoAAAACAAEAAAAGAAoAAAACAAEAAAAHAAoAAAACAAEAAAAIAAoAAAACAAEAAAAWAAoAAAACAAEAAAAXAAoAAAACAAEAAAAYAAoAAAACAAEAAAAZAAoAAAACAAEAAAAaAAoAAAACAAEAAAAbAAoAAAACAAEAAAAcAAoAAAACAAEAAAAdAAoAAAACAAEAAAAeAAoAAAACAAEAAAAfAAoAAAACAAEAAAAgAAoAAAACAAEAAAAhAAoAAAACAAEAAAAUAAEAAAAIAAQAAAAUAAAAAAAJAAMAAAAUAP//AAAAAAMAAAAQAAkAAAAEAAAAAAAPAAkAAAAEAAAAAAAOAAkAAAAEAAAAAAANAAkAAAAEAAAAAAAMAAkAAAAEAAAAAAALAAkAAAAEAAAAAAAKAAkAAAAEAAAAAAAJAAkAAAAEAAAAAAAIAAkAAAAEAAAAAAAHAAkAAAAEAAAAAAARAAkAAAAEAAAAAAASAAkAAAAEAAAAAAATAAkAAAAEAAAAAAAUAAkAAAAEAAAAAAAVAAkAAAAEAAAAAAAWAAkAAAAEAAAAAAAVAAoAAAACAAEAAAAUAAoAAAACAAEAAAATAAoAAAACAAEAAAASAAoAAAACAAEAAAARAAoAAAACAAEAAAAQAAoAAAACAAEAAAAPAAoAAAACAAEAAAAOAAoAAAACAAEAAAANAAoAAAACAAEAAAAMAAoAAAACAAEAAAALAAoAAAACAAEAAAAKAAoAAAACAAEAAAAJAAoAAAACAAEAAAAGAAkAAAAEAAAAAAAFAAkAAAAEAAAAAAAEAAkAAAAEAAAAAAADAAkAAAAEAAAAAAACAAkAAAAEAAAAAAAXAAkAAAAEAAAAAAAYAAEAAAAIAAQAAAAYAAAAAAAJAAMAAAAXAAEAAAAIAAQAAAAjAAUAAAADAAYAAAA=")
+tile_set = SubResource("TileSet_pq4u0")
+
+[node name="Board3" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.286275, 0.254902, 1, 1)
+position = Vector2(333.5, 482)
+scale = Vector2(3, 3)
+texture = ExtResource("3_skj3i")
+
+[node name="Locker4" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.42861, 0.3822, 0.78, 1)
+position = Vector2(808, 554)
+scale = Vector2(3, 3)
+texture = ExtResource("4_fntlt")
+
+[node name="Box1" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.286275, 0.254902, 1, 1)
+position = Vector2(175, 545)
+scale = Vector2(4, 4)
+texture = ExtResource("4_u5fbv")
+
+[node name="18" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.366267, 0.2144, 0.67, 1)
+position = Vector2(153, 584)
+scale = Vector2(3, 3)
+texture = ExtResource("5_7owb0")
+
+[node name="Box2" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.286275, 0.254902, 1, 1)
+position = Vector2(228, 576)
+scale = Vector2(2, 2)
+texture = ExtResource("6_dfh65")
+
+[node name="Box3" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.286275, 0.254902, 1, 1)
+position = Vector2(845, 576)
+rotation = 3.14159
+scale = Vector2(2, -2)
+texture = ExtResource("7_itu11")
+
+[node name="Box4" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.286275, 0.254902, 1, 1)
+position = Vector2(927, 560)
+rotation = -3.14159
+scale = Vector2(3, -3)
+texture = ExtResource("6_dfh65")
+
+[node name="Bucket" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.14902, 0.160784, 0.541176, 1)
+position = Vector2(961, 554)
+scale = Vector2(3, 3)
+texture = ExtResource("8_8kt74")
+
+[node name="Mop" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.286275, 0.254902, 1, 1)
+position = Vector2(903, 554)
+scale = Vector2(3, 3)
+texture = ExtResource("9_ixpgv")
+
+[node name="26" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.3705, 0.2325, 0.75, 1)
+position = Vector2(574, 554)
+scale = Vector2(2.265, 2.265)
+texture = ExtResource("11_m6m48")
+
+[node name="20" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.3705, 0.2325, 0.75, 1)
+position = Vector2(619, 575)
+scale = Vector2(-3, 3)
+texture = ExtResource("12_7abox")
+
+[node name="21" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.3705, 0.2325, 0.75, 1)
+position = Vector2(535, 575)
+scale = Vector2(3, 3)
+texture = ExtResource("12_7abox")
+
+[node name="22" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.3705, 0.2325, 0.75, 1)
+position = Vector2(472, 575)
+scale = Vector2(3, 3)
+texture = ExtResource("13_iktaq")
+
+[node name="23" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.3705, 0.2325, 0.75, 1)
+position = Vector2(681, 575)
+rotation = 3.14159
+scale = Vector2(3, -3)
+texture = ExtResource("13_iktaq")
+
+[node name="Fire-extinguisher1" type="Sprite2D" parent="Background/TileMap/Layer1"]
+modulate = Color(0.36504, 0.1872, 0.78, 1)
+position = Vector2(239, 528)
+scale = Vector2(2, 2)
+texture = ExtResource("14_tfgwc")
+
+[node name="Conveyor" type="Node2D" parent="Background"]
+position = Vector2(-1, 216)
+
+[node name="Conv" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(81, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv2" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(113, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv3" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(145, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv4" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(177, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv5" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(209, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv6" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(241, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv7" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(273, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv8" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(305, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv9" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(337, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv10" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(369, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv11" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(401, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv12" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(433, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv13" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(465, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv14" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(497, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv15" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(529, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv16" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(561, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv17" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(593, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv18" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(625, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv19" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(657, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv20" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(689, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv21" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(721, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv22" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(753, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv23" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(785, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv24" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(817, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv25" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(849, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv26" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(881, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv27" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(913, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv28" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(945, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv29" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(977, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv30" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(1009, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv31" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(1041, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="Conv32" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(1073, 105)
+sprite_frames = SubResource("SpriteFrames_7krkm")
+autoplay = "default"
+
+[node name="ConvSt" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(49, 105)
+sprite_frames = SubResource("SpriteFrames_tlewe")
+autoplay = "default"
+
+[node name="ConvEn" type="AnimatedSprite2D" parent="Background/Conveyor"]
+position = Vector2(1105, 105)
+sprite_frames = SubResource("SpriteFrames_hwcbq")
+autoplay = "default"
+
+[node name="Chao" type="StaticBody2D" parent="Background"]
+position = Vector2(552, 656)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Chao"]
+position = Vector2(0, -0.000793457)
+scale = Vector2(181.624, 1.59984)
+shape = SubResource("RectangleShape2D_o6kdl")
+
+[node name="parede1" type="StaticBody2D" parent="Background"]
+position = Vector2(16, 349)
+scale = Vector2(0.912018, 1.44179)
+
+[node name="parade1coll" type="CollisionShape2D" parent="Background/parede1"]
+shape = SubResource("RectangleShape2D_o6u1x")
+
+[node name="Parede2" type="StaticBody2D" parent="Background"]
+position = Vector2(1140, 352)
+rotation = 3.14159
+scale = Vector2(0.912217, -1.34789)
+
+[node name="parade2coll" type="CollisionShape2D" parent="Background/Parede2"]
+position = Vector2(4.44659, -2.21994)
+shape = SubResource("RectangleShape2D_o6u1x")
+
+[node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_7mart")
+autoplay = true
+parameters/looping = true
+
+[node name="PlayerHurtStream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_dd2n1")
+
+[node name="EnemyHurtStream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_ec7br")
+
+[node name="Laite" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.376471)
+z_index = 4096
+position = Vector2(190.981, 528.657)
+scale = Vector2(0.978974, 1.17351)
+texture = ExtResource("21_dr2xx")
+
+[node name="Laite2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.376471)
+z_index = 4096
+position = Vector2(973.982, 528.657)
+scale = Vector2(0.978974, 1.17351)
+texture = ExtResource("21_dr2xx")
+
+[node name="Laite3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.376471)
+z_index = 4096
+position = Vector2(575.982, 528.657)
+scale = Vector2(0.978974, 1.17351)
+texture = ExtResource("21_dr2xx")
+
+[node name="battle_camera" type="Camera2D" parent="."]
+position = Vector2(581, 587)
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 648
+script = ExtResource("2_vbxtt")
+
+[node name="UI_layer" type="CanvasLayer" parent="battle_camera"]
+
+[node name="Healthbar_Player" type="TextureProgressBar" parent="battle_camera/UI_layer"]
+z_index = 1
+offset_left = 54.0001
+offset_top = 22.0
+offset_right = 99.0001
+offset_bottom = 30.34
+scale = Vector2(7, 7)
+value = 100.0
+texture_progress = ExtResource("6_vpf56")
+texture_progress_offset = Vector2(2, 2)
+script = ExtResource("7_ubfqr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Damagebar_Player" type="TextureProgressBar" parent="battle_camera/UI_layer/Healthbar_Player"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+value = 100.0
+texture_under = ExtResource("5_vi61q")
+texture_progress = ExtResource("11_b7ndx")
+texture_progress_offset = Vector2(2, 2)
+metadata/_edit_use_anchors_ = true
+
+[node name="Player_damage_timer" type="Timer" parent="battle_camera/UI_layer/Healthbar_Player"]
+wait_time = 0.5
+
+[node name="Healthbar_Enemy" type="TextureProgressBar" parent="battle_camera/UI_layer"]
+z_index = 1
+offset_left = 1110.0
+offset_top = 23.0
+offset_right = 1155.0
+offset_bottom = 32.0
+scale = Vector2(-7, 7)
+size_flags_horizontal = 8
+value = 100.0
+texture_progress = ExtResource("6_vpf56")
+texture_progress_offset = Vector2(2, 2)
+script = ExtResource("7_1wvw0")
+metadata/_edit_use_anchors_ = true
+
+[node name="Damagebar_Enemy" type="TextureProgressBar" parent="battle_camera/UI_layer/Healthbar_Enemy"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 45.0
+offset_bottom = 9.0
+value = 100.0
+texture_under = ExtResource("5_vi61q")
+texture_progress = ExtResource("11_b7ndx")
+texture_progress_offset = Vector2(2, 2)
+metadata/_edit_use_anchors_ = true
+
+[node name="Enemy_damage_timer" type="Timer" parent="battle_camera/UI_layer/Healthbar_Enemy"]
+wait_time = 0.5
+
+[node name="Label_player" type="Label" parent="battle_camera/UI_layer"]
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.018
+offset_left = 72.0
+offset_top = 91.0
+offset_right = 94.68
+offset_bottom = 98.336
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 16
+text = "Player"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label_enemy" type="Label" parent="battle_camera/UI_layer"]
+offset_left = 1035.0
+offset_top = 90.0
+offset_right = 1110.0
+offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 16
+text = "Enemy"
+metadata/_edit_use_anchors_ = true
+
+[node name="Round_label" type="Label" parent="battle_camera/UI_layer"]
+offset_left = 469.0
+offset_top = 38.0
+offset_right = 682.0
+offset_bottom = 89.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 50
+text = "Round: X"
+script = ExtResource("9_giufu")
+metadata/_edit_use_anchors_ = true
+
+[node name="Round_Timer" type="Label" parent="battle_camera/UI_layer"]
+offset_left = 548.0
+offset_top = 87.0
+offset_right = 598.0
+offset_bottom = 127.0
+theme_override_fonts/font = ExtResource("34_i81a0")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("35_xrgkj")
+
+[node name="Player_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
+position = Vector2(347, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
+position = Vector2(48, 48)
+texture = ExtResource("36_jrxla")
+
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Player_itemframe_3/Bigframe"]
+custom_minimum_size = Vector2(30, 0)
+offset_left = -56.0
+offset_top = -38.0
+offset_right = 58.0
+offset_bottom = 58.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
+autowrap_mode = 2
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
+texture = ExtResource("33_7et10")
+
+[node name="Hover_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_3" groups=["player_frames"]]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_3/Hover_collision"]
+shape = SubResource("RectangleShape2D_ol2by")
+
+[node name="Player_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
+position = Vector2(258, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
+position = Vector2(48, 48)
+texture = ExtResource("36_jrxla")
+
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Player_itemframe_2/Bigframe"]
+offset_left = -56.0
+offset_top = -38.0
+offset_right = 58.0
+offset_bottom = 58.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
+autowrap_mode = 2
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
+texture = ExtResource("33_7et10")
+
+[node name="Hover_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_2" groups=["player_frames"]]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_2/Hover_collision"]
+shape = SubResource("RectangleShape2D_fiwkh")
+
+[node name="Player_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
+position = Vector2(172, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+position = Vector2(48, 48)
+texture = ExtResource("36_jrxla")
+
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Player_itemframe_1/Bigframe"]
+offset_left = -56.0
+offset_top = -38.0
+offset_right = 58.0
+offset_bottom = 58.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
+autowrap_mode = 2
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+texture = ExtResource("33_7et10")
+
+[node name="Hover_collision" type="Area2D" parent="battle_camera/UI_layer/Player_itemframe_1" groups=["player_frames"]]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_1/Hover_collision"]
+z_index = 8
+shape = SubResource("RectangleShape2D_vcdk6")
+
+[node name="Enemy_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
+position = Vector2(819, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
+position = Vector2(-40, 48)
+texture = ExtResource("36_jrxla")
+
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Enemy_itemframe_1/Bigframe"]
+custom_minimum_size = Vector2(32, 0)
+offset_left = -56.0
+offset_top = -38.0
+offset_right = 58.0
+offset_bottom = 58.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
+texture = ExtResource("33_7et10")
+
+[node name="Hover_collision" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_1" groups=["enemy_frames"]]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision"]
+shape = SubResource("RectangleShape2D_vcdk6")
+
+[node name="Enemy_itemframe_2" type="Sprite2D" parent="battle_camera/UI_layer"]
+position = Vector2(905, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
+position = Vector2(-40, 48)
+texture = ExtResource("36_jrxla")
+
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Enemy_itemframe_2/Bigframe"]
+custom_minimum_size = Vector2(32, 0)
+offset_left = -56.0
+offset_top = -38.0
+offset_right = 58.0
+offset_bottom = 58.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
+texture = ExtResource("33_7et10")
+
+[node name="Hover_collision" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_2" groups=["enemy_frames"]]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision"]
+shape = SubResource("RectangleShape2D_e7i7q")
+
+[node name="Enemy_itemframe_3" type="Sprite2D" parent="battle_camera/UI_layer"]
+position = Vector2(994, 123)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("13_7hk75")
+
+[node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
+position = Vector2(-40, 48)
+texture = ExtResource("36_jrxla")
+
+[node name="Item_description" type="RichTextLabel" parent="battle_camera/UI_layer/Enemy_itemframe_3/Bigframe"]
+custom_minimum_size = Vector2(32, 0)
+offset_left = -56.0
+offset_top = -38.0
+offset_right = 58.0
+offset_bottom = 58.0
+theme_override_fonts/normal_font = ExtResource("34_i81a0")
+text = "Empty slot. Holds a second weapon, when you get one."
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite_item" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
+texture = ExtResource("33_7et10")
+
+[node name="Hover_collision" type="Area2D" parent="battle_camera/UI_layer/Enemy_itemframe_3" groups=["enemy_frames"]]
+script = ExtResource("38_3nnha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision"]
+shape = SubResource("RectangleShape2D_yo620")
+
+[node name="Menu_pause" parent="." instance=ExtResource("3_sygqi")]
+visible = false
+
+[node name="Pizacomoio" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.0156863)
+position = Vector2(561, 522.26)
+scale = Vector2(10.275, 10.275)
+texture = ExtResource("33_wvca8")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="caixotas" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_0q6cn")
+position = Vector2(598, 207)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("36_g0ie3")
+
+[node name="Fundo" type="Sprite2D" parent="ParallaxBackground"]
+z_index = -4096
+position = Vector2(574.5, 180.5)
+scale = Vector2(25.839, 20)
+texture = ExtResource("37_0b0cw")
+
+[connection signal="timeout" from="suddendeathtimer" to="." method="_on_suddendeathtimer_timeout"]
+[connection signal="timeout" from="explotimer" to="." method="_on_explotimer_timeout"]
+[connection signal="timeout" from="deathtimer" to="." method="_on_deathtimer_timeout"]
+[connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Player" to="battle_camera/UI_layer/Healthbar_Player" method="_on_value_changed"]
+[connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Player/Player_damage_timer" to="battle_camera/UI_layer/Healthbar_Player" method="_on_player_damage_timer_timeout"]
+[connection signal="value_changed" from="battle_camera/UI_layer/Healthbar_Enemy" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_value_changed"]
+[connection signal="timeout" from="battle_camera/UI_layer/Healthbar_Enemy/Enemy_damage_timer" to="battle_camera/UI_layer/Healthbar_Enemy" method="_on_enemy_damage_timer_timeout"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_3/Hover_collision" to="battle_camera/UI_layer/Player_itemframe_3/Hover_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_3/Hover_collision" to="battle_camera/UI_layer/Player_itemframe_3/Hover_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_2/Hover_collision" to="battle_camera/UI_layer/Player_itemframe_2/Hover_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_2/Hover_collision" to="battle_camera/UI_layer/Player_itemframe_2/Hover_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Player_itemframe_1/Hover_collision" to="battle_camera/UI_layer/Player_itemframe_1/Hover_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Player_itemframe_1/Hover_collision" to="battle_camera/UI_layer/Player_itemframe_1/Hover_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision" to="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision" to="battle_camera/UI_layer/Enemy_itemframe_1/Hover_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision" to="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision" to="battle_camera/UI_layer/Enemy_itemframe_2/Hover_collision" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision" to="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision" to="battle_camera/UI_layer/Enemy_itemframe_3/Hover_collision" method="_on_mouse_exited"]

@@ -1,10 +1,14 @@
 extends Area2D
 
-@onready var mouse_houver = false
+func _ready() -> void:
+	$"../Bigframe".visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if mouse_houver == true:
+	pass
+
+func _on_mouse_entered() -> void:
+	if AlreadyOpen.UI_is_open == false:
 		if self.is_in_group("player_frames"):
 			$CollisionShape2D.position.x = 47.5
 			$CollisionShape2D.position.y = 47.5
@@ -17,16 +21,14 @@ func _process(delta: float) -> void:
 			$CollisionShape2D.scale.y = 4
 		$"../Bigframe/Item_description".visible = true
 		$"../Bigframe".visible = true
-	if mouse_houver == false:
-		$CollisionShape2D.position.x = 0
-		$CollisionShape2D.position.y = 0
-		$CollisionShape2D.scale.x = 1
-		$CollisionShape2D.scale.y = 1
-		$"../Bigframe/Item_description".visible = false
-		$"../Bigframe".visible = false
-
-func _on_mouse_entered() -> void:
-	mouse_houver = true
+		AlreadyOpen.boxopen(self)
+		AlreadyOpen.UI_is_open = true
 
 func _on_mouse_exited() -> void:
-	mouse_houver = false
+	$CollisionShape2D.position.x = 0
+	$CollisionShape2D.position.y = 0
+	$CollisionShape2D.scale.x = 1
+	$CollisionShape2D.scale.y = 1
+	$"../Bigframe/Item_description".visible = false
+	$"../Bigframe".visible = false
+	AlreadyOpen.UI_is_open = false
