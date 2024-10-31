@@ -31,4 +31,5 @@ func _on_mouse_exited() -> void:
 	$CollisionShape2D.scale.y = 1
 	$"../Bigframe/Item_description".visible = false
 	$"../Bigframe".visible = false
+	AlreadyOpen.boxclose(self)
 	AlreadyOpen.UI_is_open = false
