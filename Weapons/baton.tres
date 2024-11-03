@@ -17,3 +17,4 @@ bullet_velocity = 0
 Item_type = 1
 Item_name = "Baton"
 Description = "Deals weak and slow damage, but has great knockback."
+Price = 2

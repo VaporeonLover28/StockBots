@@ -17,3 +17,4 @@ bullet_velocity = 0
 Item_type = 1
 Item_name = "Scythe"
 Description = "Long cooldown, but deals great damage and pulls opponents closer to you."
+Price = 6

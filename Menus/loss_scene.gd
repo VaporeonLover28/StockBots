@@ -7,6 +7,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
+		PlayerLoadout.current_money = 4
+		RoundCounter.reroll_price = 1
 		RoundCounter.rounds = 0
 		PlayerLoadout.player_round_life = 3
 		PlayerLoadout.times_passed_item = 0
@@ -16,6 +18,8 @@ func _process(delta: float) -> void:
 		get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 	
 func _on_button_pressed() -> void:
+	PlayerLoadout.current_money = 4
+	RoundCounter.reroll_price = 1
 	RoundCounter.rounds = 0
 	PlayerLoadout.player_round_life = 3
 	PlayerLoadout.times_passed_item = 0

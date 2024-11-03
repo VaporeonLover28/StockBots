@@ -17,3 +17,4 @@ bullet_velocity = 7
 Item_type = 1
 Item_name = "Pistol"
 Description = "Weak, but efficient standart gun."
+Price = 3

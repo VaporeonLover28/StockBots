@@ -17,3 +17,4 @@ bullet_velocity = 7
 Item_type = 1
 Item_name = "Shotgun"
 Description = "Very short range, but great damage when hits."
+Price = 4

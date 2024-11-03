@@ -5,4 +5,5 @@ var player_round_life = 3
 var newest_weapon : Weapon_resource
 var oldest_weapon : Weapon_resource
 var current_mode : Mode_resource
+var current_money : int
 var times_passed_item : int

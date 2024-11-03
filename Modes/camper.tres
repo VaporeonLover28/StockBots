@@ -21,3 +21,4 @@ mode_probability_GSB = Array[int]([13, 14])
 Item_type = 0
 Item_name = "Camper"
 Description = "Makes your range much higher, good damage increase. Good with long-range."
+Price = 4

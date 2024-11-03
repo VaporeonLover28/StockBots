@@ -4,3 +4,4 @@ extends Resource; class_name Item_resource;
 @export_enum("Mode","Weapon") var Item_type : int
 @export var Item_name: String
 @export var Description: String
+@export var Price: int

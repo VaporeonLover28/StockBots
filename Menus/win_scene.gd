@@ -30,6 +30,7 @@ func _process(delta: float) -> void:
 		$"creepy music".play()
 		
 func _on_back_menu_button_pressed() -> void:
+	PlayerLoadout.current_money = 4
 	RoundCounter.rounds = 0 
 	PlayerLoadout.player_round_life = 3
 	PlayerLoadout.times_passed_item = 0

@@ -1,9 +1,9 @@
 Button
+Label
 TextureButton
 RichTextLabel
 CollisionShape2D
 Area2D
-Label
 Timer
 Sprite2D
 AnimatedSprite2D

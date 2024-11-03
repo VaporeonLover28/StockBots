@@ -106,7 +106,6 @@ func _on_deathtimer_timeout():
 	elif RoundCounter.rounds < 8:
 		if PlayerLoadout.player_round_life > 0:
 			if instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
-				print("draw")
 				RoundCounter.rounds += 1
 				player_has_died = true
 				enemy_has_died = true
@@ -117,6 +116,7 @@ func _on_deathtimer_timeout():
 				get_tree().change_scene_to_file("res://round_loss_scene.tscn")
 			elif instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
 				print("player win")
+				PlayerLoadout.current_money += round(4 * RoundCounter.rounds/2)
 				RoundCounter.rounds += 1
 				enemy_has_died = true
 				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")

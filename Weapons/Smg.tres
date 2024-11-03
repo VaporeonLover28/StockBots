@@ -17,3 +17,4 @@ bullet_velocity = 7
 Item_type = 1
 Item_name = "Heavy machine gun"
 Description = "High tier weapon, great and constant damage from a good distance."
+Price = 12
