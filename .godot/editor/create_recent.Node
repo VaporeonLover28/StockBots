@@ -1,3 +1,4 @@
+Sprite2D
 Button
 Label
 TextureButton
@@ -5,7 +6,6 @@ RichTextLabel
 CollisionShape2D
 Area2D
 Timer
-Sprite2D
 AnimatedSprite2D
 Node2D
 Node

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://cxcv2ao31a4ht"]
+[gd_scene load_steps=25 format=4 uid="uid://cxcv2ao31a4ht"]
 
 [ext_resource type="Script" path="res://Menus/upgraged_scene.gd" id="1_v6d15"]
 [ext_resource type="TileSet" uid="uid://dtnfu5ykm7ula" path="res://Menus/tiles.tres" id="2_0me02"]
@@ -9,9 +9,12 @@
 [ext_resource type="Shader" path="res://caixota.gdshader" id="9_1qrid"]
 [ext_resource type="Script" path="res://Menus/player_current_money.gd" id="9_sfxix"]
 [ext_resource type="Script" path="res://Menus/reroll_button.gd" id="9_vrxgd"]
+[ext_resource type="Texture2D" uid="uid://befihi6lxdef0" path="res://cog.png" id="10_cf0fa"]
 [ext_resource type="Script" path="res://Menus/current_player_loadout.gd" id="10_chbrl"]
 [ext_resource type="Texture2D" uid="uid://d4s5hbfw4h4k" path="res://Industria gamejam/caixaconveyor.png" id="10_pr0mk"]
+[ext_resource type="Script" path="res://Menus/scrap.gd" id="11_0upop"]
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="11_a6rk7"]
+[ext_resource type="Texture2D" uid="uid://d5iax7iloy18" path="res://cogtext.png" id="11_ugqvh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ahbtt"]
 atlas = ExtResource("3_uh4v8")
@@ -461,14 +464,25 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("11_a6rk7")
 
 [node name="Reroll_button" type="Button" parent="."]
-offset_left = 870.0
-offset_top = 555.0
-offset_right = 1000.0
-offset_bottom = 595.0
+offset_left = 723.0
+offset_top = 558.0
+offset_right = 1095.0
+offset_bottom = 598.0
 theme = ExtResource("2_j0vx0")
-text = "Reroll"
+text = "Reroll shop: X     Scrap"
 flat = true
 script = ExtResource("9_vrxgd")
+
+[node name="Scrap" type="Sprite2D" parent="Reroll_button"]
+clip_children = 2
+position = Vector2(249, 16)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_cf0fa")
+script = ExtResource("11_0upop")
+
+[node name="ScrapText" type="Sprite2D" parent="Reroll_button/Scrap"]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("11_ugqvh")
 
 [node name="Player_money" type="Label" parent="."]
 offset_left = 67.0
@@ -477,8 +491,19 @@ offset_right = 232.0
 offset_bottom = 180.0
 theme_override_fonts/font = ExtResource("11_a6rk7")
 theme_override_font_sizes/font_size = 24
-text = "Player money"
+text = "Scrap: X"
 script = ExtResource("9_sfxix")
+
+[node name="Scrap" type="Sprite2D" parent="Player_money"]
+clip_children = 2
+position = Vector2(-11, 9)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("10_cf0fa")
+script = ExtResource("11_0upop")
+
+[node name="ScrapText" type="Sprite2D" parent="Player_money/Scrap"]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("11_ugqvh")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

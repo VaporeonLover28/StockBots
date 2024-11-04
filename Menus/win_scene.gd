@@ -31,6 +31,7 @@ func _process(delta: float) -> void:
 		
 func _on_back_menu_button_pressed() -> void:
 	PlayerLoadout.current_money = 4
+	RoundCounter.reroll_price = 1
 	RoundCounter.rounds = 0 
 	PlayerLoadout.player_round_life = 3
 	PlayerLoadout.times_passed_item = 0

@@ -11,11 +11,11 @@ func roll() -> void:
 		$VBoxContainer/Item_sprite.texture = Item_loaded.weapon_sprite 
 		$VBoxContainer/Item_sprite.scale = Vector2(3,3)
 		$VBoxContainer/Item_name.text = Item_loaded.Item_name + ": Weapon"
-		$VBoxContainer/Item_price.text = "Price: $" + str(Item_loaded.Price)
+		$VBoxContainer/Item_price.text = "Price: " + str(Item_loaded.Price) + " Scrap"
 		$VBoxContainer/PanelContainer/Item_Label.text = Item_loaded.Description
 	if Item_loaded.Item_type == 0:
 		$VBoxContainer/Item_sprite.texture = Item_loaded.robo_image
 		$VBoxContainer/Item_sprite.scale = Vector2(3, 3)
 		$VBoxContainer/Item_name.text = Item_loaded.Item_name + ": Mode"
-		$VBoxContainer/Item_price.text = "Price: $" + str(Item_loaded.Price)
+		$VBoxContainer/Item_price.text = "Price: " + str(Item_loaded.Price) + " Scrap"
 		$VBoxContainer/PanelContainer/Item_Label.text = Item_loaded.Description
