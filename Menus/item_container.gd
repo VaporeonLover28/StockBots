@@ -11,11 +11,25 @@ func roll() -> void:
 		$VBoxContainer/Item_sprite.texture = Item_loaded.weapon_sprite 
 		$VBoxContainer/Item_sprite.scale = Vector2(3,3)
 		$VBoxContainer/Item_name.text = Item_loaded.Item_name + ": Weapon"
-		$VBoxContainer/Item_price.text = "Price: " + str(Item_loaded.Price) + " Scrap"
+		if Item_loaded.Price < 10:
+			$VBoxContainer/Item_price.text = "Price: " + str(Item_loaded.Price) + "      Scrap"
+			$VBoxContainer/Item_price/Scrap.position.x = 74
+			$VBoxContainer/Item_price/Scrap.position.y = 6
+		else:
+			$VBoxContainer/Item_price.text = "Price:  " + str(Item_loaded.Price) + "     Scrap"
+			$VBoxContainer/Item_price/Scrap.position.x = 80
+			$VBoxContainer/Item_price/Scrap.position.y = 6
 		$VBoxContainer/PanelContainer/Item_Label.text = Item_loaded.Description
 	if Item_loaded.Item_type == 0:
 		$VBoxContainer/Item_sprite.texture = Item_loaded.robo_image
 		$VBoxContainer/Item_sprite.scale = Vector2(3, 3)
 		$VBoxContainer/Item_name.text = Item_loaded.Item_name + ": Mode"
-		$VBoxContainer/Item_price.text = "Price: " + str(Item_loaded.Price) + " Scrap"
+		if Item_loaded.Price < 10:
+			$VBoxContainer/Item_price.text = "Price: " + str(Item_loaded.Price) + "      Scrap"
+			$VBoxContainer/Item_price/Scrap.position.x = 74
+			$VBoxContainer/Item_price/Scrap.position.y = 6
+		else:
+			$VBoxContainer/Item_price.text = "Price:  " + str(Item_loaded.Price) + "     Scrap"
+			$VBoxContainer/Item_price/Scrap.position.x = 80
+			$VBoxContainer/Item_price/Scrap.position.y = 6
 		$VBoxContainer/PanelContainer/Item_Label.text = Item_loaded.Description
