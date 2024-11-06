@@ -29,7 +29,6 @@ func _on_item_choice_button_2_pressed() -> void:
 		PlayerLoadout.current_money =  PlayerLoadout.current_money - item_container2.Item_loaded.Price
 		get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 
-
 func _on_item_choice_button_3_pressed() -> void:
 	if PlayerLoadout.current_money >= item_container3.Item_loaded.Price:
 		if item_container3.Item_loaded.Item_type == 1:

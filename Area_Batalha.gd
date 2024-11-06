@@ -20,7 +20,7 @@ var timer_death_timer_started = false
 @onready var enemy_item_description_1: RichTextLabel = $battle_camera/UI_layer/Enemy_itemframe_1/Bigframe/Item_description
 @onready var enemy_item_description_2: RichTextLabel = $battle_camera/UI_layer/Enemy_itemframe_2/Bigframe/Item_description
 @onready var enemy_item_description_3: RichTextLabel = $battle_camera/UI_layer/Enemy_itemframe_3/Bigframe/Item_description
-
+var alastorng = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -83,6 +83,9 @@ func _ready():
 		enemy_item_description_3.text = instantiated_enemy.mode.Description
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	
+	alastoroll(randf_range(0,10000000))
+	
 	if instantiated_player.current_life <= 0 or instantiated_enemy.current_life <= 0:
 		#if timer_explosion_started == false:
 			#print("algo aí")
@@ -156,3 +159,8 @@ func _on_explotimer_timeout() -> void:
 func _on_suddendeathtimer_timeout() -> void:
 	instantiated_enemy.current_life = 1
 	instantiated_player.current_life = 1
+
+func alastoroll(number):
+	print(number)
+	if number == 4145708:
+		

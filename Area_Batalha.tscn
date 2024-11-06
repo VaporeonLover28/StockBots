@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=85 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
@@ -34,6 +34,8 @@
 [ext_resource type="AudioStream" uid="uid://xoycf3uxb4dd" path="res://Bleep_02.wav" id="20_dd2n1"]
 [ext_resource type="Texture2D" uid="uid://8vmegvyjds0c" path="res://laite.png" id="21_dr2xx"]
 [ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
+[ext_resource type="Texture2D" uid="uid://dtkhd41y2rcmx" path="res://HILUXER.png" id="22_swxpq"]
+[ext_resource type="Texture2D" uid="uid://bfh22hboojans" path="res://Industria gamejam/1 Tiles/IndustrialTile_65.png" id="23_o8qwx"]
 [ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://Icones gameJam/1 Icons/7/Skillicon7_01.png" id="33_7et10"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="34_i81a0"]
@@ -1134,6 +1136,73 @@ position = Vector2(1105, 105)
 sprite_frames = SubResource("SpriteFrames_hwcbq")
 autoplay = "default"
 
+[node name="alastnode" type="Node2D" parent="Background"]
+
+[node name="hiluxer" type="Sprite2D" parent="Background/alastnode"]
+position = Vector2(9, 281)
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("22_swxpq")
+
+[node name="parede" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(16, 304)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede2" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(16, 272)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede3" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(16, 240)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede4" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(1136, 304)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede5" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(1136, 272)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede6" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(1136, 240)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede7" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(1136, 208)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede8" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(1136, 176)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede9" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(1136, 144)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede10" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(16, 208)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede11" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(16, 176)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede12" type="Sprite2D" parent="Background/alastnode"]
+z_index = 135
+position = Vector2(16, 144)
+texture = ExtResource("23_o8qwx")
+
 [node name="Chao" type="StaticBody2D" parent="Background"]
 position = Vector2(552, 656)
 
@@ -1306,6 +1375,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_3"]
+visible = false
 position = Vector2(48, 48)
 texture = ExtResource("36_jrxla")
 
@@ -1333,6 +1403,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
+visible = false
 position = Vector2(48, 48)
 texture = ExtResource("36_jrxla")
 
@@ -1360,6 +1431,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+visible = false
 position = Vector2(48, 48)
 texture = ExtResource("36_jrxla")
 
@@ -1388,6 +1460,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_1"]
+visible = false
 position = Vector2(-40, 48)
 texture = ExtResource("36_jrxla")
 
@@ -1415,6 +1488,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_2"]
+visible = false
 position = Vector2(-40, 48)
 texture = ExtResource("36_jrxla")
 
@@ -1442,6 +1516,7 @@ scale = Vector2(2.2, 2.2)
 texture = ExtResource("13_7hk75")
 
 [node name="Bigframe" type="Sprite2D" parent="battle_camera/UI_layer/Enemy_itemframe_3"]
+visible = false
 position = Vector2(-40, 48)
 texture = ExtResource("36_jrxla")
 
