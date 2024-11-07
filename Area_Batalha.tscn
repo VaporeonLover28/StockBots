@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=88 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
@@ -36,6 +36,9 @@
 [ext_resource type="AudioStream" uid="uid://bj50mbliun6mt" path="res://Bleep_05.wav" id="21_ec7br"]
 [ext_resource type="Texture2D" uid="uid://dtkhd41y2rcmx" path="res://HILUXER.png" id="22_swxpq"]
 [ext_resource type="Texture2D" uid="uid://bfh22hboojans" path="res://Industria gamejam/1 Tiles/IndustrialTile_65.png" id="23_o8qwx"]
+[ext_resource type="Texture2D" uid="uid://cukxa5rpvu3c6" path="res://pterodactyl-8240037_640.png" id="24_qm8kw"]
+[ext_resource type="AudioStream" uid="uid://ch6s2gm1xc5mh" path="res://DENTRODAHILUXXXXX.wav" id="25_4yma5"]
+[ext_resource type="AudioStream" uid="uid://b5iqwy20gpjcy" path="res://Eagle-earrape.wav" id="26_whd41"]
 [ext_resource type="Texture2D" uid="uid://d6jrqbjdut31" path="res://Icones gameJam/1 Icons/7/Skillicon7_01.png" id="33_7et10"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="33_wvca8"]
 [ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://Industria gamejam/1 Background/RevMiniPixel.ttf" id="34_i81a0"]
@@ -1138,70 +1141,84 @@ autoplay = "default"
 
 [node name="alastnode" type="Node2D" parent="Background"]
 
+[node name="alastparedes" type="Node2D" parent="Background/alastnode"]
+
+[node name="parede" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(16, 304)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede2" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(16, 272)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede3" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(16, 240)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede4" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(1136, 304)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede5" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(1136, 272)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede6" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(1136, 240)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede7" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(1136, 208)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede8" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(1136, 176)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede9" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(1136, 144)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede10" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(16, 208)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede11" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(16, 176)
+texture = ExtResource("23_o8qwx")
+
+[node name="parede12" type="Sprite2D" parent="Background/alastnode/alastparedes"]
+z_index = 135
+position = Vector2(16, 144)
+texture = ExtResource("23_o8qwx")
+
 [node name="hiluxer" type="Sprite2D" parent="Background/alastnode"]
 position = Vector2(9, 281)
 scale = Vector2(0.115, 0.115)
 texture = ExtResource("22_swxpq")
 
-[node name="parede" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(16, 304)
-texture = ExtResource("23_o8qwx")
+[node name="Pterodactyl-8240037640" type="Sprite2D" parent="Background/alastnode"]
+position = Vector2(-28, 234)
+scale = Vector2(0.185, 0.185)
+texture = ExtResource("24_qm8kw")
 
-[node name="parede2" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(16, 272)
-texture = ExtResource("23_o8qwx")
+[node name="dentodarailucs" type="AudioStreamPlayer2D" parent="Background/alastnode"]
+stream = ExtResource("25_4yma5")
+volume_db = 18.639
 
-[node name="parede3" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(16, 240)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede4" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(1136, 304)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede5" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(1136, 272)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede6" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(1136, 240)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede7" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(1136, 208)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede8" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(1136, 176)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede9" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(1136, 144)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede10" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(16, 208)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede11" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(16, 176)
-texture = ExtResource("23_o8qwx")
-
-[node name="parede12" type="Sprite2D" parent="Background/alastnode"]
-z_index = 135
-position = Vector2(16, 144)
-texture = ExtResource("23_o8qwx")
+[node name="ureeeeee" type="AudioStreamPlayer2D" parent="Background/alastnode"]
+stream = ExtResource("26_whd41")
 
 [node name="Chao" type="StaticBody2D" parent="Background"]
 position = Vector2(552, 656)

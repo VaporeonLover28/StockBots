@@ -33,13 +33,14 @@ func _process(_delta):
 func on_hit(area):
 	if area.is_in_group("Player_type_hurtbox") and origin == 1:
 		$"../".instantiated_player.current_life -= dano
-		$"../".instantiated_player.velocity.x -= knockback * 3
-		$"../".instantiated_player.velocity.y = knockback
+		$"../".instantiated_player.velocity.x -= knockback * 3 * get_process_delta_time()
+		$"../".instantiated_player.velocity.y = knockback * get_process_delta_time()
 		$"../PlayerHurtStream".playing = true
 		self.queue_free()
 	if area.is_in_group("Enemy_type_hurtbox") and origin == 0:
 		$"../".instantiated_enemy.current_life -= dano
-		$"../".instantiated_enemy.velocity.x += knockback * 3
-		$"../".instantiated_enemy.velocity.y = knockback
+		$"../".instantiated_enemy.velocity.x += knockback * 3 * get_process_delta_time()
+		$"../".instantiated_enemy.velocity.y = knockback * get_process_delta_time()
 		$"../EnemyHurtStream".playing = true
 		self.queue_free()
+		

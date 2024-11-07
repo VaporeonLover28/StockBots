@@ -21,6 +21,8 @@ var timer_death_timer_started = false
 @onready var enemy_item_description_2: RichTextLabel = $battle_camera/UI_layer/Enemy_itemframe_2/Bigframe/Item_description
 @onready var enemy_item_description_3: RichTextLabel = $battle_camera/UI_layer/Enemy_itemframe_3/Bigframe/Item_description
 var alastorng = false
+var alastorinpos = false
+var alastelowbird = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -48,7 +50,6 @@ func _ready():
 	instantiated_enemy = load_enemy.instantiate()
 	add_child(instantiated_player)
 	add_child(instantiated_enemy)
-	
 	
 	instantiated_player.position.y = 597.991
 	instantiated_enemy.position.y = 597.991
@@ -84,7 +85,19 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	
-	alastoroll(randf_range(0,10000000))
+	alastoroll(round(randf_range(0,10000000)))
+	
+	if alastorng == false:
+		
+		$BGMusicStream.playing = false
+		if $Background/alastnode/dentodarailucs.playing == false:
+			$Background/alastnode/dentodarailucs.playing = true
+			
+		$Background/alastnode/hiluxer.position.x += 0.4
+		if $Background/alastnode/hiluxer.position.x >= 100:
+			alastorinpos = true
+		if alastorinpos == true:
+			pass
 	
 	if instantiated_player.current_life <= 0 or instantiated_enemy.current_life <= 0:
 		#if timer_explosion_started == false:
@@ -99,7 +112,6 @@ func _process(_delta):
 		if $deathtimer.is_stopped() == true and timer_death_timer_started == false:
 			$deathtimer.start()
 			timer_death_timer_started == true
-			
 
 func _on_deathtimer_timeout():
 	print("deathtimer")
@@ -161,6 +173,9 @@ func _on_suddendeathtimer_timeout() -> void:
 	instantiated_player.current_life = 1
 
 func alastoroll(number):
-	print(number)
 	if number == 4145708:
-		
+		print(number)
+		print("DENTRO DA HILUUUUUUUUUUUUUUX")
+		alastorng = true
+	elif alastorng == false:
+		print(number)
