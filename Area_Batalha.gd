@@ -26,6 +26,8 @@ var alastelowbird = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print(str(PlayerLoadout.newest_weapon_lv))
+	print(str(PlayerLoadout.oldest_weapon_lv))
 	$bgmover.play("bg")
 	
 	#gedagedigedageda-o
@@ -64,6 +66,12 @@ func _ready():
 		player_sprite_item.texture = instantiated_player.instanciated_weapon1.weapon_resource.weapon_sprite
 		player_sprite_item.scale = Vector2(0.66,0.66)
 		player_item_description_1.text = instantiated_player.instanciated_weapon1.weapon_resource.Description
+		if PlayerLoadout.newest_weapon_lv >= 2:
+			$battle_camera/UI_layer/Player_itemframe_1/Item_sparkle1.visible = true
+			$battle_camera/UI_layer/Player_itemframe_1/Item_sparkle2.visible = true
+		else:
+			$battle_camera/UI_layer/Player_itemframe_1/Item_sparkle1.visible = false
+			$battle_camera/UI_layer/Player_itemframe_1/Item_sparkle2.visible = false
 	if instantiated_player.instanciated_weapon2 != null:
 		player_sprite_item_2.texture = instantiated_player.instanciated_weapon2.weapon_resource.weapon_sprite
 		player_sprite_item_2.scale = Vector2(0.66,0.66)
@@ -85,7 +93,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	
-	alastoroll(round(randf_range(0,10000000)))
 	
 	if alastorng == false:
 		

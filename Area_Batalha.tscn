@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=4 uid="uid://ci64ulxa7vqdf"]
+[gd_scene load_steps=89 format=4 uid="uid://ci64ulxa7vqdf"]
 
 [ext_resource type="Script" path="res://Area_Batalha.gd" id="1_ipkxo"]
 [ext_resource type="Texture2D" uid="uid://beni1bq4cema" path="res://Industria gamejam/1 Tiles/Sheet.png" id="2_cb1ea"]
@@ -48,6 +48,7 @@
 [ext_resource type="Texture2D" uid="uid://btk11gbmgxk0b" path="res://2 Frames/bigframe.png" id="36_jrxla"]
 [ext_resource type="Texture2D" uid="uid://dhho27twwygpj" path="res://Industria gamejam/undo_maneiro.png" id="37_0b0cw"]
 [ext_resource type="Script" path="res://houver_collision.gd" id="38_3nnha"]
+[ext_resource type="Texture2D" uid="uid://ctvaq8awj7230" path="res://Item sparkl.png" id="44_es2lt"]
 
 [sub_resource type="Animation" id="Animation_mlsej"]
 length = 0.001
@@ -1442,6 +1443,16 @@ script = ExtResource("38_3nnha")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_2/Hover_collision2"]
 shape = SubResource("RectangleShape2D_fiwkh")
 
+[node name="Item_sparkle1" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
+visible = false
+position = Vector2(-10, -10.4545)
+texture = ExtResource("44_es2lt")
+
+[node name="Item_sparkle2" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_2"]
+visible = false
+position = Vector2(12.7273, 11.8182)
+texture = ExtResource("44_es2lt")
+
 [node name="Player_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(172, 123)
 scale = Vector2(2.2, 2.2)
@@ -1470,6 +1481,16 @@ script = ExtResource("38_3nnha")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="battle_camera/UI_layer/Player_itemframe_1/Hover_collision1"]
 z_index = 8
 shape = SubResource("RectangleShape2D_vcdk6")
+
+[node name="Item_sparkle1" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+visible = false
+position = Vector2(-10, -10.4545)
+texture = ExtResource("44_es2lt")
+
+[node name="Item_sparkle2" type="Sprite2D" parent="battle_camera/UI_layer/Player_itemframe_1"]
+visible = false
+position = Vector2(12.7273, 11.8182)
+texture = ExtResource("44_es2lt")
 
 [node name="Enemy_itemframe_1" type="Sprite2D" parent="battle_camera/UI_layer"]
 position = Vector2(819, 123)

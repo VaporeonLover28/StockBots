@@ -5,6 +5,7 @@ extends Node; class_name Weapon
 @onready var arma_gen_sprite = $ArmaGen_sprite
 @onready var bullet_spawn_marker = $bullet_spawn_marker
 @export var weapon_resource: Weapon_resource
+var weapon_bonus_lv : float
 @onready var bullet = preload("res://bullet.tscn")
 @onready var range = weapon_resource.weapon_range * $"../".mode.extra_range
 @onready var dano = weapon_resource.weapon_damage * $"../".mode.extra_damage
@@ -46,8 +47,8 @@ func funcao_weapon_cooldown():
 	if $"../".process_game == true:
 		for bullet_count in range(bullet_amount):
 			if weapon_resource.weapon_type == "melee":
-				$Melee.dano = dano
-				$Melee.knockback = weapon_knockback 
+				$Melee.dano = dano * weapon_bonus_lv
+				$Melee.knockback = weapon_knockback * weapon_bonus_lv
 				$Melee.origin = bullet_origin
 				$Melee.attack_separation_time = bullet_separation_time
 				$Melee/MeleeColl.disabled = false
@@ -66,8 +67,8 @@ func funcao_weapon_cooldown():
 						instanciated_bullet.Vl = bullet_velocity - (self.get_parent().velocity.x / 100)
 					else:
 						instanciated_bullet.Vl = bullet_velocity
-				instanciated_bullet.dano = dano
-				instanciated_bullet.knockback = weapon_knockback 
+				instanciated_bullet.dano = dano * weapon_bonus_lv
+				instanciated_bullet.knockback = weapon_knockback * weapon_bonus_lv
 				instanciated_bullet.global_position = bullet_spawn_marker.global_position
 				instanciated_bullet.origin = bullet_origin
 				if arma_gen_sprite.flip_h == false:

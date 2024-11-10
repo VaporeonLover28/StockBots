@@ -34,6 +34,8 @@ func restart():
 	PlayerLoadout.current_money = 4
 	RoundCounter.reroll_price = 1
 	RoundCounter.rounds = 0
+	PlayerLoadout.newest_weapon_lv = 1
+	PlayerLoadout.oldest_weapon_lv = 1
 	PlayerLoadout.player_round_life = 3
 	PlayerLoadout.times_passed_item = 0
 	PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()

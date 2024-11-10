@@ -25,6 +25,14 @@ res://Menus/loss_scene.tscn
 res://round_counter.tscn
 res://round_loss_scene.tscn
 res://player_loadout.tscn
+res://Menus/loss_scene.gd
+res://player_loadout.gd
+res://ArmaGen.gd
+res://Menus/menu.gd
+res://Menus/menu_pause.gd
+res://Robots.gd
+res://Menus/win_scene.gd
 res://Area_Batalha.gd
-res://bullet.gd
-res://default_bus_layout.tres
+res://Weapons/knife.tres
+res://Weapons/pistola.tres
+res://Menus/upgraged_scene.gd

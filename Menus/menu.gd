@@ -27,6 +27,8 @@ func start():
 		PlayerLoadout.oldest_weapon = load("res://Weapons/secret.tres")
 	PlayerLoadout.current_money = 4
 	RoundCounter.reroll_price = 1
+	PlayerLoadout.newest_weapon_lv = 1
+	PlayerLoadout.oldest_weapon_lv = 1
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 

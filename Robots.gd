@@ -68,6 +68,10 @@ func _ready():
 		if PlayerLoadout.newest_weapon != null:
 			instanciated_weapon1 = weapon.instantiate()
 			instanciated_weapon1.weapon_resource = PlayerLoadout.newest_weapon
+			if PlayerLoadout.newest_weapon_lv != 1:
+				instanciated_weapon1.weapon_bonus_lv = PlayerLoadout.newest_weapon_lv * 1.75
+			else:
+				instanciated_weapon1.weapon_bonus_lv = 1
 			add_child(instanciated_weapon1)
 			instanciated_weapon1.arma_gen_sprite.flip_h = false
 			
@@ -75,6 +79,10 @@ func _ready():
 			instanciated_weapon2 = weapon.instantiate()
 			instanciated_weapon2.z_index = -1
 			instanciated_weapon2.weapon_resource = PlayerLoadout.oldest_weapon
+			if PlayerLoadout.oldest_weapon_lv != 1:
+				instanciated_weapon2.weapon_bonus_lv = PlayerLoadout.oldest_weapon_lv * 1.75
+			else:
+				instanciated_weapon2.weapon_bonus_lv = 1
 			add_child(instanciated_weapon2)
 			instanciated_weapon2.arma_gen_sprite.flip_h = false
 		
@@ -90,6 +98,7 @@ func _ready():
 		instanciated_weapon1 = weapon.instantiate()
 		random_weapon1 = RoundCounter.current_item_weapons.pick_random()
 		instanciated_weapon1.weapon_resource = random_weapon1
+		instanciated_weapon1.weapon_bonus_lv = 1
 		add_child(instanciated_weapon1)
 		instanciated_weapon1.arma_gen_sprite.flip_h = true
 		if RoundCounter.rounds >= 2:
@@ -97,6 +106,7 @@ func _ready():
 			random_weapon2 = RoundCounter.current_item_weapons.pick_random()
 			instanciated_weapon2.z_index = -1
 			instanciated_weapon2.weapon_resource = random_weapon2
+			instanciated_weapon2.weapon_bonus_lv = 1
 			add_child(instanciated_weapon2)
 			instanciated_weapon2.arma_gen_sprite.flip_h = true
 			
