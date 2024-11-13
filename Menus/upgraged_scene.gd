@@ -40,14 +40,15 @@ func _on_item_choice_button_pressed() -> void:
 
 func _on_item_choice_button_2_pressed() -> void:
 	if PlayerLoadout.current_money >= item_container2.Item_loaded.Price:
-		if newest_weapon_reader == oldest_weapon_reader and newest_weapon_reader == item_container2.Item_loaded.Item_name and PlayerLoadout.oldest_weapon_lv < 2:
-			PlayerLoadout.newest_weapon_lv += 1
-			PlayerLoadout.oldest_weapon = null
-		else:
-			PlayerLoadout.oldest_weapon = PlayerLoadout.newest_weapon
-			PlayerLoadout.oldest_weapon_lv = PlayerLoadout.newest_weapon_lv
-			PlayerLoadout.newest_weapon = item_container2.Item_loaded
-			PlayerLoadout.newest_weapon_lv = 1
+		if item_container2.Item_loaded.Item_type == 1:
+			if newest_weapon_reader == oldest_weapon_reader and newest_weapon_reader == item_container2.Item_loaded.Item_name and PlayerLoadout.oldest_weapon_lv < 2:
+				PlayerLoadout.newest_weapon_lv += 1
+				PlayerLoadout.oldest_weapon = null
+			else:
+				PlayerLoadout.oldest_weapon = PlayerLoadout.newest_weapon
+				PlayerLoadout.oldest_weapon_lv = PlayerLoadout.newest_weapon_lv
+				PlayerLoadout.newest_weapon = item_container2.Item_loaded
+				PlayerLoadout.newest_weapon_lv = 1
 		if item_container2.Item_loaded.Item_type == 0:
 			PlayerLoadout.current_mode = item_container2.Item_loaded
 		PlayerLoadout.current_money =  PlayerLoadout.current_money - item_container2.Item_loaded.Price
@@ -55,14 +56,15 @@ func _on_item_choice_button_2_pressed() -> void:
 
 func _on_item_choice_button_3_pressed() -> void:
 	if PlayerLoadout.current_money >= item_container3.Item_loaded.Price:
-		if newest_weapon_reader == oldest_weapon_reader and newest_weapon_reader == item_container3.Item_loaded.Item_name and PlayerLoadout.oldest_weapon_lv < 2:
-			PlayerLoadout.newest_weapon_lv += 1
-			PlayerLoadout.oldest_weapon = null
-		else:
-			PlayerLoadout.oldest_weapon = PlayerLoadout.newest_weapon
-			PlayerLoadout.oldest_weapon_lv = PlayerLoadout.newest_weapon_lv
-			PlayerLoadout.newest_weapon = item_container3.Item_loaded
-			PlayerLoadout.newest_weapon_lv = 1
+		if item_container3.Item_loaded.Item_type == 1:
+			if newest_weapon_reader == oldest_weapon_reader and newest_weapon_reader == item_container3.Item_loaded.Item_name and PlayerLoadout.oldest_weapon_lv < 2:
+				PlayerLoadout.newest_weapon_lv += 1
+				PlayerLoadout.oldest_weapon = null
+			else:
+				PlayerLoadout.oldest_weapon = PlayerLoadout.newest_weapon
+				PlayerLoadout.oldest_weapon_lv = PlayerLoadout.newest_weapon_lv
+				PlayerLoadout.newest_weapon = item_container3.Item_loaded
+				PlayerLoadout.newest_weapon_lv = 1
 		if item_container3.Item_loaded.Item_type == 0:
 			PlayerLoadout.current_mode = item_container3.Item_loaded
 		PlayerLoadout.current_money =  PlayerLoadout.current_money - item_container3.Item_loaded.Price
