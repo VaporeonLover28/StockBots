@@ -13,6 +13,7 @@ res://Menus/pause_theme.tres
 res://fontpixel_theme.tres
 res://caixota.gdshader
 res://Area_Batalha.gdshader
+res://Area_Batalha.gd
 res://Menus/menu.tscn
 res://introduction.tscn
 res://Menus/credits_scene.tscn
@@ -23,4 +24,4 @@ res://Menus/loss_scene.tscn
 res://round_counter.tscn
 res://round_loss_scene.tscn
 res://player_loadout.tscn
-res://Menus/upgraged_scene.gd
+res://addons/Todo_Manager/doc/example.gd

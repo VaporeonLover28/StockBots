@@ -93,18 +93,33 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	
+	alastoroll(round(randf_range(0,10000000)))
 	
-	if alastorng == false:
+	if alastorng == true:
+		#TODO consertar easter egg
 		
 		$BGMusicStream.playing = false
+		if alastorinpos == false and alastelowbird == false:
+			$Background/alastnode/hiluxer.position.x += 0.4
+		
 		if $Background/alastnode/dentodarailucs.playing == false:
 			$Background/alastnode/dentodarailucs.playing = true
-			
-		$Background/alastnode/hiluxer.position.x += 0.4
-		if $Background/alastnode/hiluxer.position.x >= 100:
+		
+		if $Background/alastnode/hiluxer.position.x >= 275:
 			alastorinpos = true
+			
 		if alastorinpos == true:
-			pass
+			if $Background/alastnode/ureeeeee.playing == false:
+				$Background/alastnode/ureeeeee.playing = true
+			$Background/alastnode/bird.position.x += 5
+			
+		if $Background/alastnode/bird.position.x == 275:
+			alastorinpos = false
+			alastelowbird = true
+		
+		if alastelowbird == true:
+			$Background/alastnode/bird.position += 5
+			$Background/alastnode/hiluxer.position.x += 5
 	
 	if instantiated_player.current_life <= 0 or instantiated_enemy.current_life <= 0:
 		#if timer_explosion_started == false:

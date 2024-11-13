@@ -26,6 +26,10 @@ AlreadyOpen="*res://AlreadyOpen.gd"
 window/size/mode=4
 window/stretch/mode="canvas_items"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg")
+
 [global_group]
 
 Enemy_type_hurtbox=""
