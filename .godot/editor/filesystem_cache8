@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731772925
+::res://::1731773717
 AlreadyOpen.gd::GDScript::-1::1730485339::0::1::::<>Node<>::
-Area_Batalha.gd::GDScript::-1::1731540902::0::1::::<>Node2D<>::
-Area_Batalha.gdshader::Shader::-1::1731273169::0::1::::<><>::
-Area_Batalha.tscn::PackedScene::5400144948865599507::1731540902::0::1::::<><>::res://Area_Batalha.gd<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>res://battle_camera.gd<>uid://dpad7q5prlkr1::::res://robo gamejam/Arte experimental/HealthIceSlot.png<>uid://e5o2g1xto0ei::::res://Industria gamejam/2 Objects/Board3.png<>uid://ti04y3oterqt::::res://Menus/menu_pause.tscn<>uid://byklwnlhgc235::::res://stockbots_Battle.mp3<>uid://byafh2sgeok2q::::res://robo gamejam/Arte experimental/HealthIceIcon.png<>uid://c5pgkanxape01::::res://Industria gamejam/2 Objects/Locker4.png<>uid://cxxyxvrbyawxc::::res://Industria gamejam/2 Objects/Box1.png<>uid://cxy648aacf25k::::res://powerplant scenario gamejam/3 Objects/2 Decoration/18.png<>uid://bus3gxvaqgd7o::::res://heathbar_background.png<>uid://c6gukofqxjn4e::::res://Industria gamejam/2 Objects/Box2.png<>uid://d2sjy8h3h7tb4::::res://Healthbar_enchimento.png<>res://healthbar_enemy.gd<>uid://dv68bod06bl57::::res://Industria gamejam/2 Objects/Box3.png<>res://healthbar_player.gd<>uid://b5qgkf12tfpj2::::res://Industria gamejam/2 Objects/Bucket.png<>res://round_label.gd<>uid://dwen7gx4h1mc2::::res://Industria gamejam/2 Objects/Mop.png<>uid://d3wpb5c55x7tu::::res://Damagebar_enchiment.png<>uid://cq26ohjang3aq::::res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png<>uid://yasf3m23fpr5::::res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png<>uid://2gkcw1bng28h::::res://fontpixel_theme.tres<>uid://cw3ok2cns1ch0::::res://2 Frames/Frame_07.png<>uid://d2ubh3rmxvmsu::::res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png<>uid://cepabdw87w6tj::::res://Industria gamejam/3 Animated objects/Transporter2.png<>uid://cpi67xm2sx63c::::res://Industria gamejam/2 Objects/Fire-extinguisher1.png<>uid://b6rndm00is02q::::res://Industria gamejam/3 Animated objects/Hammer.png<>uid://pda6nje28um0::::res://Industria gamejam/3 Animated objects/Transporter1.png<>uid://hgwx0luh4jly::::res://Industria gamejam/3 Animated objects/Transporter3.png<>uid://xoycf3uxb4dd::::res://Bleep_02.wav<>uid://8vmegvyjds0c::::res://laite.png<>uid://bj50mbliun6mt::::res://Bleep_05.wav<>uid://dtkhd41y2rcmx::::res://HILUXER.png<>uid://bfh22hboojans::::res://Industria gamejam/1 Tiles/IndustrialTile_65.png<>uid://cukxa5rpvu3c6::::res://pterodactyl-8240037_640.png<>uid://ch6s2gm1xc5mh::::res://DENTRODAHILUXXXXX.wav<>uid://b5iqwy20gpjcy::::res://Eagle-earrape.wav<>uid://d6jrqbjdut31::::res://Icones gameJam/1 Icons/7/Skillicon7_01.png<>uid://07dec65xra5r::::res://pizacomoio.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>res://caixota.gdshader<>res://round_timer.gd<>uid://d4s5hbfw4h4k::::res://Industria gamejam/caixaconveyor.png<>uid://btk11gbmgxk0b::::res://2 Frames/bigframe.png<>uid://dhho27twwygpj::::res://Industria gamejam/undo_maneiro.png<>res://houver_collision.gd<>uid://ctvaq8awj7230::::res://Item sparkl.png
+Area_Batalha.gd::GDScript::-1::1731773111::0::1::::<>Node2D<>::
+Area_Batalha.gdshader::Shader::-1::1731773548::0::1::::<><>::
+Area_Batalha.tscn::PackedScene::5400144948865599507::1731773391::0::1::::<><>::res://Area_Batalha.gd<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>res://battle_camera.gd<>uid://dpad7q5prlkr1::::res://robo gamejam/Arte experimental/HealthIceSlot.png<>uid://e5o2g1xto0ei::::res://Industria gamejam/2 Objects/Board3.png<>uid://ti04y3oterqt::::res://Menus/menu_pause.tscn<>uid://byklwnlhgc235::::res://stockbots_Battle.mp3<>uid://byafh2sgeok2q::::res://robo gamejam/Arte experimental/HealthIceIcon.png<>uid://c5pgkanxape01::::res://Industria gamejam/2 Objects/Locker4.png<>uid://cxxyxvrbyawxc::::res://Industria gamejam/2 Objects/Box1.png<>uid://cxy648aacf25k::::res://powerplant scenario gamejam/3 Objects/2 Decoration/18.png<>uid://bus3gxvaqgd7o::::res://heathbar_background.png<>uid://c6gukofqxjn4e::::res://Industria gamejam/2 Objects/Box2.png<>uid://d2sjy8h3h7tb4::::res://Healthbar_enchimento.png<>res://healthbar_enemy.gd<>uid://dv68bod06bl57::::res://Industria gamejam/2 Objects/Box3.png<>res://healthbar_player.gd<>uid://b5qgkf12tfpj2::::res://Industria gamejam/2 Objects/Bucket.png<>res://round_label.gd<>uid://dwen7gx4h1mc2::::res://Industria gamejam/2 Objects/Mop.png<>uid://d3wpb5c55x7tu::::res://Damagebar_enchiment.png<>uid://cq26ohjang3aq::::res://powerplant scenario gamejam/3 Objects/2 Decoration/26.png<>uid://yasf3m23fpr5::::res://powerplant scenario gamejam/3 Objects/2 Decoration/20.png<>uid://2gkcw1bng28h::::res://fontpixel_theme.tres<>uid://cw3ok2cns1ch0::::res://2 Frames/Frame_07.png<>uid://d2ubh3rmxvmsu::::res://powerplant scenario gamejam/3 Objects/2 Decoration/21.png<>uid://cepabdw87w6tj::::res://Industria gamejam/3 Animated objects/Transporter2.png<>uid://cpi67xm2sx63c::::res://Industria gamejam/2 Objects/Fire-extinguisher1.png<>uid://b6rndm00is02q::::res://Industria gamejam/3 Animated objects/Hammer.png<>uid://pda6nje28um0::::res://Industria gamejam/3 Animated objects/Transporter1.png<>uid://hgwx0luh4jly::::res://Industria gamejam/3 Animated objects/Transporter3.png<>uid://xoycf3uxb4dd::::res://Bleep_02.wav<>uid://8vmegvyjds0c::::res://laite.png<>uid://bj50mbliun6mt::::res://Bleep_05.wav<>uid://dtkhd41y2rcmx::::res://HILUXER.png<>uid://bfh22hboojans::::res://Industria gamejam/1 Tiles/IndustrialTile_65.png<>uid://cukxa5rpvu3c6::::res://pterodactyl-8240037_640.png<>uid://ch6s2gm1xc5mh::::res://DENTRODAHILUXXXXX.wav<>uid://b5iqwy20gpjcy::::res://Eagle-earrape.wav<>uid://d6jrqbjdut31::::res://Icones gameJam/1 Icons/7/Skillicon7_01.png<>uid://07dec65xra5r::::res://pizacomoio.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>res://caixota.gdshader<>res://round_timer.gd<>uid://d4s5hbfw4h4k::::res://Industria gamejam/caixaconveyor.png<>uid://btk11gbmgxk0b::::res://2 Frames/bigframe.png<>uid://dhho27twwygpj::::res://Industria gamejam/undo_maneiro.png<>res://houver_collision.gd<>uid://ctvaq8awj7230::::res://Item sparkl.png
 ArmaGen.gd::GDScript::-1::1731540902::0::1::::Weapon<>Node<>::
 arma_gen.gd::GDScript::-1::1726523625::0::1::::<>Node<>::
-arma_gen.tscn::PackedScene::4607893857483116694::1731273010::0::1::::<><>::res://ArmaGen.gd<>uid://7exxfvrcnpao::::res://Weapons/Icon29_13.png<>res://melee.gd<>uid://dds0ynv0bstoo::::res://SP301_nyknck/SP301_nyknck/SP301_01.png<>uid://50mlri3vfh8c::::res://SP301_nyknck/SP301_nyknck/SP301_02.png<>uid://d32x5ydu2m2fq::::res://SP301_nyknck/SP301_nyknck/SP301_03.png<>uid://jwhch5yj6g65::::res://SP301_nyknck/SP301_nyknck/SP301_04.png<>uid://eo2p05df8r3j::::res://SP301_nyknck/SP301_nyknck/SP301_05.png
+arma_gen.tscn::PackedScene::4607893857483116694::1731773391::0::1::::<><>::res://ArmaGen.gd<>uid://7exxfvrcnpao::::res://Weapons/Icon29_13.png<>res://melee.gd<>uid://dds0ynv0bstoo::::res://SP301_nyknck/SP301_nyknck/SP301_01.png<>uid://50mlri3vfh8c::::res://SP301_nyknck/SP301_nyknck/SP301_02.png<>uid://d32x5ydu2m2fq::::res://SP301_nyknck/SP301_nyknck/SP301_03.png<>uid://jwhch5yj6g65::::res://SP301_nyknck/SP301_nyknck/SP301_04.png<>uid://eo2p05df8r3j::::res://SP301_nyknck/SP301_nyknck/SP301_05.png
 arm_drop.wav::AudioStreamWAV::7060105983057837916::1728931328::1731772941::1::::<><>::
 arrow.png::CompressedTexture2D::1163894417363539599::1727233275::1731772938::1::::<><>::
 atatck.tscn::PackedScene::3829231720759194005::1726181205::0::1::::<><>::uid://dds0ynv0bstoo::::res://SP301_nyknck/SP301_nyknck/SP301_01.png<>uid://50mlri3vfh8c::::res://SP301_nyknck/SP301_nyknck/SP301_02.png<>uid://d32x5ydu2m2fq::::res://SP301_nyknck/SP301_nyknck/SP301_03.png<>uid://jwhch5yj6g65::::res://SP301_nyknck/SP301_nyknck/SP301_04.png<>uid://eo2p05df8r3j::::res://SP301_nyknck/SP301_nyknck/SP301_05.png
@@ -18,7 +18,7 @@ Bleep_05.wav::AudioStreamWAV::3081591033310162191::1727225953::1731772941::1::::
 Boxes.gd::GDScript::-1::1730485339::0::1::::<>Node<>::
 bullet.gd::GDScript::-1::1731020041::0::1::::<>Area2D<>::
 bullet.tscn::PackedScene::6799741680790631131::1727050258::0::1::::<><>::res://bullet.gd<>uid://v03lvom2gxoj::::res://robo gamejam/6/Ball1.png
-caixota.gdshader::Shader::-1::1731273169::0::1::::<><>::
+caixota.gdshader::Shader::-1::1731773548::0::1::::<><>::
 chismest.mp3::AudioStreamMP3::904543138155335860::1727621209::1731772936::1::::<><>::
 cog.png::CompressedTexture2D::2677996652121381627::1727125081::1731772938::1::::<><>::
 cogtext.png::CompressedTexture2D::272984857327578773::1727125496::1731772938::1::::<><>::
@@ -33,7 +33,7 @@ dark_logo6.png::CompressedTexture2D::6045658771880382425::1726524426::1731772938
 dark_logo7.png::CompressedTexture2D::2042269449778353780::1726524656::1731772938::1::::<><>::
 dark_logo8.png::CompressedTexture2D::3665816681105061111::1726524675::1731772938::1::::<><>::
 dark_logo.png::CompressedTexture2D::5109143945065579457::1727125186::1731772938::1::::<><>::
-default_bus_layout.tres::AudioBusLayout::7306929473513873330::1731772929::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::7306929473513873330::1731773720::0::1::::<><>::
 deltarune explosion greenscreen.mp3::AudioStreamMP3::6138804616401488247::1727225953::1731772936::1::::<><>::
 DENTRODAHILUXXXXX.wav::AudioStreamWAV::5329300440423434711::1730936024::1731772941::1::::<><>::
 Eagle-earrape.wav::AudioStreamWAV::4509613077631348280::1730936024::1731772941::1::::<><>::
@@ -41,7 +41,7 @@ enemy_teste.gd::GDScript::-1::1727048667::0::1::::<>Robots<>::
 enemy_teste.tscn::PackedScene::4218012141222295258::1731273010::0::1::::<><>::res://enemy_teste.gd<>uid://c5go2phur6nw5::::res://Industria gamejam/1 Background/OLHA A EXPLOSÃO.png<>uid://ctpxhkx6nx4gp::::res://deltarune explosion greenscreen.mp3<>uid://cclgutysjb5rh::::res://robo gamejam/Arte experimental/Fire_Idle_Sheet2.png<>uid://cby8yigvw75xd::::res://robo gamejam/Arte experimental/Fire_Hurt_Sheet.png<>uid://bw1dnyhhps5b8::::res://robo gamejam/Arte experimental/Fire_Walk_Sheet.png<>uid://c8iv1mse2251n::::res://pizaslice.png
 export_presets.cfg::TextFile::-1::1728673950::0::1::::<><>::
 Font.txt::TextFile::-1::1725573598::0::1::::<><>::
-fontpixel_theme.tres::Theme::1908096982008401397::1731272964::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
+fontpixel_theme.tres::Theme::1908096982008401397::1731773111::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
 Healthbar_enchimento.png::CompressedTexture2D::9092110686234880827::1725573599::1731772938::1::::<><>::
 healthbar_enemy.gd::GDScript::-1::1726866160::0::1::::<>TextureProgressBar<>::
 healthbar_player.gd::GDScript::-1::1726866160::0::1::::<>TextureProgressBar<>::
@@ -51,7 +51,7 @@ houver_collision.gd::GDScript::-1::1730485339::0::1::::<>Area2D<>::
 icon.svg::CompressedTexture2D::8701001055468581931::1725573600::1731772938::1::::<><>::
 inimigo.tscn::PackedScene::5417691426241772373::1725573600::0::1::::<><>::uid://cwdbc1stgr0q2::::res://Industria gamejam/drones gamejam/1 Drones/1/Idle.png
 introduction.gd::GDScript::-1::1728673950::0::1::::<>Node2D<>::
-introduction.tscn::PackedScene::1975921687603180726::1731273009::0::1::::<><>::res://introduction.gd<>uid://dtnfu5ykm7ula::::res://Menus/tiles.tres<>uid://c455x0jvfd8hl::::res://subterfuge.mp3<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://bd11dayngex3s::::res://Industria gamejam/1 Background/blue_aura.png<>uid://dp45cqcmi5ari::::res://Industria gamejam/1 Background/red_aura.png<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres<>uid://qt2f2xiv4vu2::::res://arrow.png
+introduction.tscn::PackedScene::1975921687603180726::1731773390::0::1::::<><>::res://introduction.gd<>uid://dtnfu5ykm7ula::::res://Menus/tiles.tres<>uid://c455x0jvfd8hl::::res://subterfuge.mp3<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://bd11dayngex3s::::res://Industria gamejam/1 Background/blue_aura.png<>uid://dp45cqcmi5ari::::res://Industria gamejam/1 Background/red_aura.png<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres<>uid://qt2f2xiv4vu2::::res://arrow.png
 Item sparkl.png::CompressedTexture2D::6149811636330002061::1731540902::1731772938::1::::<><>::
 item_resource.gd::GDScript::-1::1730674498::0::1::::Item_resource<>Resource<>::
 item_resource.tscn::PackedScene::2507479971577964477::1726971822::0::1::::<><>::res://item_resource.gd
@@ -80,7 +80,7 @@ pizza.jpeg::CompressedTexture2D::7602727520321744028::1726523625::1731772938::1:
 pizza_slice.png::CompressedTexture2D::4367721951273279332::1727033202::1731772938::1::::<><>::
 player.tscn::PackedScene::1856491382297284369::1726366165::0::1::::<><>::uid://dtcfjvtert0nj::::res://robo gamejam/6/Idle.png
 player_loadout.gd::GDScript::-1::1731540902::0::1::::<>Node<>::
-player_loadout.tscn::PackedScene::144307127695818630::1731273010::0::1::::<><>::res://player_loadout.gd<>res://weapon_resource_base.gd<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://cmdhgntf7f4oa::::res://Weapons/pistola.tres<>uid://b6lxllx6gu78i::::res://Weapons/baton.tres<>uid://bw3j1f7fekdxy::::res://Weapons/Hammer.tres<>uid://btu4w4guwao35::::res://Weapons/chainsaw.tres<>uid://btqjh46mvsnvh::::res://Weapons/knife.tres<>uid://bnsemtux7ekn6::::res://Weapons/scythe.tres<>uid://2efwn6lthyk2::::res://Weapons/Sword.tres<>uid://bc1llup7iku37::::res://Weapons/rifle.tres<>uid://3nfehs72ddv5::::res://Weapons/Shotgun.tres<>uid://cjgnfduibhtik::::res://Weapons/Smg.tres<>uid://btb8opkimoq5n::::res://Weapons/uzi.tres
+player_loadout.tscn::PackedScene::144307127695818630::1731773391::0::1::::<><>::res://player_loadout.gd<>res://weapon_resource_base.gd<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://cmdhgntf7f4oa::::res://Weapons/pistola.tres<>uid://b6lxllx6gu78i::::res://Weapons/baton.tres<>uid://bw3j1f7fekdxy::::res://Weapons/Hammer.tres<>uid://btu4w4guwao35::::res://Weapons/chainsaw.tres<>uid://btqjh46mvsnvh::::res://Weapons/knife.tres<>uid://bnsemtux7ekn6::::res://Weapons/scythe.tres<>uid://2efwn6lthyk2::::res://Weapons/Sword.tres<>uid://bc1llup7iku37::::res://Weapons/rifle.tres<>uid://3nfehs72ddv5::::res://Weapons/Shotgun.tres<>uid://cjgnfduibhtik::::res://Weapons/Smg.tres<>uid://btb8opkimoq5n::::res://Weapons/uzi.tres
 player_teste.gd::GDScript::-1::1726181205::0::1::::<>Robots<>::
 player_teste.tscn::PackedScene::5386540115154593914::1731273010::0::1::::<><>::res://player_teste.gd<>uid://bdsoklsj0nuvn::::res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png<>uid://c5go2phur6nw5::::res://Industria gamejam/1 Background/OLHA A EXPLOSÃO.png<>uid://ctpxhkx6nx4gp::::res://deltarune explosion greenscreen.mp3<>uid://cs2etpneiext::::res://robo gamejam/Arte experimental/Ice_Hurt_Sheet.png<>uid://htesi5gh4hkc::::res://robo gamejam/Arte experimental/Ice_Walk_Sheet.png<>uid://cm2vv3bthg7n1::::res://Icones gameJam/1 Icons/7/Skillicon7_10.png
 pterodactyl-8240037_640.png::CompressedTexture2D::6198660111193668579::1730936024::1731772938::1::::<><>::
@@ -90,10 +90,10 @@ Robots.gd::GDScript::-1::1731540902::0::1::::Robots<>CharacterBody2D<>::
 robots.tscn::PackedScene::9042431026298361450::1727050258::0::1::::<><>::res://Robots.gd<>uid://dtcfjvtert0nj::::res://robo gamejam/6/Idle.png
 robot_boot.wav::AudioStreamWAV::4665868486341755228::1728931125::1731772941::1::::<><>::
 round_counter.gd::GDScript::-1::1730674498::0::1::::<>Node<>::
-round_counter.tscn::PackedScene::1446679903272424325::1731273010::0::1::::<><>::res://round_counter.gd<>res://weapon_resource_base.gd<>res://mode_resource.gd<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://b6lxllx6gu78i::::res://Weapons/baton.tres<>uid://btqjh46mvsnvh::::res://Weapons/knife.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://cmdhgntf7f4oa::::res://Weapons/pistola.tres<>uid://bc1llup7iku37::::res://Weapons/rifle.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://3nfehs72ddv5::::res://Weapons/Shotgun.tres<>uid://2efwn6lthyk2::::res://Weapons/Sword.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://btb8opkimoq5n::::res://Weapons/uzi.tres<>uid://btu4w4guwao35::::res://Weapons/chainsaw.tres<>uid://cphdxboh4hox3::::res://Modes/tank.tres<>uid://bnsemtux7ekn6::::res://Weapons/scythe.tres<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://bw3j1f7fekdxy::::res://Weapons/Hammer.tres<>uid://cjgnfduibhtik::::res://Weapons/Smg.tres
+round_counter.tscn::PackedScene::1446679903272424325::1731773391::0::1::::<><>::res://round_counter.gd<>res://weapon_resource_base.gd<>res://mode_resource.gd<>uid://c7cxxptqesbar::::res://Modes/agressivo.tres<>uid://b6lxllx6gu78i::::res://Weapons/baton.tres<>uid://btqjh46mvsnvh::::res://Weapons/knife.tres<>uid://ct4k2dd16hjtv::::res://Modes/lento.tres<>uid://cmdhgntf7f4oa::::res://Weapons/pistola.tres<>uid://bc1llup7iku37::::res://Weapons/rifle.tres<>uid://y38a6o8o786m::::res://Modes/fast.tres<>uid://cllbth8kyrwtg::::res://Modes/camper.tres<>uid://3nfehs72ddv5::::res://Weapons/Shotgun.tres<>uid://2efwn6lthyk2::::res://Weapons/Sword.tres<>uid://cs7n177luksmp::::res://Modes/Breaker.tres<>uid://cfaj8muo1v8w0::::res://Modes/Frail.tres<>uid://btb8opkimoq5n::::res://Weapons/uzi.tres<>uid://btu4w4guwao35::::res://Weapons/chainsaw.tres<>uid://cphdxboh4hox3::::res://Modes/tank.tres<>uid://bnsemtux7ekn6::::res://Weapons/scythe.tres<>uid://dwtfs4v7ims6n::::res://Weapons/bazuca.tres<>uid://bnqqai2ica55s::::res://Weapons/sniper.tres<>uid://bw3j1f7fekdxy::::res://Weapons/Hammer.tres<>uid://cjgnfduibhtik::::res://Weapons/Smg.tres
 round_label.gd::GDScript::-1::1726954834::0::1::::<>Label<>::
 round_loss_scene.gd::GDScript::-1::1728934506::0::1::::<>Node2D<>::
-round_loss_scene.tscn::PackedScene::1523486116451839882::1731273010::0::1::::<><>::res://round_loss_scene.gd<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>uid://cigdf23tkbdyy::::res://robo gamejam/Arte experimental/Ice_Explodedasso_Base.png<>uid://c7t76cvxloxyq::::res://arm_drop.wav<>uid://b7qgf4fhp7jx1::::res://robot_boot.wav<>uid://bdsoklsj0nuvn::::res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://dy7jxvr6ie2ep::::res://robo gamejam/Arte experimental/Ice_Ice_Reice.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://ciqtouif625fy::::res://robo gamejam/Arte experimental/Ice_Arm_Reice_Sheet.png<>uid://2gkcw1bng28h::::res://fontpixel_theme.tres
+round_loss_scene.tscn::PackedScene::1523486116451839882::1731773391::0::1::::<><>::res://round_loss_scene.gd<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>uid://cigdf23tkbdyy::::res://robo gamejam/Arte experimental/Ice_Explodedasso_Base.png<>uid://c7t76cvxloxyq::::res://arm_drop.wav<>uid://b7qgf4fhp7jx1::::res://robot_boot.wav<>uid://bdsoklsj0nuvn::::res://robo gamejam/Arte experimental/Ice_Idle_Sheet2.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://dy7jxvr6ie2ep::::res://robo gamejam/Arte experimental/Ice_Ice_Reice.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://ciqtouif625fy::::res://robo gamejam/Arte experimental/Ice_Arm_Reice_Sheet.png<>uid://2gkcw1bng28h::::res://fontpixel_theme.tres
 round_timer.gd::GDScript::-1::1729397051::0::1::::<>Label<>::
 sound effect win scene.mp3::AudioStreamMP3::1741107322892978565::1726954834::1731772936::1::::<><>::
 stockbots_Battle.mp3::AudioStreamMP3::4092304583055392082::1726279148::1731772936::1::::<><>::
@@ -107,7 +107,7 @@ Vine boom sound effect.mp3::AudioStreamMP3::8503333935455447983::1725656524::173
 weapon_resource.tscn::PackedScene::1058344215478704269::1728931705::0::1::::<><>::res://weapon_resource_base.gd
 weapon_resource_base.gd::GDScript::-1::1728931705::0::1::::Weapon_resource<>Item_resource<>::
 ::res://1 Icons/::1731540901
-::res://1 Icons/7/::1731272950
+::res://1 Icons/7/::1731772939
 Skillicon7_01.png::CompressedTexture2D::275139895053375182::1726784705::1731772939::1::::<><>::
 Skillicon7_02.png::CompressedTexture2D::1224614436723026572::1726181205::1731772939::1::::<><>::
 Skillicon7_03.png::CompressedTexture2D::2677411555197284006::1726181205::1731772939::1::::<><>::
@@ -148,12 +148,12 @@ Skillicon7_37.png::CompressedTexture2D::5841481623999687439::1726181205::1731772
 Skillicon7_38.png::CompressedTexture2D::1328557503330988799::1726181205::1731772939::1::::<><>::
 Skillicon7_39.png::CompressedTexture2D::6919414945343052970::1726181205::1731772939::1::::<><>::
 Skillicon7_40.png::CompressedTexture2D::2163941553271849476::1726181205::1731772939::1::::<><>::
-::res://2 Frames/::1731272950
+::res://2 Frames/::1731772939
 bigframe.png::CompressedTexture2D::3742277880048834259::1729824469::1731772939::1::::<><>::
 Frameset.png::CompressedTexture2D::7543863925328352920::1725573598::1731772939::1::::<><>::
 Frame_07.png::CompressedTexture2D::6375667822210169503::1726181205::1731772939::1::::<><>::
 ::res://addons/::1731540902
-::res://addons/Todo_Manager/::1731772928
+::res://addons/Todo_Manager/::1731773719
 ColourPicker.gd::GDScript::-1::1731540902::0::1::::<>HBoxContainer<>::
 Current.gd::GDScript::-1::1731540902::0::1::::<>Panel<>::
 Dock.gd::GDScript::-1::1731540902::0::1::::<>Control<>::
@@ -161,12 +161,12 @@ Pattern.gd::GDScript::-1::1731540902::0::1::::<>HBoxContainer<>::
 plugin.cfg::TextFile::-1::1731540902::0::1::::<><>::
 plugin.gd::GDScript::-1::1731540902::0::1::::<>EditorPlugin<>::
 Project.gd::GDScript::-1::1731540902::0::1::::<>Panel<>::
-todo.cfg::TextFile::-1::1731772928::0::1::::<><>::
+todo.cfg::TextFile::-1::1731773719::0::1::::<><>::
 todoItem_class.gd::GDScript::-1::1731540902::0::1::::<>RefCounted<>::
 todo_class.gd::GDScript::-1::1731540902::0::1::::<>RefCounted<>::
 ::res://addons/Todo_Manager/doc/::1731540902
 example.gd::GDScript::-1::1731540902::0::1::::<>Node<>::
-::res://addons/Todo_Manager/doc/images/::1731540902
+::res://addons/Todo_Manager/doc/images/::1731772939
 example1.png::CompressedTexture2D::8063086250666186557::1731540902::1731772939::1::::<><>::
 example2.png::CompressedTexture2D::5465130140263008380::1731540902::1731772939::1::::<><>::
 Instruct1.png::CompressedTexture2D::3903001367757256649::1731540902::1731772939::1::::<><>::
@@ -180,7 +180,7 @@ ColourPicker.tscn::PackedScene::2957809393656723737::1731540902::0::1::::<><>::r
 Dock.tscn::PackedScene::4584442902745049483::1731540902::0::1::::<><>::res://addons/Todo_Manager/Dock.gd<>res://addons/Todo_Manager/Project.gd<>res://addons/Todo_Manager/Current.gd
 Pattern.tscn::PackedScene::4056048923411208166::1731540902::0::1::::<><>::res://addons/Todo_Manager/Pattern.gd
 ::res://free-guns-pixel-art/::1725573599
-::res://free-guns-pixel-art/free-guns-pixel-art/::1731272950
+::res://free-guns-pixel-art/free-guns-pixel-art/::1731772939
 Amo1.png::CompressedTexture2D::3012728399825928161::1725573599::1731772939::1::::<><>::
 Amo2.png::CompressedTexture2D::7037076175461653515::1725573599::1731772939::1::::<><>::
 Amo3.png::CompressedTexture2D::6554417133359309402::1725573599::1731772939::1::::<><>::
@@ -220,11 +220,11 @@ Sniper-rifle-2.png::CompressedTexture2D::6797667897816471691::1725573599::173177
 Sniper-rifle-3-scoped.png::CompressedTexture2D::2105551258928791837::1725573599::1731772939::1::::<><>::
 Sniper-rifle-3.png::CompressedTexture2D::5468468938579887652::1725573599::1731772939::1::::<><>::
 Spritesheet.png::CompressedTexture2D::5165089185544461962::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/::1731272957
+::res://Grafitti titlescreen game/::1731772940
 Font.txt::TextFile::-1::1725573599::0::1::::<><>::
 License.txt::TextFile::-1::1725573599::0::1::::<><>::
 Palette.png::CompressedTexture2D::5070479415213530555::1725573599::1731772940::1::::<><>::
-::res://Grafitti titlescreen game/1 Font/::1731272945
+::res://Grafitti titlescreen game/1 Font/::1731772939
 0.png::CompressedTexture2D::3512588314399984065::1725573598::1731772939::1::::<><>::
 1.png::CompressedTexture2D::6785121703232177789::1725573598::1731772939::1::::<><>::
 2.png::CompressedTexture2D::7762720696918237169::1725573598::1731772939::1::::<><>::
@@ -288,7 +288,7 @@ Y2.png::CompressedTexture2D::4208303621215773752::1725573598::1731772939::1::::<
 Z1.png::CompressedTexture2D::6455871016510445411::1725573598::1731772939::1::::<><>::
 Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<><>::
 ::res://Grafitti titlescreen game/2 Decoratoins/::1725573599
-::res://Grafitti titlescreen game/2 Decoratoins/0 All/::1731272947
+::res://Grafitti titlescreen game/2 Decoratoins/0 All/::1731772939
 1.png::CompressedTexture2D::6735490764655443730::1725573598::1731772939::1::::<><>::
 2.png::CompressedTexture2D::5589875304751759589::1725573598::1731772939::1::::<><>::
 3.png::CompressedTexture2D::7985817976630820342::1725573598::1731772939::1::::<><>::
@@ -402,7 +402,7 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 111.png::CompressedTexture2D::3790362528507272364::1725573598::1731772938::1::::<><>::
 112.png::CompressedTexture2D::7620252936658782752::1725573598::1731772938::1::::<><>::
 113.png::CompressedTexture2D::18907391278511215::1725573598::1731772938::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/1 Spray/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/1 Spray/::1731772939
 1.png::CompressedTexture2D::7100370962338189272::1725573599::1731772938::1::::<><>::
 2.png::CompressedTexture2D::6336684458287768679::1725573599::1731772939::1::::<><>::
 3.png::CompressedTexture2D::6280196590993920830::1725573599::1731772939::1::::<><>::
@@ -412,18 +412,18 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 7.png::CompressedTexture2D::1643328709973263423::1725573599::1731772939::1::::<><>::
 8.png::CompressedTexture2D::6178365413275648516::1725573599::1731772939::1::::<><>::
 9.png::CompressedTexture2D::8551423160535578339::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/2 Pointers/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/2 Pointers/::1731772939
 10.png::CompressedTexture2D::7229095215768922699::1725573599::1731772939::1::::<><>::
 11.png::CompressedTexture2D::6018894077519286237::1725573599::1731772939::1::::<><>::
 12.png::CompressedTexture2D::432317234713723519::1725573599::1731772939::1::::<><>::
 13.png::CompressedTexture2D::8819751062175459489::1725573599::1731772939::1::::<><>::
 14.png::CompressedTexture2D::3405028597193580920::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/3 Rays/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/3 Rays/::1731772939
 15.png::CompressedTexture2D::6712618487664459690::1725573599::1731772939::1::::<><>::
 16.png::CompressedTexture2D::2907614525259639850::1725573599::1731772939::1::::<><>::
 17.png::CompressedTexture2D::188310466844018148::1725573599::1731772939::1::::<><>::
 18.png::CompressedTexture2D::626504223513451313::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/4 Smudges/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/4 Smudges/::1731772939
 19.png::CompressedTexture2D::7763156858715966815::1725573599::1731772939::1::::<><>::
 20.png::CompressedTexture2D::1356777017582296547::1725573599::1731772939::1::::<><>::
 21.png::CompressedTexture2D::5039090477219497876::1725573599::1731772939::1::::<><>::
@@ -433,7 +433,7 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 25.png::CompressedTexture2D::3308321181102711589::1725573599::1731772939::1::::<><>::
 26.png::CompressedTexture2D::4999870705138544446::1725573599::1731772939::1::::<><>::
 27.png::CompressedTexture2D::8822926563101905336::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/5 ExtraRays/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/5 ExtraRays/::1731772939
 28.png::CompressedTexture2D::5060371246202221538::1725573599::1731772939::1::::<><>::
 29.png::CompressedTexture2D::6254663578728682284::1725573599::1731772939::1::::<><>::
 30.png::CompressedTexture2D::9154389873059645672::1725573599::1731772939::1::::<><>::
@@ -441,7 +441,7 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 32.png::CompressedTexture2D::8635766761138835392::1725573599::1731772939::1::::<><>::
 33.png::CompressedTexture2D::5318726076313267532::1725573599::1731772939::1::::<><>::
 34.png::CompressedTexture2D::1483655670785548218::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/6 Circles/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/6 Circles/::1731772939
 35.png::CompressedTexture2D::2085268072538272463::1725573599::1731772939::1::::<><>::
 36.png::CompressedTexture2D::5388637917102730678::1725573599::1731772939::1::::<><>::
 37.png::CompressedTexture2D::8160994970344972536::1725573599::1731772939::1::::<><>::
@@ -449,14 +449,14 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 39.png::CompressedTexture2D::5125506592988241064::1725573599::1731772939::1::::<><>::
 40.png::CompressedTexture2D::8505730739780084993::1725573599::1731772939::1::::<><>::
 41.png::CompressedTexture2D::461810548227429424::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/7 Waves/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/7 Waves/::1731772939
 42.png::CompressedTexture2D::2108365921112561105::1725573599::1731772939::1::::<><>::
 43.png::CompressedTexture2D::6838597913543218324::1725573599::1731772939::1::::<><>::
 44.png::CompressedTexture2D::294050687237601181::1725573599::1731772939::1::::<><>::
 45.png::CompressedTexture2D::7216842416007385558::1725573599::1731772939::1::::<><>::
 46.png::CompressedTexture2D::4948718915326072972::1725573599::1731772939::1::::<><>::
 47.png::CompressedTexture2D::399033443872065387::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/8 Skulls/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/8 Skulls/::1731772939
 48.png::CompressedTexture2D::1609763090514217364::1725573599::1731772939::1::::<><>::
 49.png::CompressedTexture2D::7585131242319211226::1725573599::1731772939::1::::<><>::
 50.png::CompressedTexture2D::765109501734482717::1725573599::1731772939::1::::<><>::
@@ -464,7 +464,7 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 52.png::CompressedTexture2D::1667008771986426320::1725573599::1731772939::1::::<><>::
 53.png::CompressedTexture2D::5437700404616069482::1725573599::1731772939::1::::<><>::
 54.png::CompressedTexture2D::2178517791053457944::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/9 Hearts/::1731272956
+::res://Grafitti titlescreen game/2 Decoratoins/9 Hearts/::1731772939
 55.png::CompressedTexture2D::5964553425754929806::1725573599::1731772939::1::::<><>::
 56.png::CompressedTexture2D::3048213138100296108::1725573599::1731772939::1::::<><>::
 57.png::CompressedTexture2D::5609697912239012469::1725573599::1731772939::1::::<><>::
@@ -474,13 +474,13 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 61.png::CompressedTexture2D::1077585474857352318::1725573599::1731772939::1::::<><>::
 62.png::CompressedTexture2D::6226590631102461786::1725573599::1731772939::1::::<><>::
 63.png::CompressedTexture2D::3014540861395480862::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/10 Bubbles/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/10 Bubbles/::1731772939
 64.png::CompressedTexture2D::8746343561689020541::1725573599::1731772939::1::::<><>::
 65.png::CompressedTexture2D::2612317564598662298::1725573599::1731772939::1::::<><>::
 66.png::CompressedTexture2D::4063331078178236404::1725573599::1731772939::1::::<><>::
 67.png::CompressedTexture2D::7614238307569262733::1725573599::1731772939::1::::<><>::
 68.png::CompressedTexture2D::7002505872409044151::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/11 Bones/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/11 Bones/::1731772939
 69.png::CompressedTexture2D::8465252890115040487::1725573599::1731772939::1::::<><>::
 70.png::CompressedTexture2D::6613301844455220514::1725573599::1731772939::1::::<><>::
 71.png::CompressedTexture2D::9187254621900880714::1725573599::1731772939::1::::<><>::
@@ -488,25 +488,25 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 73.png::CompressedTexture2D::6838235923916557839::1725573599::1731772939::1::::<><>::
 74.png::CompressedTexture2D::8123085893404251139::1725573599::1731772939::1::::<><>::
 75.png::CompressedTexture2D::4485988463795664035::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/12 Crowns/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/12 Crowns/::1731772939
 76.png::CompressedTexture2D::7385918637686284095::1725573599::1731772939::1::::<><>::
 77.png::CompressedTexture2D::5689115249897347878::1725573599::1731772939::1::::<><>::
 78.png::CompressedTexture2D::3187172388495182176::1725573599::1731772939::1::::<><>::
 79.png::CompressedTexture2D::4596071325628580409::1725573599::1731772939::1::::<><>::
 80.png::CompressedTexture2D::8313313023317416189::1725573599::1731772939::1::::<><>::
 81.png::CompressedTexture2D::4311499993513674679::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/13 Wings/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/13 Wings/::1731772939
 82.png::CompressedTexture2D::8121270157861401802::1725573599::1731772939::1::::<><>::
 83.png::CompressedTexture2D::3097175266193249400::1725573599::1731772939::1::::<><>::
 84.png::CompressedTexture2D::7775946005534403969::1725573599::1731772939::1::::<><>::
 85.png::CompressedTexture2D::8670079677118199487::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/14 Nimbus/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/14 Nimbus/::1731772939
 86.png::CompressedTexture2D::5222820966406180393::1725573599::1731772939::1::::<><>::
 87.png::CompressedTexture2D::5334499499027399103::1725573599::1731772939::1::::<><>::
 88.png::CompressedTexture2D::4496627451814486552::1725573599::1731772939::1::::<><>::
 89.png::CompressedTexture2D::7778921265379912391::1725573599::1731772939::1::::<><>::
 90.png::CompressedTexture2D::7324582636761419491::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/15 Shine/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/15 Shine/::1731772939
 91.png::CompressedTexture2D::1675505966742628871::1725573599::1731772939::1::::<><>::
 92.png::CompressedTexture2D::41743901153835677::1725573599::1731772939::1::::<><>::
 93.png::CompressedTexture2D::768157065109334262::1725573599::1731772939::1::::<><>::
@@ -517,23 +517,23 @@ Z2.png::CompressedTexture2D::6347663733658527317::1725573598::1731772939::1::::<
 98.png::CompressedTexture2D::5826259708394543459::1725573599::1731772939::1::::<><>::
 99.png::CompressedTexture2D::7963422571164983334::1725573599::1731772939::1::::<><>::
 100.png::CompressedTexture2D::920494094172553179::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/16 Stars/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/16 Stars/::1731772939
 101.png::CompressedTexture2D::4031388285576057100::1725573599::1731772939::1::::<><>::
 102.png::CompressedTexture2D::5125644144415075950::1725573599::1731772939::1::::<><>::
 103.png::CompressedTexture2D::5942585769048378367::1725573599::1731772939::1::::<><>::
 104.png::CompressedTexture2D::2584646457306849870::1725573599::1731772939::1::::<><>::
 105.png::CompressedTexture2D::1798340475462064287::1725573599::1731772939::1::::<><>::
 106.png::CompressedTexture2D::8185231850176955163::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/17 Bricks/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/17 Bricks/::1731772939
 107.png::CompressedTexture2D::3551854344279780798::1725573599::1731772939::1::::<><>::
 108.png::CompressedTexture2D::6816749069930346214::1725573599::1731772939::1::::<><>::
 109.png::CompressedTexture2D::3288117457677430701::1725573599::1731772939::1::::<><>::
 110.png::CompressedTexture2D::8359451117172157245::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/18 Puddles/::1731272955
+::res://Grafitti titlescreen game/2 Decoratoins/18 Puddles/::1731772939
 111.png::CompressedTexture2D::4688334717021893678::1725573599::1731772939::1::::<><>::
 112.png::CompressedTexture2D::7131523101194294601::1725573599::1731772939::1::::<><>::
 113.png::CompressedTexture2D::6493421838557710411::1725573599::1731772939::1::::<><>::
-::res://Grafitti titlescreen game/2 Decoratoins/19 Backtiles/::1731272958
+::res://Grafitti titlescreen game/2 Decoratoins/19 Backtiles/::1731772940
 Backtileset.png::CompressedTexture2D::3882391812236886904::1725573599::1731772939::1::::<><>::
 Back_01.png::CompressedTexture2D::3401877034018649486::1725573599::1731772939::1::::<><>::
 Back_02.png::CompressedTexture2D::6158199982657717251::1725573599::1731772939::1::::<><>::
@@ -559,7 +559,7 @@ Back_21.png::CompressedTexture2D::6744950222036253389::1725573599::1731772940::1
 Back_22.png::CompressedTexture2D::314461783970883092::1725573599::1731772940::1::::<><>::
 Back_23.png::CompressedTexture2D::1378813510761152756::1725573599::1731772940::1::::<><>::
 Back_24.png::CompressedTexture2D::199684500146622177::1725573599::1731772940::1::::<><>::
-::res://Grafitti titlescreen game/3 Transitions/::1731272958
+::res://Grafitti titlescreen game/3 Transitions/::1731772940
 1.png::CompressedTexture2D::2830966027224997705::1725573599::1731772940::1::::<><>::
 2.png::CompressedTexture2D::2200327736366822041::1725573599::1731772940::1::::<><>::
 3.png::CompressedTexture2D::4189784170194648::1725573599::1731772940::1::::<><>::
@@ -580,7 +580,7 @@ Back_24.png::CompressedTexture2D::199684500146622177::1725573599::1731772940::1:
 18.png::CompressedTexture2D::8707832753566707086::1725573599::1731772940::1::::<><>::
 19.png::CompressedTexture2D::905835669561496399::1725573599::1731772940::1::::<><>::
 20.png::CompressedTexture2D::6438356693428817031::1725573599::1731772940::1::::<><>::
-::res://Grafitti titlescreen game/4 Examples/::1731272958
+::res://Grafitti titlescreen game/4 Examples/::1731772940
 1Band.png::CompressedTexture2D::1135529374852039606::1725573599::1731772940::1::::<><>::
 2Squad13.png::CompressedTexture2D::5276142000856405201::1725573599::1731772940::1::::<><>::
 3Sport.png::CompressedTexture2D::6554829762511156477::1725573599::1731772940::1::::<><>::
@@ -590,12 +590,12 @@ Back_24.png::CompressedTexture2D::199684500146622177::1725573599::1731772940::1:
 7Dangerarea.png::CompressedTexture2D::674617216270609915::1725573599::1731772940::1::::<><>::
 8Loot.png::CompressedTexture2D::6039029576519786559::1725573599::1731772940::1::::<><>::
 ::res://Grafitti titlescreen game/PSD/::1725573599
-::res://Icones gameJam/::1731272931
+::res://Icones gameJam/::1731772937
 Coupon by craftpix.pdf.png::CompressedTexture2D::3258330270289671979::1728342203::1731772937::1::::<><>::
 Font.txt::TextFile::-1::1728342203::0::1::::<><>::
 License.txt::TextFile::-1::1728342203::0::1::::<><>::
 ::res://Icones gameJam/1 Icons/::1728342203
-::res://Icones gameJam/1 Icons/1/::1731272957
+::res://Icones gameJam/1 Icons/1/::1731772940
 Skillicon1_01.png::CompressedTexture2D::6263800665103231318::1728342203::1731772940::1::::<><>::
 Skillicon1_02.png::CompressedTexture2D::7077918713852368460::1728342203::1731772940::1::::<><>::
 Skillicon1_03.png::CompressedTexture2D::1780571720337667378::1728342203::1731772940::1::::<><>::
@@ -636,7 +636,7 @@ Skillicon1_37.png::CompressedTexture2D::129609445972706201::1728342203::17317729
 Skillicon1_38.png::CompressedTexture2D::1277151541662124601::1728342203::1731772940::1::::<><>::
 Skillicon1_39.png::CompressedTexture2D::7938923123942779977::1728342203::1731772940::1::::<><>::
 Skillicon1_40.png::CompressedTexture2D::2491252047882645397::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/2/::1731272957
+::res://Icones gameJam/1 Icons/2/::1731772940
 Skillicon2_01.png::CompressedTexture2D::5243491845627476958::1728342203::1731772940::1::::<><>::
 Skillicon2_02.png::CompressedTexture2D::7725471834801307682::1728342203::1731772940::1::::<><>::
 Skillicon2_03.png::CompressedTexture2D::9211724575763352747::1728342203::1731772940::1::::<><>::
@@ -677,7 +677,7 @@ Skillicon2_37.png::CompressedTexture2D::8545922086647038156::1728342203::1731772
 Skillicon2_38.png::CompressedTexture2D::883550400568063473::1728342203::1731772940::1::::<><>::
 Skillicon2_39.png::CompressedTexture2D::7328184811377230715::1728342203::1731772940::1::::<><>::
 Skillicon2_40.png::CompressedTexture2D::2314966039626672169::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/3/::1731272953
+::res://Icones gameJam/1 Icons/3/::1731772941
 Skillicon3_01.png::CompressedTexture2D::2426545781296655946::1728342203::1731772940::1::::<><>::
 Skillicon3_02.png::CompressedTexture2D::686393342540890792::1728342203::1731772940::1::::<><>::
 Skillicon3_03.png::CompressedTexture2D::8205917368395783678::1728342203::1731772940::1::::<><>::
@@ -718,7 +718,7 @@ Skillicon3_37.png::CompressedTexture2D::3870525044961867228::1728342203::1731772
 Skillicon3_38.png::CompressedTexture2D::4078020967545208557::1728342203::1731772940::1::::<><>::
 Skillicon3_39.png::CompressedTexture2D::8041296478677701446::1728342203::1731772940::1::::<><>::
 Skillicon3_40.png::CompressedTexture2D::4349303183814565523::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/4/::1731272954
+::res://Icones gameJam/1 Icons/4/::1731772940
 Skillicon4_01.png::CompressedTexture2D::1773040459341416258::1728342203::1731772940::1::::<><>::
 Skillicon4_02.png::CompressedTexture2D::4122485821224270340::1728342203::1731772940::1::::<><>::
 Skillicon4_03.png::CompressedTexture2D::3713737907688689358::1728342203::1731772940::1::::<><>::
@@ -759,7 +759,7 @@ Skillicon4_37.png::CompressedTexture2D::7416725993298745846::1728342203::1731772
 Skillicon4_38.png::CompressedTexture2D::663342696596292180::1728342203::1731772940::1::::<><>::
 Skillicon4_39.png::CompressedTexture2D::6682169919360158873::1728342203::1731772940::1::::<><>::
 Skillicon4_40.png::CompressedTexture2D::3665011504065767166::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/5/::1731272955
+::res://Icones gameJam/1 Icons/5/::1731772940
 Skillicon5_01.png::CompressedTexture2D::4014422761321111450::1728342203::1731772940::1::::<><>::
 Skillicon5_02.png::CompressedTexture2D::3329205063739157590::1728342203::1731772940::1::::<><>::
 Skillicon5_03.png::CompressedTexture2D::6776858859262592698::1728342203::1731772940::1::::<><>::
@@ -800,7 +800,7 @@ Skillicon5_37.png::CompressedTexture2D::380542625974068976::1728342203::17317729
 Skillicon5_38.png::CompressedTexture2D::1526306996158355419::1728342203::1731772940::1::::<><>::
 Skillicon5_39.png::CompressedTexture2D::3784701749150535016::1728342203::1731772940::1::::<><>::
 Skillicon5_40.png::CompressedTexture2D::4507208397259006226::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/6/::1731272955
+::res://Icones gameJam/1 Icons/6/::1731772940
 Skillicon6_01.png::CompressedTexture2D::2106194382556601811::1728342203::1731772940::1::::<><>::
 Skillicon6_02.png::CompressedTexture2D::3582782832686856906::1728342203::1731772940::1::::<><>::
 Skillicon6_03.png::CompressedTexture2D::2939026875398251511::1728342203::1731772940::1::::<><>::
@@ -841,7 +841,7 @@ Skillicon6_37.png::CompressedTexture2D::7362800795418967963::1728342203::1731772
 Skillicon6_38.png::CompressedTexture2D::1937623872140504440::1728342203::1731772940::1::::<><>::
 Skillicon6_39.png::CompressedTexture2D::4429552427717709915::1728342203::1731772940::1::::<><>::
 Skillicon6_40.png::CompressedTexture2D::8349412607057026471::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/7/::1731272954
+::res://Icones gameJam/1 Icons/7/::1731772940
 Skillicon7_01.png::CompressedTexture2D::275139895053375182::1728342203::1731772940::1::::<><>::
 Skillicon7_02.png::CompressedTexture2D::1224614436723026572::1728342203::1731772940::1::::<><>::
 Skillicon7_03.png::CompressedTexture2D::2677411555197284006::1728342203::1731772940::1::::<><>::
@@ -882,7 +882,7 @@ Skillicon7_37.png::CompressedTexture2D::5841481623999687439::1728342203::1731772
 Skillicon7_38.png::CompressedTexture2D::1328557503330988799::1728342203::1731772940::1::::<><>::
 Skillicon7_39.png::CompressedTexture2D::6919414945343052970::1728342203::1731772940::1::::<><>::
 Skillicon7_40.png::CompressedTexture2D::2163941553271849476::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/8/::1731272935
+::res://Icones gameJam/1 Icons/8/::1731772940
 Skillicon8_01.png::CompressedTexture2D::3446134389242559554::1728342203::1731772940::1::::<><>::
 Skillicon8_02.png::CompressedTexture2D::81901889462411465::1728342203::1731772940::1::::<><>::
 Skillicon8_03.png::CompressedTexture2D::88214027898929887::1728342203::1731772940::1::::<><>::
@@ -923,7 +923,7 @@ Skillicon8_37.png::CompressedTexture2D::2410955531575316626::1728342203::1731772
 Skillicon8_38.png::CompressedTexture2D::4323494847599978724::1728342203::1731772940::1::::<><>::
 Skillicon8_39.png::CompressedTexture2D::8983695512428325010::1728342203::1731772940::1::::<><>::
 Skillicon8_40.png::CompressedTexture2D::2130620024093580375::1728342203::1731772940::1::::<><>::
-::res://Icones gameJam/1 Icons/9/::1731272934
+::res://Icones gameJam/1 Icons/9/::1731772940
 Skillicon9_01.png::CompressedTexture2D::8303122234331206953::1728342203::1731772940::1::::<><>::
 Skillicon9_02.png::CompressedTexture2D::658499860386880175::1728342203::1731772940::1::::<><>::
 Skillicon9_03.png::CompressedTexture2D::453949094656075570::1728342203::1731772940::1::::<><>::
@@ -964,7 +964,7 @@ Skillicon9_37.png::CompressedTexture2D::722979388772243380::1728342203::17317729
 Skillicon9_38.png::CompressedTexture2D::9165123534451731919::1728342203::1731772937::1::::<><>::
 Skillicon9_39.png::CompressedTexture2D::1818531161792988609::1728342203::1731772937::1::::<><>::
 Skillicon9_40.png::CompressedTexture2D::5738054128534293470::1728342203::1731772937::1::::<><>::
-::res://Icones gameJam/1 Icons/10/::1731272936
+::res://Icones gameJam/1 Icons/10/::1731772937
 Skillicon10_01.png::CompressedTexture2D::852323461703727503::1728342203::1731772937::1::::<><>::
 Skillicon10_02.png::CompressedTexture2D::7121530870510767618::1728342203::1731772937::1::::<><>::
 Skillicon10_03.png::CompressedTexture2D::6091382523973474607::1728342203::1731772937::1::::<><>::
@@ -1005,7 +1005,7 @@ Skillicon10_37.png::CompressedTexture2D::6630413820964481133::1728342203::173177
 Skillicon10_38.png::CompressedTexture2D::7322387230913909209::1728342203::1731772937::1::::<><>::
 Skillicon10_39.png::CompressedTexture2D::6652946032045981440::1728342203::1731772937::1::::<><>::
 Skillicon10_40.png::CompressedTexture2D::6770010769829006100::1728342203::1731772937::1::::<><>::
-::res://Icones gameJam/1 Icons/11/::1731272936
+::res://Icones gameJam/1 Icons/11/::1731772937
 Skillicon11_01.png::CompressedTexture2D::1333306162115304894::1728342203::1731772937::1::::<><>::
 Skillicon11_02.png::CompressedTexture2D::4535079883967742450::1728342203::1731772937::1::::<><>::
 Skillicon11_03.png::CompressedTexture2D::8216782217485385095::1728342203::1731772937::1::::<><>::
@@ -1046,7 +1046,7 @@ Skillicon11_37.png::CompressedTexture2D::4556975096009775838::1728342203::173177
 Skillicon11_38.png::CompressedTexture2D::2221403312447745762::1728342203::1731772937::1::::<><>::
 Skillicon11_39.png::CompressedTexture2D::951103887551557364::1728342203::1731772937::1::::<><>::
 Skillicon11_40.png::CompressedTexture2D::7221996891202083641::1728342203::1731772937::1::::<><>::
-::res://Icones gameJam/1 Icons/12/::1731272935
+::res://Icones gameJam/1 Icons/12/::1731772937
 Skillicon12_01.png::CompressedTexture2D::5565138651197167766::1728342203::1731772937::1::::<><>::
 Skillicon12_02.png::CompressedTexture2D::7900724143622565974::1728342203::1731772937::1::::<><>::
 Skillicon12_03.png::CompressedTexture2D::1088969537714971321::1728342203::1731772937::1::::<><>::
@@ -1087,7 +1087,7 @@ Skillicon12_37.png::CompressedTexture2D::1503159964563148885::1728342203::173177
 Skillicon12_38.png::CompressedTexture2D::6622233238232457016::1728342203::1731772937::1::::<><>::
 Skillicon12_39.png::CompressedTexture2D::2079392443989794345::1728342203::1731772937::1::::<><>::
 Skillicon12_40.png::CompressedTexture2D::2270728919496456682::1728342203::1731772937::1::::<><>::
-::res://Icones gameJam/1 Icons/13/::1731272932
+::res://Icones gameJam/1 Icons/13/::1731772937
 Skillicon13_01.png::CompressedTexture2D::3527178770343454330::1728342203::1731772937::1::::<><>::
 Skillicon13_02.png::CompressedTexture2D::3643492376227511557::1728342203::1731772937::1::::<><>::
 Skillicon13_03.png::CompressedTexture2D::8505618371930263076::1728342203::1731772937::1::::<><>::
@@ -1128,7 +1128,7 @@ Skillicon13_37.png::CompressedTexture2D::8806323306914350431::1728342203::173177
 Skillicon13_38.png::CompressedTexture2D::2503964884341777622::1728342203::1731772937::1::::<><>::
 Skillicon13_39.png::CompressedTexture2D::1872609631276830464::1728342203::1731772937::1::::<><>::
 Skillicon13_40.png::CompressedTexture2D::5897857624518555606::1728342203::1731772937::1::::<><>::
-::res://Icones gameJam/1 Icons/14/::1731272932
+::res://Icones gameJam/1 Icons/14/::1731772937
 Skillicon14_01.png::CompressedTexture2D::3425109905509444208::1728342203::1731772937::1::::<><>::
 Skillicon14_02.png::CompressedTexture2D::6641475767421723473::1728342203::1731772937::1::::<><>::
 Skillicon14_03.png::CompressedTexture2D::7801222866629405670::1728342203::1731772937::1::::<><>::
@@ -1169,7 +1169,7 @@ Skillicon14_37.png::CompressedTexture2D::6879744826328833539::1728342203::173177
 Skillicon14_38.png::CompressedTexture2D::578205590312653227::1728342203::1731772937::1::::<><>::
 Skillicon14_39.png::CompressedTexture2D::1362835748154902885::1728342203::1731772937::1::::<><>::
 Skillicon14_40.png::CompressedTexture2D::3401957272250207817::1728342203::1731772937::1::::<><>::
-::res://Icones gameJam/2 Frames/::1731272932
+::res://Icones gameJam/2 Frames/::1731772937
 Frameset.png::CompressedTexture2D::4278919517564400190::1728342203::1731772937::1::::<><>::
 Frame_01.png::CompressedTexture2D::7045981081864358478::1728342203::1731772937::1::::<><>::
 Frame_02.png::CompressedTexture2D::1593340222941601515::1728342203::1731772937::1::::<><>::
@@ -1185,14 +1185,14 @@ Frame_11.png::CompressedTexture2D::615965013846912245::1728342203::1731772937::1
 Frame_12.png::CompressedTexture2D::2788875097839387240::1728342203::1731772937::1::::<><>::
 Frame_13.png::CompressedTexture2D::3593509977467109488::1728342203::1731772937::1::::<><>::
 Frame_14.png::CompressedTexture2D::1583470473267512877::1728342203::1731772937::1::::<><>::
-::res://Industria gamejam/::1731272940
+::res://Industria gamejam/::1731772938
 4.png::CompressedTexture2D::3744063366718623903::1725573599::1731772938::1::::<><>::
 caixaconveyor2.png::CompressedTexture2D::3522104920548435252::1727228318::1731772938::1::::<><>::
 caixaconveyor.png::CompressedTexture2D::271580334934754728::1727130381::1731772938::1::::<><>::
 Font.txt::TextFile::-1::1725573599::0::1::::<><>::
 license.txt::TextFile::-1::1725573599::0::1::::<><>::
 undo_maneiro.png::CompressedTexture2D::7665934566286528959::1727228318::1731772938::1::::<><>::
-::res://Industria gamejam/1 Background/::1731272934
+::res://Industria gamejam/1 Background/::1731772937
 1.png::CompressedTexture2D::7237159243083904879::1725573599::1731772937::1::::<><>::
 2.png::CompressedTexture2D::3462612141539620866::1725573599::1731772937::1::::<><>::
 3.png::CompressedTexture2D::5732364193004468916::1725573599::1731772937::1::::<><>::
@@ -1202,7 +1202,7 @@ blue_aura.png::CompressedTexture2D::2652245073080564422::1727228318::1731772936:
 OLHA A EXPLOSÃO.png::CompressedTexture2D::6891791996982238470::1727228318::1731772937::1::::<><>::
 red_aura.png::CompressedTexture2D::8273787585908632762::1727228318::1731772936::1::::<><>::
 RevMiniPixel.ttf::FontFile::2135204196879700638::1725573599::1731772936::1::::<><>::
-::res://Industria gamejam/1 Tiles/::1731272934
+::res://Industria gamejam/1 Tiles/::1731772937
 chain.png::CompressedTexture2D::7870127716342834824::1726275604::1731772937::1::::<><>::
 IndustrialTile_01.png::CompressedTexture2D::7027885607499216429::1728342203::1731772936::1::::<><>::
 IndustrialTile_02.png::CompressedTexture2D::1493511953829948368::1728342203::1731772936::1::::<><>::
@@ -1286,7 +1286,7 @@ IndustrialTile_79.png::CompressedTexture2D::3573341835270579214::1728342203::173
 IndustrialTile_80.png::CompressedTexture2D::1870754343157008977::1728342203::1731772937::1::::<><>::
 IndustrialTile_81.png::CompressedTexture2D::7617698959176717118::1728342203::1731772937::1::::<><>::
 Sheet.png::CompressedTexture2D::79251329829187016::1726273381::1731772937::1::::<><>::
-::res://Industria gamejam/2 Objects/::1731272941
+::res://Industria gamejam/2 Objects/::1731772937
 0.png::CompressedTexture2D::1940836586696303620::1728342203::1731772937::1::::<><>::
 1.png::CompressedTexture2D::4105677185199550052::1728342203::1731772937::1::::<><>::
 2.png::CompressedTexture2D::4503312200435885717::1728342203::1731772937::1::::<><>::
@@ -1332,7 +1332,7 @@ Locker4.png::CompressedTexture2D::6909854523861785236::1726967592::1731772937::1
 Mop.png::CompressedTexture2D::8712520940441795375::1725573599::1731772937::1::::<><>::
 Pointer1.png::CompressedTexture2D::4200323352265674053::1725573599::1731772937::1::::<><>::
 Pointer2.png::CompressedTexture2D::653955533996628248::1725573599::1731772937::1::::<><>::
-::res://Industria gamejam/3 Animated objects/::1731272941
+::res://Industria gamejam/3 Animated objects/::1731772938
 Card.png::CompressedTexture2D::6065804273806327587::1725573599::1731772937::1::::<><>::
 Chest.png::CompressedTexture2D::349901153338517176::1725573599::1731772937::1::::<><>::
 Entry.png::CompressedTexture2D::4817588375525683588::1725573599::1731772937::1::::<><>::
@@ -1349,16 +1349,16 @@ Transporter.png::CompressedTexture2D::5133186011883348563::1725573599::173177293
 Font.txt::TextFile::-1::1725573599::0::1::::<><>::
 license.txt::TextFile::-1::1725573599::0::1::::<><>::
 ::res://Industria gamejam/drones gamejam/1 Drones/::1725573599
-::res://Industria gamejam/drones gamejam/1 Drones/1/::1731272941
+::res://Industria gamejam/drones gamejam/1 Drones/1/::1731772938
 Death.png::CompressedTexture2D::3826303434083689662::1725573599::1731772938::1::::<><>::
 Idle.png::CompressedTexture2D::6323254743551242087::1725573599::1731772938::1::::<><>::
 Scan.png::CompressedTexture2D::8546049929124427777::1725573599::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::7218635475172475110::1725573599::1731772938::1::::<><>::
 Walk_scan.png::CompressedTexture2D::130547540895374356::1725573599::1731772938::1::::<><>::
-::res://Industria gamejam/drones gamejam/1 Drones/2/::1731272941
+::res://Industria gamejam/drones gamejam/1 Drones/2/::1731772938
 Bomb.png::CompressedTexture2D::1668442103480877032::1725573599::1731772938::1::::<><>::
 Drop.png::CompressedTexture2D::6099783680025460917::1725573599::1731772938::1::::<><>::
-::res://Industria gamejam/drones gamejam/1 Drones/3/::1731272941
+::res://Industria gamejam/drones gamejam/1 Drones/3/::1731772938
 Back.png::CompressedTexture2D::1778587315713816039::1725573599::1731772938::1::::<><>::
 Death.png::CompressedTexture2D::460623447969542007::1725573599::1731772938::1::::<><>::
 Fire1.png::CompressedTexture2D::7271476101616778647::1725573599::1731772938::1::::<><>::
@@ -1366,29 +1366,29 @@ Fire2.png::CompressedTexture2D::1168834122298916955::1725573599::1731772938::1::
 Fire3.png::CompressedTexture2D::2505125396708615557::1725573599::1731772938::1::::<><>::
 Forward.png::CompressedTexture2D::7822643046957084772::1725573599::1731772938::1::::<><>::
 Idle.png::CompressedTexture2D::1455698326715071781::1725573599::1731772938::1::::<><>::
-::res://Industria gamejam/drones gamejam/1 Drones/4/::1731272940
+::res://Industria gamejam/drones gamejam/1 Drones/4/::1731772938
 Death.png::CompressedTexture2D::6701269228630748963::1725573599::1731772938::1::::<><>::
 Idle.png::CompressedTexture2D::8514271752607900744::1725573599::1731772938::1::::<><>::
 Landing.png::CompressedTexture2D::589002841173049337::1725573599::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::1859727610445814924::1725573599::1731772938::1::::<><>::
-::res://Industria gamejam/drones gamejam/1 Drones/5/::1731272940
+::res://Industria gamejam/drones gamejam/1 Drones/5/::1731772938
 Death.png::CompressedTexture2D::3096526702037546327::1725573599::1731772938::1::::<><>::
 Idle.png::CompressedTexture2D::9041771522812240179::1725573599::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::72785002104499242::1725573599::1731772938::1::::<><>::
-::res://Industria gamejam/drones gamejam/1 Drones/5_2/::1731272940
+::res://Industria gamejam/drones gamejam/1 Drones/5_2/::1731772938
 Death.png::CompressedTexture2D::5432804246074569504::1725573599::1731772938::1::::<><>::
 Idle.png::CompressedTexture2D::4282564211538519378::1725573599::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::7493461386058945704::1725573599::1731772938::1::::<><>::
-::res://Industria gamejam/drones gamejam/1 Drones/6/::1731272940
+::res://Industria gamejam/drones gamejam/1 Drones/6/::1731772938
 Capsule.png::CompressedTexture2D::4094705450752358042::1725573599::1731772938::1::::<><>::
 Drop.png::CompressedTexture2D::480041359881626480::1725573599::1731772938::1::::<><>::
 Walk2.png::CompressedTexture2D::1859610468282580868::1725573599::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::1341509151008821629::1725573599::1731772938::1::::<><>::
-::res://Industria gamejam/drones gamejam/2 Character animations/::1731272940
+::res://Industria gamejam/drones gamejam/2 Character animations/::1731772938
 1.png::CompressedTexture2D::7212486927732954650::1725573599::1731772938::1::::<><>::
 2.png::CompressedTexture2D::8080446791871900546::1725573599::1731772938::1::::<><>::
 3.png::CompressedTexture2D::5525150166196243409::1725573599::1731772938::1::::<><>::
-::res://melee weapons/::1731272943
+::res://melee weapons/::1731772938
 Icon28_01.png::CompressedTexture2D::4830493680048202079::1726523625::1731772938::1::::<><>::
 Icon28_02.png::CompressedTexture2D::8058455909023285896::1726523625::1731772938::1::::<><>::
 Icon28_03.png::CompressedTexture2D::3716159313212729875::1726523625::1731772938::1::::<><>::
@@ -1429,41 +1429,41 @@ Icon28_37.png::CompressedTexture2D::8471023719824926469::1726523625::1731772938:
 Icon28_38.png::CompressedTexture2D::6275423307875600576::1726523625::1731772938::1::::<><>::
 Icon28_39.png::CompressedTexture2D::213578981912153529::1726523625::1731772938::1::::<><>::
 Icon28_40.png::CompressedTexture2D::6184886015982273516::1726523625::1731772938::1::::<><>::
-::res://Menus/::1731540902
+::res://Menus/::1731773548
 credits_scene.gd::GDScript::-1::1727119990::0::1::::<>Control<>::
-credits_scene.tscn::PackedScene::2973797887980467519::1731273009::0::1::::<><>::res://Menus/credits_scene.gd<>uid://qgsoqyvcjhtp::::res://powerplant scenario gamejam/2 Background/Day/1.png<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cqkown127ytl3::::res://powerplant scenario gamejam/2 Background/Day/2.png<>uid://yq5xvqmqofa2::::res://powerplant scenario gamejam/2 Background/Day/3.png<>uid://di52sr7yarkih::::res://powerplant scenario gamejam/2 Background/Day/5.png<>uid://2gkcw1bng28h::::res://fontpixel_theme.tres<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres
+credits_scene.tscn::PackedScene::2973797887980467519::1731773390::0::1::::<><>::res://Menus/credits_scene.gd<>uid://qgsoqyvcjhtp::::res://powerplant scenario gamejam/2 Background/Day/1.png<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cqkown127ytl3::::res://powerplant scenario gamejam/2 Background/Day/2.png<>uid://yq5xvqmqofa2::::res://powerplant scenario gamejam/2 Background/Day/3.png<>uid://di52sr7yarkih::::res://powerplant scenario gamejam/2 Background/Day/5.png<>uid://2gkcw1bng28h::::res://fontpixel_theme.tres<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres
 current_player_loadout.gd::GDScript::-1::1726780246::0::1::::<>BoxContainer<>::
 item_container.gd::GDScript::-1::1730936024::0::1::::<>BoxContainer<>::
 loss_scene.gd::GDScript::-1::1731540902::0::1::::<>Node2D<>::
-loss_scene.tscn::PackedScene::1577220408338634432::1731273010::0::1::::<><>::res://Menus/loss_scene.gd<>uid://cqa5xhk4abu72::::res://robo gamejam/Arte experimental/Ice_Explodedasso_Sheet.png<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres
+loss_scene.tscn::PackedScene::1577220408338634432::1731773391::0::1::::<><>::res://Menus/loss_scene.gd<>uid://cqa5xhk4abu72::::res://robo gamejam/Arte experimental/Ice_Explodedasso_Sheet.png<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres
 menu.gd::GDScript::-1::1731540902::0::1::::<>Control<>::
-menu.gdshader::Shader::-1::1731273169::0::1::::<><>::
-menu.tscn::PackedScene::7247103091441093636::1731273009::0::1::::<><>::res://Menus/menu.gd<>uid://b84hwqo6xc6pu::::res://stockbots_Intro.mp3<>uid://dbdy7qn6gl06v::::res://Industria gamejam/1 Background/1.png<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cnw2g3cjksd0g::::res://Industria gamejam/1 Background/3.png<>uid://btlwgagqgd0jr::::res://Industria gamejam/4.png<>uid://cyyviqxs8i4ro::::res://Industria gamejam/1 Background/5.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://ce154bugrrsa8::::res://dark_logo.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://4dj45wiebwgi::::res://dark_logo7.png<>uid://cf6ys3mggt1dn::::res://logo_letters.png<>uid://cal7jolbeke3m::::res://dark_logo4.png<>uid://bsh0p2yp0nlk6::::res://dark_logo8.png<>uid://b6lsce3d03ch8::::res://dark_logo2.png<>uid://b3rnfic0opvaw::::res://dark_logo1.png<>uid://c6xj6aj2l53gm::::res://dark_logo3.png<>uid://hw551ekb41he::::res://dark_logo5.png<>uid://csetd75oqg1pd::::res://dark_logo6.png<>uid://befihi6lxdef0::::res://cog.png<>uid://d5iax7iloy18::::res://cogtext.png
+menu.gdshader::Shader::-1::1731773548::0::1::::<><>::
+menu.tscn::PackedScene::7247103091441093636::1731773390::0::1::::<><>::res://Menus/menu.gd<>uid://b84hwqo6xc6pu::::res://stockbots_Intro.mp3<>uid://dbdy7qn6gl06v::::res://Industria gamejam/1 Background/1.png<>res://Menus/menu.gdshader<>uid://bplkyl1xy4bfm::::res://Industria gamejam/1 Background/2.png<>uid://cnw2g3cjksd0g::::res://Industria gamejam/1 Background/3.png<>uid://btlwgagqgd0jr::::res://Industria gamejam/4.png<>uid://cyyviqxs8i4ro::::res://Industria gamejam/1 Background/5.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://ce154bugrrsa8::::res://dark_logo.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://4dj45wiebwgi::::res://dark_logo7.png<>uid://cf6ys3mggt1dn::::res://logo_letters.png<>uid://cal7jolbeke3m::::res://dark_logo4.png<>uid://bsh0p2yp0nlk6::::res://dark_logo8.png<>uid://b6lsce3d03ch8::::res://dark_logo2.png<>uid://b3rnfic0opvaw::::res://dark_logo1.png<>uid://c6xj6aj2l53gm::::res://dark_logo3.png<>uid://hw551ekb41he::::res://dark_logo5.png<>uid://csetd75oqg1pd::::res://dark_logo6.png<>uid://befihi6lxdef0::::res://cog.png<>uid://d5iax7iloy18::::res://cogtext.png
 menu_pause.gd::GDScript::-1::1731540902::0::1::::<>CanvasLayer<>::
 menu_pause.tscn::PackedScene::1351674068474087943::1726971823::0::1::::<><>::res://Menus/menu_pause.gd<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres
-menu_theme.tres::Theme::5337092342093551882::1731272964::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
-pause_theme.tres::Theme::5565090707935745082::1731272964::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
+menu_theme.tres::Theme::5337092342093551882::1731773110::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
+pause_theme.tres::Theme::5565090707935745082::1731773111::0::1::::<><>::uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf
 player_current_money.gd::GDScript::-1::1730681873::0::1::::<>Label<>::
 reroll_button.gd::GDScript::-1::1730682205::0::1::::<>Button<>::
 scrap.gd::GDScript::-1::1730682420::0::1::::<>Sprite2D<>::
-tiles.tres::TileSet::8520027905094107590::1731272964::0::1::::<><>::uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png
+tiles.tres::TileSet::8520027905094107590::1731773110::0::1::::<><>::uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png
 upgraged_scene.gd::GDScript::-1::1731540902::0::1::::<>CanvasLayer<>::
-upgraged_scene.tscn::PackedScene::6392636822786826645::1731273010::0::1::::<><>::res://Menus/upgraged_scene.gd<>uid://dtnfu5ykm7ula::::res://Menus/tiles.tres<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres<>res://Menus/item_container.gd<>uid://desw3f5klvetp::::res://stockbots_Upgrade.mp3<>uid://cepabdw87w6tj::::res://Industria gamejam/3 Animated objects/Transporter2.png<>res://caixota.gdshader<>res://Menus/player_current_money.gd<>res://Menus/reroll_button.gd<>uid://befihi6lxdef0::::res://cog.png<>res://Menus/current_player_loadout.gd<>uid://d4s5hbfw4h4k::::res://Industria gamejam/caixaconveyor.png<>res://Menus/scrap.gd<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://d5iax7iloy18::::res://cogtext.png
+upgraged_scene.tscn::PackedScene::6392636822786826645::1731773391::0::1::::<><>::res://Menus/upgraged_scene.gd<>uid://dtnfu5ykm7ula::::res://Menus/tiles.tres<>uid://clj1h355k1bw1::::res://Menus/pause_theme.tres<>res://Menus/item_container.gd<>uid://desw3f5klvetp::::res://stockbots_Upgrade.mp3<>uid://cepabdw87w6tj::::res://Industria gamejam/3 Animated objects/Transporter2.png<>res://caixota.gdshader<>res://Menus/player_current_money.gd<>res://Menus/reroll_button.gd<>uid://befihi6lxdef0::::res://cog.png<>res://Menus/current_player_loadout.gd<>uid://d4s5hbfw4h4k::::res://Industria gamejam/caixaconveyor.png<>res://Menus/scrap.gd<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://d5iax7iloy18::::res://cogtext.png
 win_scene.gd::GDScript::-1::1731540902::0::1::::<>CanvasLayer<>::
-win_scene.tscn::PackedScene::3486261982251564868::1731273010::0::1::::<><>::res://Menus/win_scene.gd<>uid://cf0fy854iu0yx::::res://robo gamejam/Arte experimental/Idle_ice_image.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cxy648aacf25k::::res://powerplant scenario gamejam/3 Objects/2 Decoration/18.png<>uid://cvnjwn8dna4p7::::res://pizasemoio.png<>uid://07dec65xra5r::::res://pizacomoio.png<>uid://y2n1vobhruev::::res://sound effect win scene.mp3<>uid://bjtd0chwbbb38::::res://Minecraft Music Disc - 13.mp3
-::res://Modes/::1731272964
-agressivo.tres::Resource/Mode_resource::7024451501339356069::1731272964::0::1::::<><>::uid://bn026wua4pj1p::::res://1 Icons/7/Skillicon7_15.png<>res://mode_resource.gd
+win_scene.tscn::PackedScene::3486261982251564868::1731773391::0::1::::<><>::res://Menus/win_scene.gd<>uid://cf0fy854iu0yx::::res://robo gamejam/Arte experimental/Idle_ice_image.png<>uid://cibleptmewh3g::::res://Menus/menu_theme.tres<>uid://beni1bq4cema::::res://Industria gamejam/1 Tiles/Sheet.png<>uid://5okrbl2le27c::::res://Industria gamejam/1 Background/RevMiniPixel.ttf<>uid://cxy648aacf25k::::res://powerplant scenario gamejam/3 Objects/2 Decoration/18.png<>uid://cvnjwn8dna4p7::::res://pizasemoio.png<>uid://07dec65xra5r::::res://pizacomoio.png<>uid://y2n1vobhruev::::res://sound effect win scene.mp3<>uid://bjtd0chwbbb38::::res://Minecraft Music Disc - 13.mp3
+::res://Modes/::1731773110
+agressivo.tres::Resource/Mode_resource::7024451501339356069::1731773110::0::1::::<><>::uid://bn026wua4pj1p::::res://1 Icons/7/Skillicon7_15.png<>res://mode_resource.gd
 basic.tres::Resource/Mode_resource::5266329202374964533::1729397051::0::1::::<><>::uid://dbx3mf4k37hkr::::res://Icones gameJam/1 Icons/7/Skillicon7_36.png<>res://mode_resource.gd
-Breaker.tres::Resource/Mode_resource::6103138123256065759::1731272964::0::1::::<><>::uid://cphwl4lapsiqp::::res://1 Icons/7/Skillicon7_37.png<>res://mode_resource.gd
-camper.tres::Resource/Mode_resource::5567721868905292652::1731272964::0::1::::<><>::uid://d4mcw81475u76::::res://1 Icons/7/Skillicon7_23.png<>res://mode_resource.gd
-fast.tres::Resource/Mode_resource::1744340136558235182::1731272964::0::1::::<><>::uid://dmimpbnbpm683::::res://1 Icons/7/Skillicon7_29.png<>res://mode_resource.gd
-Frail.tres::Resource/Mode_resource::5124391631558118801::1731272964::0::1::::<><>::res://mode_resource.gd<>uid://b1lekt3ro000r::::res://1 Icons/7/Skillicon7_19.png
-lento.tres::Resource/Mode_resource::6166951901167145063::1731272964::0::1::::<><>::uid://blb6pitk3vhuo::::res://1 Icons/7/Skillicon7_34.png<>res://mode_resource.gd
-tank.tres::Resource/Mode_resource::5840347964980924106::1731272964::0::1::::<><>::uid://bmfsir1p24aw7::::res://1 Icons/7/Skillicon7_18.png<>res://mode_resource.gd
+Breaker.tres::Resource/Mode_resource::6103138123256065759::1731773110::0::1::::<><>::uid://cphwl4lapsiqp::::res://1 Icons/7/Skillicon7_37.png<>res://mode_resource.gd
+camper.tres::Resource/Mode_resource::5567721868905292652::1731773110::0::1::::<><>::uid://d4mcw81475u76::::res://1 Icons/7/Skillicon7_23.png<>res://mode_resource.gd
+fast.tres::Resource/Mode_resource::1744340136558235182::1731773110::0::1::::<><>::uid://dmimpbnbpm683::::res://1 Icons/7/Skillicon7_29.png<>res://mode_resource.gd
+Frail.tres::Resource/Mode_resource::5124391631558118801::1731773110::0::1::::<><>::res://mode_resource.gd<>uid://b1lekt3ro000r::::res://1 Icons/7/Skillicon7_19.png
+lento.tres::Resource/Mode_resource::6166951901167145063::1731773110::0::1::::<><>::uid://blb6pitk3vhuo::::res://1 Icons/7/Skillicon7_34.png<>res://mode_resource.gd
+tank.tres::Resource/Mode_resource::5840347964980924106::1731773110::0::1::::<><>::uid://bmfsir1p24aw7::::res://1 Icons/7/Skillicon7_18.png<>res://mode_resource.gd
 ::res://powerplant scenario gamejam/::1725573600
 Font.txt::TextFile::-1::1725573600::0::1::::<><>::
 License.txt::TextFile::-1::1725573600::0::1::::<><>::
-::res://powerplant scenario gamejam/1 Tiles/::1731272943
+::res://powerplant scenario gamejam/1 Tiles/::1731772938
 Tileset.png::CompressedTexture2D::1607401521975622136::1725573600::1731772938::1::::<><>::
 Tile_01.png::CompressedTexture2D::3527691905999586896::1725573600::1731772938::1::::<><>::
 Tile_02.png::CompressedTexture2D::311087468462731527::1725573600::1731772938::1::::<><>::
@@ -1529,23 +1529,23 @@ Tile_61.png::CompressedTexture2D::8823918917163992511::1725573600::1731772938::1
 Tile_62.png::CompressedTexture2D::5449098816955390065::1725573600::1731772938::1::::<><>::
 Tile_63.png::CompressedTexture2D::4392325147761920690::1725573600::1731772938::1::::<><>::
 Tile_64.png::CompressedTexture2D::1495142566077151080::1725573600::1731772938::1::::<><>::
-::res://powerplant scenario gamejam/2 Background/::1731272943
+::res://powerplant scenario gamejam/2 Background/::1731772938
 5.png::CompressedTexture2D::7784376579322162119::1727119990::1731772938::1::::<><>::
 Overlay.png::CompressedTexture2D::4835373807141199921::1725573600::1731772938::1::::<><>::
-::res://powerplant scenario gamejam/2 Background/Day/::1731272943
+::res://powerplant scenario gamejam/2 Background/Day/::1731772938
 1.png::CompressedTexture2D::1136526550123429049::1725573600::1731772938::1::::<><>::
 2.png::CompressedTexture2D::5917396692738907774::1725573600::1731772938::1::::<><>::
 3.png::CompressedTexture2D::1719426002694926367::1725573600::1731772938::1::::<><>::
 4.png::CompressedTexture2D::3408018539743771050::1725573600::1731772938::1::::<><>::
 5.png::CompressedTexture2D::7784376579322162119::1728342203::1731772938::1::::<><>::
-::res://powerplant scenario gamejam/2 Background/Night/::1731272943
+::res://powerplant scenario gamejam/2 Background/Night/::1731772938
 1.png::CompressedTexture2D::7120437640546740080::1725573600::1731772938::1::::<><>::
 2.png::CompressedTexture2D::5938656155420125409::1725573600::1731772938::1::::<><>::
 3.png::CompressedTexture2D::8402454216068556524::1725573600::1731772938::1::::<><>::
 4.png::CompressedTexture2D::8319655327860770765::1725573600::1731772938::1::::<><>::
 5.png::CompressedTexture2D::5124809340858124494::1725573600::1731772938::1::::<><>::
 ::res://powerplant scenario gamejam/3 Objects/::1725573600
-::res://powerplant scenario gamejam/3 Objects/1 Tube/::1731272942
+::res://powerplant scenario gamejam/3 Objects/1 Tube/::1731772938
 1.png::CompressedTexture2D::7086877263662048894::1725573600::1731772938::1::::<><>::
 2.png::CompressedTexture2D::3511055758449347101::1725573600::1731772938::1::::<><>::
 3.png::CompressedTexture2D::8801741492629961460::1725573600::1731772938::1::::<><>::
@@ -1557,7 +1557,7 @@ Overlay.png::CompressedTexture2D::4835373807141199921::1725573600::1731772938::1
 9.png::CompressedTexture2D::5620636756968976608::1725573600::1731772938::1::::<><>::
 10.png::CompressedTexture2D::2712064484028679202::1725573600::1731772938::1::::<><>::
 11.png::CompressedTexture2D::9120887253488539521::1725573600::1731772938::1::::<><>::
-::res://powerplant scenario gamejam/3 Objects/2 Decoration/::1731272942
+::res://powerplant scenario gamejam/3 Objects/2 Decoration/::1731772938
 1.png::CompressedTexture2D::3569574669305805237::1725573600::1731772938::1::::<><>::
 2.png::CompressedTexture2D::3238202075902122763::1725573600::1731772938::1::::<><>::
 3.png::CompressedTexture2D::6095407243203370172::1725573600::1731772938::1::::<><>::
@@ -1585,7 +1585,7 @@ Overlay.png::CompressedTexture2D::4835373807141199921::1725573600::1731772938::1
 25.png::CompressedTexture2D::5633258209621000753::1725573600::1731772938::1::::<><>::
 26.png::CompressedTexture2D::5953508674429094464::1725573600::1731772938::1::::<><>::
 27.png::CompressedTexture2D::2067382181724078451::1725573600::1731772938::1::::<><>::
-::res://powerplant scenario gamejam/3 Objects/3 Power lines/::1731272937
+::res://powerplant scenario gamejam/3 Objects/3 Power lines/::1731772938
 1.png::CompressedTexture2D::7698404191187830982::1725573600::1731772938::1::::<><>::
 2.png::CompressedTexture2D::2534891317263244487::1725573600::1731772938::1::::<><>::
 3.png::CompressedTexture2D::5439109313195313877::1725573600::1731772938::1::::<><>::
@@ -1595,16 +1595,16 @@ Overlay.png::CompressedTexture2D::4835373807141199921::1725573600::1731772938::1
 7.png::CompressedTexture2D::1131255267714826971::1725573600::1731772938::1::::<><>::
 8.png::CompressedTexture2D::5991932783719072002::1725573600::1731772938::1::::<><>::
 9.png::CompressedTexture2D::935748545245078025::1725573600::1731772938::1::::<><>::
-::res://powerplant scenario gamejam/4 Animated objects/::1731272937
+::res://powerplant scenario gamejam/4 Animated objects/::1731772938
 Card.png::CompressedTexture2D::1477182529271028299::1725573600::1731772938::1::::<><>::
 Chest.png::CompressedTexture2D::6155954696176371452::1725573600::1731772938::1::::<><>::
 Money.png::CompressedTexture2D::5112596649845914888::1725573600::1731772938::1::::<><>::
 Trap.png::CompressedTexture2D::2631401777142689110::1725573600::1731772938::1::::<><>::
-::res://Powerup gamejam/::1731272936
+::res://Powerup gamejam/::1731772938
 Coupon by craftpix.pdf.png::CompressedTexture2D::2465219562892073490::1728342203::1731772938::1::::<><>::
 Font.txt::TextFile::-1::1728342203::0::1::::<><>::
 License.txt::TextFile::-1::1728342203::0::1::::<><>::
-::res://Powerup gamejam/1 Icons/::1731272937
+::res://Powerup gamejam/1 Icons/::1731772938
 Icon14_01.png::CompressedTexture2D::6636811329222246855::1728342203::1731772938::1::::<><>::
 Icon14_02.png::CompressedTexture2D::4051119442639683189::1728342203::1731772938::1::::<><>::
 Icon14_03.png::CompressedTexture2D::1812087084853610292::1728342203::1731772938::1::::<><>::
@@ -1650,38 +1650,38 @@ Icon14_40.png::CompressedTexture2D::8100397560644228231::1728342203::1731772937:
 ::res://robo gamejam/::1730485339
 Font.txt::TextFile::-1::1725573600::0::1::::<><>::
 License.txt::TextFile::-1::1730485339::0::1::::<><>::
-::res://robo gamejam/1/::1731272936
+::res://robo gamejam/1/::1731772937
 Attack.png::CompressedTexture2D::7375401907884332266::1725573600::1731772937::1::::<><>::
 Death.png::CompressedTexture2D::707577537708307144::1725573600::1731772937::1::::<><>::
 Hurt.png::CompressedTexture2D::3224900010915783419::1725573600::1731772937::1::::<><>::
 Idle.png::CompressedTexture2D::733866289337181750::1725573600::1731772937::1::::<><>::
 Walk.png::CompressedTexture2D::5221097779084553985::1725573600::1731772937::1::::<><>::
-::res://robo gamejam/2/::1731272936
+::res://robo gamejam/2/::1731772937
 Attack.png::CompressedTexture2D::1548982454166261609::1725573600::1731772937::1::::<><>::
 Death.png::CompressedTexture2D::1277704524620828066::1725573600::1731772937::1::::<><>::
 Hurt.png::CompressedTexture2D::927276733170574308::1725573600::1731772937::1::::<><>::
 Idle.png::CompressedTexture2D::2019814120693932209::1725573600::1731772937::1::::<><>::
 Walk.png::CompressedTexture2D::7647119272828804414::1725573600::1731772937::1::::<><>::
-::res://robo gamejam/3/::1731272936
+::res://robo gamejam/3/::1731772938
 Attack.png::CompressedTexture2D::8190343776277791259::1725573600::1731772937::1::::<><>::
 Death.png::CompressedTexture2D::7506062114665664127::1725573600::1731772937::1::::<><>::
 Hurt2.png::CompressedTexture2D::1440601036923916928::1725573600::1731772937::1::::<><>::
 Hurt.png::CompressedTexture2D::3918732053542212993::1725573600::1731772937::1::::<><>::
 Idle.png::CompressedTexture2D::4268553853346102481::1725573600::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::1640362652745680030::1725573600::1731772938::1::::<><>::
-::res://robo gamejam/4/::1731272936
+::res://robo gamejam/4/::1731772938
 Attack.png::CompressedTexture2D::6308126443702315507::1725573600::1731772938::1::::<><>::
 Death.png::CompressedTexture2D::4192156180543014094::1725573600::1731772938::1::::<><>::
 Hurt.png::CompressedTexture2D::6009659903557382857::1725573600::1731772938::1::::<><>::
 Idle.png::CompressedTexture2D::1740775923701936715::1725573600::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::2449409491505916488::1725573600::1731772938::1::::<><>::
-::res://robo gamejam/5/::1731272936
+::res://robo gamejam/5/::1731772938
 Attack.png::CompressedTexture2D::4118567479787148417::1725573600::1731772938::1::::<><>::
 Death.png::CompressedTexture2D::6631104813647703174::1725573600::1731772938::1::::<><>::
 Hurt.png::CompressedTexture2D::806918621077508674::1725573600::1731772938::1::::<><>::
 Idle.png::CompressedTexture2D::1535886430255544668::1725573600::1731772938::1::::<><>::
 Walk.png::CompressedTexture2D::5964396224420447027::1725573600::1731772938::1::::<><>::
-::res://robo gamejam/6/::1731272939
+::res://robo gamejam/6/::1731772938
 Attack.png::CompressedTexture2D::2543649569388979788::1725573600::1731772938::1::::<><>::
 Ball1.png::CompressedTexture2D::1527296004979773217::1725573600::1731772937::1::::<><>::
 Ball2.png::CompressedTexture2D::3662512468870626376::1725573600::1731772937::1::::<><>::
@@ -1689,7 +1689,7 @@ Death.png::CompressedTexture2D::954927924556388376::1725573600::1731772937::1:::
 Hurt.png::CompressedTexture2D::2780629461206292568::1725573600::1731772937::1::::<><>::
 Idle.png::CompressedTexture2D::8497299625365886863::1725573600::1731772937::1::::<><>::
 Walk.png::CompressedTexture2D::1312350508746546977::1725573600::1731772937::1::::<><>::
-::res://robo gamejam/Arte experimental/::1731272939
+::res://robo gamejam/Arte experimental/::1731772938
 explicao.txt::TextFile::-1::1725573600::0::1::::<><>::
 Fire_Hurt_Sheet.png::CompressedTexture2D::4894622227377144073::1727038558::1731772937::1::::<><>::
 Fire_Idle_Sheet2.png::CompressedTexture2D::4936328263640519065::1725576319::1731772937::1::::<><>::
@@ -1708,7 +1708,7 @@ Ice_Idle_Sheet2.png::CompressedTexture2D::2635014516024246719::1725576836::17317
 Ice_Idle_Sheet.png::CompressedTexture2D::443711515435315784::1725573600::1731772938::1::::<><>::
 Ice_Walk_Sheet.png::CompressedTexture2D::530820561868765194::1725573600::1731772938::1::::<><>::
 Idle_ice_image.png::CompressedTexture2D::5175743254389229291::1726181205::1731772938::1::::<><>::
-::res://SP201_nyknck/::1731272939
+::res://SP201_nyknck/::1731772938
 SP201_01.png::CompressedTexture2D::3568904086948852214::1726181205::1731772938::1::::<><>::
 SP201_02.png::CompressedTexture2D::759659201127313458::1726181205::1731772938::1::::<><>::
 SP201_03.png::CompressedTexture2D::5558326826922860564::1726181205::1731772938::1::::<><>::
@@ -1717,13 +1717,13 @@ SP201_05.png::CompressedTexture2D::3810275801809751496::1726181205::1731772938::
 SP201_06.png::CompressedTexture2D::4808638602691616318::1726181205::1731772938::1::::<><>::
 SP201_07.png::CompressedTexture2D::7972900171343545789::1726181205::1731772938::1::::<><>::
 ::res://SP301_nyknck/::1726181205
-::res://SP301_nyknck/SP301_nyknck/::1731272939
+::res://SP301_nyknck/SP301_nyknck/::1731772938
 SP301_01.png::CompressedTexture2D::7408548881821751862::1726181205::1731772938::1::::<><>::
 SP301_02.png::CompressedTexture2D::2158023907194465784::1726181205::1731772938::1::::<><>::
 SP301_03.png::CompressedTexture2D::9181739203094708726::1726181205::1731772938::1::::<><>::
 SP301_04.png::CompressedTexture2D::677544908980068700::1726181205::1731772938::1::::<><>::
 SP301_05.png::CompressedTexture2D::311324168394426045::1726181205::1731772938::1::::<><>::
-::res://Weapons/::1731540902
+::res://Weapons/::1731772938
 baton.tres::Resource/Weapon_resource::4586399741038038538::1730674498::0::1::::<><>::res://weapon_resource_base.gd<>uid://dwnxuu6p7krqt::::res://melee weapons/Icon28_06.png
 bazuca.tres::Resource/Weapon_resource::8742977074780436499::1730674498::0::1::::<><>::res://weapon_resource_base.gd<>uid://dg3hvgqhhcf2q::::res://Weapons/Icon29_02.png
 chainsaw.tres::Resource/Weapon_resource::3763097881537152750::1730674498::0::1::::<><>::res://weapon_resource_base.gd<>uid://ccm3akn5unvi3::::res://melee weapons/Icon28_10.png

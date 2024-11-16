@@ -17,4 +17,4 @@ bullet_velocity = 7
 Item_type = 1
 Item_name = "Uzi"
 Description = "Short bursts of good damage after a medium cooldown."
-Price = 5
+Price = 4

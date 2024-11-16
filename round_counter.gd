@@ -2,6 +2,7 @@ extends Node
 
 var rounds : int = 0 : set = _item_pool
 var reroll_price : int = 1
+var winmoneyindicator : int
 @export var mode_rarity_1 : Array[Mode_resource]
 @export var mode_rarity_2 : Array[Mode_resource]
 @export var mode_rarity_3 : Array[Mode_resource]
@@ -14,6 +15,8 @@ var current_item_weapons : Array[Weapon_resource]
 var current_item_pool : Array
 
 func _process(delta: float) -> void:
+	winmoneyindicator = round(4 * (RoundCounter.rounds - 1)/2)
+	
 	if Input.is_action_just_pressed("time"):
 		if Engine.time_scale == 1:
 			Engine.time_scale = 3

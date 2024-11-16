@@ -538,6 +538,16 @@ script = ExtResource("11_0upop")
 scale = Vector2(1.3, 1.3)
 texture = ExtResource("11_ugqvh")
 
+[node name="Money_Won" type="Label" parent="Player_money"]
+layout_mode = 0
+offset_left = 110.0
+offset_right = 150.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.52, 1, 0.52, 1)
+theme_override_fonts/font = ExtResource("11_a6rk7")
+theme_override_font_sizes/font_size = 24
+text = "(+X)"
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]

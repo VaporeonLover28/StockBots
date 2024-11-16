@@ -1,8 +1,8 @@
+Label
 Sprite2D
 AudioStreamPlayer2D
 Node2D
 Button
-Label
 TextureButton
 RichTextLabel
 CollisionShape2D

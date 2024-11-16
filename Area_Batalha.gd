@@ -136,7 +136,6 @@ func _process(_delta):
 			timer_death_timer_started == true
 
 func _on_deathtimer_timeout():
-	print("deathtimer")
 	if RoundCounter.rounds == 8:
 		print("win")
 		get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
@@ -149,29 +148,29 @@ func _on_deathtimer_timeout():
 				enemy_has_died = true
 				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
 			elif  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
-				print("enemy win")
+				#print("enemy win")
 				player_has_died = true
 				get_tree().change_scene_to_file("res://round_loss_scene.tscn")
 			elif instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
-				print("player win")
+				#print("player win")
 				PlayerLoadout.current_money += round(4 * RoundCounter.rounds/2)
 				RoundCounter.rounds += 1
 				enemy_has_died = true
 				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
 		else:
 			if instantiated_player.current_life <= 0 and instantiated_enemy.current_life <= 0:
-				print("draw")
+				#print("draw")
 				PlayerLoadout.current_money += round(4 * RoundCounter.rounds/2)
 				RoundCounter.rounds += 1
 				player_has_died = true
 				enemy_has_died = true
 				get_tree().change_scene_to_file("res://Menus/upgraged_scene.tscn")
 			elif  instantiated_player.current_life <= 0 and instantiated_enemy.current_life > 0:
-				print("enemy win")
+				#print("enemy win")
 				player_has_died = true
 				get_tree().change_scene_to_file("res://Menus/loss_scene.tscn")
 			elif instantiated_enemy.current_life <= 0 and instantiated_player.current_life > 0:
-				print("player win")
+				#print("player win")
 				PlayerLoadout.current_money += round(4 * RoundCounter.rounds/2)
 				RoundCounter.rounds += 1
 				enemy_has_died = true
@@ -179,7 +178,6 @@ func _on_deathtimer_timeout():
 	$deathtimer.stop()
 
 func _on_explotimer_timeout() -> void:
-	print("explosiontimer")
 	if instantiated_player.current_life <= 0:
 		instantiated_player.robot_player.play("explosion")
 		if instantiated_player.instanciated_weapon1 != null:

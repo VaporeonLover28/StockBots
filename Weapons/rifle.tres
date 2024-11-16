@@ -17,4 +17,4 @@ bullet_velocity = 9
 Item_type = 1
 Item_name = "Rifle"
 Description = "Good all around, but doesn't excel at any specific stats. Basic weapon."
-Price = 4
+Price = 5
