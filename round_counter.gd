@@ -3,6 +3,7 @@ extends Node
 var rounds : int = 0 : set = _item_pool
 var reroll_price : int = 1
 var winmoneyindicator : int
+var timeswon = 0
 @export var mode_rarity_1 : Array[Mode_resource]
 @export var mode_rarity_2 : Array[Mode_resource]
 @export var mode_rarity_3 : Array[Mode_resource]

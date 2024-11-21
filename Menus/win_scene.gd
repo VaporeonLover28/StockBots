@@ -7,7 +7,6 @@ var r_pressed = false
 var l_pressed = false
 var p_pressed = false
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -18,7 +17,7 @@ func _process(delta: float) -> void:
 		secret_pressed = true
 	
 	if secret_pressed == true:
-		$Back_menu_button.text = "Next victim"
+		$Restart.text = "Next victim"
 		$Pizza.animation = "eye"
 		$Label.text = "Do not belive in their lies, stupid robot."
 		$Label2.text = "The pizza is not real. you will die like all the others."
@@ -45,6 +44,17 @@ func _on_back_menu_button_pressed() -> void:
 		PlayerLoadout.oldest_weapon = load("res://Weapons/secret.tres")
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
+
+func _on_ng_plus_pressed() -> void:
+	if RoundCounter.timeswon > 1:
+		PlayerLoadout.current_money = 4
+		RoundCounter.reroll_price = 1
+		RoundCounter.rounds = 0 
+		PlayerLoadout.player_round_life = 3
+		PlayerLoadout.times_passed_item = 0
+		get_tree().change_scene_to_file("res://Area_Batalha.tscn")
+	else:
+		pass
 
 func _on_c_pressed() -> void:
 	c_pressed = true

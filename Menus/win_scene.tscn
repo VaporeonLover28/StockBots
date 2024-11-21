@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://bpw1hww8w6lxs"]
+[gd_scene load_steps=15 format=4 uid="uid://bpw1hww8w6lxs"]
 
 [ext_resource type="Script" path="res://Menus/win_scene.gd" id="1_oodep"]
 [ext_resource type="Texture2D" uid="uid://cf0fy854iu0yx" path="res://robo gamejam/Arte experimental/Idle_ice_image.png" id="2_4duf8"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cxy648aacf25k" path="res://powerplant scenario gamejam/3 Objects/2 Decoration/18.png" id="3_grv3w"]
 [ext_resource type="Texture2D" uid="uid://cvnjwn8dna4p7" path="res://pizasemoio.png" id="5_b0ili"]
 [ext_resource type="Texture2D" uid="uid://07dec65xra5r" path="res://pizacomoio.png" id="6_bd3du"]
+[ext_resource type="Script" path="res://Menus/label.gd" id="6_bkjjd"]
 [ext_resource type="AudioStream" uid="uid://y2n1vobhruev" path="res://sound effect win scene.mp3" id="6_kewtd"]
 [ext_resource type="AudioStream" uid="uid://bjtd0chwbbb38" path="res://Minecraft Music Disc - 13.mp3" id="7_3sa2t"]
 
@@ -411,13 +412,31 @@ position = Vector2(763, 455)
 scale = Vector2(6, 6)
 texture = ExtResource("3_grv3w")
 
-[node name="Back_menu_button" type="Button" parent="."]
-offset_left = 478.0
+[node name="Restart" type="Button" parent="."]
+offset_left = 339.0
 offset_top = 584.0
-offset_right = 678.0
+offset_right = 539.0
 offset_bottom = 624.0
 theme = ExtResource("2_c28we")
-text = "Reset run"
+text = "Restart"
+
+[node name="NGPlus" type="Button" parent="."]
+offset_left = 610.0
+offset_top = 584.0
+offset_right = 835.0
+offset_bottom = 624.0
+theme = ExtResource("2_c28we")
+text = "New Game +"
+
+[node name="Label" type="Label" parent="NGPlus"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 44.0
+offset_right = 203.0
+offset_bottom = 67.0
+theme_override_fonts/font = ExtResource("3_1hjga")
+text = "Requires 2 Wins, has: X"
+script = ExtResource("6_bkjjd")
 
 [node name="robot" type="Sprite2D" parent="."]
 position = Vector2(358, 408)
@@ -545,7 +564,8 @@ offset_right = 983.0
 offset_bottom = 125.0
 flat = true
 
-[connection signal="pressed" from="Back_menu_button" to="." method="_on_back_menu_button_pressed"]
+[connection signal="pressed" from="Restart" to="." method="_on_back_menu_button_pressed"]
+[connection signal="pressed" from="NGPlus" to="." method="_on_ng_plus_pressed"]
 [connection signal="pressed" from="c" to="." method="_on_c_pressed"]
 [connection signal="pressed" from="t" to="." method="_on_t_pressed"]
 [connection signal="pressed" from="r" to="." method="_on_r_pressed"]

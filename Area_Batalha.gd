@@ -138,6 +138,7 @@ func _process(_delta):
 func _on_deathtimer_timeout():
 	if RoundCounter.rounds == 8:
 		print("win")
+		RoundCounter.timeswon += 1
 		get_tree().change_scene_to_file("res://Menus/win_scene.tscn")
 	elif RoundCounter.rounds < 8:
 		if PlayerLoadout.player_round_life > 0:
