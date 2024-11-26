@@ -347,6 +347,7 @@ font_size = 40
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_jv4su")
+secret_weapon = "secret"
 
 [node name="BGMusicStream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_4jpd1")

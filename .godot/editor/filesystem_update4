@@ -23,7 +23,10 @@ res://Menus/loss_scene.tscn
 res://round_counter.tscn
 res://round_loss_scene.tscn
 res://player_loadout.tscn
-res://Menus/win_scene.gd
-res://Area_Batalha.gd
+res://Weapons/sniper.tres
+res://bullet.gd
+res://ArmaGen.gd
+res://Menus/menu.gd
+res://introduction.gd
+res://Weapons/chainsaw.tres
 res://round_counter.gd
-res://Menus/label.gd

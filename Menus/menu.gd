@@ -1,6 +1,7 @@
 extends Control
 
 var secret_pressed
+@export var secret_weapon : String
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,12 +20,7 @@ func _process(_delta):
 		start()
 
 func start():
-	if secret_pressed == false:
-		PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
-		PlayerLoadout.oldest_weapon = null
-	else:
-		PlayerLoadout.newest_weapon = load("res://Weapons/secret.tres")
-		PlayerLoadout.oldest_weapon = load("res://Weapons/secret.tres")
+	start_weapons()
 	PlayerLoadout.current_money = 4
 	RoundCounter.reroll_price = 1
 	PlayerLoadout.newest_weapon_lv = 1
@@ -32,13 +28,16 @@ func start():
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 
-func _on_start_btn_pressed():
+func start_weapons():
 	if secret_pressed == false:
 		PlayerLoadout.newest_weapon = RoundCounter.current_item_weapons.pick_random()
 		PlayerLoadout.oldest_weapon = null
 	else:
-		PlayerLoadout.newest_weapon = load("res://Weapons/secret.tres")
-		PlayerLoadout.oldest_weapon = load("res://Weapons/secret.tres")
+		PlayerLoadout.newest_weapon = load("res://Weapons/" + secret_weapon + ".tres")
+		PlayerLoadout.oldest_weapon = load("res://Weapons/" + secret_weapon + ".tres")
+
+func _on_start_btn_pressed():
+	start_weapons()
 	PlayerLoadout.current_mode = load("res://Modes/basic.tres")
 	get_tree().change_scene_to_file("res://introduction.tscn")
 

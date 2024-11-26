@@ -15,6 +15,6 @@ bullet_amount = 1
 bullet_separation_time = 0.5
 bullet_velocity = 15
 Item_type = 1
-Item_name = "sniper"
+Item_name = "Sniper"
 Description = "Slightly long cooldown, but deals good damage at any distance."
 Price = 7

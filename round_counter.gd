@@ -20,10 +20,10 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("time"):
 		if Engine.time_scale == 1:
-			Engine.time_scale = 3
-		elif Engine.time_scale == 3:
-			Engine.time_scale = 10
-		elif Engine.time_scale == 10:
+			Engine.time_scale = 1.75
+		elif Engine.time_scale == 1.75:
+			Engine.time_scale = 5
+		elif Engine.time_scale == 5:
 			Engine.time_scale = 1
 
 func _item_pool(round):
