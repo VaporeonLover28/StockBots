@@ -23,8 +23,11 @@ func _on_pass_upgrade_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Area_Batalha.tscn")
 
 func _on_item_choice_button_pressed() -> void:
+	#se o jogador tiver dinheiro
 	if PlayerLoadout.current_money >= item_container.Item_loaded.Price:
+		#se for uma arma (0 é modo)
 		if item_container.Item_loaded.Item_type == 1:
+			#se o que identifica o nome das armas forem 2 iguais a o que está no nome da arma nesse container:
 			if newest_weapon_reader == oldest_weapon_reader and newest_weapon_reader == item_container.Item_loaded.Item_name and PlayerLoadout.oldest_weapon_lv < 2:
 				PlayerLoadout.newest_weapon_lv += 1
 				PlayerLoadout.oldest_weapon = null
